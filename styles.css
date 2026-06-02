@@ -325,12 +325,13 @@ h2 {
 }
 
 .ele .project-mark {
+  height: 92px;
   min-height: 92px;
 }
 
 .ele .project-mark img {
   display: block;
-  width: min(118px, 72%);
+  width: min(104px, 64%);
   height: auto;
   filter: drop-shadow(0 0 18px rgba(228, 173, 88, 0.24));
 }
