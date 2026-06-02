@@ -289,6 +289,8 @@ h2 {
 
 .project-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   min-height: 300px;
   padding: 1.6rem 1.35rem 1.25rem;
   overflow: hidden;
@@ -395,6 +397,7 @@ h2 {
 }
 
 .project-card p {
+  flex: 1;
   max-width: 26ch;
   margin-bottom: 1.65rem;
   color: var(--ink);
@@ -411,12 +414,22 @@ h2 {
   text-underline-offset: 0.25rem;
 }
 
+.project-card a {
+  margin-top: auto;
+}
+
 .wide {
   display: grid;
   grid-template-columns: 39% 1fr;
   align-items: center;
   min-height: 165px;
   padding: 0 1.8rem 0 0;
+}
+
+.wide > div:last-child {
+  display: flex;
+  flex-direction: column;
+  min-height: 108px;
 }
 
 .quantum {
