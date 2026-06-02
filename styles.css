@@ -1330,7 +1330,7 @@ h2 {
 
 .continuo-hero-visual img {
   display: block;
-  width: min(100%, 550px);
+  width: min(100%, 420px);
   filter: drop-shadow(0 0 2.2rem rgba(55, 216, 242, 0.32));
 }
 
@@ -1467,10 +1467,25 @@ h2 {
   line-height: 1;
 }
 
+.action-symbol svg {
+  width: 60px;
+  height: 60px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 0.8rem currentColor);
+}
+
 .gradient-symbol {
   color: var(--continuo-purple);
   text-shadow: 0.55em 0 var(--continuo-cyan);
   transform: translateX(-0.25em);
+}
+
+.camera-symbol {
+  color: var(--continuo-cyan);
 }
 
 .blue-symbol {
@@ -1486,6 +1501,10 @@ h2 {
 }
 
 .purple-symbol {
+  color: var(--continuo-purple-2);
+}
+
+.tool-symbol {
   color: var(--continuo-purple-2);
 }
 
@@ -1538,11 +1557,21 @@ h2 {
 
 .fragment-visual {
   min-height: 410px;
+  overflow: hidden;
   background:
     linear-gradient(90deg, rgba(2, 5, 8, 0.22), rgba(2, 5, 8, 0.02)),
     radial-gradient(circle at 32% 64%, rgba(155, 114, 255, 0.2), transparent 7rem),
     radial-gradient(circle at 66% 34%, rgba(55, 216, 242, 0.16), transparent 10rem),
     linear-gradient(135deg, #06121c, #020509);
+}
+
+.fragment-artwork {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 410px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .laptop-scene {
@@ -1650,7 +1679,7 @@ h2 {
   }
 
   .continuo-hero-visual img {
-    width: min(100%, 430px);
+    width: min(100%, 340px);
   }
 
   .principles-panel,
@@ -1709,7 +1738,8 @@ h2 {
   }
 
   .fragment-visual,
-  .laptop-scene {
+  .laptop-scene,
+  .fragment-artwork {
     min-height: 300px;
   }
 
