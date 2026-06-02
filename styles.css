@@ -367,6 +367,14 @@ h2 {
     linear-gradient(140deg, #27100b, #060706 72%);
 }
 
+.tempo .project-mark img {
+  display: block;
+  width: 86px;
+  height: 86px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 18px rgba(255, 121, 55, 0.32));
+}
+
 .nova {
   background:
     radial-gradient(circle at 55% 24%, rgba(106, 186, 255, 0.5), transparent 7rem),
