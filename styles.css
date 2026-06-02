@@ -103,7 +103,7 @@ nav a:focus-visible {
   height: 100%;
   object-fit: cover;
   object-position: center center;
-  opacity: 0.94;
+  opacity: 1;
 }
 
 .hero::before {
@@ -113,9 +113,9 @@ nav a:focus-visible {
   z-index: 1;
   pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(2, 7, 10, 0.96) 0%, rgba(2, 7, 10, 0.82) 33%, rgba(2, 7, 10, 0.28) 63%, rgba(2, 7, 10, 0.46) 100%),
-    linear-gradient(0deg, rgba(2, 7, 10, 0.95) 0%, rgba(2, 7, 10, 0.28) 32%, transparent 58%),
-    radial-gradient(circle at 20% 45%, rgba(2, 7, 10, 0.38), transparent 26rem);
+    linear-gradient(90deg, rgba(2, 7, 10, 0.96) 0%, rgba(2, 7, 10, 0.8) 32%, rgba(2, 7, 10, 0.16) 62%, rgba(2, 7, 10, 0.2) 100%),
+    linear-gradient(0deg, rgba(2, 7, 10, 0.88) 0%, rgba(2, 7, 10, 0.16) 32%, transparent 58%),
+    radial-gradient(circle at 17% 45%, rgba(2, 7, 10, 0.42), transparent 25rem);
 }
 
 .hero::after {
@@ -224,10 +224,7 @@ h1 {
 }
 
 .hero-quote {
-  max-width: 210px;
-  margin: 0 0 2rem;
-  color: var(--ink);
-  text-shadow: 0 16px 36px rgba(0, 0, 0, 0.9);
+  display: none;
 }
 
 .hero-quote blockquote {
