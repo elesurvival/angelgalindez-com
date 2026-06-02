@@ -353,6 +353,14 @@ h2 {
     linear-gradient(140deg, #06262a, #05080a 72%);
 }
 
+.echo .project-mark img {
+  display: block;
+  width: 86px;
+  height: 86px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 18px rgba(109, 235, 235, 0.3));
+}
+
 .tempo {
   background:
     radial-gradient(circle at 55% 26%, rgba(255, 121, 55, 0.42), transparent 7rem),
