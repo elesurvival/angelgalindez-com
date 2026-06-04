@@ -2010,7 +2010,7 @@ h2 {
 
 .ele-story-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(220px, 0.78fr) minmax(0, 1.05fr) minmax(260px, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 0.72fr) minmax(340px, 1.35fr) minmax(220px, 0.85fr);
   gap: 1px;
   width: min(100% - 4rem, var(--max));
   margin: 0 auto;
@@ -2021,6 +2021,7 @@ h2 {
 }
 
 .ele-story-card {
+  min-width: 0;
   min-height: 320px;
   padding: clamp(1.5rem, 3vw, 2.5rem);
   background:
@@ -2032,6 +2033,14 @@ h2 {
 .ele-freedom h2 {
   margin-bottom: 1rem;
   font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.ele-story-card h2 {
+  max-width: 10.5ch;
+}
+
+.ele-story-card:nth-child(3) h2 {
+  max-width: 12ch;
 }
 
 .ele-story-card p:not(.ele-kicker),
@@ -2215,26 +2224,37 @@ h2 {
 }
 
 .world-thread {
+  position: relative;
   display: grid;
   grid-template-columns: 1.15fr repeat(6, minmax(0, 1fr));
   gap: 1rem;
-  align-items: center;
+  align-items: start;
+  padding-top: 0.25rem;
+}
+
+.world-thread::before {
+  content: "";
+  position: absolute;
+  top: calc(0.25rem + 0.65rem + 34px);
+  right: 4.25rem;
+  left: 4.25rem;
+  z-index: 0;
+  border-top: 1px dashed rgba(255, 106, 0, 0.48);
 }
 
 .thread-node {
   position: relative;
+  z-index: 1;
   display: grid;
   justify-items: center;
+  grid-template-rows: 68px auto auto;
+  align-items: start;
   min-height: 142px;
+  padding-top: 0.65rem;
 }
 
 .thread-node:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 36px;
-  left: calc(50% + 34px);
-  width: calc(100% - 34px);
-  border-top: 1px dashed rgba(255, 106, 0, 0.48);
+  display: none;
 }
 
 .thread-node span,
@@ -2243,9 +2263,10 @@ h2 {
   place-items: center;
   width: 68px;
   height: 68px;
-  margin-bottom: 0.75rem;
+  margin: 0 0 0.75rem;
   border: 1px solid rgba(255, 106, 0, 0.44);
   border-radius: 50%;
+  background: #080909;
   color: var(--amber-2);
   font-size: 1.8rem;
   object-fit: contain;
@@ -2253,8 +2274,9 @@ h2 {
 }
 
 .thread-node.is-origin {
+  grid-template-rows: 68px auto auto;
   min-height: 158px;
-  padding: 1rem;
+  padding: 0.65rem 1rem 1rem;
   border: 1px solid rgba(255, 106, 0, 0.55);
   border-radius: 8px;
   background: rgba(255, 106, 0, 0.07);
@@ -2372,6 +2394,10 @@ h2 {
 
   .world-thread {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .world-thread::before {
+    display: none;
   }
 
   .thread-node::after {
