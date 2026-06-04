@@ -1804,6 +1804,12 @@ h2 {
   position: absolute;
   inset: 0;
   opacity: 0.98;
+  background:
+    linear-gradient(90deg, rgba(3, 4, 4, 0.96) 0%, rgba(3, 4, 4, 0.62) 38%, rgba(3, 4, 4, 0.1) 100%),
+    linear-gradient(180deg, rgba(3, 4, 4, 0.08), rgba(3, 4, 4, 0.42)),
+    url("assets/projects/ele/ele_hero.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .ele-workbench {
@@ -1817,6 +1823,7 @@ h2 {
     repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 86px),
     radial-gradient(circle at 55% 32%, rgba(255, 106, 0, 0.14), transparent 14rem),
     radial-gradient(circle at 78% 26%, rgba(49, 176, 219, 0.22), transparent 14rem);
+  display: none;
 }
 
 .ele-workbench::before {
@@ -2053,10 +2060,12 @@ h2 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(140deg, rgba(255, 255, 255, 0.08), transparent 40%),
-    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0 2px, transparent 2px 38px),
-    radial-gradient(circle at 60% 35%, rgba(255, 106, 0, 0.32), transparent 8rem),
-    linear-gradient(135deg, #251b12, #090b0a);
+    linear-gradient(140deg, rgba(255, 255, 255, 0.06), transparent 42%),
+    linear-gradient(180deg, rgba(3, 4, 4, 0.04), rgba(3, 4, 4, 0.2)),
+    var(--ele-story-image);
+  background-position: var(--ele-story-position, center);
+  background-size: cover;
+  transform: scale(1.01);
 }
 
 .warehouse-card::after {
@@ -2068,6 +2077,7 @@ h2 {
   box-shadow:
     0 30px 0 rgba(255, 255, 255, 0.08),
     0 60px 0 rgba(255, 255, 255, 0.05);
+  display: none;
 }
 
 .gear-card::after {
@@ -2079,6 +2089,17 @@ h2 {
   box-shadow:
     -70px 36px 0 -8px rgba(255, 255, 255, 0.2),
     74px -26px 0 -12px rgba(47, 188, 231, 0.24);
+  display: none;
+}
+
+.warehouse-card {
+  --ele-story-image: url("assets/projects/ele/warehouse.jpg");
+  --ele-story-position: center;
+}
+
+.gear-card {
+  --ele-story-image: url("assets/projects/ele/books_on_the_table.jpg");
+  --ele-story-position: center;
 }
 
 .ele-ownership,
@@ -2158,9 +2179,11 @@ h2 {
 .ele-freedom-scene {
   min-height: 360px;
   background:
-    radial-gradient(circle at 55% 48%, rgba(255, 106, 0, 0.34), transparent 9rem),
-    linear-gradient(180deg, transparent 0 58%, rgba(5, 6, 6, 0.78) 58% 100%),
-    linear-gradient(140deg, #0a1520, #2d1409 62%, #060606);
+    linear-gradient(90deg, rgba(3, 4, 4, 0.12), rgba(3, 4, 4, 0.24)),
+    linear-gradient(180deg, rgba(3, 4, 4, 0.02), rgba(3, 4, 4, 0.42)),
+    url("assets/projects/ele/standing_at_the_lake.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .ele-freedom-scene::before {
@@ -2172,6 +2195,7 @@ h2 {
   border-radius: 999px 999px 20px 20px;
   background: linear-gradient(180deg, #121212, #050505);
   box-shadow: 0 5rem 5rem rgba(0, 0, 0, 0.6);
+  display: none;
 }
 
 .ele-first-world {
@@ -2258,25 +2282,35 @@ h2 {
 .craft-image {
   min-height: 130px;
   background:
-    repeating-linear-gradient(35deg, rgba(255, 106, 0, 0.48) 0 7px, rgba(10, 12, 10, 0.95) 7px 14px),
-    radial-gradient(circle at 55% 45%, rgba(255, 255, 255, 0.2), transparent 7rem),
-    #17100b;
+    linear-gradient(180deg, rgba(3, 4, 4, 0), rgba(3, 4, 4, 0.18)),
+    var(--craft-image);
+  background-position: var(--craft-position, center);
+  background-size: cover;
 }
 
-.knife-lanyard,
-.zipper-pulls {
-  background:
-    repeating-linear-gradient(-35deg, rgba(47, 188, 231, 0.42) 0 7px, rgba(10, 12, 10, 0.95) 7px 14px),
-    radial-gradient(circle at 50% 50%, rgba(255, 106, 0, 0.24), transparent 7rem),
-    #15100d;
+.id-lanyard {
+  --craft-image: url("assets/projects/ele/id_lanyards.jpg");
+  --craft-position: center;
 }
 
-.keychains,
+.knife-lanyard {
+  --craft-image: url("assets/projects/ele/knife_lanyards.jpg");
+  --craft-position: center;
+}
+
+.keychains {
+  --craft-image: url("assets/projects/ele/keychains.jpg");
+  --craft-position: center;
+}
+
 .wrist-lanyard {
-  background:
-    repeating-linear-gradient(90deg, rgba(255, 106, 0, 0.5) 0 8px, rgba(38, 66, 44, 0.9) 8px 16px),
-    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.12), transparent 7rem),
-    #15120d;
+  --craft-image: url("assets/projects/ele/wrist lanyards.jpg");
+  --craft-position: center;
+}
+
+.zipper-pulls {
+  --craft-image: url("assets/projects/ele/zipper_pulls.jpg");
+  --craft-position: center;
 }
 
 .craft-grid h3 {
@@ -2293,8 +2327,8 @@ h2 {
   min-height: 170px;
   padding: 1rem;
   background:
-    repeating-linear-gradient(180deg, rgba(255, 106, 0, 0.35) 0 14px, rgba(255, 255, 255, 0.08) 14px 28px),
-    #080909 !important;
+    linear-gradient(90deg, rgba(3, 4, 4, 0.2), rgba(3, 4, 4, 0.5)),
+    url("assets/projects/ele/400_colors.jpg") center / cover !important;
 }
 
 .custom-card p {
