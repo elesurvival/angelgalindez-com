@@ -2573,7 +2573,6 @@ h2 {
 .quantum-copy h1,
 .quantum-album h2,
 .quantum-why h2,
-.quantum-tracks h2,
 .studio-panel h2 {
   font-family: Impact, "Arial Narrow", Haettenschweiler, sans-serif;
   line-height: 0.95;
@@ -2646,7 +2645,6 @@ h2 {
 
 .quantum-album,
 .quantum-why,
-.quantum-tracks,
 .quantum-lab {
   width: min(100% - 4rem, var(--max));
   margin: 1rem auto;
@@ -2676,8 +2674,7 @@ h2 {
 }
 
 .quantum-album h2,
-.quantum-why h2,
-.quantum-tracks h2 {
+.quantum-why h2 {
   margin-bottom: 0.8rem;
   font-size: clamp(2.2rem, 4.5vw, 3.2rem);
 }
@@ -2694,38 +2691,107 @@ h2 {
   color: var(--q-cyan) !important;
 }
 
-.album-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-top: 1.2rem;
-}
-
-.album-preview {
+.album-playlist {
   display: grid;
-  gap: 0.45rem;
+  max-height: 390px;
+  gap: 0.18rem;
+  overflow-y: auto;
   margin: 0;
-  padding: 1.05rem 1.2rem;
+  padding: 0.9rem;
   list-style: none;
   border: 1px solid rgba(51, 216, 255, 0.16);
   border-radius: 8px;
   background: rgba(2, 6, 14, 0.72);
+  scrollbar-color: rgba(51, 216, 255, 0.42) rgba(2, 6, 14, 0.72);
 }
 
-.album-preview li {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  gap: 1rem;
-  min-height: 32px;
-  padding-bottom: 0.45rem;
+.playlist-row {
+  display: grid;
+  grid-template-columns: 2.2rem minmax(0, 1fr) 4.6rem;
+  gap: 0.75rem;
+  align-items: center;
+  min-height: 42px;
+  padding: 0.55rem 0.65rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
   color: var(--muted);
+  cursor: pointer;
+  transition: border-color 160ms ease, box-shadow 160ms ease, color 160ms ease, background 160ms ease;
 }
 
-.album-preview strong {
+.playlist-row:hover,
+.playlist-row:focus-visible {
+  color: var(--ink);
+  background: rgba(51, 216, 255, 0.06);
+  outline: none;
+}
+
+.playlist-row.is-playing {
+  border-color: rgba(51, 216, 255, 0.34);
+  color: var(--ink);
+  background:
+    linear-gradient(90deg, rgba(51, 216, 255, 0.12), rgba(179, 76, 255, 0.08)),
+    rgba(4, 11, 24, 0.82);
+  box-shadow: inset 0 0 1rem rgba(51, 216, 255, 0.08);
+}
+
+.playlist-row strong {
   color: var(--q-cyan);
   font-size: 0.78rem;
+}
+
+.playlist-row span {
+  overflow: hidden;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.playlist-play {
+  min-height: 28px;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid rgba(51, 216, 255, 0.34);
+  border-radius: 999px;
+  color: var(--q-cyan);
+  background: rgba(2, 6, 14, 0.72);
+  font: 900 0.62rem/1 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.playlist-play:hover,
+.playlist-play:focus-visible,
+.playlist-row.is-playing .playlist-play {
+  border-color: rgba(51, 216, 255, 0.76);
+  color: #021019;
+  background: var(--q-cyan);
+  box-shadow: 0 0 0.9rem rgba(51, 216, 255, 0.3);
+  outline: none;
+}
+
+.playlist-row.is-playing .playlist-play::before {
+  content: "";
+  display: inline-block;
+  width: 0.35rem;
+  height: 0.35rem;
+  margin-right: 0.35rem;
+  border-radius: 50%;
+  background: currentColor;
+  animation: qf-pulse 900ms ease-in-out infinite;
+}
+
+@keyframes qf-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+
+  50% {
+    opacity: 1;
+  }
 }
 
 .quantum-why {
@@ -2819,105 +2885,6 @@ h2 {
   line-height: 1.5;
   overflow-wrap: normal;
   word-break: normal;
-}
-
-.quantum-tracks {
-  padding: 1.25rem 1.5rem 1.5rem;
-  border: 1px solid rgba(51, 216, 255, 0.14);
-  border-radius: 8px;
-  background:
-    radial-gradient(circle at 12% 0%, rgba(51, 216, 255, 0.12), transparent 18rem),
-    rgba(2, 6, 14, 0.7);
-  text-align: center;
-}
-
-.track-grid {
-  display: flex;
-  gap: 0.75rem;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x proximity;
-  scrollbar-color: rgba(51, 216, 255, 0.42) rgba(2, 6, 14, 0.72);
-  margin-top: 1.2rem;
-  padding-bottom: 0.75rem;
-  text-align: left;
-}
-
-.track-grid article {
-  flex: 0 0 clamp(145px, 15vw, 180px);
-  display: grid;
-  align-content: start;
-  min-height: 150px;
-  padding: 0.9rem;
-  scroll-snap-align: start;
-  border: 1px solid rgba(51, 216, 255, 0.18);
-  border-radius: 6px;
-  color: inherit;
-  cursor: pointer;
-  background:
-    linear-gradient(140deg, rgba(51, 216, 255, 0.1), rgba(179, 76, 255, 0.08)),
-    rgba(4, 11, 24, 0.8);
-  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
-}
-
-.track-grid article:hover,
-.track-grid article:focus-visible {
-  border-color: rgba(51, 216, 255, 0.42);
-  box-shadow: 0 0 1.4rem rgba(51, 216, 255, 0.16);
-  outline: none;
-}
-
-.track-grid article.is-playing {
-  border-color: rgba(51, 216, 255, 0.72);
-  box-shadow:
-    0 0 1.4rem rgba(51, 216, 255, 0.22),
-    inset 0 0 1.2rem rgba(179, 76, 255, 0.12);
-  transform: translateY(-2px);
-}
-
-.track-grid span {
-  display: inline-grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  margin-bottom: 1.05rem;
-  border: 1px solid rgba(51, 216, 255, 0.38);
-  border-radius: 50%;
-  color: var(--q-cyan);
-  font-size: 0.72rem;
-}
-
-.track-grid h3 {
-  margin: 0;
-  font: 900 0.82rem/1.25 Arial, Helvetica, sans-serif;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.track-play {
-  align-self: end;
-  justify-self: start;
-  min-height: 30px;
-  margin-top: 1rem;
-  padding: 0.35rem 0.7rem;
-  border: 1px solid rgba(51, 216, 255, 0.38);
-  border-radius: 999px;
-  color: var(--q-cyan);
-  background: rgba(2, 6, 14, 0.74);
-  font: 900 0.65rem/1 Arial, Helvetica, sans-serif;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.track-play:hover,
-.track-play:focus-visible,
-.track-grid article.is-playing .track-play {
-  border-color: rgba(51, 216, 255, 0.75);
-  color: #021019;
-  background: var(--q-cyan);
-  box-shadow: 0 0 1rem rgba(51, 216, 255, 0.32);
-  outline: none;
 }
 
 .quantum-lab {
@@ -3014,10 +2981,6 @@ h2 {
     grid-template-columns: 1fr;
   }
 
-  .track-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .tool-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -3036,7 +2999,6 @@ h2 {
   .quantum-hero-inner,
   .quantum-album,
   .quantum-why,
-  .quantum-tracks,
   .quantum-lab {
     width: min(100% - 1.25rem, var(--max));
   }
@@ -3067,18 +3029,20 @@ h2 {
 
   .quantum-album,
   .quantum-why,
-  .quantum-tracks,
   .tools-panel {
     padding: 1rem;
   }
 
-  .track-grid,
   .tool-grid {
     grid-template-columns: 1fr;
   }
 
-  .track-grid article {
-    flex-basis: 72vw;
+  .album-playlist {
+    max-height: 340px;
+  }
+
+  .playlist-row {
+    grid-template-columns: 2rem minmax(0, 1fr) 4.4rem;
   }
 
   .why-cards article {
