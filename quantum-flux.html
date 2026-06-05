@@ -156,6 +156,7 @@
   <script>
     (() => {
       const rows = Array.from(document.querySelectorAll(".playlist-row"));
+      const listenButton = document.querySelector(".quantum-primary[href='#ciphered-realms']");
       const audio = document.getElementById("quantum-track-player");
       let activeRow = null;
 
@@ -221,6 +222,15 @@
             playRow(row);
           }
         });
+      });
+
+      listenButton?.addEventListener("click", (event) => {
+        event.preventDefault();
+        document.getElementById("ciphered-realms")?.scrollIntoView({ behavior: "smooth", block: "start" });
+
+        if (rows[0]) {
+          playRow(rows[0]);
+        }
       });
 
       audio.addEventListener("ended", () => {
