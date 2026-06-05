@@ -28,7 +28,6 @@
       <img class="quantum-hero-image" src="assets/projects/quantum-flux/quantum-flux-hero.png" alt="">
       <div class="quantum-hero-inner">
         <div class="quantum-copy">
-          <img class="quantum-logo" src="assets/projects/quantum-flux/quantum-flux-logo-transparency.png" alt="Quantum Flux">
           <h1 id="quantum-title">Quantum Flux</h1>
           <p class="quantum-subtitle">Exploring Hidden Worlds Through Sound</p>
           <p>
@@ -226,7 +225,12 @@
 
       listenButton?.addEventListener("click", (event) => {
         event.preventDefault();
-        document.getElementById("ciphered-realms")?.scrollIntoView({ behavior: "smooth", block: "start" });
+        const albumSection = document.getElementById("ciphered-realms");
+        if (albumSection) {
+          const headerOffset = 104;
+          const targetTop = albumSection.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+          window.scrollTo({ top: targetTop, behavior: "smooth" });
+        }
 
         if (rows[0]) {
           playRow(rows[0]);

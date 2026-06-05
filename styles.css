@@ -2562,6 +2562,7 @@ h2 {
 }
 
 .quantum-logo {
+  display: none;
   width: clamp(64px, 8vw, 110px);
   margin-bottom: 1rem;
   opacity: 0.92;
@@ -2571,7 +2572,6 @@ h2 {
 }
 
 .quantum-copy h1,
-.quantum-album h2,
 .quantum-why h2,
 .studio-panel h2 {
   font-family: Impact, "Arial Narrow", Haettenschweiler, sans-serif;
@@ -2651,6 +2651,7 @@ h2 {
 }
 
 .quantum-album {
+  scroll-margin-top: 6.5rem;
   display: grid;
   grid-template-columns: 280px minmax(0, 1fr) minmax(320px, 0.86fr);
   gap: 2rem;
@@ -2676,7 +2677,17 @@ h2 {
 .quantum-album h2,
 .quantum-why h2 {
   margin-bottom: 0.8rem;
-  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+}
+
+.quantum-album h2 {
+  max-width: 18ch;
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(1.45rem, 2.55vw, 2.05rem);
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .album-copy p:not(.quantum-kicker),
@@ -2689,6 +2700,9 @@ h2 {
 
 .album-meta {
   color: var(--q-cyan) !important;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .album-playlist {
