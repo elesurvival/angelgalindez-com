@@ -2466,3 +2466,520 @@ h2 {
     padding: 2rem 1rem;
   }
 }
+
+/* Quantum Flux page */
+.quantum-page-body {
+  --q-cyan: #33d8ff;
+  --q-blue: #167cff;
+  --q-purple: #b34cff;
+  --q-pink: #ff3df2;
+  --q-panel: rgba(4, 11, 24, 0.78);
+  background:
+    radial-gradient(circle at 18% 18%, rgba(51, 216, 255, 0.14), transparent 24rem),
+    radial-gradient(circle at 78% 16%, rgba(179, 76, 255, 0.18), transparent 24rem),
+    linear-gradient(180deg, #02040b 0%, #06101d 45%, #02040a 100%);
+}
+
+.quantum-page-body::before {
+  background-image:
+    linear-gradient(rgba(51, 216, 255, 0.035) 1px, transparent 1px),
+    radial-gradient(circle at 30% 70%, rgba(179, 76, 255, 0.22), transparent 28rem);
+}
+
+.quantum-site-header {
+  background: rgba(2, 4, 10, 0.9);
+}
+
+.quantum-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--ink);
+  font-size: 0.92rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.quantum-brand img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 0.8rem rgba(51, 216, 255, 0.7));
+}
+
+.quantum-page-body nav a.is-active,
+.quantum-page-body nav a:hover,
+.quantum-page-body nav a:focus-visible {
+  color: var(--q-cyan);
+}
+
+.quantum-page-body nav a.is-active::after {
+  background: var(--q-cyan);
+}
+
+.quantum-hero {
+  position: relative;
+  min-height: 680px;
+  overflow: hidden;
+  padding-top: 4.8rem;
+  border-bottom: 1px solid rgba(51, 216, 255, 0.18);
+  background: #02040b;
+}
+
+.quantum-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.9;
+}
+
+.quantum-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(2, 4, 11, 0.96) 0%, rgba(2, 4, 11, 0.78) 34%, rgba(2, 4, 11, 0.16) 76%),
+    linear-gradient(180deg, rgba(2, 4, 11, 0.08), rgba(2, 4, 11, 0.72));
+}
+
+.quantum-hero-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  width: min(100% - 4rem, var(--max));
+  min-height: 680px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.quantum-copy {
+  max-width: 560px;
+}
+
+.quantum-logo {
+  width: min(100%, 390px);
+  margin-bottom: 1.25rem;
+  filter: drop-shadow(0 0 1.5rem rgba(51, 216, 255, 0.38));
+}
+
+.quantum-copy h1,
+.quantum-album h2,
+.quantum-why h2,
+.quantum-tracks h2,
+.studio-panel h2 {
+  font-family: Impact, "Arial Narrow", Haettenschweiler, sans-serif;
+  line-height: 0.95;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.quantum-copy h1 {
+  margin-bottom: 0.8rem;
+  font-size: clamp(4.2rem, 9vw, 7.5rem);
+  text-shadow: 0 0 1.5rem rgba(51, 216, 255, 0.28);
+}
+
+.quantum-subtitle,
+.quantum-kicker {
+  color: var(--q-cyan);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.quantum-subtitle {
+  max-width: 22ch;
+  margin-bottom: 1.4rem;
+  font-size: clamp(1.1rem, 2.4vw, 1.6rem);
+}
+
+.quantum-copy > p:not(.quantum-subtitle) {
+  max-width: 48ch;
+  color: var(--muted);
+}
+
+.quantum-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.8rem;
+}
+
+.quantum-actions a,
+.quantum-album a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.82rem 1.3rem;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.quantum-primary {
+  color: #031018;
+  background: linear-gradient(100deg, var(--q-cyan), #5ef0ff);
+  box-shadow: 0 0 1.6rem rgba(51, 216, 255, 0.28);
+}
+
+.quantum-secondary,
+.quantum-album a {
+  border: 1px solid rgba(179, 76, 255, 0.58);
+  color: var(--ink);
+  background: rgba(4, 11, 24, 0.58);
+}
+
+.quantum-album,
+.quantum-why,
+.quantum-tracks,
+.quantum-lab {
+  width: min(100% - 4rem, var(--max));
+  margin: 1.1rem auto;
+}
+
+.quantum-album {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr) minmax(320px, 0.9fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 1.5rem;
+  border: 1px solid rgba(51, 216, 255, 0.18);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 20% 40%, rgba(179, 76, 255, 0.18), transparent 16rem),
+    var(--q-panel);
+}
+
+.album-cover-wrap img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(51, 216, 255, 0.25);
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 0 2rem rgba(179, 76, 255, 0.2);
+}
+
+.quantum-album h2,
+.quantum-why h2,
+.quantum-tracks h2 {
+  margin-bottom: 0.8rem;
+  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+}
+
+.album-copy p:not(.quantum-kicker),
+.why-copy p,
+.why-cards p,
+.tools-panel p,
+.studio-panel p {
+  color: var(--muted);
+}
+
+.album-meta {
+  color: var(--q-cyan) !important;
+}
+
+.album-preview {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 1.1rem;
+  list-style: none;
+  border: 1px solid rgba(51, 216, 255, 0.16);
+  border-radius: 8px;
+  background: rgba(2, 6, 14, 0.72);
+}
+
+.album-preview li {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  color: var(--muted);
+}
+
+.album-preview strong {
+  color: var(--q-cyan);
+  font-size: 0.78rem;
+}
+
+.quantum-why {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(260px, 0.85fr) minmax(320px, 0.95fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  border-top: 1px solid rgba(51, 216, 255, 0.16);
+  border-bottom: 1px solid rgba(51, 216, 255, 0.16);
+}
+
+.quantum-mantra {
+  color: var(--q-cyan) !important;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.phantom-mark {
+  display: grid;
+  place-items: center;
+}
+
+.phantom-mark img {
+  width: min(100%, 320px);
+  filter:
+    drop-shadow(0 0 1.2rem rgba(51, 216, 255, 0.42))
+    drop-shadow(0 0 2.2rem rgba(179, 76, 255, 0.22));
+}
+
+.why-cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.why-cards article {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid rgba(179, 76, 255, 0.2);
+  border-radius: 7px;
+  background: rgba(4, 11, 24, 0.56);
+}
+
+.why-cards span {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(179, 76, 255, 0.52);
+  border-radius: 50%;
+  color: var(--q-purple);
+  font-size: 1.2rem;
+  box-shadow: 0 0 1rem rgba(179, 76, 255, 0.24);
+}
+
+.why-cards h3 {
+  margin-bottom: 0.2rem;
+  color: var(--q-cyan);
+  font: 900 0.9rem/1.25 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.quantum-tracks {
+  padding: 1.5rem;
+  border: 1px solid rgba(51, 216, 255, 0.14);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(51, 216, 255, 0.12), transparent 18rem),
+    rgba(2, 6, 14, 0.7);
+  text-align: center;
+}
+
+.track-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1.3rem;
+  text-align: left;
+}
+
+.track-grid article {
+  min-height: 132px;
+  padding: 1rem;
+  border: 1px solid rgba(51, 216, 255, 0.18);
+  border-radius: 6px;
+  background:
+    linear-gradient(140deg, rgba(51, 216, 255, 0.1), rgba(179, 76, 255, 0.08)),
+    rgba(4, 11, 24, 0.8);
+}
+
+.track-grid span {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 1.4rem;
+  border: 1px solid rgba(51, 216, 255, 0.38);
+  border-radius: 50%;
+  color: var(--q-cyan);
+  font-size: 0.72rem;
+}
+
+.track-grid h3 {
+  margin: 0;
+  font: 900 0.9rem/1.25 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.quantum-lab {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr);
+  gap: 1rem;
+}
+
+.tools-panel,
+.studio-panel {
+  border: 1px solid rgba(51, 216, 255, 0.16);
+  border-radius: 8px;
+  background: var(--q-panel);
+}
+
+.tools-panel {
+  padding: 1.5rem;
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin-top: 1.3rem;
+}
+
+.tool-grid span {
+  display: grid;
+  place-items: center;
+  min-height: 70px;
+  padding: 0.7rem;
+  border: 1px solid rgba(51, 216, 255, 0.2);
+  border-radius: 6px;
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgba(2, 6, 14, 0.72);
+}
+
+.studio-panel {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) minmax(0, 0.85fr);
+  gap: 1.2rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.studio-panel img {
+  display: block;
+  width: 100%;
+  min-height: 220px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.studio-panel h2 {
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+}
+
+.quantum-closing {
+  margin-top: 1rem;
+  padding: 3rem 1rem;
+  border-top: 1px solid rgba(51, 216, 255, 0.16);
+  background:
+    radial-gradient(circle at 20% 50%, rgba(51, 216, 255, 0.18), transparent 18rem),
+    radial-gradient(circle at 82% 50%, rgba(179, 76, 255, 0.18), transparent 18rem),
+    #02040b;
+  text-align: center;
+}
+
+.quantum-closing blockquote {
+  max-width: 860px;
+  margin: 0 auto 0.8rem;
+  color: var(--q-cyan);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.quantum-closing p {
+  color: var(--q-purple);
+  font: italic 1.25rem Georgia, serif;
+}
+
+@media (max-width: 1040px) {
+  .quantum-album,
+  .quantum-why,
+  .quantum-lab,
+  .studio-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .track-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .tool-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .quantum-hero {
+    padding-top: 7.2rem;
+  }
+
+  .quantum-hero-inner,
+  .quantum-album,
+  .quantum-why,
+  .quantum-tracks,
+  .quantum-lab {
+    width: min(100% - 1.25rem, var(--max));
+  }
+
+  .quantum-hero-inner {
+    min-height: 620px;
+  }
+
+  .quantum-hero-image {
+    object-position: 62% center;
+  }
+
+  .quantum-logo {
+    width: min(100%, 280px);
+  }
+
+  .quantum-copy h1 {
+    font-size: clamp(3.6rem, 16vw, 5rem);
+  }
+
+  .quantum-actions {
+    display: grid;
+  }
+
+  .quantum-actions a {
+    width: 100%;
+  }
+
+  .quantum-album,
+  .quantum-why,
+  .quantum-tracks,
+  .tools-panel {
+    padding: 1rem;
+  }
+
+  .track-grid,
+  .tool-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-cards article {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+}
