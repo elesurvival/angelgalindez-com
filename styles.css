@@ -2737,9 +2737,12 @@ h2 {
   border-top: 1px solid rgba(51, 216, 255, 0.16);
   border-bottom: 1px solid rgba(51, 216, 255, 0.16);
   background:
-    radial-gradient(circle at 49% 50%, rgba(51, 216, 255, 0.08), transparent 18rem),
     radial-gradient(circle at 18% 85%, rgba(179, 76, 255, 0.08), transparent 16rem),
     linear-gradient(90deg, rgba(1, 5, 12, 0.96), rgba(2, 8, 17, 0.94));
+}
+
+.why-copy .quantum-kicker {
+  color: var(--q-cyan);
 }
 
 .quantum-why h2 {
@@ -2766,10 +2769,8 @@ h2 {
 
 .phantom-mark img {
   width: min(100%, 315px);
-  opacity: 0.94;
-  filter:
-    drop-shadow(0 0 1.4rem rgba(51, 216, 255, 0.52))
-    drop-shadow(0 0 2.8rem rgba(179, 76, 255, 0.28));
+  opacity: 0.86;
+  filter: none;
 }
 
 .why-cards {
