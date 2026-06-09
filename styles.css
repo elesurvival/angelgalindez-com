@@ -3022,28 +3022,39 @@ h2 {
 
 .studio-panel {
   display: grid;
-  grid-template-columns: minmax(280px, 1.08fr) minmax(210px, 0.82fr);
-  gap: 1.2rem;
-  align-items: center;
+  gap: 0.9rem;
+  align-content: start;
   padding: 1rem;
 }
 
 .studio-panel img {
   display: block;
   width: 100%;
-  min-height: 220px;
+  aspect-ratio: 3 / 2;
   border-radius: 6px;
   object-fit: cover;
 }
 
+.studio-panel .quantum-kicker {
+  margin-top: 0.1rem;
+  margin-bottom: 0.35rem;
+}
+
 .studio-panel h2 {
-  max-width: 15ch;
+  margin: 0 0 0.65rem;
+  max-width: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(1.35rem, 2.4vw, 1.85rem);
   font-weight: 500;
   line-height: 1.16;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.studio-panel p:not(.quantum-kicker) {
+  margin: 0;
+  max-width: 34ch;
+  line-height: 1.65;
 }
 
 .quantum-closing {
