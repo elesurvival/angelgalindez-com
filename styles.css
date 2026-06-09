@@ -783,7 +783,7 @@ h2 {
 
 .projects-page-hero {
   position: relative;
-  min-height: 450px;
+  min-height: 680px;
   padding-top: 4.8rem;
   overflow: hidden;
   border-bottom: 1px solid var(--line-soft);
@@ -832,9 +832,9 @@ h2 {
   gap: 3rem;
   align-items: center;
   width: min(100% - 4rem, var(--max));
-  min-height: 370px;
+  min-height: calc(680px - 4.8rem);
   margin: 0 auto;
-  padding: 3.5rem 0 3rem;
+  padding: 3.2rem 0 3.8rem;
 }
 
 .projects-page-copy {
@@ -1164,6 +1164,7 @@ h2 {
   }
 
   .projects-page-hero {
+    min-height: 680px;
     padding-top: 7.2rem;
   }
 
@@ -1173,9 +1174,10 @@ h2 {
   }
 
   .projects-page-hero-inner {
-    min-height: auto;
+    min-height: calc(680px - 7.2rem);
+    align-content: center;
     gap: 1.5rem;
-    padding: 3rem 0;
+    padding: 2.6rem 0 3rem;
   }
 
   .projects-page-title {
