@@ -2968,47 +2968,9 @@ h2 {
 }
 
 .tools-panel {
-  position: relative;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   padding: 1.5rem;
-}
-
-.tools-panel::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  opacity: 0.07;
-  background:
-    linear-gradient(115deg, transparent 0 18%, rgba(51, 216, 255, 0.7) 18.2% 18.5%, transparent 18.7% 100%),
-    linear-gradient(35deg, transparent 0 42%, rgba(179, 76, 255, 0.65) 42.2% 42.5%, transparent 42.7% 100%),
-    radial-gradient(circle at 18% 28%, transparent 0 0.55rem, rgba(51, 216, 255, 0.75) 0.58rem 0.65rem, transparent 0.68rem),
-    radial-gradient(circle at 72% 36%, transparent 0 0.5rem, rgba(51, 216, 255, 0.65) 0.53rem 0.6rem, transparent 0.63rem),
-    repeating-linear-gradient(0deg, transparent 0 0.95rem, rgba(51, 216, 255, 0.7) 0.97rem 1rem),
-    repeating-linear-gradient(90deg, transparent 0 2.6rem, rgba(51, 216, 255, 0.58) 2.62rem 2.66rem);
-  background-size: auto, auto, auto, auto, 100% 100%, 100% 100%;
-}
-
-.tools-panel::after {
-  content: "$ scan --trace\n> packets: 128\n> route: mapped\n> signal: stable\n\n0101 1110 0011\nnode::vector::link\nschema.build(active)";
-  position: absolute;
-  inset: 1.2rem auto auto 1.1rem;
-  z-index: 0;
-  max-width: 18rem;
-  color: var(--q-cyan);
-  font-size: 0.64rem;
-  line-height: 1.7;
-  white-space: pre-line;
-  opacity: 0.06;
-  pointer-events: none;
-}
-
-.tools-panel > * {
-  position: relative;
-  z-index: 1;
 }
 
 .tools-panel .quantum-kicker,
