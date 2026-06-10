@@ -1852,7 +1852,7 @@ h2 {
   background:
     linear-gradient(90deg, rgba(3, 4, 4, 0.96) 0%, rgba(3, 4, 4, 0.62) 38%, rgba(3, 4, 4, 0.1) 100%),
     linear-gradient(180deg, rgba(3, 4, 4, 0.08), rgba(3, 4, 4, 0.42)),
-    url("assets/projects/ele/ele_hero.png");
+    url("assets/projects/ele/ele-hero.png");
   background-position: center;
   background-size: cover;
 }
