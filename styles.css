@@ -4164,7 +4164,7 @@ h2 {
 
 .workshop-category-section {
   display: grid;
-  gap: 1.2rem;
+  gap: 1.35rem;
 }
 
 .workshop-section-heading {
@@ -4183,24 +4183,38 @@ h2 {
   flex-direction: column;
   min-height: 350px;
   overflow: hidden;
-  padding: 1.2rem;
-  border: 1px solid rgba(228, 173, 88, 0.18);
+  padding: 1.35rem 1.15rem 1.2rem;
+  border: 1px solid rgba(228, 173, 88, 0.16);
   border-radius: 8px;
   background:
-    radial-gradient(circle at 50% 0%, rgba(228, 173, 88, 0.12), transparent 10rem),
-    linear-gradient(160deg, rgba(8, 16, 18, 0.96), rgba(2, 7, 10, 0.78));
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    radial-gradient(circle at 50% -8%, rgba(228, 173, 88, 0.14), transparent 8.5rem),
+    radial-gradient(circle at 100% 100%, rgba(55, 216, 242, 0.045), transparent 9rem),
+    linear-gradient(165deg, rgba(9, 17, 18, 0.98), rgba(3, 8, 10, 0.86) 58%, rgba(2, 6, 8, 0.94));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 1.1rem 2.2rem rgba(0, 0, 0, 0.16);
 }
 
 .workshop-category-card::before {
   content: "";
   position: absolute;
+  top: 0;
+  left: 1rem;
+  right: 1rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, currentColor, transparent);
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.workshop-category-card::after {
+  content: "";
+  position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    radial-gradient(circle at 50% 18%, currentColor 0 1px, transparent 1px);
-  background-size: 100% 4px, 10px 10px;
-  opacity: 0.38;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 22%),
+    radial-gradient(circle at 50% 8%, currentColor, transparent 8rem);
+  opacity: 0.07;
   pointer-events: none;
 }
 
@@ -4210,21 +4224,30 @@ h2 {
 }
 
 .workshop-category-mark {
-  justify-content: start;
-  width: 82px;
-  height: 82px;
-  margin-bottom: auto;
+  width: 76px;
+  height: 76px;
+  margin-bottom: 2.2rem;
+  border: 1px solid color-mix(in srgb, currentColor 34%, transparent);
+  border-radius: 8px;
   color: var(--amber);
+  background:
+    radial-gradient(circle at 50% 40%, color-mix(in srgb, currentColor 14%, transparent), transparent 62%),
+    rgba(2, 7, 10, 0.42);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 0 1.15rem color-mix(in srgb, currentColor 16%, transparent);
 }
 
 .workshop-category-mark svg {
-  width: 72px;
-  height: 72px;
+  width: 46px;
+  height: 46px;
+  stroke-width: 1.85;
+  filter: drop-shadow(0 0 0.55rem color-mix(in srgb, currentColor 38%, transparent));
 }
 
 .workshop-category-card h3 {
-  margin: 1rem 0 0.75rem;
-  font: 500 1.42rem/1.1 Arial, Helvetica, sans-serif;
+  margin: 0 0 0.85rem;
+  font: 500 1.32rem/1.12 Arial, Helvetica, sans-serif;
   letter-spacing: -0.01em;
   text-transform: none;
 }
@@ -4237,7 +4260,7 @@ h2 {
 
 .workshop-category-card a {
   margin-top: auto;
-  padding-top: 1rem;
+  padding-top: 1.35rem;
   color: var(--amber-2);
   font-size: 0.74rem;
   font-weight: 900;
