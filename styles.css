@@ -3968,6 +3968,403 @@ h2 {
   text-transform: uppercase;
 }
 
+/* Workshop page */
+.workshop-page-body {
+  background:
+    radial-gradient(circle at 18% 0%, rgba(228, 173, 88, 0.1), transparent 24rem),
+    radial-gradient(circle at 82% 18%, rgba(55, 216, 242, 0.08), transparent 26rem),
+    linear-gradient(180deg, #020609 0%, #071013 42%, #020609 100%);
+}
+
+.workshop-site-header {
+  background: rgba(2, 6, 8, 0.8);
+}
+
+.workshop-brand {
+  color: var(--amber-2);
+}
+
+.workshop-container {
+  width: min(100% - 4rem, var(--max));
+  margin: 1.15rem auto;
+}
+
+.workshop-kicker {
+  margin: 0 0 0.9rem;
+  color: var(--amber-2);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.workshop-hero {
+  position: relative;
+  min-height: 640px;
+  overflow: hidden;
+  padding-top: 4.8rem;
+  border-bottom: 1px solid var(--line-soft);
+  background: #020609;
+}
+
+.workshop-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 62% center;
+  opacity: 0.78;
+}
+
+.workshop-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(2, 6, 8, 0.96) 0%, rgba(2, 6, 8, 0.74) 34%, rgba(2, 6, 8, 0.28) 66%, rgba(2, 6, 8, 0.72) 100%),
+    linear-gradient(0deg, rgba(2, 6, 8, 0.86) 0%, transparent 48%);
+}
+
+.workshop-hero-inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  align-items: center;
+  width: min(100% - 4rem, var(--max));
+  min-height: calc(640px - 4.8rem);
+  margin: 0 auto;
+}
+
+.workshop-hero-copy {
+  max-width: 560px;
+}
+
+.workshop-hero h1 {
+  margin: 0 0 1rem;
+  font: 500 clamp(4rem, 9vw, 6.8rem)/0.92 Arial, Helvetica, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.workshop-hero-copy > p:not(.workshop-kicker) {
+  max-width: 32ch;
+  margin: 0 0 2rem;
+  color: var(--ink);
+  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
+  line-height: 1.5;
+}
+
+.workshop-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.workshop-primary,
+.workshop-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.85rem 1.35rem;
+  border-radius: 5px;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.workshop-primary {
+  color: #16100a;
+  background: linear-gradient(120deg, var(--amber-2), #b47a2d);
+  box-shadow: 0 1rem 2.3rem rgba(228, 173, 88, 0.18);
+}
+
+.workshop-secondary {
+  border: 1px solid rgba(228, 173, 88, 0.48);
+  color: var(--ink);
+  background: rgba(2, 6, 8, 0.58);
+}
+
+.workshop-intro-panel {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.25fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  padding: clamp(1.6rem, 3vw, 2.4rem);
+  border: 1px solid rgba(228, 173, 88, 0.25);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(228, 173, 88, 0.1), transparent 20rem),
+    linear-gradient(110deg, rgba(7, 15, 17, 0.94), rgba(3, 8, 10, 0.78));
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.18);
+}
+
+.workshop-intro-copy {
+  padding-left: 1.8rem;
+  border-left: 1px solid rgba(228, 173, 88, 0.58);
+}
+
+.workshop-intro-copy h2,
+.workshop-section-heading h2,
+.workshop-space h2,
+.workshop-closing h2 {
+  margin: 0 0 1rem;
+  font: 500 clamp(2rem, 4.5vw, 3.2rem)/1.05 Arial, Helvetica, sans-serif;
+  letter-spacing: -0.01em;
+  text-transform: none;
+}
+
+.workshop-intro-copy p:not(.workshop-kicker),
+.workshop-space p,
+.featured-copy p {
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.workshop-purpose-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem 2.2rem;
+  align-content: center;
+}
+
+.workshop-purpose-grid article {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: center;
+}
+
+.workshop-purpose-grid span,
+.workshop-category-mark {
+  display: grid;
+  place-items: center;
+  color: var(--amber);
+}
+
+.workshop-purpose-grid svg,
+.workshop-category-mark svg,
+.workshop-closing-mark svg {
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 0.5rem rgba(228, 173, 88, 0.28));
+}
+
+.workshop-purpose-grid p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.94rem;
+}
+
+.workshop-category-section {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.workshop-section-heading {
+  max-width: 620px;
+}
+
+.workshop-category-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.workshop-category-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+  overflow: hidden;
+  padding: 1.2rem;
+  border: 1px solid rgba(228, 173, 88, 0.18);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(228, 173, 88, 0.12), transparent 10rem),
+    linear-gradient(160deg, rgba(8, 16, 18, 0.96), rgba(2, 7, 10, 0.78));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.workshop-category-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    radial-gradient(circle at 50% 18%, currentColor 0 1px, transparent 1px);
+  background-size: 100% 4px, 10px 10px;
+  opacity: 0.38;
+  pointer-events: none;
+}
+
+.workshop-category-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.workshop-category-mark {
+  justify-content: start;
+  width: 82px;
+  height: 82px;
+  margin-bottom: auto;
+  color: var(--amber);
+}
+
+.workshop-category-mark svg {
+  width: 72px;
+  height: 72px;
+}
+
+.workshop-category-card h3 {
+  margin: 1rem 0 0.75rem;
+  font: 500 1.42rem/1.1 Arial, Helvetica, sans-serif;
+  letter-spacing: -0.01em;
+  text-transform: none;
+}
+
+.workshop-category-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.workshop-category-card a {
+  margin-top: auto;
+  padding-top: 1rem;
+  color: var(--amber-2);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.continuo-note {
+  color: #37d8f2;
+}
+
+.continuo-note .workshop-category-mark {
+  color: #37d8f2;
+}
+
+.entrepreneurship-note .workshop-category-mark,
+.wins-note .workshop-category-mark {
+  color: var(--amber-2);
+}
+
+.ai-note .workshop-category-mark {
+  color: #57e5a8;
+}
+
+.philosophy-note .workshop-category-mark {
+  color: #9b72ff;
+}
+
+.lessons-note .workshop-category-mark {
+  color: #ff684d;
+}
+
+.workshop-featured {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.82fr) minmax(260px, 0.72fr) minmax(280px, 1fr);
+  gap: 2rem;
+  align-items: center;
+  min-height: 290px;
+  overflow: hidden;
+  padding: clamp(1.5rem, 3vw, 2.2rem);
+  border: 1px solid rgba(228, 173, 88, 0.24);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(2, 7, 10, 0.96), rgba(2, 7, 10, 0.78)),
+    radial-gradient(circle at 0% 50%, rgba(228, 173, 88, 0.1), transparent 18rem);
+}
+
+.featured-quote {
+  padding-right: 2rem;
+  border-right: 1px solid rgba(228, 173, 88, 0.22);
+}
+
+.featured-quote h2 {
+  margin: 0;
+  font: 500 clamp(2rem, 4vw, 3.2rem)/1.08 Arial, Helvetica, sans-serif;
+  letter-spacing: -0.02em;
+  text-transform: none;
+}
+
+.featured-image {
+  min-height: 230px;
+  margin: -2.2rem -2.2rem -2.2rem 0;
+  background:
+    linear-gradient(90deg, rgba(2, 7, 10, 0.18), rgba(2, 7, 10, 0.82)),
+    url("assets/projects/continuo/continuo-before-you-fragment.png") center/cover;
+}
+
+.workshop-space {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.8fr) minmax(240px, 0.8fr) minmax(300px, 1.2fr);
+  gap: 2rem;
+  align-items: center;
+  overflow: hidden;
+  padding: clamp(1.5rem, 3vw, 2.2rem);
+  border: 1px solid rgba(228, 173, 88, 0.18);
+  border-radius: 8px;
+  background: linear-gradient(120deg, rgba(5, 12, 15, 0.94), rgba(2, 7, 10, 0.72));
+}
+
+.workshop-space h2 {
+  font-size: clamp(1.65rem, 3vw, 2.4rem);
+}
+
+.workshop-space-image {
+  min-height: 220px;
+  margin: -2.2rem -2.2rem -2.2rem 0;
+  background:
+    linear-gradient(90deg, rgba(2, 7, 10, 0.2), rgba(2, 7, 10, 0.74)),
+    url("assets/projects/about/angel-workstation.jpg") center/cover;
+}
+
+.workshop-closing {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 2rem;
+  align-items: center;
+  padding: clamp(1.6rem, 3vw, 2.4rem);
+  border: 1px solid rgba(228, 173, 88, 0.22);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 80% 50%, rgba(55, 216, 242, 0.12), transparent 16rem),
+    linear-gradient(120deg, rgba(8, 16, 18, 0.96), rgba(2, 7, 10, 0.82));
+}
+
+.workshop-closing h2 {
+  margin-bottom: 0.45rem;
+}
+
+.workshop-closing p {
+  margin: 0 0 1.6rem;
+  color: var(--amber-2);
+  font: 500 clamp(1.5rem, 3vw, 2.35rem)/1.2 Arial, Helvetica, sans-serif;
+}
+
+.workshop-closing-mark {
+  display: grid;
+  place-items: center;
+  color: #37d8f2;
+}
+
+.workshop-closing-mark svg {
+  width: 160px;
+  height: 160px;
+  stroke-width: 1.5;
+  filter: drop-shadow(0 0 1.2rem rgba(55, 216, 242, 0.28));
+}
+
 @media (max-width: 1040px) {
   .about-hero-inner,
   .about-builder-grid,
@@ -4002,11 +4399,34 @@ h2 {
   .about-quantum-banner {
     justify-items: start;
   }
+
+  .workshop-intro-panel,
+  .workshop-featured,
+  .workshop-space,
+  .workshop-closing {
+    grid-template-columns: 1fr;
+  }
+
+  .workshop-category-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .featured-quote {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+  .featured-image,
+  .workshop-space-image {
+    margin: 0;
+  }
 }
 
 @media (max-width: 700px) {
   .about-container,
-  .about-hero-inner {
+  .about-hero-inner,
+  .workshop-container,
+  .workshop-hero-inner {
     width: min(100% - 1.25rem, var(--max));
   }
 
@@ -4051,5 +4471,62 @@ h2 {
 
   .about-ele-mark {
     width: 82px;
+  }
+
+  .workshop-hero {
+    min-height: 680px;
+    padding-top: 7rem;
+  }
+
+  .workshop-hero-image {
+    object-position: 58% center;
+  }
+
+  .workshop-hero-inner {
+    min-height: calc(680px - 7rem);
+  }
+
+  .workshop-hero h1 {
+    font-size: clamp(3.3rem, 15vw, 4.5rem);
+  }
+
+  .workshop-actions,
+  .workshop-actions a,
+  .workshop-closing a {
+    width: 100%;
+  }
+
+  .workshop-intro-panel,
+  .workshop-featured,
+  .workshop-space,
+  .workshop-closing {
+    padding: 1.2rem;
+  }
+
+  .workshop-intro-copy {
+    padding-left: 1rem;
+  }
+
+  .workshop-purpose-grid,
+  .workshop-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .workshop-category-card {
+    min-height: 260px;
+  }
+
+  .workshop-category-mark {
+    width: 68px;
+    height: 68px;
+  }
+
+  .workshop-category-mark svg {
+    width: 58px;
+    height: 58px;
+  }
+
+  .workshop-closing-mark {
+    justify-content: start;
   }
 }
