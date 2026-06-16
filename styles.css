@@ -4807,9 +4807,9 @@ h2 {
 
 .entry-hero {
   position: relative;
-  min-height: 520px;
+  min-height: 620px;
   overflow: hidden;
-  padding-top: 4.8rem;
+  padding-top: 6.4rem;
   border-bottom: 1px solid var(--line-soft);
   background: #020609;
 }
@@ -4854,7 +4854,7 @@ h2 {
   display: grid;
   align-content: center;
   width: min(100% - 4rem, var(--max));
-  min-height: calc(520px - 4.8rem);
+  min-height: calc(620px - 6.4rem);
   margin: 0 auto;
 }
 
