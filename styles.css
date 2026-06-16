@@ -4460,27 +4460,6 @@ h2 {
   color: var(--amber-2);
 }
 
-.contact-header-action {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  min-height: 42px;
-  padding: 0.7rem 1rem;
-  border: 1px solid rgba(228, 173, 88, 0.5);
-  border-radius: 5px;
-  color: var(--ink);
-  font-size: 0.72rem;
-  font-weight: 900;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
-.contact-header-action span {
-  color: var(--amber-2);
-  font-size: 1rem;
-  line-height: 1;
-}
-
 .contact-container {
   width: min(100% - 4rem, var(--max));
   margin: 1.15rem auto;
@@ -4860,9 +4839,6 @@ h2 {
     margin: 0;
   }
 
-  .contact-header-action {
-    display: none;
-  }
 }
 
 @media (max-width: 700px) {
