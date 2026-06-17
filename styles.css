@@ -531,6 +531,9 @@ h2 {
 }
 
 .entry-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   overflow: hidden;
   border: 1px solid var(--line-soft);
   border-radius: 6px;
@@ -539,7 +542,8 @@ h2 {
 
 .entry-card .date,
 .entry-card h3,
-.entry-card p:last-child {
+.entry-card > p:not(.date),
+.entry-card > a {
   margin-right: 1rem;
   margin-left: 1rem;
 }
@@ -585,7 +589,8 @@ h2 {
   text-transform: none;
 }
 
-.entry-card p:last-child {
+.entry-card > p:not(.date) {
+  margin-bottom: 1rem;
   color: var(--muted);
   font-size: 0.78rem;
 }
