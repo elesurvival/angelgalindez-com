@@ -560,8 +560,8 @@ h2 {
 
 .ridge {
   background:
-    linear-gradient(160deg, transparent 0 46%, rgba(0, 0, 0, 0.55) 46% 52%, transparent 52%),
-    linear-gradient(145deg, #c08a62, #6d8798 44%, #111a20 45%);
+    linear-gradient(180deg, rgba(2, 7, 10, 0.04), rgba(2, 7, 10, 0.64)),
+    url("assets/projects/workshop/entrpreneurship-hero.jpg") center/cover;
 }
 
 .command {
@@ -5044,11 +5044,15 @@ h2 {
 }
 
 .related-entry.mountain {
-  --entry-related-image: url("assets/hero/projects-hero_2560x1440.jpg");
+  --entry-related-image: url("assets/projects/workshop/entrpreneurship-hero.jpg");
 }
 
 .related-entry.bench {
   --entry-related-image: url("assets/projects/workshop/workshop-hero.jpg");
+}
+
+.related-entry.stack {
+  --entry-related-image: linear-gradient(145deg, #0a1722, #041018 58%, #111a20);
 }
 
 .related-entry.systems {
