@@ -566,9 +566,8 @@ h2 {
 
 .command {
   background:
-    repeating-linear-gradient(90deg, transparent 0 36px, rgba(96, 180, 255, 0.22) 37px 39px),
-    radial-gradient(circle at 70% 35%, rgba(77, 159, 255, 0.32), transparent 7rem),
-    #05101a;
+    linear-gradient(180deg, rgba(2, 7, 10, 0.04), rgba(2, 7, 10, 0.66)),
+    url("assets/projects/workshop/creative-hero.jpg") center/cover;
 }
 
 .date {
@@ -4954,6 +4953,24 @@ h2 {
   margin-bottom: 0;
 }
 
+.entry-article ul {
+  display: grid;
+  gap: 0.45rem;
+  max-width: 68ch;
+  margin: 0.35rem 0 1rem;
+  padding-left: 1.25rem;
+  color: var(--ink);
+}
+
+.entry-article li {
+  padding-left: 0.25rem;
+  line-height: 1.75;
+}
+
+.entry-article li::marker {
+  color: var(--amber);
+}
+
 .entry-article strong {
   color: var(--amber-2);
   font-style: italic;
@@ -5052,7 +5069,7 @@ h2 {
 }
 
 .related-entry.stack {
-  --entry-related-image: linear-gradient(145deg, #0a1722, #041018 58%, #111a20);
+  --entry-related-image: url("assets/projects/workshop/creative-hero.jpg");
 }
 
 .related-entry.systems {
