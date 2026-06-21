@@ -28,21 +28,22 @@
     const timestampPattern = /[\[<](\d{1,2}):(\d{2})(?:\.(\d{1,3}))?[\]>]/g;
     return text
       .split(/\r?\n/)
-      .flatMap((line) => {
+      .map((line) => {
         const matches = Array.from(line.matchAll(timestampPattern));
         const lyric = line.replace(timestampPattern, "").trim();
-        return matches
-          .map((match) => {
-            const minutes = Number(match[1]);
-            const seconds = Number(match[2]);
-            const fraction = match[3] ? Number(`0.${match[3].padEnd(3, "0")}`) : 0;
-            return {
-              time: minutes * 60 + seconds + fraction,
-              text: lyric
-            };
-          })
-          .filter((entry) => Number.isFinite(entry.time));
+        const match = matches[0];
+        if (!match) {
+          return null;
+        }
+        const minutes = Number(match[1]);
+        const seconds = Number(match[2]);
+        const fraction = match[3] ? Number(`0.${match[3].padEnd(3, "0")}`) : 0;
+        return {
+          time: minutes * 60 + seconds + fraction,
+          text: lyric
+        };
       })
+      .filter((entry) => entry && Number.isFinite(entry.time))
       .sort((a, b) => a.time - b.time);
   };
 
