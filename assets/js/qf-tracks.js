@@ -46,6 +46,10 @@
         "",
         "Full lyrics are being assembled in the lab."
       ].join("\n")
+    },
+    5: {
+      lyricsType: "plain",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/06-packets-in-the-flow.txt"
     }
   };
 
