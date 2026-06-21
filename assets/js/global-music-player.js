@@ -29,9 +29,10 @@
 
   const readCollapsedState = () => {
     try {
-      return localStorage.getItem(collapsedStorageKey) === "true";
+      const storedValue = localStorage.getItem(collapsedStorageKey);
+      return storedValue === null ? true : storedValue === "true";
     } catch {
-      return false;
+      return true;
     }
   };
 
@@ -228,6 +229,7 @@
 
   const play = async (index = currentIndex, options = {}) => {
     const requestedIndex = clampIndex(index);
+    setCollapsed(false);
     const sameTrack = requestedIndex === currentIndex && normalizeSrc(audio.src) === normalizeSrc(tracks[requestedIndex].file);
     if (!sameTrack || Number.isFinite(options.position)) {
       loadTrack(requestedIndex, options);
