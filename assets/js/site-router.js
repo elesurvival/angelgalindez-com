@@ -99,7 +99,25 @@
     });
   };
 
+  const initEmailLinks = () => {
+    document.querySelectorAll(".js-email-link").forEach((link) => {
+      const user = link.dataset.emailUser || "";
+      const domain = link.dataset.emailDomain || "";
+      const tld = link.dataset.emailTld || "";
+      if (!user || !domain || !tld) {
+        return;
+      }
+
+      const address = `${user}@${domain}.${tld}`;
+      link.href = `mailto:${address}`;
+      if (link.dataset.emailLabel === "address") {
+        link.textContent = address;
+      }
+    });
+  };
+
   const initPage = () => {
+    initEmailLinks();
     window.QFPlayer?.bindPage?.();
     window.dispatchEvent(new CustomEvent("angelsite:page-ready", {
       detail: {
