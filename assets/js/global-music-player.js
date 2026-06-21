@@ -108,7 +108,7 @@
       <button class="gmp-prev" type="button" aria-label="Previous track">‹</button>
       <button class="gmp-play" type="button" aria-label="Play Quantum Flux">Play</button>
       <button class="gmp-next" type="button" aria-label="Next track">›</button>
-      <button class="gmp-collapse" type="button" aria-label="Hide Quantum Flux player">v</button>
+      <button class="gmp-collapse" type="button" aria-label="Hide Quantum Flux player">-</button>
     </div>
     <div class="gmp-progress-wrap">
       <span class="gmp-current">0:00</span>
