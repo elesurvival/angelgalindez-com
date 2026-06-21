@@ -51,6 +51,12 @@
 
   window.QF_TRACKS = baseTracks.map((track, index) => ({
     ...track,
+    src: track.file,
+    albumSlug: "ciphered-realms",
+    trackNumber: index + 1,
+    durationText: "--:--",
+    cover: "/assets/projects/quantum-flux/ciphered-realms-cover.jpg",
+    tags: ["cyberpunk", "electronic", "phantom"],
     lyricsType: "none",
     ...lyricsMeta[index],
     index,

@@ -1,0 +1,376 @@
+.gmp-library {
+  min-width: 62px !important;
+  padding: 0 0.78rem;
+  border-color: rgba(51, 216, 255, 0.42) !important;
+  color: #b9f1ff !important;
+}
+
+.gmp-library.is-active {
+  border-color: rgba(51, 216, 255, 0.74) !important;
+  color: #03111b !important;
+  background: linear-gradient(135deg, #33d8ff, #79edff) !important;
+  box-shadow: 0 0 1rem rgba(51, 216, 255, 0.24);
+}
+
+.qf-library-panel {
+  position: fixed;
+  right: max(1rem, calc((100vw - var(--max, 1168px)) / 2));
+  bottom: calc(var(--global-player-height) + max(1.2rem, env(safe-area-inset-bottom, 0px)));
+  left: max(1rem, calc((100vw - var(--max, 1168px)) / 2));
+  z-index: 98;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  max-height: min(68vh, 720px);
+  border: 1px solid rgba(51, 216, 255, 0.24);
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, rgba(2, 8, 15, 0.98), rgba(4, 5, 20, 0.95)),
+    radial-gradient(circle at 10% 0%, rgba(51, 216, 255, 0.14), transparent 18rem),
+    radial-gradient(circle at 90% 100%, rgba(179, 76, 255, 0.15), transparent 20rem);
+  box-shadow:
+    0 1.4rem 4.5rem rgba(0, 0, 0, 0.66),
+    0 0 1.5rem rgba(51, 216, 255, 0.09);
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transform: translateY(0.85rem);
+  transition: opacity 170ms ease, transform 170ms ease;
+  backdrop-filter: blur(20px);
+}
+
+.qf-library-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.16;
+  background:
+    linear-gradient(90deg, rgba(51, 216, 255, 0.1), transparent 32%, transparent 68%, rgba(179, 76, 255, 0.1)),
+    repeating-linear-gradient(0deg, rgba(51, 216, 255, 0.08) 0 1px, transparent 1px 7px);
+  mix-blend-mode: screen;
+}
+
+.qf-library-panel.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.qf-library-header,
+.qf-library-layout {
+  position: relative;
+  z-index: 1;
+}
+
+.qf-library-header {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.1rem 1.2rem 0.95rem;
+  border-bottom: 1px solid rgba(51, 216, 255, 0.16);
+}
+
+.qf-library-kicker,
+.qf-library-title,
+.qf-library-meta {
+  margin: 0;
+}
+
+.qf-library-kicker {
+  color: #33d8ff;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.qf-library-title {
+  margin-top: 0.25rem;
+  color: #f8f5ef;
+  font: 900 1.24rem/1.1 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.qf-library-meta {
+  margin-top: 0.24rem;
+  color: rgba(242, 240, 235, 0.62);
+  font: 700 0.78rem/1.45 "Courier New", Courier, monospace;
+}
+
+.qf-library-close {
+  border: 1px solid rgba(179, 76, 255, 0.34);
+  border-radius: 999px;
+  color: #f2f0eb;
+  background: rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+  font: 900 0.66rem/1 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.12em;
+  padding: 0.56rem 0.78rem;
+  text-transform: uppercase;
+}
+
+.qf-library-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.34fr) minmax(0, 1fr);
+  min-height: 0;
+}
+
+.qf-library-albums {
+  display: grid;
+  align-content: start;
+  gap: 0.7rem;
+  padding: 1rem;
+  border-right: 1px solid rgba(51, 216, 255, 0.14);
+  overflow-y: auto;
+}
+
+.qf-album-button {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: center;
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid rgba(51, 216, 255, 0.18);
+  border-radius: 12px;
+  color: #f2f0eb;
+  background: rgba(255, 255, 255, 0.035);
+  cursor: pointer;
+  text-align: left;
+}
+
+.qf-album-button.is-selected {
+  border-color: rgba(51, 216, 255, 0.58);
+  background: rgba(51, 216, 255, 0.08);
+  box-shadow: inset 0 0 1.1rem rgba(51, 216, 255, 0.08);
+}
+
+.qf-album-cover,
+.qf-now-cover {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 9px;
+  color: #33d8ff;
+  background: rgba(51, 216, 255, 0.08);
+  object-fit: cover;
+}
+
+.qf-album-button strong,
+.qf-album-button small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.qf-album-button strong {
+  font: 900 0.78rem/1.2 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.qf-album-button small {
+  margin-top: 0.25rem;
+  color: rgba(242, 240, 235, 0.58);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.qf-library-main {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  min-width: 0;
+  min-height: 0;
+}
+
+.qf-library-now {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: center;
+  padding: 1rem 1rem 0.8rem;
+  border-bottom: 1px solid rgba(51, 216, 255, 0.13);
+}
+
+.qf-now-cover {
+  border: 1px solid rgba(51, 216, 255, 0.24);
+}
+
+.qf-now-kicker,
+.qf-library-now h3,
+.qf-library-now p {
+  margin: 0;
+}
+
+.qf-now-kicker {
+  color: #33d8ff;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.qf-library-now h3 {
+  margin-top: 0.24rem;
+  color: #fff7df;
+  font: 900 1rem/1.18 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.qf-library-now p:not(.qf-now-kicker) {
+  margin-top: 0.24rem;
+  color: rgba(242, 240, 235, 0.62);
+  font: 700 0.75rem/1.4 "Courier New", Courier, monospace;
+}
+
+.qf-library-tracks {
+  display: grid;
+  align-content: start;
+  gap: 0.45rem;
+  padding: 0.75rem 1rem 1rem;
+  overflow-y: auto;
+  scrollbar-color: rgba(51, 216, 255, 0.45) rgba(255, 255, 255, 0.04);
+}
+
+.qf-library-track {
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr) 64px 78px;
+  gap: 0.75rem;
+  align-items: center;
+  width: 100%;
+  min-height: 54px;
+  padding: 0.65rem 0.7rem;
+  border: 1px solid rgba(51, 216, 255, 0.13);
+  border-radius: 11px;
+  color: #f2f0eb;
+  background: rgba(255, 255, 255, 0.025);
+  cursor: pointer;
+  text-align: left;
+}
+
+.qf-library-track:hover,
+.qf-library-track:focus-visible {
+  border-color: rgba(51, 216, 255, 0.4);
+  outline: none;
+}
+
+.qf-library-track.is-current {
+  border-color: rgba(51, 216, 255, 0.58);
+  background:
+    linear-gradient(90deg, rgba(51, 216, 255, 0.1), rgba(179, 76, 255, 0.05)),
+    rgba(255, 255, 255, 0.03);
+}
+
+.qf-library-track.is-playing .qf-track-state::before {
+  content: "▸";
+  margin-right: 0.28rem;
+}
+
+.qf-track-number,
+.qf-track-duration,
+.qf-track-state {
+  color: #33d8ff;
+  font: 900 0.68rem/1 "Courier New", Courier, monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.qf-track-copy {
+  min-width: 0;
+}
+
+.qf-track-copy strong,
+.qf-track-copy small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.qf-track-copy strong {
+  color: #f8f5ef;
+  font: 900 0.78rem/1.25 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.qf-track-copy small {
+  margin-top: 0.18rem;
+  color: rgba(242, 240, 235, 0.5);
+  font: 700 0.65rem/1.2 "Courier New", Courier, monospace;
+}
+
+.qf-track-duration,
+.qf-track-state {
+  justify-self: end;
+  color: rgba(242, 240, 235, 0.64);
+}
+
+.qf-library-track.is-current .qf-track-state {
+  color: #fff7df;
+}
+
+@media (max-width: 860px) {
+  .qf-library-panel {
+    right: 0.75rem;
+    left: 0.75rem;
+    max-height: 56vh;
+  }
+
+  .qf-library-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .qf-library-albums {
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(220px, 0.72fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-right: 0;
+    border-bottom: 1px solid rgba(51, 216, 255, 0.14);
+  }
+}
+
+@media (max-width: 560px) {
+  .qf-library-panel {
+    right: 0.55rem;
+    left: 0.55rem;
+    bottom: calc(var(--global-player-height) + max(3.25rem, env(safe-area-inset-bottom, 0px)));
+    max-height: 54vh;
+    border-radius: 12px;
+  }
+
+  .qf-library-header {
+    padding: 0.9rem;
+  }
+
+  .qf-library-title {
+    font-size: 1rem;
+  }
+
+  .qf-library-albums {
+    padding: 0.75rem;
+  }
+
+  .qf-library-now {
+    grid-template-columns: 64px minmax(0, 1fr);
+    padding: 0.8rem;
+  }
+
+  .qf-library-track {
+    grid-template-columns: 34px minmax(0, 1fr) 56px;
+    gap: 0.5rem;
+  }
+
+  .qf-track-state {
+    grid-column: 2 / -1;
+    justify-self: start;
+  }
+}
