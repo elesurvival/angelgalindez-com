@@ -260,6 +260,9 @@
     })
   };
 
+  let syncQuantumRows = () => {};
+  window.addEventListener("qfplayer:state", () => syncQuantumRows());
+
   const bindQuantumPlaylist = () => {
     const rows = Array.from(document.querySelectorAll(".playlist-row"));
     if (!rows.length) {
@@ -285,6 +288,11 @@
     };
 
     rows.forEach((row) => {
+      if (row.dataset.qfPlayerBound === "true") {
+        return;
+      }
+      row.dataset.qfPlayerBound = "true";
+
       row.addEventListener("click", () => {
         const index = trackIndexFromSource(row.dataset.audio);
         if (index >= 0) {
@@ -304,12 +312,19 @@
       });
     });
 
-    window.addEventListener("qfplayer:state", setRowState);
+    syncQuantumRows = setRowState;
     setRowState();
   };
 
   const bindListenNow = () => {
     const listenButton = document.querySelector(".quantum-primary[href='#ciphered-realms']");
+    if (listenButton?.dataset.qfPlayerBound === "true") {
+      return;
+    }
+    if (listenButton) {
+      listenButton.dataset.qfPlayerBound = "true";
+    }
+
     listenButton?.addEventListener("click", (event) => {
       event.preventDefault();
       const albumSection = document.getElementById("ciphered-realms");
@@ -321,6 +336,14 @@
       play(0);
     });
   };
+
+  const bindPage = () => {
+    bindQuantumPlaylist();
+    bindListenNow();
+    dispatchState();
+  };
+
+  window.QFPlayer.bindPage = bindPage;
 
   playButton.addEventListener("click", () => toggle(currentIndex));
   prevButton.addEventListener("click", previous);
@@ -357,6 +380,5 @@
 
   loadTrack(currentIndex, { position: Number(state.position) || 0 });
   updateProgress();
-  bindQuantumPlaylist();
-  bindListenNow();
+  bindPage();
 })();
