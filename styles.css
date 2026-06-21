@@ -4724,12 +4724,15 @@ h2 {
 }
 
 .contact-email {
-  display: inline-block;
+  display: block;
+  max-width: 100%;
   margin-bottom: 1.4rem;
   color: var(--amber-2);
-  font: 500 clamp(2rem, 4.5vw, 3.2rem)/1.1 Arial, Helvetica, sans-serif;
-  letter-spacing: -0.03em;
-  overflow-wrap: anywhere;
+  font: 500 clamp(1.65rem, 3vw, 2.6rem)/1.1 Arial, Helvetica, sans-serif;
+  letter-spacing: -0.04em;
+  overflow-wrap: normal;
+  word-break: normal;
+  white-space: nowrap;
 }
 
 .contact-email-panel > p:not(.contact-kicker) {
@@ -5480,7 +5483,7 @@ h2 {
   }
 
   .contact-email {
-    font-size: clamp(1.65rem, 9vw, 2.35rem);
+    font-size: clamp(1.25rem, 6vw, 1.9rem);
   }
 
   .contact-closing-image {
