@@ -7,6 +7,7 @@
   }
 
   const storageKey = "qfPlayerState";
+  const collapsedStorageKey = "qfPlayerCollapsed";
   const saveIntervalMs = 1000;
   const defaultState = {
     index: 0,
@@ -23,6 +24,22 @@
       return { ...defaultState, ...JSON.parse(localStorage.getItem(storageKey) || "{}") };
     } catch {
       return { ...defaultState };
+    }
+  };
+
+  const readCollapsedState = () => {
+    try {
+      return localStorage.getItem(collapsedStorageKey) === "true";
+    } catch {
+      return false;
+    }
+  };
+
+  const writeCollapsedState = (isCollapsed) => {
+    try {
+      localStorage.setItem(collapsedStorageKey, String(isCollapsed));
+    } catch {
+      // Player collapse is cosmetic; playback state should never depend on it.
     }
   };
 
@@ -87,6 +104,7 @@
       <button class="gmp-prev" type="button" aria-label="Previous track">‹</button>
       <button class="gmp-play" type="button" aria-label="Play Quantum Flux">Play</button>
       <button class="gmp-next" type="button" aria-label="Next track">›</button>
+      <button class="gmp-collapse" type="button" aria-label="Hide Quantum Flux player">v</button>
     </div>
     <div class="gmp-progress-wrap">
       <span class="gmp-current">0:00</span>
@@ -100,6 +118,14 @@
   `;
   document.body.appendChild(player);
 
+  const revealButton = document.createElement("button");
+  revealButton.className = "qf-player-reveal";
+  revealButton.type = "button";
+  revealButton.setAttribute("aria-label", "Show Quantum Flux player");
+  revealButton.setAttribute("aria-expanded", "false");
+  revealButton.innerHTML = `<span aria-hidden="true">QF</span>`;
+  document.body.appendChild(revealButton);
+
   const titleEl = player.querySelector(".gmp-title");
   const subtitleEl = player.querySelector(".gmp-subtitle");
   const currentEl = player.querySelector(".gmp-current");
@@ -108,8 +134,28 @@
   const playButton = player.querySelector(".gmp-play");
   const prevButton = player.querySelector(".gmp-prev");
   const nextButton = player.querySelector(".gmp-next");
+  const collapseButton = player.querySelector(".gmp-collapse");
   const volumeEl = player.querySelector(".gmp-volume");
   volumeEl.value = String(audio.volume);
+
+  const setCollapsed = (isCollapsed, options = {}) => {
+    const nextCollapsed = Boolean(isCollapsed);
+    player.classList.toggle("qf-player--collapsed", nextCollapsed);
+    document.body.classList.toggle("qf-player-collapsed", nextCollapsed);
+    revealButton.classList.toggle("is-visible", nextCollapsed);
+    revealButton.setAttribute("aria-expanded", String(!nextCollapsed));
+    collapseButton.setAttribute("aria-expanded", String(!nextCollapsed));
+    if (!options.skipSave) {
+      writeCollapsedState(nextCollapsed);
+    }
+    if (nextCollapsed) {
+      window.QFLyrics?.close?.();
+      window.QFLibrary?.close?.();
+    }
+    window.dispatchEvent(new CustomEvent("qfplayer:collapse", {
+      detail: { collapsed: nextCollapsed }
+    }));
+  };
 
   const dispatchState = () => {
     window.dispatchEvent(new CustomEvent("qfplayer:state", { detail: getPublicState() }));
@@ -252,6 +298,10 @@
     next,
     previous,
     loadTrack,
+    collapse: () => setCollapsed(true),
+    reveal: () => setCollapsed(false),
+    setCollapsed,
+    isCollapsed: () => player.classList.contains("qf-player--collapsed"),
     getState: getPublicState,
     getLyricsPanelData: () => window.QFLyrics?.getPanelData?.() || {
       status: "placeholder",
@@ -340,6 +390,7 @@
   const bindPage = () => {
     bindQuantumPlaylist();
     bindListenNow();
+    setCollapsed(player.classList.contains("qf-player--collapsed"), { skipSave: true });
     dispatchState();
   };
 
@@ -348,6 +399,8 @@
   playButton.addEventListener("click", () => toggle(currentIndex));
   prevButton.addEventListener("click", previous);
   nextButton.addEventListener("click", next);
+  collapseButton.addEventListener("click", () => setCollapsed(true));
+  revealButton.addEventListener("click", () => setCollapsed(false));
 
   progressEl.addEventListener("input", () => {
     const nextTime = Number(progressEl.value);
@@ -379,6 +432,7 @@
   window.addEventListener("pagehide", () => saveState(true));
 
   loadTrack(currentIndex, { position: Number(state.position) || 0 });
+  setCollapsed(readCollapsedState(), { skipSave: true });
   updateProgress();
   bindPage();
 })();

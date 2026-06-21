@@ -215,5 +215,5 @@
   };
 
   render();
-  setOpen(readStorage(openStorageKey) === "true");
+  setOpen(player.isCollapsed?.() ? false : readStorage(openStorageKey) === "true");
 })();

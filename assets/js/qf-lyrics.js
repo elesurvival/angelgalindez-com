@@ -270,6 +270,6 @@
     getPanelData: () => currentLyrics
   };
 
-  setOpen(readOpenState());
+  setOpen(player.isCollapsed?.() ? false : readOpenState());
   syncFromPlayer();
 })();

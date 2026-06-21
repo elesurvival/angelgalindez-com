@@ -6,6 +6,10 @@ body {
   padding-bottom: calc(var(--global-player-height) + env(safe-area-inset-bottom, 0px));
 }
 
+body.qf-player-collapsed {
+  padding-bottom: calc(4.25rem + env(safe-area-inset-bottom, 0px));
+}
+
 .global-music-player {
   position: fixed;
   right: max(1rem, calc((100vw - var(--max, 1168px)) / 2));
@@ -28,6 +32,58 @@ body {
     0 1rem 3.5rem rgba(0, 0, 0, 0.58),
     0 0 1.2rem rgba(51, 216, 255, 0.08);
   backdrop-filter: blur(18px);
+  transition:
+    opacity 180ms ease,
+    transform 220ms ease,
+    visibility 220ms ease;
+}
+
+.global-music-player.qf-player--collapsed {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(calc(100% + 1.75rem));
+}
+
+.qf-player-reveal {
+  position: fixed;
+  right: max(1rem, calc((100vw - var(--max, 1168px)) / 2));
+  bottom: max(0.85rem, env(safe-area-inset-bottom, 0px));
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(51, 216, 255, 0.32);
+  border-radius: 999px;
+  color: #33d8ff;
+  background:
+    radial-gradient(circle at 35% 20%, rgba(51, 216, 255, 0.22), transparent 58%),
+    rgba(2, 8, 15, 0.9);
+  box-shadow:
+    0 0.8rem 2rem rgba(0, 0, 0, 0.42),
+    0 0 1rem rgba(51, 216, 255, 0.12);
+  cursor: pointer;
+  font: 900 1rem/1 Arial, Helvetica, sans-serif;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0.6rem) scale(0.94);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease,
+    border-color 180ms ease;
+}
+
+.qf-player-reveal.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.qf-player-reveal:hover,
+.qf-player-reveal:focus-visible {
+  border-color: rgba(51, 216, 255, 0.72);
+  transform: translateY(-0.1rem) scale(1.02);
 }
 
 .gmp-track {
@@ -97,6 +153,11 @@ body {
   font: 900 0.82rem/1 Arial, Helvetica, sans-serif;
 }
 
+.gmp-collapse {
+  color: rgba(242, 240, 235, 0.72) !important;
+  border-color: rgba(242, 240, 235, 0.18) !important;
+}
+
 .gmp-play {
   min-width: 64px !important;
   padding: 0 0.9rem;
@@ -159,6 +220,13 @@ body {
     left: 0.55rem;
     grid-template-columns: 1fr;
     border-radius: 12px;
+  }
+
+  .qf-player-reveal {
+    right: 0.75rem;
+    bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));
+    width: 44px;
+    height: 44px;
   }
 
   .gmp-controls {
