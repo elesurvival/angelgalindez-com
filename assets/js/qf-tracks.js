@@ -27,34 +27,83 @@
   const lyricsMeta = {
     0: {
       lyricsType: "lrc",
-      lyricsText: [
-        "[00:00.00] System Boot",
-        "[00:08.00] Initializing the hidden signal.",
-        "[00:16.00] Neon circuits wake in the dark.",
-        "[00:24.00] Every pulse becomes a doorway.",
-        "[00:32.00] Follow the rhythm into the code.",
-        "[00:40.00] Quantum Flux online."
-      ].join("\n")
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/01-system-boot.mp3.lrc"
     },
     1: {
-      lyricsType: "plain",
-      lyricsSrc: "/assets/projects/quantum-flux/lyrics/02-code-breaker.txt"
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/02-code-breaker.mp3.lrc"
     },
     2: {
-      lyricsType: "plain",
-      lyricsSrc: "/assets/projects/quantum-flux/lyrics/05-digital-shadows.txt"
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/03-digital-shadows.mp3.lrc"
+    },
+    3: {
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/04-zero-day-dance.mp3.lrc"
+    },
+    4: {
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/05-echoes-of-rebellion.mp3.lrc"
     },
     5: {
-      lyricsType: "plain",
-      lyricsSrc: "/assets/projects/quantum-flux/lyrics/06-packets-in-the-flow.txt"
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/06-packets-in-the-flow.mp3.lrc"
+    },
+    6: {
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/07-liminal-dreams.mp3.lrc"
+    },
+    7: {
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/08-binary-beats.mp3.lrc"
+    },
+    8: {
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/09-quantum-leap.mp3.lrc"
     },
     9: {
-      lyricsType: "plain",
-      lyricsSrc: "/assets/projects/quantum-flux/lyrics/19-upload-my-soul.txt"
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/10-upload-my-soul.mp3.lrc"
+    },
+    10: {
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/11-cybernetic-serenade.mp3.lrc"
+    },
+    11: {
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/12-neon-algorithm.mp3.lrc"
+    },
+    12: {
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/13-root-access-rhapsody.mp3.lrc"
+    },
+    13: {
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/14-the-last-key.mp3.lrc"
+    },
+    14: {
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/15-phantom-protocols.mp3.lrc"
+    },
+    15: {
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/16-debugging-the-night.mp3.lrc"
+    },
+    16: {
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/17-shadow-hackers.mp3.lrc"
     },
     17: {
-      lyricsType: "plain",
-      lyricsSrc: "/assets/projects/quantum-flux/lyrics/08-hacktivist-anthem.txt"
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/18-hacktivist-anthem.mp3.lrc"
+    },
+    18: {
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/19-end-of-the-code.mp3.lrc"
+    },
+    19: {
+      lyricsType: "lrc",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/20-log-off-sequence.mp3.lrc"
     }
   };
 
