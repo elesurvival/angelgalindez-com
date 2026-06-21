@@ -25,11 +25,12 @@
       return [];
     }
 
+    const timestampPattern = /[\[<](\d{1,2}):(\d{2})(?:\.(\d{1,3}))?[\]>]/g;
     return text
       .split(/\r?\n/)
       .flatMap((line) => {
-        const matches = Array.from(line.matchAll(/\[(\d{1,2}):(\d{2})(?:\.(\d{1,3}))?\]/g));
-        const lyric = line.replace(/\[(\d{1,2}):(\d{2})(?:\.(\d{1,3}))?\]/g, "").trim();
+        const matches = Array.from(line.matchAll(timestampPattern));
+        const lyric = line.replace(timestampPattern, "").trim();
         return matches
           .map((match) => {
             const minutes = Number(match[1]);
@@ -128,7 +129,7 @@
     bodyEl.innerHTML = currentLyrics.lines
       .map((line, index) => {
         const isBlank = !line.text;
-        return `<p class="${lineClass}${isBlank ? " is-blank" : ""}" data-lyric-index="${index}">
+        return `<p class="${lineClass}${isBlank ? " is-blank" : ""}" data-lyric-index="${index}"${Number.isFinite(line.time) ? ` data-lyric-time="${line.time}"` : ""}>
           ${line.text || "&nbsp;"}
         </p>`;
       })

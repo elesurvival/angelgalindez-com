@@ -107,12 +107,35 @@
     }
   };
 
+  const durationMeta = [
+    "0:47",
+    "3:24",
+    "3:18",
+    "3:33",
+    "1:09",
+    "3:15",
+    "3:51",
+    "2:42",
+    "3:04",
+    "4:00",
+    "3:39",
+    "2:57",
+    "2:58",
+    "0:44",
+    "3:39",
+    "2:57",
+    "3:44",
+    "2:57",
+    "3:37",
+    "0:38"
+  ];
+
   window.QF_TRACKS = baseTracks.map((track, index) => ({
     ...track,
     src: track.file,
     albumSlug: "ciphered-realms",
     trackNumber: index + 1,
-    durationText: "--:--",
+    durationText: durationMeta[index] || "--:--",
     cover: "/assets/projects/quantum-flux/ciphered-realms-cover.jpg",
     tags: ["cyberpunk", "electronic", "phantom"],
     lyricsType: "none",

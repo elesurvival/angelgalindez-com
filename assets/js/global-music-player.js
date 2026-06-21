@@ -8,6 +8,7 @@
 
   const storageKey = "qfPlayerState";
   const collapsedStorageKey = "qfPlayerCollapsed";
+  const logoSrc = "/assets/projects/quantum-flux/quantum-flux-logo-transparency.png";
   const saveIntervalMs = 1000;
   const defaultState = {
     index: 0,
@@ -94,7 +95,9 @@
   player.setAttribute("aria-label", "Quantum Flux music player");
   player.innerHTML = `
     <div class="gmp-track">
-      <div class="gmp-mark" aria-hidden="true">QF</div>
+      <a class="gmp-mark" href="/quantum-flux.html" aria-label="Open Quantum Flux page">
+        <img src="${logoSrc}" alt="" aria-hidden="true">
+      </a>
       <div>
         <p class="gmp-eyebrow">Quantum Flux</p>
         <p class="gmp-title">System Boot</p>
@@ -124,7 +127,7 @@
   revealButton.type = "button";
   revealButton.setAttribute("aria-label", "Show Quantum Flux player");
   revealButton.setAttribute("aria-expanded", "false");
-  revealButton.innerHTML = `<span aria-hidden="true">QF</span>`;
+  revealButton.innerHTML = `<img src="${logoSrc}" alt="" aria-hidden="true">`;
   document.body.appendChild(revealButton);
 
   const titleEl = player.querySelector(".gmp-title");
@@ -136,6 +139,7 @@
   const prevButton = player.querySelector(".gmp-prev");
   const nextButton = player.querySelector(".gmp-next");
   const collapseButton = player.querySelector(".gmp-collapse");
+  const markLink = player.querySelector(".gmp-mark");
   const volumeEl = player.querySelector(".gmp-volume");
   volumeEl.value = String(audio.volume);
 
@@ -403,6 +407,11 @@
   nextButton.addEventListener("click", next);
   collapseButton.addEventListener("click", () => setCollapsed(true));
   revealButton.addEventListener("click", () => setCollapsed(false));
+  markLink?.addEventListener("click", (event) => {
+    if (window.location.pathname.endsWith("/quantum-flux.html")) {
+      event.preventDefault();
+    }
+  });
 
   progressEl.addEventListener("input", () => {
     const nextTime = Number(progressEl.value);

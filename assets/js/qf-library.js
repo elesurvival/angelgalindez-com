@@ -9,6 +9,7 @@
 
   const openStorageKey = "qfLibraryPanelOpen";
   const albumStorageKey = "qfLibrarySelectedAlbum";
+  const durationCache = new Map();
   let selectedAlbum = "";
 
   const slugify = (value) => String(value || "collection")
@@ -30,6 +31,54 @@
     } catch {
       // Local storage is optional; the library remains usable without it.
     }
+  };
+
+  const formatDuration = (seconds) => {
+    if (!Number.isFinite(seconds) || seconds <= 0) {
+      return "--:--";
+    }
+    const minutes = Math.floor(seconds / 60);
+    const remainder = Math.floor(seconds % 60);
+    return `${minutes}:${String(remainder).padStart(2, "0")}`;
+  };
+
+  const resolveDuration = (track) => {
+    if (!track || (track.durationText && track.durationText !== "--:--")) {
+      return Promise.resolve(track?.durationText || "--:--");
+    }
+
+    const source = track.file || track.src;
+    if (!source) {
+      return Promise.resolve("--:--");
+    }
+
+    if (durationCache.has(source)) {
+      return durationCache.get(source);
+    }
+
+    const promise = new Promise((resolve) => {
+      const probe = new Audio();
+      const cleanup = () => {
+        probe.removeAttribute("src");
+        probe.load();
+      };
+
+      probe.preload = "metadata";
+      probe.addEventListener("loadedmetadata", () => {
+        const durationText = formatDuration(probe.duration);
+        track.durationText = durationText;
+        cleanup();
+        resolve(durationText);
+      }, { once: true });
+      probe.addEventListener("error", () => {
+        cleanup();
+        resolve("--:--");
+      }, { once: true });
+      probe.src = source;
+    });
+
+    durationCache.set(source, promise);
+    return promise;
   };
 
   const albums = Array.from(tracks.reduce((map, track) => {
@@ -159,10 +208,26 @@
     }).join("");
   };
 
+  const resolveVisibleDurations = () => {
+    const album = getSelectedAlbum();
+    (album?.tracks || []).forEach((track) => {
+      resolveDuration(track).then((durationText) => {
+        if (durationText === "--:--" || getSelectedAlbum()?.slug !== album.slug) {
+          return;
+        }
+        const durationEl = tracksEl.querySelector(`[data-track-index="${track.index}"] .qf-track-duration`);
+        if (durationEl) {
+          durationEl.textContent = durationText;
+        }
+      });
+    });
+  };
+
   const render = () => {
     renderAlbums();
     renderNowPlaying();
     renderTracks();
+    resolveVisibleDurations();
   };
 
   const selectAlbum = (slug) => {
