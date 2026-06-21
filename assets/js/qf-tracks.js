@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  window.QF_TRACKS = [
+  const baseTracks = [
     { title: "System Boot", file: "/assets/projects/quantum-flux/audio/01-system-boot.mp3" },
     { title: "Code Breaker", file: "/assets/projects/quantum-flux/audio/02-code-breaker.mp3" },
     { title: "Digital Shadows", file: "/assets/projects/quantum-flux/audio/03-digital-shadows.mp3" },
@@ -22,8 +22,37 @@
     { title: "Hacktivist Anthem", file: "/assets/projects/quantum-flux/audio/18-hacktivist-anthem.mp3" },
     { title: "End of the Code", file: "/assets/projects/quantum-flux/audio/19-end-of-the-code.mp3" },
     { title: "Log Off Sequence", file: "/assets/projects/quantum-flux/audio/20-log-off-sequence.mp3" }
-  ].map((track, index) => ({
+  ];
+
+  const lyricsMeta = {
+    0: {
+      lyricsType: "lrc",
+      lyricsText: [
+        "[00:00.00] System Boot",
+        "[00:08.00] Initializing the hidden signal.",
+        "[00:16.00] Neon circuits wake in the dark.",
+        "[00:24.00] Every pulse becomes a doorway.",
+        "[00:32.00] Follow the rhythm into the code.",
+        "[00:40.00] Quantum Flux online."
+      ].join("\n")
+    },
+    1: {
+      lyricsType: "plain",
+      lyricsText: [
+        "Code Breaker",
+        "",
+        "A transmission from Ciphered Realms.",
+        "Built for focus, motion, and digital discovery.",
+        "",
+        "Full lyrics are being assembled in the lab."
+      ].join("\n")
+    }
+  };
+
+  window.QF_TRACKS = baseTracks.map((track, index) => ({
     ...track,
+    lyricsType: "none",
+    ...lyricsMeta[index],
     index,
     number: String(index + 1).padStart(2, "0"),
     artist: "Quantum Flux",

@@ -253,11 +253,11 @@
     previous,
     loadTrack,
     getState: getPublicState,
-    getLyricsPanelData: () => ({
+    getLyricsPanelData: () => window.QFLyrics?.getPanelData?.() || {
       status: "placeholder",
       track: tracks[currentIndex],
       lines: []
-    })
+    }
   };
 
   let syncQuantumRows = () => {};
