@@ -38,18 +38,23 @@
     },
     1: {
       lyricsType: "plain",
-      lyricsText: [
-        "Code Breaker",
-        "",
-        "A transmission from Ciphered Realms.",
-        "Built for focus, motion, and digital discovery.",
-        "",
-        "Full lyrics are being assembled in the lab."
-      ].join("\n")
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/02-code-breaker.txt"
+    },
+    2: {
+      lyricsType: "plain",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/05-digital-shadows.txt"
     },
     5: {
       lyricsType: "plain",
       lyricsSrc: "/assets/projects/quantum-flux/lyrics/06-packets-in-the-flow.txt"
+    },
+    9: {
+      lyricsType: "plain",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/19-upload-my-soul.txt"
+    },
+    17: {
+      lyricsType: "plain",
+      lyricsSrc: "/assets/projects/quantum-flux/lyrics/08-hacktivist-anthem.txt"
     }
   };
 
