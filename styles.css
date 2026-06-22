@@ -5497,6 +5497,7 @@ h2 {
   --echo-cyan: #5fd7ff;
   --echo-gold: #e6bf75;
   --echo-line: rgba(116, 184, 255, 0.18);
+  --echo-panel: rgba(5, 13, 17, 0.92);
   background:
     radial-gradient(circle at 84% 8%, rgba(95, 215, 255, 0.13), transparent 28rem),
     radial-gradient(circle at 15% 38%, rgba(230, 191, 117, 0.08), transparent 22rem),
@@ -5530,8 +5531,9 @@ h2 {
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(90deg, rgba(2, 6, 9, 0.95) 0%, rgba(2, 6, 9, 0.76) 32%, rgba(2, 6, 9, 0.24) 66%, rgba(2, 6, 9, 0.5) 100%),
-    linear-gradient(180deg, rgba(2, 6, 9, 0.08) 0%, rgba(2, 6, 9, 0.38) 70%, #020609 100%);
+    linear-gradient(90deg, rgba(2, 6, 9, 0.96) 0%, rgba(2, 6, 9, 0.8) 34%, rgba(2, 6, 9, 0.25) 67%, rgba(2, 6, 9, 0.52) 100%),
+    radial-gradient(circle at 22% 38%, rgba(95, 215, 255, 0.16), transparent 18rem),
+    linear-gradient(180deg, rgba(2, 6, 9, 0.12) 0%, rgba(2, 6, 9, 0.42) 70%, #020609 100%);
 }
 
 .echo-hero::after {
@@ -5565,9 +5567,17 @@ h2 {
   max-width: 560px;
 }
 
+.echo-hero-mark {
+  display: block;
+  width: clamp(4.5rem, 9vw, 7rem);
+  height: clamp(4.5rem, 9vw, 7rem);
+  margin: 1.1rem 0 0.25rem;
+  object-fit: contain;
+  filter: drop-shadow(0 0 1.4rem rgba(95, 215, 255, 0.3));
+}
+
 .echo-kicker,
-.echo-section-heading,
-.echo-icon-label {
+.echo-section-heading {
   color: var(--echo-cyan);
   font-size: 0.8rem;
   font-weight: 800;
@@ -5646,9 +5656,12 @@ h2 {
 .echo-panel {
   border: 1px solid var(--line-soft);
   background:
-    radial-gradient(circle at 18% 18%, rgba(95, 215, 255, 0.08), transparent 18rem),
-    linear-gradient(135deg, rgba(9, 18, 23, 0.94), rgba(3, 8, 11, 0.94));
-  box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.24);
+    radial-gradient(circle at 18% 12%, rgba(95, 215, 255, 0.1), transparent 18rem),
+    radial-gradient(circle at 84% 100%, rgba(230, 191, 117, 0.055), transparent 16rem),
+    linear-gradient(135deg, rgba(9, 18, 23, 0.96), rgba(3, 8, 11, 0.96));
+  box-shadow:
+    0 1.5rem 5rem rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.035);
 }
 
 .echo-two-up,
@@ -5677,6 +5690,27 @@ h2 {
   text-transform: uppercase;
 }
 
+.echo-icon-label {
+  display: grid;
+  place-items: center;
+  width: 3.35rem;
+  height: 3.35rem;
+  margin: 0 0 1.2rem;
+  border: 1px solid rgba(95, 215, 255, 0.28);
+  border-radius: 14px;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(95, 215, 255, 0.16), transparent 70%),
+    rgba(255, 255, 255, 0.025);
+  box-shadow: 0 0 1.2rem rgba(95, 215, 255, 0.1);
+}
+
+.echo-icon-label img {
+  display: block;
+  width: 2.2rem;
+  height: 2.2rem;
+  object-fit: contain;
+}
+
 .echo-panel p {
   color: var(--muted);
 }
@@ -5701,7 +5735,9 @@ h2 {
   padding: 0.75rem;
   border: 1px solid var(--line-soft);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.025);
+  background:
+    linear-gradient(145deg, rgba(95, 215, 255, 0.055), rgba(255, 255, 255, 0.018)),
+    rgba(255, 255, 255, 0.025);
   color: var(--ink);
   font-size: 0.68rem;
   font-weight: 800;
@@ -5746,6 +5782,14 @@ h2 {
 .echo-workflow article {
   position: relative;
   z-index: 1;
+  min-height: 250px;
+  padding: 1rem;
+  border: 1px solid rgba(116, 184, 255, 0.14);
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(95, 215, 255, 0.08), transparent 10rem),
+    rgba(255, 255, 255, 0.018);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.025);
 }
 
 .echo-workflow article > span {
@@ -5766,12 +5810,26 @@ h2 {
   width: 86px;
   height: 86px;
   margin-bottom: 1rem;
-  border: 1px solid var(--echo-line);
+  border: 1px solid rgba(95, 215, 255, 0.32);
   border-radius: 999px;
-  background: rgba(5, 12, 16, 0.92);
+  background:
+    radial-gradient(circle at 50% 35%, rgba(95, 215, 255, 0.16), transparent 62%),
+    rgba(5, 12, 16, 0.94);
   color: var(--echo-blue);
-  font-size: 2rem;
-  box-shadow: 0 0 1.6rem rgba(95, 215, 255, 0.1);
+  box-shadow:
+    0 0 1.6rem rgba(95, 215, 255, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.025);
+}
+
+.echo-workflow-icon svg,
+.echo-tool-icon svg {
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
 }
 
 .echo-workflow h3,
@@ -5819,10 +5877,17 @@ h2 {
   width: 4rem;
   height: 4rem;
   margin: 0 0 1.25rem;
+  border: 1px solid rgba(95, 215, 255, 0.28);
   border-radius: 999px;
-  background: rgba(230, 191, 117, 0.09);
-  color: var(--echo-gold);
-  font-size: 1.7rem;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(95, 215, 255, 0.14), transparent 68%),
+    rgba(230, 191, 117, 0.05);
+}
+
+.echo-connection-mark img {
+  width: 2.6rem;
+  height: 2.6rem;
+  object-fit: contain;
 }
 
 .echo-connection-map {
@@ -5944,9 +6009,20 @@ h2 {
   align-items: center;
   min-height: 104px;
   padding: 1rem;
-  border: 1px solid var(--line-soft);
+  border: 1px solid rgba(116, 184, 255, 0.16);
   border-radius: 9px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+  background:
+    radial-gradient(circle at 12% 20%, rgba(95, 215, 255, 0.06), transparent 9rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+  transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.echo-related-grid a:hover,
+.echo-related-grid a:focus-visible {
+  border-color: rgba(95, 215, 255, 0.34);
+  box-shadow: 0 0 1.4rem rgba(95, 215, 255, 0.08);
+  outline: none;
+  transform: translateY(-2px);
 }
 
 .echo-related-grid img,
@@ -5957,9 +6033,12 @@ h2 {
   width: 58px;
   height: 58px;
   object-fit: contain;
-  padding: 0.45rem;
+  padding: 0.55rem;
+  border: 1px solid rgba(116, 184, 255, 0.16);
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.035);
+  background:
+    radial-gradient(circle at 50% 35%, rgba(95, 215, 255, 0.12), transparent 68%),
+    rgba(255, 255, 255, 0.035);
 }
 
 .echo-tool-icon {
