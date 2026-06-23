@@ -1,6 +1,33 @@
 {
-  "updated_at": "2026-06-23T11:16:04.133Z",
+  "updated_at": "2026-06-23T21:23:14.602Z",
   "items": [
+    {
+      "project": "ELE Survival Shopify",
+      "repo": "elesurvival-shopify",
+      "hash": "656b933",
+      "message": "Use approved customer photos on homepage",
+      "date": "2026-06-23",
+      "time": "4:05 PM",
+      "timestamp": "2026-06-23T16:05:07-05:00"
+    },
+    {
+      "project": "ELE Survival Shopify",
+      "repo": "elesurvival-shopify",
+      "hash": "a6b8a62",
+      "message": "Support customer photo gallery fallback",
+      "date": "2026-06-23",
+      "time": "3:17 PM",
+      "timestamp": "2026-06-23T15:17:46-05:00"
+    },
+    {
+      "project": "ELE Survival Shopify",
+      "repo": "elesurvival-shopify",
+      "hash": "36319f8",
+      "message": "Add homepage trust layer",
+      "date": "2026-06-23",
+      "time": "2:56 PM",
+      "timestamp": "2026-06-23T14:56:13-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -873,33 +900,6 @@
       "date": "2026-06-09",
       "time": "3:57 PM",
       "timestamp": "2026-06-09T15:57:55-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "7cdbfa7",
-      "message": "Update About hero copy",
-      "date": "2026-06-09",
-      "time": "3:43 PM",
-      "timestamp": "2026-06-09T15:43:12-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "02157b4",
-      "message": "Replace About workshop symbol asset",
-      "date": "2026-06-09",
-      "time": "3:23 PM",
-      "timestamp": "2026-06-09T15:23:00-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "75996f7",
-      "message": "Refine About workshop panel",
-      "date": "2026-06-09",
-      "time": "3:14 PM",
-      "timestamp": "2026-06-09T15:14:04-05:00"
     }
   ]
 }
