@@ -56,10 +56,10 @@
           connected, and developed.
         </p>
         <div class="echo-feature-grid" aria-label="Echo capture modes">
-          <span>Voice Capture</span>
-          <span>Manual Entry</span>
-          <span>Auto Transcribe</span>
-          <span>Syncs to Continuo</span>
+          <button type="button" data-echo-modal="voice-capture">Voice Capture</button>
+          <button type="button" data-echo-modal="manual-entry">Manual Entry</button>
+          <button type="button" data-echo-modal="auto-transcribe">Auto Transcribe</button>
+          <button type="button" data-echo-modal="syncs-to-continuo">Syncs to Continuo</button>
         </div>
       </article>
 
@@ -199,12 +199,22 @@
         </a>
       </div>
     </section>
+    <div class="echo-modal" data-echo-modal-root aria-hidden="true">
+      <div class="echo-modal-backdrop" data-echo-modal-close></div>
+      <div class="echo-modal-frame" role="dialog" aria-modal="true" aria-labelledby="echo-modal-title">
+        <button class="echo-modal-close" type="button" data-echo-modal-close aria-label="Close Echo screenshot">&times;</button>
+        <p class="echo-modal-kicker">Echo Preview</p>
+        <h2 id="echo-modal-title">Voice Capture</h2>
+        <img data-echo-modal-image src="assets/projects/echo/voice-capture.png" alt="Echo Voice Capture screenshot">
+      </div>
+    </div>
   </main>
   <script src="/assets/js/qf-tracks.js?v=20260621" defer></script>
   <script src="/assets/js/global-music-player.js?v=20260621c" defer></script>
   <script src="/assets/js/qf-lyrics.js?v=20260621b" defer></script>
   <script src="/assets/js/qf-library.js?v=20260621b" defer></script>
   <script src="/assets/js/workshop-build-log.js?v=20260622" defer></script>
+  <script src="/assets/js/echo-modal.js?v=20260623" defer></script>
   <script src="/assets/js/site-router.js?v=20260623a" defer></script>
 </body>
 </html>
