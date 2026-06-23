@@ -50,6 +50,28 @@ function formatTime(timestamp) {
   return timeFormatter.format(new Date(timestamp));
 }
 
+function readGit(repoPath, args) {
+  return execFileSync("git", args, {
+    cwd: repoPath,
+    encoding: "utf8",
+    stdio: ["ignore", "pipe", "pipe"],
+  }).trim();
+}
+
+function resolveLogRef(repoPath) {
+  try {
+    const upstream = readGit(repoPath, ["rev-parse", "--abbrev-ref", "--symbolic-full-name", "@{u}"]);
+
+    if (upstream) {
+      return upstream;
+    }
+  } catch {
+    // Repos without an upstream still contribute their local HEAD.
+  }
+
+  return "HEAD";
+}
+
 function readCommits(repoConfig) {
   const gitDir = join(repoConfig.path, ".git");
 
@@ -57,9 +79,10 @@ function readCommits(repoConfig) {
     return { skipped: true, commits: [] };
   }
 
+  const logRef = resolveLogRef(repoConfig.path);
   const output = execFileSync(
     "git",
-    ["log", `-${commitsPerRepo}`, "--pretty=format:%h%x1f%cI%x1f%s"],
+    ["log", logRef, `-${commitsPerRepo}`, "--pretty=format:%h%x1f%cI%x1f%s"],
     {
       cwd: repoConfig.path,
       encoding: "utf8",

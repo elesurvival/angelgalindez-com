@@ -15,6 +15,8 @@ The update script scans these local project names when they are available:
 
 Missing local repos are skipped gracefully and reported in the console.
 
+When a repo has an upstream branch, the public feed is generated from that upstream ref instead of unpushed local `HEAD`. This prevents the live website from showing commit hashes that are not available on GitHub yet. Repos without an upstream fall back to local `HEAD`.
+
 ## Refresh Locally
 
 Run:
@@ -39,22 +41,22 @@ Install the local hooks:
 npm run install-build-log-hook
 ```
 
-The installer writes `.git/hooks/post-commit` and `.git/hooks/pre-push` on this workstation. Git hooks are local files, so the installed hooks are not committed to the repository and will not affect other machines unless installed there too.
+The installer writes `.git/hooks/post-commit` and `.git/hooks/pre-push` for each available scanned repo on this workstation. The hooks all point back to this `angelgalindez.com` repo and refresh `assets/data/build-log.json` from the scanned repo list. Git hooks are local files, so the installed hooks are not committed to any repository and will not affect other machines unless installed there too.
 
-The post-commit hook is the primary automation. After a normal site commit, it:
+The post-commit hook is the primary automation. After a normal commit in any hooked scanned repo, it:
 
 1. Runs `npm run refresh-build-log`.
 2. Checks whether `assets/data/build-log.json` changed.
 3. If it changed, stages only `assets/data/build-log.json`.
 4. Creates a local commit named `Update Workshop build activity`.
 
-That means the refreshed build log commit already exists by the time you push.
+That means a refreshed build log commit can already exist in the site repo by the time you push. Because the feed uses upstream refs when available, commit and push source repo work first if you want those commits to appear publicly.
 
 The pre-push hook is a final safety check. It runs the same refresh before pushing. In normal use there should be no change because the post-commit hook already handled it.
 
 The hooks do not stage or commit unrelated files.
 
-To disable the automation, remove the local hooks:
+To disable the automation for a repo, remove that repo's local hooks:
 
 ```bash
 rm .git/hooks/pre-push .git/hooks/post-commit
