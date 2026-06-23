@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "update-build-log": "node scripts/update-build-log.mjs"
+  }
+}
