@@ -12,6 +12,18 @@
     "elesurvival-shopify": "green",
   };
 
+  const projectLinks = {
+    "angelgalindez.com": "index.html",
+    "angelgalindez-com": "index.html",
+    continuo: "continuo.html",
+    echo: "echo.html",
+    "ele survival": "ele.html",
+    "ele survival shopify": "ele.html",
+    "ele shopify": "ele.html",
+    "elesurvival-shopify": "ele.html",
+    "quantum flux": "quantum-flux.html",
+  };
+
   const normalizeProject = (value) => String(value || "")
     .trim()
     .toLowerCase();
@@ -20,6 +32,12 @@
     const project = normalizeProject(item.project);
     const repo = normalizeProject(item.repo);
     return projectAccent[project] || projectAccent[repo] || "gold";
+  };
+
+  const getProjectHref = (item) => {
+    const project = normalizeProject(item.project);
+    const repo = normalizeProject(item.repo);
+    return projectLinks[project] || projectLinks[repo] || "";
   };
 
   const formatUpdated = (value) => {
@@ -55,6 +73,19 @@
     if (text !== undefined) {
       element.textContent = text;
     }
+    return element;
+  };
+
+  const makeProjectBadge = (item, className) => {
+    const label = item.project || item.repo || "Build";
+    const href = getProjectHref(item);
+    const element = makeElement(href ? "a" : "span", className, label);
+
+    if (href) {
+      element.href = href;
+      element.setAttribute("aria-label", `View ${label}`);
+    }
+
     return element;
   };
 
@@ -95,7 +126,7 @@
       const row = makeElement("article", "build-log-row");
       const accent = getAccent(item);
 
-      const badge = makeElement("span", `build-log-badge build-log-badge--${accent}`, item.project || item.repo || "Build");
+      const badge = makeProjectBadge(item, `build-log-badge build-log-badge--${accent}`);
       const message = makeElement("p", "build-log-message", item.message || "Quiet progress");
       const meta = makeElement("p", "build-log-meta", `${item.date || ""}${item.time ? ` • ${item.time}` : ""}`.trim());
       const hash = makeElement("span", "build-log-hash", item.hash || "-------");
@@ -112,7 +143,7 @@
     if (projects) {
       const uniqueProjects = [...new Map(items.map((item) => [item.project || item.repo, item])).values()].slice(0, 4);
       projects.replaceChildren(...uniqueProjects.map((item) => (
-        makeElement("span", `build-log-project build-log-project--${getAccent(item)}`, item.project || item.repo)
+        makeProjectBadge(item, `build-log-project build-log-project--${getAccent(item)}`)
       )));
     }
   };

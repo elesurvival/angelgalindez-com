@@ -4629,6 +4629,28 @@ h2 {
   text-transform: none;
 }
 
+a.build-log-badge,
+a.build-log-project {
+  text-decoration: none;
+  transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease, transform 180ms ease;
+}
+
+a.build-log-badge:hover,
+a.build-log-project:hover {
+  background: color-mix(in srgb, currentColor 16%, transparent);
+  box-shadow: 0 0 18px color-mix(in srgb, currentColor 24%, transparent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a.build-log-badge:focus-visible,
+a.build-log-project:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.55);
+}
+
 .build-log-badge--cyan,
 .build-log-project--cyan {
   color: #37d8f2;
