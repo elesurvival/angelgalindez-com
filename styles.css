@@ -4566,8 +4566,33 @@ h2 {
 
 .build-log-list {
   display: grid;
+  max-height: clamp(27rem, 46vw, 31.5rem);
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-right: 0.25rem;
   border-top: 1px solid rgba(228, 173, 88, 0.13);
   border-bottom: 1px solid rgba(228, 173, 88, 0.13);
+  scrollbar-color: rgba(228, 173, 88, 0.38) rgba(255, 255, 255, 0.045);
+  scrollbar-width: thin;
+}
+
+.build-log-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.build-log-list::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.045);
+  border-radius: 999px;
+}
+
+.build-log-list::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(228, 173, 88, 0.38);
+}
+
+.build-log-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(228, 173, 88, 0.56);
 }
 
 .build-log-row {

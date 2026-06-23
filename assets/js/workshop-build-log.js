@@ -84,7 +84,7 @@
     const list = panel.querySelector("[data-build-log-list]");
     const updated = panel.querySelector("[data-build-log-updated]");
     const projects = panel.querySelector("[data-build-log-projects]");
-    const items = Array.isArray(data.items) ? data.items.slice(0, 10) : [];
+    const items = Array.isArray(data.items) ? data.items.slice(0, 50) : [];
 
     if (!list || !items.length) {
       renderFallback(panel);

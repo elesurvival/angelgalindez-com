@@ -1,6 +1,6 @@
 # Workshop Build Activity
 
-The Workshop Build Activity section is a static snapshot of recent local commits across Angel's active software projects. It gives the Workshop page a quiet record of what is currently being built without exposing repository URLs, author emails, local file paths, or commit bodies.
+The Workshop Build Activity section is a static snapshot of recent local commits across Angel's active software projects. It stores and renders the latest 50 commits, while the Workshop panel keeps a compact height and lets visitors scroll the activity list internally for deeper history. It gives the Workshop page a quiet record of what is currently being built without exposing repository URLs, author emails, local file paths, or commit bodies.
 
 ## Repos Scanned
 
