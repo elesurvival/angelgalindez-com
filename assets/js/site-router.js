@@ -127,6 +127,36 @@
     }));
   };
 
+  const scrollToHashTarget = (url) => {
+    if (!url.hash || url.hash.length <= 1) {
+      return false;
+    }
+
+    const targetId = decodeURIComponent(url.hash.slice(1));
+    const target = document.getElementById(targetId);
+    if (!target) {
+      return false;
+    }
+
+    target.scrollIntoView({ block: "start" });
+    return true;
+  };
+
+  const scrollAfterNavigation = (url, options = {}) => {
+    window.requestAnimationFrame(() => {
+      if (options.popstate) {
+        const scrollX = Number(options.state?.scrollX || 0);
+        const scrollY = Number(options.state?.scrollY || 0);
+        window.scrollTo(scrollX, scrollY);
+        return;
+      }
+
+      if (!scrollToHashTarget(url)) {
+        window.scrollTo(0, 0);
+      }
+    });
+  };
+
   const rememberScrollPosition = () => {
     history.replaceState({
       ...(history.state || {}),
@@ -178,16 +208,12 @@
       document.body.className = nextDocument.body.className;
       markCurrentNavigation(url);
 
-      if (options.popstate) {
-        const scrollX = Number(options.state?.scrollX || 0);
-        const scrollY = Number(options.state?.scrollY || 0);
-        window.scrollTo(scrollX, scrollY);
-      } else {
+      if (!options.popstate) {
         history.pushState({ scrollX: 0, scrollY: 0 }, "", url.href);
-        window.scrollTo(0, 0);
       }
 
       initPage();
+      scrollAfterNavigation(url, options);
     } catch (error) {
       console.warn("Soft navigation fell back to a full page load.", error);
       window.location.href = url.href;
@@ -226,4 +252,5 @@
 
   markCurrentNavigation(new URL(window.location.href));
   initPage();
+  scrollAfterNavigation(new URL(window.location.href));
 })();

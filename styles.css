@@ -4458,6 +4458,7 @@ h2 {
 
 .workshop-build-log {
   position: relative;
+  scroll-margin-top: 6.75rem;
   overflow: hidden;
   padding: clamp(1.25rem, 2.4vw, 1.8rem);
   border: 1px solid rgba(228, 173, 88, 0.28);
