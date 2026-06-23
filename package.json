@@ -1,6 +1,7 @@
 {
   "scripts": {
     "update-build-log": "node scripts/update-build-log.mjs",
-    "refresh-build-log": "npm run update-build-log && node --check scripts/update-build-log.mjs && node --check assets/js/workshop-build-log.js"
+    "refresh-build-log": "npm run update-build-log && node --check scripts/update-build-log.mjs && node --check assets/js/workshop-build-log.js",
+    "install-build-log-hook": "node scripts/install-build-log-hook.mjs"
   }
 }

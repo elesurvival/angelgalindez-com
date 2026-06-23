@@ -5,6 +5,9 @@ import { fileURLToPath } from "node:url";
 
 const rootDir = dirname(dirname(fileURLToPath(import.meta.url)));
 const outputPath = join(rootDir, "assets", "data", "build-log.json");
+const ignoredSubjects = new Set([
+  "Update Workshop build activity",
+]);
 
 const repos = [
   { project: "Continuo", repo: "Continuo", path: "C:\\Users\\Angel\\Documents\\Continuo" },
@@ -66,10 +69,14 @@ function readCommits(repoConfig) {
     return { skipped: false, commits: [] };
   }
 
-  const commits = output.split(/\r?\n/).map((line) => {
+  const commits = output.split(/\r?\n/).flatMap((line) => {
     const [hash, timestamp, message] = line.split("\x1f");
 
-    return {
+    if (ignoredSubjects.has(message)) {
+      return [];
+    }
+
+    return [{
       project: repoConfig.project,
       repo: repoConfig.repo,
       hash,
@@ -77,7 +84,7 @@ function readCommits(repoConfig) {
       date: formatDate(timestamp),
       time: formatTime(timestamp),
       timestamp,
-    };
+    }];
   });
 
   return { skipped: false, commits };
