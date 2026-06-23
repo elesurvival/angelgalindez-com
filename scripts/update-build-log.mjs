@@ -9,7 +9,7 @@ const outputPath = join(rootDir, "assets", "data", "build-log.json");
 const repos = [
   { project: "Continuo", repo: "Continuo", path: "C:\\Users\\Angel\\Documents\\Continuo" },
   { project: "Echo", repo: "Echo", path: "C:\\Users\\Angel\\Documents\\Echo" },
-  { project: "Glimpse", repo: "Glimpse", path: "C:\\Users\\Angel\\Documents\\Glimpse" },
+  { project: "Glimpse", repo: "Glimpse", path: "C:\\Users\\Angel\\Documents\\Glimpse 2" },
   { project: "Tempo", repo: "Tempo", path: "C:\\Users\\Angel\\Documents\\Tempo" },
   {
     project: "AngelGalindez.com",
