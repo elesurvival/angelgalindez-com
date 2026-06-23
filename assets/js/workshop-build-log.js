@@ -74,6 +74,12 @@
     }
   };
 
+  const renderHomeTeasers = (data) => {
+    document.querySelectorAll("[data-build-log-home-updated]").forEach((element) => {
+      element.textContent = formatUpdated(data?.updated_at);
+    });
+  };
+
   const renderItems = (panel, data) => {
     const list = panel.querySelector("[data-build-log-list]");
     const updated = panel.querySelector("[data-build-log-updated]");
@@ -113,7 +119,9 @@
 
   const initBuildLog = async () => {
     const panel = document.querySelector("[data-build-log-panel], .workshop-build-log");
-    if (!panel) {
+    const homeTeasers = document.querySelectorAll("[data-build-log-home-updated]");
+
+    if (!panel && !homeTeasers.length) {
       return;
     }
 
@@ -123,10 +131,16 @@
         throw new Error(`Build log unavailable: ${response.status}`);
       }
 
-      renderItems(panel, await response.json());
+      const data = await response.json();
+      renderHomeTeasers(data);
+      if (panel) {
+        renderItems(panel, data);
+      }
     } catch (error) {
       console.warn(error.message);
-      renderFallback(panel);
+      if (panel) {
+        renderFallback(panel);
+      }
     }
   };
 
