@@ -6350,16 +6350,67 @@ a.build-log-project:focus-visible {
 }
 
 .echo-modal h2 {
-  margin: 0 3rem 1rem 0;
+  margin: 0 3rem 0.7rem 0;
   font: 400 clamp(1.45rem, 3vw, 2.35rem)/1.05 Arial, Helvetica, sans-serif;
   letter-spacing: 0.04em;
   text-transform: none;
 }
 
+.echo-preview-description {
+  max-width: 70ch;
+  margin: 0 3rem 1rem 0;
+  color: var(--muted);
+  font-size: clamp(0.88rem, 1.5vw, 1rem);
+  line-height: 1.65;
+}
+
+.echo-preview-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 0 0 1rem;
+}
+
+.echo-preview-nav button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0.62rem 1rem;
+  border: 1px solid rgba(95, 215, 255, 0.26);
+  border-radius: 999px;
+  background:
+    linear-gradient(145deg, rgba(95, 215, 255, 0.08), rgba(180, 108, 255, 0.04)),
+    rgba(255, 255, 255, 0.025);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease, background 180ms ease;
+}
+
+.echo-preview-nav button:hover,
+.echo-preview-nav button:focus-visible {
+  border-color: rgba(95, 215, 255, 0.58);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(180, 108, 255, 0.2), transparent 72%),
+    linear-gradient(145deg, rgba(48, 213, 255, 0.14), rgba(180, 108, 255, 0.08)),
+    rgba(255, 255, 255, 0.035);
+  box-shadow: 0 0 18px rgba(48, 213, 255, 0.18);
+  transform: translateY(-1px);
+}
+
+.echo-preview-nav button:focus-visible {
+  outline: 2px solid rgba(95, 215, 255, 0.72);
+  outline-offset: 3px;
+}
+
 .echo-modal img {
   display: block;
   width: 100%;
-  max-height: min(70vh, 760px);
+  max-height: min(62vh, 700px);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   object-fit: contain;
@@ -6740,5 +6791,34 @@ a.build-log-project:focus-visible {
     width: 1px;
     height: 46px;
     justify-self: center;
+  }
+
+  .echo-modal-frame {
+    width: min(94vw, 520px);
+    max-height: 88vh;
+    padding: 0.9rem;
+  }
+
+  .echo-modal h2 {
+    margin-right: 2.75rem;
+  }
+
+  .echo-preview-description {
+    margin-right: 0;
+    font-size: 0.84rem;
+    line-height: 1.55;
+  }
+
+  .echo-preview-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .echo-preview-nav button {
+    width: 100%;
+  }
+
+  .echo-modal img {
+    max-height: 54vh;
   }
 }
