@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-23T21:30:34.724Z",
+  "updated_at": "2026-06-23T22:34:49.272Z",
   "items": [
+    {
+      "project": "ELE Survival Shopify",
+      "repo": "elesurvival-shopify",
+      "hash": "b5c4fcb",
+      "message": "Use Shuttle review badge on homepage",
+      "date": "2026-06-23",
+      "time": "5:34 PM",
+      "timestamp": "2026-06-23T17:34:13-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -891,15 +900,6 @@
       "date": "2026-06-09",
       "time": "6:06 PM",
       "timestamp": "2026-06-09T18:06:37-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "84c0634",
-      "message": "Update About forward image",
-      "date": "2026-06-09",
-      "time": "5:45 PM",
-      "timestamp": "2026-06-09T17:45:10-05:00"
     }
   ]
 }
