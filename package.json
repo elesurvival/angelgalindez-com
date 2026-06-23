@@ -1,5 +1,6 @@
 {
   "scripts": {
-    "update-build-log": "node scripts/update-build-log.mjs"
+    "update-build-log": "node scripts/update-build-log.mjs",
+    "refresh-build-log": "npm run update-build-log && node --check scripts/update-build-log.mjs && node --check assets/js/workshop-build-log.js"
   }
 }
