@@ -2,6 +2,7 @@
   "use strict";
 
   const dataUrl = "/assets/data/build-log.json";
+  const maxVisibleItems = 100;
   const projectAccent = {
     continuo: "cyan",
     echo: "purple",
@@ -115,7 +116,7 @@
     const list = panel.querySelector("[data-build-log-list]");
     const updated = panel.querySelector("[data-build-log-updated]");
     const projects = panel.querySelector("[data-build-log-projects]");
-    const items = Array.isArray(data.items) ? data.items.slice(0, 50) : [];
+    const items = Array.isArray(data.items) ? data.items.slice(0, maxVisibleItems) : [];
 
     if (!list || !items.length) {
       renderFallback(panel);

@@ -5,6 +5,8 @@ import { fileURLToPath } from "node:url";
 
 const rootDir = dirname(dirname(fileURLToPath(import.meta.url)));
 const outputPath = join(rootDir, "assets", "data", "build-log.json");
+const buildLogLimit = 100;
+const commitsPerRepo = 100;
 const ignoredSubjects = new Set([
   "Update Workshop build activity",
 ]);
@@ -57,7 +59,7 @@ function readCommits(repoConfig) {
 
   const output = execFileSync(
     "git",
-    ["log", "-20", "--pretty=format:%h%x1f%cI%x1f%s"],
+    ["log", `-${commitsPerRepo}`, "--pretty=format:%h%x1f%cI%x1f%s"],
     {
       cwd: repoConfig.path,
       encoding: "utf8",
@@ -114,7 +116,7 @@ for (const repoConfig of repos) {
 
 const items = allCommits
   .sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime())
-  .slice(0, 50);
+  .slice(0, buildLogLimit);
 
 const buildLog = {
   updated_at: new Date().toISOString(),
