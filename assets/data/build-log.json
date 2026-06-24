@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-24T11:38:05.044Z",
+  "updated_at": "2026-06-24T22:11:40.512Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "b9a89c8",
+      "message": "Link ELE craft cards to collections",
+      "date": "2026-06-24",
+      "time": "6:38 AM",
+      "timestamp": "2026-06-24T06:38:01-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -891,15 +900,6 @@
       "date": "2026-06-09",
       "time": "11:41 PM",
       "timestamp": "2026-06-09T23:41:47-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "401a53d",
-      "message": "Update ELE hero image asset",
-      "date": "2026-06-09",
-      "time": "11:25 PM",
-      "timestamp": "2026-06-09T23:25:29-05:00"
     }
   ]
 }
