@@ -406,6 +406,21 @@ h2 {
   filter: drop-shadow(0 0 18px rgba(106, 186, 255, 0.34));
 }
 
+.glimpse {
+  background:
+    radial-gradient(circle at 55% 24%, rgba(159, 76, 255, 0.5), transparent 7rem),
+    radial-gradient(circle at 42% 34%, rgba(54, 216, 255, 0.2), transparent 6rem),
+    linear-gradient(140deg, #140c2d, #030812 72%);
+}
+
+.glimpse .project-mark img {
+  display: block;
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 20px rgba(159, 76, 255, 0.4));
+}
+
 .project-card h3 {
   margin-bottom: 0.85rem;
   font: 800 1rem/1.2 Arial, Helvetica, sans-serif;
@@ -1210,6 +1225,13 @@ h2 {
     linear-gradient(140deg, #071c2b, #03080c);
 }
 
+.world-glimpse .world-media {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(159, 76, 255, 0.46), transparent 7rem),
+    radial-gradient(circle at 44% 56%, rgba(54, 216, 255, 0.2), transparent 6rem),
+    linear-gradient(140deg, #140c2d, #030812);
+}
+
 .world-quantum .world-media img,
 .world-keepers .world-media img {
   width: 100%;
@@ -1273,6 +1295,10 @@ h2 {
 
 .world-nova .world-category {
   color: #7fc2ff;
+}
+
+.world-glimpse .world-category {
+  color: #b77cff;
 }
 
 .world-quantum .world-category {
@@ -6820,5 +6846,792 @@ a.build-log-project:focus-visible {
 
   .echo-modal img {
     max-height: 54vh;
+  }
+}
+
+/* Glimpse project page */
+.glimpse-page-body {
+  --glimpse-cyan: #36d8ff;
+  --glimpse-violet: #9f4cff;
+  --glimpse-lavender: #c7b8ff;
+  --glimpse-line: rgba(140, 119, 255, 0.22);
+  --glimpse-panel: rgba(5, 8, 26, 0.9);
+  background:
+    radial-gradient(circle at 78% 6%, rgba(159, 76, 255, 0.22), transparent 30rem),
+    radial-gradient(circle at 18% 42%, rgba(54, 216, 255, 0.1), transparent 22rem),
+    linear-gradient(180deg, #050716 0%, #0a1030 44%, #02060f 100%);
+}
+
+.glimpse-page-body .site-header {
+  background: rgba(2, 5, 14, 0.86);
+}
+
+.glimpse-hero {
+  position: relative;
+  min-height: 720px;
+  padding-top: 4.8rem;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.glimpse-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.glimpse-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(2, 5, 14, 0.98) 0%, rgba(4, 7, 22, 0.78) 38%, rgba(4, 8, 25, 0.24) 70%, rgba(2, 5, 14, 0.45) 100%),
+    radial-gradient(circle at 20% 32%, rgba(54, 216, 255, 0.12), transparent 18rem),
+    linear-gradient(180deg, rgba(2, 5, 14, 0.08) 0%, rgba(2, 5, 14, 0.34) 66%, #050716 100%);
+}
+
+.glimpse-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image:
+    radial-gradient(circle, rgba(199, 184, 255, 0.28) 0 1px, transparent 1.5px),
+    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+  background-size: 140px 140px, 100% 4px;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.glimpse-hero-inner,
+.glimpse-panel,
+.glimpse-related {
+  width: min(100% - 4rem, var(--max));
+  margin: 0 auto;
+}
+
+.glimpse-hero-inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  align-items: center;
+  min-height: calc(720px - 4.8rem);
+  padding: 4rem 0;
+}
+
+.glimpse-hero-copy {
+  max-width: 620px;
+}
+
+.glimpse-hero-mark {
+  display: block;
+  width: clamp(4.2rem, 8vw, 6.8rem);
+  height: clamp(4.2rem, 8vw, 6.8rem);
+  margin: 1.1rem 0 0.25rem;
+  object-fit: contain;
+  filter: drop-shadow(0 0 1.6rem rgba(159, 76, 255, 0.48));
+}
+
+.glimpse-kicker,
+.glimpse-section-heading {
+  color: var(--glimpse-cyan);
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.glimpse-kicker span {
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.45rem;
+  margin-right: 0.75rem;
+  border-radius: 999px;
+  background: var(--glimpse-cyan);
+  box-shadow: 0 0 1rem rgba(54, 216, 255, 0.85);
+  vertical-align: 0.1em;
+}
+
+.glimpse-hero h1 {
+  margin: 0.7rem 0 0.35rem;
+  font: 800 clamp(5rem, 11vw, 9rem)/0.9 Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+  background: linear-gradient(100deg, var(--glimpse-violet), #6d7dff 50%, var(--glimpse-cyan));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
+.glimpse-subtitle {
+  margin: 0 0 1.35rem;
+  color: var(--glimpse-lavender);
+  font-size: clamp(1.18rem, 2vw, 1.55rem);
+  line-height: 1.35;
+}
+
+.glimpse-hero-copy p:not(.glimpse-kicker):not(.glimpse-subtitle) {
+  max-width: 55ch;
+  color: var(--ink);
+}
+
+.glimpse-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.glimpse-primary,
+.glimpse-secondary,
+.glimpse-closing a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  min-height: 48px;
+  padding: 0.85rem 1.35rem;
+  border: 1px solid var(--glimpse-line);
+  border-radius: 8px;
+  color: var(--ink);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.glimpse-primary {
+  background: linear-gradient(135deg, rgba(159, 76, 255, 0.86), rgba(54, 216, 255, 0.82));
+  border-color: rgba(54, 216, 255, 0.38);
+  box-shadow: 0 0 1.8rem rgba(159, 76, 255, 0.22);
+}
+
+.glimpse-secondary {
+  border-color: rgba(54, 216, 255, 0.28);
+  color: var(--muted);
+}
+
+.glimpse-panel {
+  border: 1px solid var(--glimpse-line);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(54, 216, 255, 0.08), transparent 18rem),
+    radial-gradient(circle at 84% 100%, rgba(159, 76, 255, 0.08), transparent 16rem),
+    linear-gradient(135deg, rgba(8, 15, 36, 0.96), rgba(3, 7, 18, 0.96));
+  box-shadow:
+    0 1.5rem 5rem rgba(0, 0, 0, 0.26),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  overflow: hidden;
+}
+
+.glimpse-two-up,
+.glimpse-reflection-action {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.glimpse-two-up article,
+.glimpse-reflection,
+.glimpse-action {
+  min-height: 320px;
+  padding: clamp(2rem, 4vw, 3rem);
+}
+
+.glimpse-two-up article + article,
+.glimpse-action {
+  border-left: 1px solid var(--glimpse-line);
+}
+
+.glimpse-panel h2,
+.glimpse-closing h2 {
+  margin: 0 0 1rem;
+  font: 800 clamp(1.35rem, 2.7vw, 2.05rem)/1.08 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.glimpse-icon-label {
+  display: grid;
+  place-items: center;
+  width: 3.35rem;
+  height: 3.35rem;
+  margin: 0 0 1.2rem;
+  border: 1px solid rgba(54, 216, 255, 0.28);
+  border-radius: 14px;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(159, 76, 255, 0.2), transparent 70%),
+    rgba(255, 255, 255, 0.025);
+  box-shadow: 0 0 1.2rem rgba(159, 76, 255, 0.18);
+}
+
+.glimpse-icon-label img {
+  display: block;
+  width: 2.25rem;
+  height: 2.25rem;
+  object-fit: contain;
+}
+
+.glimpse-panel p,
+.glimpse-panel li,
+.glimpse-related-grid p {
+  color: var(--muted);
+}
+
+.glimpse-starry-card {
+  background:
+    radial-gradient(circle at 72% 55%, rgba(159, 76, 255, 0.18), transparent 12rem),
+    radial-gradient(circle at 85% 72%, rgba(199, 184, 255, 0.14), transparent 0.08rem);
+}
+
+.glimpse-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.glimpse-feature-grid span {
+  display: grid;
+  place-items: center;
+  min-height: 64px;
+  padding: 0.75rem;
+  border: 1px solid var(--glimpse-line);
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(54, 216, 255, 0.055), rgba(159, 76, 255, 0.055)),
+    rgba(255, 255, 255, 0.025);
+  color: var(--ink);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.glimpse-workflow-section,
+.glimpse-continuo-flow {
+  padding: clamp(2rem, 4vw, 3rem);
+}
+
+.glimpse-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.glimpse-section-heading h2 {
+  margin: 0;
+  font-size: clamp(1.3rem, 2.4vw, 1.85rem);
+}
+
+.glimpse-workflow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1.1rem, 3vw, 2rem);
+}
+
+.glimpse-workflow article {
+  position: relative;
+  min-height: 360px;
+  padding: 1rem;
+  border: 1px solid rgba(140, 119, 255, 0.18);
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(159, 76, 255, 0.09), transparent 10rem),
+    rgba(255, 255, 255, 0.018);
+}
+
+.glimpse-workflow article > span {
+  display: inline-grid;
+  place-items: center;
+  width: 1.55rem;
+  height: 1.55rem;
+  margin-bottom: 0.65rem;
+  border: 1px solid rgba(54, 216, 255, 0.5);
+  border-radius: 999px;
+  color: var(--glimpse-cyan);
+  font-size: 0.72rem;
+}
+
+.glimpse-workflow figure,
+.glimpse-phone-frame,
+.glimpse-gallery figure {
+  margin: 0;
+}
+
+.glimpse-workflow figure {
+  display: grid;
+  place-items: center;
+  min-height: 178px;
+  margin-bottom: 1rem;
+}
+
+.glimpse-workflow img {
+  display: block;
+  max-width: 116px;
+  max-height: 178px;
+  border: 1px solid rgba(199, 184, 255, 0.2);
+  border-radius: 13px;
+  object-fit: contain;
+  box-shadow: 0 0 1.3rem rgba(159, 76, 255, 0.16);
+}
+
+.glimpse-workflow h3,
+.glimpse-related-grid span,
+.glimpse-gallery figcaption {
+  margin: 0 0 0.3rem;
+  color: var(--ink);
+  font: 900 0.86rem/1.25 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.glimpse-workflow p,
+.glimpse-gallery figcaption span {
+  margin: 0;
+  font-size: 0.86rem;
+}
+
+.glimpse-duality {
+  display: grid;
+  grid-template-columns: 1fr minmax(110px, 190px) minmax(180px, 260px) minmax(110px, 190px) 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  padding: clamp(2rem, 4vw, 3rem);
+}
+
+.glimpse-duality-column h2 {
+  color: var(--glimpse-cyan);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.glimpse-duality-column:last-child h2 {
+  color: var(--glimpse-violet);
+}
+
+.glimpse-duality ul,
+.glimpse-reflection ul {
+  display: grid;
+  gap: 0.55rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.glimpse-duality li,
+.glimpse-reflection li {
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.glimpse-duality li::before,
+.glimpse-reflection li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 999px;
+  background: var(--glimpse-cyan);
+  box-shadow: 0 0 0.8rem rgba(54, 216, 255, 0.65);
+}
+
+.glimpse-duality-column:last-child li::before,
+.glimpse-reflection li::before {
+  background: var(--glimpse-violet);
+  box-shadow: 0 0 0.8rem rgba(159, 76, 255, 0.65);
+}
+
+.glimpse-phone-frame {
+  justify-self: center;
+  padding: 0.55rem;
+  border: 1px solid rgba(140, 119, 255, 0.24);
+  border-radius: 28px;
+  background: linear-gradient(145deg, rgba(18, 22, 49, 0.96), rgba(4, 7, 18, 0.98));
+  box-shadow: 0 0 2rem rgba(159, 76, 255, 0.13);
+  transform: rotate(4deg);
+}
+
+.echo-phone {
+  transform: rotate(-5deg);
+}
+
+.glimpse-phone-frame img {
+  display: block;
+  width: 148px;
+  max-height: 300px;
+  border-radius: 21px;
+  object-fit: cover;
+}
+
+.glimpse-duality-center {
+  display: grid;
+  justify-items: center;
+  gap: 0.8rem;
+  text-align: center;
+}
+
+.glimpse-duality-center img {
+  width: 82px;
+  height: 82px;
+  object-fit: contain;
+}
+
+.glimpse-duality-center h2 {
+  margin: 0;
+  letter-spacing: 0.12em;
+}
+
+.glimpse-reflection-action {
+  margin-top: 1rem;
+}
+
+.glimpse-symbol-map {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 4rem);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.8rem;
+  min-height: 190px;
+}
+
+.glimpse-symbol-map::before {
+  content: "";
+  position: absolute;
+  inset: 16%;
+  border: 1px solid rgba(159, 76, 255, 0.22);
+  border-radius: 999px;
+  box-shadow: 0 0 2rem rgba(159, 76, 255, 0.12);
+}
+
+.glimpse-symbol-map span {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid rgba(159, 76, 255, 0.32);
+  border-radius: 999px;
+  background: rgba(10, 14, 35, 0.88);
+  color: var(--glimpse-lavender);
+  font-size: 1.5rem;
+  box-shadow: 0 0 1.4rem rgba(159, 76, 255, 0.16);
+}
+
+.glimpse-symbol-map .symbol-center {
+  grid-column: 2;
+  grid-row: 2;
+  border-color: rgba(54, 216, 255, 0.36);
+  color: var(--glimpse-cyan);
+  transform: scale(1.15);
+}
+
+.glimpse-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+.glimpse-gallery figure {
+  display: grid;
+  gap: 0.8rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.glimpse-gallery img {
+  display: block;
+  width: min(100%, 118px);
+  border: 1px solid rgba(199, 184, 255, 0.2);
+  border-radius: 14px;
+  object-fit: contain;
+  box-shadow: 0 0 1.3rem rgba(54, 216, 255, 0.11);
+}
+
+.glimpse-gallery figcaption span {
+  color: var(--muted);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.glimpse-continuo-flow {
+  display: grid;
+  gap: 1.6rem;
+  margin-top: 1rem;
+}
+
+.glimpse-flow-map {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(92px, 1fr));
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.glimpse-flow-map > span {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(159, 76, 255, 0.08), var(--glimpse-violet), rgba(54, 216, 255, 0.28));
+  box-shadow: 0 0 1rem rgba(159, 76, 255, 0.35);
+}
+
+.glimpse-flow-map div {
+  display: grid;
+  justify-items: center;
+  gap: 0.75rem;
+  min-height: 112px;
+  padding: 1rem;
+  border: 1px solid var(--glimpse-line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.025);
+  text-align: center;
+}
+
+.glimpse-flow-map img,
+.glimpse-flow-map div > span {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  color: var(--glimpse-cyan);
+  font-size: 1.6rem;
+}
+
+.glimpse-flow-map p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.glimpse-flow-copy {
+  max-width: 64ch;
+  margin: 0;
+}
+
+.glimpse-closing {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 380px;
+  margin-top: 1rem;
+  overflow: hidden;
+  border-top: 1px solid var(--glimpse-line);
+  border-bottom: 1px solid var(--glimpse-line);
+  background:
+    linear-gradient(180deg, rgba(2, 5, 14, 0.18), #02060f),
+    radial-gradient(circle at 52% 0%, rgba(54, 216, 255, 0.18), transparent 22rem);
+  text-align: center;
+}
+
+.glimpse-closing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("assets/projects/glimpse/hero/glimpse-hero-background.jpg") center / cover no-repeat;
+  opacity: 0.48;
+  filter: saturate(1.08);
+}
+
+.glimpse-closing::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #02060f 0%, rgba(2, 6, 15, 0.42) 50%, #02060f 100%);
+}
+
+.glimpse-closing > div {
+  position: relative;
+  z-index: 1;
+  width: min(100% - 2rem, 920px);
+  padding: 3rem 0;
+}
+
+.glimpse-closing h2 {
+  margin-bottom: 1rem;
+  color: var(--ink);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.glimpse-closing h2 span {
+  color: var(--glimpse-lavender);
+}
+
+.glimpse-closing p {
+  color: var(--muted);
+}
+
+.glimpse-related {
+  padding: 2.4rem 0 4rem;
+}
+
+.glimpse-related-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.glimpse-related-grid a {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: 0.9rem 1rem;
+  align-items: center;
+  min-height: 112px;
+  padding: 1rem;
+  border: 1px solid var(--glimpse-line);
+  border-radius: 9px;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(54, 216, 255, 0.06), transparent 9rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+  transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.glimpse-related-grid a:hover,
+.glimpse-related-grid a:focus-visible {
+  border-color: rgba(54, 216, 255, 0.4);
+  box-shadow: 0 0 1.4rem rgba(159, 76, 255, 0.12);
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.glimpse-related-grid img,
+.glimpse-tool-icon {
+  grid-row: span 2;
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  padding: 0.55rem;
+  border: 1px solid var(--glimpse-line);
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 50% 35%, rgba(159, 76, 255, 0.15), transparent 68%),
+    rgba(255, 255, 255, 0.035);
+}
+
+.glimpse-tool-icon {
+  color: var(--glimpse-cyan);
+}
+
+.glimpse-tool-icon svg {
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+@media (max-width: 1100px) {
+  .glimpse-duality {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .glimpse-duality-center {
+    grid-column: 1 / -1;
+    order: 3;
+  }
+}
+
+@media (max-width: 960px) {
+  .glimpse-two-up,
+  .glimpse-reflection-action,
+  .glimpse-workflow,
+  .glimpse-gallery,
+  .glimpse-related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .glimpse-two-up article + article,
+  .glimpse-action {
+    border-left: 0;
+    border-top: 1px solid var(--glimpse-line);
+  }
+
+  .glimpse-feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .glimpse-flow-map {
+    grid-template-columns: 1fr;
+  }
+
+  .glimpse-flow-map > span {
+    width: 1px;
+    height: 38px;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .glimpse-hero {
+    min-height: 720px;
+    padding-top: 7rem;
+  }
+
+  .glimpse-hero-image {
+    object-position: 70% center;
+  }
+
+  .glimpse-hero::before {
+    background:
+      linear-gradient(90deg, rgba(2, 5, 14, 0.94) 0%, rgba(2, 5, 14, 0.76) 58%, rgba(2, 5, 14, 0.38) 100%),
+      linear-gradient(180deg, rgba(2, 5, 14, 0.12) 0%, #050716 100%);
+  }
+
+  .glimpse-hero-inner,
+  .glimpse-panel,
+  .glimpse-related {
+    width: min(100% - 1.25rem, var(--max));
+  }
+
+  .glimpse-hero-inner {
+    min-height: calc(720px - 7rem);
+    padding: 2rem 0 3rem;
+  }
+
+  .glimpse-hero h1 {
+    font-size: clamp(4.4rem, 20vw, 5.8rem);
+  }
+
+  .glimpse-actions,
+  .glimpse-primary,
+  .glimpse-secondary {
+    width: 100%;
+  }
+
+  .glimpse-feature-grid,
+  .glimpse-duality {
+    grid-template-columns: 1fr;
+  }
+
+  .glimpse-phone-frame {
+    transform: none;
+  }
+
+  .glimpse-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .glimpse-gallery img {
+    width: min(100%, 132px);
   }
 }
