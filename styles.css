@@ -2770,11 +2770,27 @@ h2 {
   gap: 0.7rem;
 }
 
-.craft-grid article {
+.craft-grid article,
+.craft-card {
   overflow: hidden;
   border: 1px solid var(--line-soft);
   border-radius: 5px;
   background: #070808;
+}
+
+.craft-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.craft-card:hover,
+.craft-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: rgba(246, 117, 22, 0.7);
+  box-shadow: 0 0 22px rgba(246, 117, 22, 0.16);
 }
 
 .craft-image {
@@ -2784,6 +2800,12 @@ h2 {
     var(--craft-image);
   background-position: var(--craft-position, center);
   background-size: cover;
+  transition: filter 180ms ease;
+}
+
+.craft-card:hover .craft-image,
+.craft-card:focus-visible .craft-image {
+  filter: brightness(1.12);
 }
 
 .id-lanyard {
