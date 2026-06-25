@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-24T22:11:40.512Z",
+  "updated_at": "2026-06-25T00:48:08.314Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "a6e502b",
+      "message": "Add attention philosophy workshop entry",
+      "date": "2026-06-24",
+      "time": "5:11 PM",
+      "timestamp": "2026-06-24T17:11:36-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -891,15 +900,6 @@
       "date": "2026-06-10",
       "time": "12:41 AM",
       "timestamp": "2026-06-10T00:41:59-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "5287b53",
-      "message": "Update ELE hero links",
-      "date": "2026-06-09",
-      "time": "11:41 PM",
-      "timestamp": "2026-06-09T23:41:47-05:00"
     }
   ]
 }
