@@ -4147,6 +4147,7 @@ h2 {
   height: 62px;
   margin-top: -0.25rem;
   margin-bottom: 0.55rem;
+  background: transparent;
   filter: drop-shadow(0 0 16px rgba(155, 227, 63, 0.28));
 }
 
