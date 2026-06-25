@@ -386,9 +386,8 @@ h2 {
 
 .tempo .project-mark img {
   display: block;
-  width: min(168px, 92%);
-  height: auto;
-  max-height: 88px;
+  width: 86px;
+  height: 86px;
   object-fit: contain;
   filter: drop-shadow(0 0 18px rgba(155, 227, 63, 0.34));
 }
@@ -1221,10 +1220,9 @@ h2 {
 }
 
 .world-tempo .world-media img {
-  max-width: min(82%, 230px);
-  max-height: 128px;
-  border-radius: 4px;
-  filter: drop-shadow(0 0 22px rgba(155, 227, 63, 0.22));
+  max-width: 122px;
+  max-height: 122px;
+  filter: drop-shadow(0 0 22px rgba(155, 227, 63, 0.28));
 }
 
 .world-nova .world-media {
@@ -4049,12 +4047,9 @@ h2 {
   color: #9be33f;
 }
 
-.about-world-card.tempo-card {
-  grid-template-columns: 148px minmax(0, 1fr);
-}
-
 .about-world-card.tempo-card img {
-  width: min(100%, 160px);
+  width: 86px;
+  justify-self: center;
   filter: drop-shadow(0 0 18px rgba(155, 227, 63, 0.26));
 }
 
@@ -7767,8 +7762,8 @@ a.build-log-project:focus-visible {
 
 .tempo-hero-logo {
   display: block;
-  width: clamp(10rem, 22vw, 18rem);
-  max-height: 86px;
+  width: clamp(3.8rem, 7vw, 5.4rem);
+  height: clamp(3.8rem, 7vw, 5.4rem);
   margin-bottom: 1.35rem;
   object-fit: contain;
   object-position: left center;
@@ -8206,7 +8201,8 @@ a.build-log-project:focus-visible {
   }
 
   .tempo-hero-logo {
-    width: min(72vw, 15rem);
+    width: 4.35rem;
+    height: 4.35rem;
   }
 
   .tempo-actions,
