@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-25T09:13:00.328Z",
+  "updated_at": "2026-06-25T09:13:55.905Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "5ab70bf",
+      "message": "Include Scriptorium in Workshop build activity",
+      "date": "2026-06-25",
+      "time": "4:13 AM",
+      "timestamp": "2026-06-25T04:13:52-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -846,15 +855,6 @@
       "date": "2026-06-14",
       "time": "12:18 AM",
       "timestamp": "2026-06-14T00:18:56-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "0ba08a2",
-      "message": "Update Continuo preview CTA",
-      "date": "2026-06-11",
-      "time": "1:20 AM",
-      "timestamp": "2026-06-11T01:20:10-05:00"
     },
     {
       "project": "Continuo",
