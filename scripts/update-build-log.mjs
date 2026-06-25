@@ -50,25 +50,7 @@ function formatTime(timestamp) {
   return timeFormatter.format(new Date(timestamp));
 }
 
-function readGit(repoPath, args) {
-  return execFileSync("git", args, {
-    cwd: repoPath,
-    encoding: "utf8",
-    stdio: ["ignore", "pipe", "pipe"],
-  }).trim();
-}
-
-function resolveLogRef(repoPath) {
-  try {
-    const upstream = readGit(repoPath, ["rev-parse", "--abbrev-ref", "--symbolic-full-name", "@{u}"]);
-
-    if (upstream) {
-      return upstream;
-    }
-  } catch {
-    // Repos without an upstream still contribute their local HEAD.
-  }
-
+function resolveLogRef() {
   return "HEAD";
 }
 
