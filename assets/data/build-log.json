@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-25T12:06:24.732Z",
+  "updated_at": "2026-06-25T12:22:33.358Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "54abcbf",
+      "message": "Pin Scriptorium dev server port",
+      "date": "2026-06-25",
+      "time": "7:22 AM",
+      "timestamp": "2026-06-25T07:22:13-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -756,15 +765,6 @@
       "date": "2026-06-16",
       "time": "4:37 PM",
       "timestamp": "2026-06-16T16:37:46-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "fa9edea",
-      "message": "Polish Designing Continuity hero",
-      "date": "2026-06-16",
-      "time": "4:25 PM",
-      "timestamp": "2026-06-16T16:25:23-05:00"
     },
     {
       "project": "Continuo",
