@@ -8,6 +8,7 @@ const repos = [
   { repo: "Echo", path: "C:\\Users\\Angel\\Documents\\Echo" },
   { repo: "Glimpse", path: "C:\\Users\\Angel\\Documents\\Glimpse 2" },
   { repo: "Tempo", path: "C:\\Users\\Angel\\Documents\\Tempo" },
+  { repo: "scriptorium", path: "C:\\Users\\Angel\\Documents\\scriptorium" },
   { repo: "angelgalindez-com", path: rootDir },
   { repo: "elesurvival-shopify", path: "C:\\Users\\Angel\\Documents\\elesurvival-shopify" },
 ];

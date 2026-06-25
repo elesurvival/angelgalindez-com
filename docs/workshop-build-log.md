@@ -10,6 +10,7 @@ The update script scans these local project names when they are available:
 - Echo
 - Glimpse
 - Tempo
+- Scriptorium
 - AngelGalindez.com
 - ELE Survival Shopify
 

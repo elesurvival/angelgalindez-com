@@ -16,6 +16,7 @@ const repos = [
   { project: "Echo", repo: "Echo", path: "C:\\Users\\Angel\\Documents\\Echo" },
   { project: "Glimpse", repo: "Glimpse", path: "C:\\Users\\Angel\\Documents\\Glimpse 2" },
   { project: "Tempo", repo: "Tempo", path: "C:\\Users\\Angel\\Documents\\Tempo" },
+  { project: "Scriptorium", repo: "scriptorium", path: "C:\\Users\\Angel\\Documents\\scriptorium" },
   {
     project: "AngelGalindez.com",
     repo: "angelgalindez-com",
