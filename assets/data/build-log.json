@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-26T22:56:07.775Z",
+  "updated_at": "2026-06-26T23:49:15.413Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "37ffb7d",
+      "message": "Add Scriptorium notebook typography settings",
+      "date": "2026-06-26",
+      "time": "6:48 PM",
+      "timestamp": "2026-06-26T18:48:37-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -729,15 +738,6 @@
       "date": "2026-06-21",
       "time": "6:45 PM",
       "timestamp": "2026-06-21T18:45:00-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "29fe7d7",
-      "message": "Remove obsolete plain lyric files",
-      "date": "2026-06-21",
-      "time": "6:32 PM",
-      "timestamp": "2026-06-21T18:32:26-05:00"
     },
     {
       "project": "Continuo",
