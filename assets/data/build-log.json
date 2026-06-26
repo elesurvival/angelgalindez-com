@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-25T23:59:29.876Z",
+  "updated_at": "2026-06-26T00:40:32.216Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "8b2bc55",
+      "message": "Polish Scriptorium admin fidelity",
+      "date": "2026-06-25",
+      "time": "7:40 PM",
+      "timestamp": "2026-06-25T19:40:14-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -729,15 +738,6 @@
       "date": "2026-06-17",
       "time": "12:08 AM",
       "timestamp": "2026-06-17T00:08:50-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "d1a1a16",
-      "message": "Align homepage workshop card links",
-      "date": "2026-06-16",
-      "time": "11:47 PM",
-      "timestamp": "2026-06-16T23:47:27-05:00"
     },
     {
       "project": "Continuo",
