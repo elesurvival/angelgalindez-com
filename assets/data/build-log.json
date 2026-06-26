@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-26T22:16:16.664Z",
+  "updated_at": "2026-06-26T22:56:07.775Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "d661ba7",
+      "message": "Apply Quentin and Daniel notebook typography",
+      "date": "2026-06-26",
+      "time": "5:55 PM",
+      "timestamp": "2026-06-26T17:55:39-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -729,15 +738,6 @@
       "date": "2026-06-21",
       "time": "6:32 PM",
       "timestamp": "2026-06-21T18:32:26-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "d7afe8e",
-      "message": "Polish Quantum Flux player controls",
-      "date": "2026-06-21",
-      "time": "6:27 PM",
-      "timestamp": "2026-06-21T18:27:56-05:00"
     },
     {
       "project": "Continuo",
