@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-26T21:50:30.166Z",
+  "updated_at": "2026-06-26T22:16:16.664Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "fb999d3",
+      "message": "Split notebook handwriting fonts",
+      "date": "2026-06-26",
+      "time": "5:15 PM",
+      "timestamp": "2026-06-26T17:15:13-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -729,15 +738,6 @@
       "date": "2026-06-21",
       "time": "6:27 PM",
       "timestamp": "2026-06-21T18:27:56-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "5180b56",
-      "message": "Fix duplicated LRC lyric rows",
-      "date": "2026-06-21",
-      "time": "5:40 PM",
-      "timestamp": "2026-06-21T17:40:46-05:00"
     },
     {
       "project": "Continuo",
