@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-26T01:56:23.835Z",
+  "updated_at": "2026-06-26T02:54:52.443Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "5350353",
+      "message": "Make Scriptorium admin notebook-first",
+      "date": "2026-06-25",
+      "time": "9:53 PM",
+      "timestamp": "2026-06-25T21:53:02-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -729,15 +738,6 @@
       "date": "2026-06-17",
       "time": "1:07 AM",
       "timestamp": "2026-06-17T01:07:47-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "ff00dc6",
-      "message": "Link workshop entrepreneurship card",
-      "date": "2026-06-17",
-      "time": "12:21 AM",
-      "timestamp": "2026-06-17T00:21:54-05:00"
     },
     {
       "project": "Continuo",
