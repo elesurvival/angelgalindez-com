@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-27T05:40:50.873Z",
+  "updated_at": "2026-06-27T06:36:23.976Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "a62a04e",
+      "message": "Simplify Scriptorium semantic blocks",
+      "date": "2026-06-27",
+      "time": "1:35 AM",
+      "timestamp": "2026-06-27T01:35:19-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -639,15 +648,6 @@
       "date": "2026-06-22",
       "time": "7:58 PM",
       "timestamp": "2026-06-22T19:58:30-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "d907dd7",
-      "message": "Add Workshop build activity section",
-      "date": "2026-06-22",
-      "time": "7:35 PM",
-      "timestamp": "2026-06-22T19:35:18-05:00"
     },
     {
       "project": "Continuo",
