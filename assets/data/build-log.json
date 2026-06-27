@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-27T03:21:57.225Z",
+  "updated_at": "2026-06-27T04:38:14.121Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "a400bd4",
+      "message": "Add Scriptorium image placement controls",
+      "date": "2026-06-26",
+      "time": "11:37 PM",
+      "timestamp": "2026-06-26T23:37:40-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -729,15 +738,6 @@
       "date": "2026-06-21",
       "time": "10:31 PM",
       "timestamp": "2026-06-21T22:31:15-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "210d3e1",
-      "message": "Update Echo hero image",
-      "date": "2026-06-21",
-      "time": "10:04 PM",
-      "timestamp": "2026-06-21T22:04:23-05:00"
     },
     {
       "project": "Continuo",
