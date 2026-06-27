@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-27T08:53:58.066Z",
+  "updated_at": "2026-06-27T09:51:57.446Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "76702dd",
+      "message": "Add Scriptorium list typography settings",
+      "date": "2026-06-27",
+      "time": "4:51 AM",
+      "timestamp": "2026-06-27T04:51:25-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-10",
       "time": "1:13 AM",
       "timestamp": "2026-06-10T01:13:01-05:00"
-    },
-    {
-      "project": "ELE Survival Shopify",
-      "repo": "elesurvival-shopify",
-      "hash": "23f3bd2",
-      "message": "Add custom ELE about page",
-      "date": "2026-06-10",
-      "time": "1:02 AM",
-      "timestamp": "2026-06-10T01:02:36-05:00"
     }
   ]
 }
