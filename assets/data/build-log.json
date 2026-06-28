@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-28T10:22:00.219Z",
+  "updated_at": "2026-06-28T11:27:51.172Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "8f65d2a",
+      "message": "Promote Scriptorium typography to sidebar tool",
+      "date": "2026-06-28",
+      "time": "6:27 AM",
+      "timestamp": "2026-06-28T06:27:05-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -684,15 +693,6 @@
       "date": "2026-06-22",
       "time": "10:54 PM",
       "timestamp": "2026-06-22T22:54:40-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "24c314c",
-      "message": "Fix build activity anchor navigation",
-      "date": "2026-06-22",
-      "time": "10:20 PM",
-      "timestamp": "2026-06-22T22:20:43-05:00"
     },
     {
       "project": "Continuo",
