@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-28T21:19:38.671Z",
+  "updated_at": "2026-06-28T22:09:49.091Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "580a873",
+      "message": "Add Scriptorium decoration asset cleanup",
+      "date": "2026-06-28",
+      "time": "5:09 PM",
+      "timestamp": "2026-06-28T17:09:10-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-11",
       "time": "12:56 AM",
       "timestamp": "2026-06-11T00:56:02-05:00"
-    },
-    {
-      "project": "Continuo",
-      "repo": "Continuo",
-      "hash": "b1c6e60",
-      "message": "Allow preview tunnel hostname",
-      "date": "2026-06-10",
-      "time": "11:54 PM",
-      "timestamp": "2026-06-10T23:54:12-05:00"
     }
   ]
 }
