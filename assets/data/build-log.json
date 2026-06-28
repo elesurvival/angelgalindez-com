@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-28T08:32:16.642Z",
+  "updated_at": "2026-06-28T09:15:44.516Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "3617e7d",
+      "message": "Fix Scriptorium typography save behavior",
+      "date": "2026-06-28",
+      "time": "4:15 AM",
+      "timestamp": "2026-06-28T04:15:12-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -675,15 +684,6 @@
       "date": "2026-06-22",
       "time": "10:20 PM",
       "timestamp": "2026-06-22T22:20:43-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "0ba160a",
-      "message": "Add homepage build activity teaser",
-      "date": "2026-06-22",
-      "time": "9:36 PM",
-      "timestamp": "2026-06-22T21:36:56-05:00"
     },
     {
       "project": "Continuo",
