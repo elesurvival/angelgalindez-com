@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-29T05:57:46.367Z",
+  "updated_at": "2026-06-29T06:35:20.843Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "5a08c65",
+      "message": "Fix Live Notebook visible page size parity",
+      "date": "2026-06-29",
+      "time": "1:34 AM",
+      "timestamp": "2026-06-29T01:34:36-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -756,15 +765,6 @@
       "date": "2026-06-23",
       "time": "4:45 AM",
       "timestamp": "2026-06-23T04:45:42-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "4432f12",
-      "message": "Add Echo feature preview modal",
-      "date": "2026-06-23",
-      "time": "4:30 AM",
-      "timestamp": "2026-06-23T04:30:02-05:00"
     },
     {
       "project": "Continuo",
