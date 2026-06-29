@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-29T21:35:47.804Z",
+  "updated_at": "2026-06-29T22:10:58.986Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "943a3ee",
+      "message": "Remove Live Notebook helper card",
+      "date": "2026-06-29",
+      "time": "5:10 PM",
+      "timestamp": "2026-06-29T17:10:54-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -702,15 +711,6 @@
       "date": "2026-06-24",
       "time": "7:48 PM",
       "timestamp": "2026-06-24T19:48:05-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "a6e502b",
-      "message": "Add attention philosophy workshop entry",
-      "date": "2026-06-24",
-      "time": "5:11 PM",
-      "timestamp": "2026-06-24T17:11:36-05:00"
     },
     {
       "project": "Glimpse",
