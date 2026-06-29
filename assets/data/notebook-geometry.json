@@ -1,0 +1,21 @@
+{
+  "source": "scriptorium",
+  "generatedFrom": "apps/web/src/shared/notebookGeometry.ts",
+  "geometry": {
+    "shellWidthPx": 1174,
+    "shellHeightPx": 690,
+    "aspectRatio": "1174 / 690",
+    "gutterWidthPx": 18,
+    "shellPaddingTopRem": 1.05,
+    "shellPaddingInlineRem": 1.08,
+    "shellPaddingBottomRem": 1.18,
+    "pageSafeTopRem": 3,
+    "pageSafeBottomRem": 3.25,
+    "pageSafeOuterRem": 3,
+    "pageSafeInnerRem": 4.75,
+    "titleSizePx": 48,
+    "titleLineHeight": 1.08,
+    "bodySizePx": 16,
+    "bodyLineHeight": 1.68
+  }
+}

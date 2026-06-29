@@ -8238,23 +8238,23 @@ a.build-log-project:focus-visible {
 }
 
 .live-notebook-scene {
-  --live-notebook-shell-width: 1174px;
-  --live-notebook-shell-height: 690px;
-  --live-notebook-gutter-width: 18px;
-  --live-notebook-shell-padding-top: 1.05rem;
-  --live-notebook-shell-padding-inline: 1.08rem;
-  --live-notebook-shell-padding-bottom: 1.18rem;
-  --live-notebook-page-safe-top: 3rem;
-  --live-notebook-page-safe-bottom: 3.25rem;
-  --live-notebook-page-safe-outer: 3rem;
-  --live-notebook-page-safe-inner: 4.75rem;
-  --live-notebook-title-size: 48px;
-  --live-notebook-title-line-height: 1.08;
+  --live-notebook-shell-width: var(--notebook-publish-shell-width);
+  --live-notebook-shell-height: var(--notebook-publish-shell-height);
+  --live-notebook-gutter-width: var(--notebook-publish-gutter-width);
+  --live-notebook-shell-padding-top: var(--notebook-publish-shell-padding-top);
+  --live-notebook-shell-padding-inline: var(--notebook-publish-shell-padding-inline);
+  --live-notebook-shell-padding-bottom: var(--notebook-publish-shell-padding-bottom);
+  --live-notebook-page-safe-top: var(--notebook-publish-page-safe-top);
+  --live-notebook-page-safe-bottom: var(--notebook-publish-page-safe-bottom);
+  --live-notebook-page-safe-outer: var(--notebook-publish-page-safe-outer);
+  --live-notebook-page-safe-inner: var(--notebook-publish-page-safe-inner);
+  --live-notebook-title-size: var(--notebook-publish-title-size);
+  --live-notebook-title-line-height: var(--notebook-publish-title-line-height);
   --live-notebook-title-spacing: 1.12rem;
   --live-notebook-meta-size: 18.56px;
   --live-notebook-meta-spacing: 1rem;
-  --live-notebook-body-size: 16px;
-  --live-notebook-body-line-height: 1.68;
+  --live-notebook-body-size: var(--notebook-publish-body-size);
+  --live-notebook-body-line-height: var(--notebook-publish-body-line-height);
   --live-notebook-reader-max: 1560px;
   color: #f7f1e2;
   isolation: isolate;
@@ -8328,7 +8328,7 @@ a.build-log-project:focus-visible {
 }
 
 .live-notebook-spread {
-  aspect-ratio: 1174 / 690;
+  aspect-ratio: var(--notebook-publish-aspect-ratio);
   background:
     radial-gradient(ellipse at 50% 102%, rgba(0, 0, 0, 0.3), transparent 54%),
     linear-gradient(180deg, rgba(255, 220, 148, 0.04), transparent 14%, rgba(0, 0, 0, 0.2)),
