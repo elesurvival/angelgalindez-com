@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-29T05:12:47.513Z",
+  "updated_at": "2026-06-29T05:57:46.367Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "13a370a",
+      "message": "Match Live Notebook to Admin size without touching Admin",
+      "date": "2026-06-29",
+      "time": "12:57 AM",
+      "timestamp": "2026-06-29T00:57:15-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-14",
       "time": "2:23 AM",
       "timestamp": "2026-06-14T02:23:27-05:00"
-    },
-    {
-      "project": "Continuo",
-      "repo": "Continuo",
-      "hash": "5c87a1b",
-      "message": "Fix New Entry menu clipping",
-      "date": "2026-06-14",
-      "time": "1:12 AM",
-      "timestamp": "2026-06-14T01:12:06-05:00"
     }
   ]
 }
