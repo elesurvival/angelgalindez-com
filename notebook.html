@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The hidden Live Notebook for Scriptorium notes published by Angel Galindez.">
+  <title>Live Notebook | Angel Galindez</title>
+  <link rel="stylesheet" href="/styles.css?v=20260629a">
+  <link rel="stylesheet" href="/assets/css/global-music-player.css?v=20260621c">
+  <link rel="stylesheet" href="/assets/css/qf-lyrics.css?v=20260621">
+  <link rel="stylesheet" href="/assets/css/qf-library.css?v=20260621">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/logos/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/logos/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/logos/apple-touch-icon.png">
+</head>
+<body class="notebook-page-body">
+  <header class="site-header notebook-site-header" aria-label="Main navigation">
+    <a class="brand" href="/" aria-label="Angel Galindez home">AG</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="workshop.html">Workshop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="site-content">
+    <section class="live-notebook-scene" data-live-notebook data-notebook-source="/assets/data/live-notebook.json" aria-labelledby="live-notebook-title">
+      <div class="live-notebook-ambient" aria-hidden="true"></div>
+      <div class="live-notebook-intro">
+        <p class="live-notebook-kicker">Scriptorium Notebook</p>
+        <h1 id="live-notebook-title">Fragments from the bench.</h1>
+        <p data-notebook-subtitle>Published notes from Scriptorium.</p>
+      </div>
+
+      <div class="live-notebook-stage">
+        <article class="live-notebook-spread" aria-live="polite">
+          <section class="live-notebook-page live-notebook-page-left" aria-label="Published notebook note">
+            <p class="live-notebook-note-meta" data-note-meta>Scriptorium · Notebook · Loading</p>
+            <h2 data-note-title>Opening the notebook...</h2>
+            <div class="live-notebook-note-body" data-note-body>
+              <p>Published notes are loading from Scriptorium.</p>
+            </div>
+            <p class="live-notebook-note-foot" data-note-foot>Published from Scriptorium</p>
+          </section>
+
+          <div class="live-notebook-gutter" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+          <aside class="live-notebook-page live-notebook-page-right" aria-label="Notebook publication details">
+            <p class="live-notebook-side-label">Published from the private Admin Notebook.</p>
+            <h3 data-notebook-title>Live Notebook</h3>
+            <ul class="live-notebook-tags" data-note-tags aria-label="Current note tags"></ul>
+            <div class="live-notebook-side-card">
+              <span>Source</span>
+              <strong>Scriptorium</strong>
+              <p>Selected notes allowed to breathe in public.</p>
+            </div>
+          </aside>
+        </article>
+      </div>
+
+      <div class="live-notebook-controls" aria-label="Notebook page controls">
+        <button type="button" data-notebook-prev>Previous</button>
+        <span data-page-count>Page 1 of 1</span>
+        <button type="button" data-notebook-next>Next</button>
+      </div>
+      <p class="live-notebook-status" data-notebook-status role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="/assets/js/qf-tracks.js?v=20260621" defer></script>
+  <script src="/assets/js/global-music-player.js?v=20260621c" defer></script>
+  <script src="/assets/js/qf-lyrics.js?v=20260621b" defer></script>
+  <script src="/assets/js/qf-library.js?v=20260621b" defer></script>
+  <script src="/assets/js/notebook.js?v=20260629a" defer></script>
+  <script src="/assets/js/site-router.js?v=20260623a" defer></script>
+</body>
+</html>

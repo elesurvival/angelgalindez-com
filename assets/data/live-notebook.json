@@ -1,0 +1,48 @@
+{
+  "notebook": {
+    "title": "Live Notebook",
+    "subtitle": "Published notes from Scriptorium.",
+    "updatedAt": "2026-06-29"
+  },
+  "pages": [
+    {
+      "id": "scriptorium-origin",
+      "title": "Why Scriptorium Exists",
+      "date": "2026-06-29",
+      "project": "Scriptorium",
+      "type": "Design Note",
+      "tags": ["scriptorium", "notebook", "publishing"],
+      "body": [
+        "Scriptorium is where scattered thought becomes durable.",
+        "The Admin Notebook is private. The Live Notebook is where selected notes are allowed to breathe in public.",
+        "This page is not a blog. It is the public notebook sitting open on the bench."
+      ]
+    },
+    {
+      "id": "admin-to-live",
+      "title": "Admin Notebook to Live Notebook",
+      "date": "2026-06-29",
+      "project": "Scriptorium",
+      "type": "Architecture Note",
+      "tags": ["admin", "live notebook", "publishing"],
+      "body": [
+        "The Admin Notebook is the authoring surface.",
+        "The Live Notebook is the publication surface.",
+        "The two must share the same page geometry so notes created in Admin arrive on the public page without layout surprises."
+      ]
+    },
+    {
+      "id": "workshop-vs-notebook",
+      "title": "Workshop vs Notebook",
+      "date": "2026-06-29",
+      "project": "angelgalindez.com",
+      "type": "Design Note",
+      "tags": ["workshop", "notebook", "site"],
+      "body": [
+        "The Workshop records what was built.",
+        "The Notebook records what was noticed while building.",
+        "One is the artifact. The other is the trail."
+      ]
+    }
+  ]
+}
