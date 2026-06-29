@@ -1,47 +1,91 @@
 {
   "notebook": {
     "title": "Live Notebook",
-    "subtitle": "Ideas, discoveries, wrong turns, and breakthroughs. A notebook of the philosophy behind every commit.",
+    "subtitle": "Published notes from Scriptorium.",
     "updatedAt": "2026-06-29"
   },
   "pages": [
     {
-      "id": "scriptorium-origin",
-      "title": "Why Scriptorium Exists",
-      "date": "2026-06-29",
-      "project": "Scriptorium",
-      "type": "Design Note",
-      "tags": ["scriptorium", "notebook", "publishing"],
+      "id": "why-we-built-tempo-first",
+      "title": "Why We Built Tempo First",
+      "date": "2026-06-23",
+      "project": "Tempo",
+      "type": "Flow",
+      "tags": [
+        "friction",
+        "raw-ideas"
+      ],
       "body": [
-        "Scriptorium is where scattered thought becomes durable.",
-        "The Admin Notebook is private. The Live Notebook is where selected notes are allowed to breathe in public.",
-        "This page is not a blog. It is the public notebook sitting open on the bench."
+        "What is the smallest useful interface for protecting attention?",
+        "Tempo taught us that workflow tools should remove negotiation, not add dashboards.",
+        "A focused ritual can become infrastructure for better work."
       ]
     },
     {
-      "id": "admin-to-live",
-      "title": "Admin Notebook to Live Notebook",
-      "date": "2026-06-29",
-      "project": "Scriptorium",
-      "type": "Architecture Note",
-      "tags": ["admin", "live notebook", "publishing"],
+      "id": "the-listener-becomes-the-phantom",
+      "title": "The Listener Becomes the Phantom",
+      "date": "2026-06-24",
+      "project": "The Locksmith",
+      "type": "Philosophy",
+      "tags": [
+        "craft",
+        "decision",
+        "friction"
+      ],
       "body": [
-        "The Admin Notebook is the authoring surface.",
-        "The Live Notebook is the publication surface.",
-        "The two must share the same page geometry so notes created in Admin arrive on the public page without layout surprises."
+        "Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?",
+        "The Locksmith is not about breaking in. It is about becoming someone who can build anything.",
+        "Every track will represent a stage in the transformation from ordinary to extraordinary.",
+        "When someone presses play, they do not just listen. They step into a different identity.",
+        "One insight rippled through every decision."
       ]
     },
     {
-      "id": "workshop-vs-notebook",
-      "title": "Workshop vs Notebook",
-      "date": "2026-06-29",
-      "project": "angelgalindez.com",
-      "type": "Design Note",
-      "tags": ["workshop", "notebook", "site"],
+      "id": "from-friction-to-flow",
+      "title": "From Friction to Flow",
+      "date": "2026-06-20",
+      "project": "Workshop Philosophy",
+      "type": "Flow",
+      "tags": [
+        "raw-ideas"
+      ],
       "body": [
-        "The Workshop records what was built.",
-        "The Notebook records what was noticed while building.",
-        "One is the artifact. The other is the trail."
+        "Friction is not always bad; unchosen friction is the problem.",
+        "Every removed decision gives attention back to the work that matters.",
+        "kept for later",
+        "Beautiful constraints are a kindness to future focus."
+      ]
+    },
+    {
+      "id": "continuo-isn-t-another-productivity-app",
+      "title": "Continuo Isn’t Another Productivity App",
+      "date": "2026-06-22",
+      "project": "Continuo",
+      "type": "Philosophy",
+      "tags": [
+        "craft",
+        "friction"
+      ],
+      "body": [
+        "Productivity apps often preserve motion instead of meaning.",
+        "Continuo should help people continue the right work, not merely track more work.",
+        "The tool is successful when the user returns to the craft faster."
+      ]
+    },
+    {
+      "id": "cold-boot-defines-the-identity",
+      "title": "Cold Boot Defines the Identity",
+      "date": "2026-06-23",
+      "project": "The Locksmith",
+      "type": "Identity",
+      "tags": [
+        "decision",
+        "friction"
+      ],
+      "body": [
+        "The first sound should feel like a system waking up and remembering its purpose.",
+        "Cold Boot becomes the threshold: before it, potential; after it, commitment.",
+        "Identity lands better when it is introduced as a ritual instead of an explanation."
       ]
     }
   ]
