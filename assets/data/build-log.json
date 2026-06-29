@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-29T11:39:28.016Z",
+  "updated_at": "2026-06-29T12:29:31.857Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "679a9b2",
+      "message": "Fix Admin Notebook geometry",
+      "date": "2026-06-29",
+      "time": "7:28 AM",
+      "timestamp": "2026-06-29T07:28:49-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-15",
       "time": "2:43 AM",
       "timestamp": "2026-06-15T02:43:19-05:00"
-    },
-    {
-      "project": "Continuo",
-      "repo": "Continuo",
-      "hash": "1f1c53a",
-      "message": "Stack login PDF resource links",
-      "date": "2026-06-14",
-      "time": "3:18 AM",
-      "timestamp": "2026-06-14T03:18:59-05:00"
     }
   ]
 }
