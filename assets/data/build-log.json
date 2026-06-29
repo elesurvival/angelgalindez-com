@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-29T02:54:48.982Z",
+  "updated_at": "2026-06-29T04:40:31.907Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "5537efe",
+      "message": "Restore true Scriptorium admin notebook size",
+      "date": "2026-06-28",
+      "time": "11:39 PM",
+      "timestamp": "2026-06-28T23:39:53-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-14",
       "time": "1:12 AM",
       "timestamp": "2026-06-14T01:12:06-05:00"
-    },
-    {
-      "project": "Continuo",
-      "repo": "Continuo",
-      "hash": "400dd51",
-      "message": "Clarify admin password reset flow",
-      "date": "2026-06-14",
-      "time": "12:45 AM",
-      "timestamp": "2026-06-14T00:45:01-05:00"
     }
   ]
 }
