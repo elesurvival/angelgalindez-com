@@ -8229,12 +8229,14 @@ a.build-log-project:focus-visible {
 /* Hidden Scriptorium Live Notebook */
 .notebook-page-body {
   background:
-    radial-gradient(circle at 50% 0%, rgba(42, 72, 58, 0.22), transparent 32rem),
-    linear-gradient(180deg, #050807 0%, #081211 48%, #050706 100%);
+    radial-gradient(circle at 72% 6%, rgba(213, 162, 72, 0.16), transparent 20rem),
+    radial-gradient(circle at 25% 20%, rgba(46, 70, 57, 0.25), transparent 24rem),
+    linear-gradient(180deg, #030606 0%, #08100f 45%, #050504 100%);
 }
 
 .notebook-site-header {
-  background: rgba(3, 7, 7, 0.82);
+  background: rgba(2, 5, 5, 0.86);
+  border-bottom: 1px solid rgba(219, 176, 91, 0.16);
 }
 
 .live-notebook-scene {
@@ -8255,42 +8257,92 @@ a.build-log-project:focus-visible {
   --live-notebook-meta-spacing: 1rem;
   --live-notebook-body-size: var(--notebook-publish-body-size);
   --live-notebook-body-line-height: var(--notebook-publish-body-line-height);
-  --live-notebook-reader-max: 1560px;
+  --live-notebook-reader-max: 1600px;
   color: #f7f1e2;
   isolation: isolate;
   min-height: calc(100vh - 5.5rem);
-  overflow: hidden;
-  padding: clamp(7rem, 12vw, 9rem) clamp(1rem, 3vw, 2.5rem) 8rem;
+  overflow-x: clip;
+  padding: clamp(6.25rem, 9vw, 7.75rem) clamp(1rem, 3vw, 2.6rem) 4.5rem;
   position: relative;
 }
 
 .live-notebook-ambient {
   background:
-    radial-gradient(circle at 50% 48%, rgba(220, 180, 96, 0.14), transparent 23rem),
-    radial-gradient(circle at 18% 24%, rgba(69, 118, 91, 0.18), transparent 18rem),
-    radial-gradient(circle at 78% 16%, rgba(218, 168, 76, 0.13), transparent 17rem),
-    linear-gradient(120deg, rgba(0, 0, 0, 0.88), transparent 28%, rgba(0, 0, 0, 0.82)),
+    radial-gradient(circle at 86% 14%, rgba(230, 175, 76, 0.28), transparent 9rem),
+    radial-gradient(circle at 50% 38%, rgba(217, 176, 96, 0.12), transparent 30rem),
+    linear-gradient(120deg, rgba(0, 0, 0, 0.86), transparent 35%, rgba(0, 0, 0, 0.82)),
     repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 5px),
-    linear-gradient(135deg, #0d1714, #050605 58%, #130d08);
+    linear-gradient(135deg, #0b1512, #050605 56%, #140e09);
   inset: 0;
-  opacity: 0.96;
+  opacity: 0.98;
   position: absolute;
-  z-index: -2;
+  z-index: -3;
 }
 
 .live-notebook-ambient::after {
   background:
-    radial-gradient(ellipse at 50% 116%, rgba(0, 0, 0, 0.6), transparent 44%),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.72), transparent 28%, transparent 72%, rgba(0, 0, 0, 0.72));
+    radial-gradient(ellipse at 50% 104%, rgba(0, 0, 0, 0.56), transparent 42%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.76), transparent 30%, transparent 72%, rgba(0, 0, 0, 0.72));
   content: "";
   inset: 0;
   position: absolute;
 }
 
+.live-notebook-workbench {
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: -2;
+}
+
+.live-prop {
+  display: block;
+  opacity: 0.58;
+  position: absolute;
+}
+
+.live-prop-pen {
+  background: linear-gradient(90deg, #1b1712, #d2a24e 18%, #111 23% 76%, #d2a24e 82%, #080808);
+  border-radius: 999px;
+  box-shadow: 0 9px 28px rgba(0, 0, 0, 0.48);
+  height: 0.56rem;
+  left: 43%;
+  top: 8.6rem;
+  transform: rotate(-29deg);
+  width: 13rem;
+}
+
+.live-prop-mug {
+  border: 2px solid rgba(214, 165, 80, 0.18);
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 0 1.1rem rgba(0, 0, 0, 0.36),
+    inset 0 0 2.6rem rgba(222, 176, 93, 0.12);
+  height: 9rem;
+  left: 56%;
+  top: 4.2rem;
+  width: 9rem;
+}
+
+.live-prop-lamp {
+  background:
+    radial-gradient(circle, rgba(252, 188, 78, 0.72), rgba(252, 188, 78, 0.18) 28%, transparent 62%),
+    linear-gradient(90deg, transparent 46%, rgba(255, 213, 128, 0.76) 49% 51%, transparent 54%);
+  filter: blur(0.4px);
+  height: 14rem;
+  right: -0.5rem;
+  top: 4.8rem;
+  width: 9rem;
+}
+
 .live-notebook-intro {
-  margin: 0 auto 1.4rem;
+  align-items: end;
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  grid-template-columns: minmax(0, 0.9fr) minmax(20rem, 0.64fr);
+  margin: 0 auto 1.9rem;
   max-width: var(--live-notebook-reader-max);
-  text-align: center;
 }
 
 .live-notebook-kicker,
@@ -8306,18 +8358,213 @@ a.build-log-project:focus-visible {
 
 .live-notebook-intro h1 {
   color: #f8f3e8;
-  font-family: var(--display, Impact, sans-serif);
-  font-size: clamp(2.7rem, 6vw, 6rem);
+  font-family: var(--display, Georgia, serif);
+  font-size: clamp(3.2rem, 6vw, 6.25rem);
   font-weight: 400;
   letter-spacing: 0;
   line-height: 0.92;
-  margin: 0.45rem 0 0.55rem;
+  margin: 0.45rem 0 0.7rem;
+  max-width: 12ch;
 }
 
 .live-notebook-intro p:last-child {
-  color: rgba(247, 241, 226, 0.74);
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: rgba(247, 241, 226, 0.78);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(1rem, 1.45vw, 1.18rem);
+  line-height: 1.6;
   margin: 0;
+  max-width: 43rem;
+}
+
+.live-notebook-principles {
+  background: rgba(5, 8, 7, 0.54);
+  border: 1px solid rgba(220, 176, 92, 0.28);
+  border-radius: 8px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 235, 180, 0.08),
+    0 22px 50px rgba(0, 0, 0, 0.28);
+  display: grid;
+  gap: 1rem 1.45rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 1.35rem 1.5rem;
+}
+
+.live-notebook-principles span {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.live-notebook-principles strong {
+  color: #f4ebd8;
+  font-family: var(--mono, "Courier New", monospace);
+  font-size: 0.82rem;
+}
+
+.live-notebook-principles em {
+  color: rgba(247, 241, 226, 0.72);
+  font-family: var(--mono, "Courier New", monospace);
+  font-size: 0.72rem;
+  font-style: normal;
+  line-height: 1.55;
+}
+
+.live-notebook-desk {
+  align-items: end;
+  display: grid;
+  gap: clamp(1rem, 2.1vw, 1.65rem);
+  grid-template-columns: minmax(17rem, 22.75rem) minmax(0, var(--live-notebook-shell-width));
+  margin: 0 auto;
+  max-width: var(--live-notebook-reader-max);
+}
+
+.live-notebook-browser {
+  align-self: stretch;
+  background:
+    linear-gradient(180deg, rgba(38, 29, 20, 0.78), rgba(8, 12, 11, 0.92)),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04), transparent);
+  border: 1px solid rgba(210, 162, 82, 0.24);
+  border-radius: 10px;
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.34),
+    0 24px 60px rgba(0, 0, 0, 0.34);
+  color: #f4ebd8;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 0.7rem;
+}
+
+.live-browser-tabs {
+  align-items: end;
+  display: flex;
+  gap: 0.12rem;
+  margin: 0 0 -1px 0.45rem;
+}
+
+.live-browser-tabs button {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(210, 162, 82, 0.2);
+  border-bottom-color: rgba(210, 162, 82, 0.12);
+  border-radius: 6px 6px 0 0;
+  color: rgba(247, 241, 226, 0.86);
+  font: inherit;
+  padding: 0.85rem 1.05rem;
+}
+
+.live-browser-tabs button.is-active {
+  background: #d7bd82;
+  color: #17100a;
+}
+
+.live-browser-tabs button:disabled {
+  opacity: 0.72;
+}
+
+.live-browser-panel {
+  background: rgba(5, 9, 9, 0.76);
+  border: 1px solid rgba(210, 162, 82, 0.22);
+  border-radius: 8px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 27rem;
+  padding: 1rem;
+}
+
+.live-browser-heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
+}
+
+.live-browser-heading p {
+  color: #d9ad57;
+  font-family: var(--mono, "Courier New", monospace);
+  font-size: 0.76rem;
+  letter-spacing: 0.13em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.live-browser-heading span {
+  background: rgba(216, 174, 91, 0.16);
+  border: 1px solid rgba(216, 174, 91, 0.24);
+  border-radius: 999px;
+  color: #edc56e;
+  font-family: var(--mono, "Courier New", monospace);
+  font-size: 0.72rem;
+  padding: 0.12rem 0.48rem;
+}
+
+.live-browser-search {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  color: rgba(247, 241, 226, 0.48);
+  font-family: var(--mono, "Courier New", monospace);
+  font-size: 0.76rem;
+  margin-bottom: 0.9rem;
+  padding: 0.82rem 0.92rem;
+}
+
+.live-entry-list {
+  display: grid;
+  gap: 0.46rem;
+  max-height: 31rem;
+  overflow: auto;
+  padding-right: 0.22rem;
+}
+
+.live-entry-button {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 6px;
+  color: #f4ebd8;
+  cursor: pointer;
+  display: grid;
+  gap: 0.18rem;
+  padding: 0.86rem 0.9rem;
+  text-align: left;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.live-entry-button:hover,
+.live-entry-button:focus-visible {
+  border-color: rgba(224, 180, 94, 0.48);
+  box-shadow: inset 3px 0 0 rgba(224, 180, 94, 0.65);
+}
+
+.live-entry-button[aria-current="page"] {
+  background: linear-gradient(110deg, rgba(213, 169, 83, 0.22), rgba(255, 255, 255, 0.035));
+  border-color: rgba(224, 180, 94, 0.84);
+}
+
+.live-entry-date,
+.live-entry-meta,
+.live-entry-empty {
+  color: rgba(247, 241, 226, 0.58);
+  font-family: var(--mono, "Courier New", monospace);
+  font-size: 0.68rem;
+}
+
+.live-entry-button strong {
+  color: #fff4dc;
+  font-family: var(--mono, "Courier New", monospace);
+  font-size: 0.88rem;
+  line-height: 1.25;
+}
+
+.live-entry-empty {
+  line-height: 1.6;
+  margin: 0;
+}
+
+.live-notebook-main {
+  min-width: 0;
+  position: relative;
 }
 
 .live-notebook-stage {
@@ -8325,6 +8572,18 @@ a.build-log-project:focus-visible {
   max-width: var(--live-notebook-shell-width);
   position: relative;
   width: min(100%, var(--live-notebook-shell-width));
+}
+
+.live-notebook-stage::before {
+  background:
+    radial-gradient(ellipse at 50% 100%, rgba(0, 0, 0, 0.48), transparent 58%),
+    linear-gradient(90deg, rgba(35, 24, 16, 0.75), rgba(16, 13, 10, 0.9));
+  border: 1px solid rgba(216, 174, 91, 0.2);
+  border-radius: 18px;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.45);
+  content: "";
+  inset: -0.55rem;
+  position: absolute;
 }
 
 .live-notebook-spread {
@@ -8572,40 +8831,76 @@ a.build-log-project:focus-visible {
   margin: 0;
 }
 
+.live-notebook-edge-tabs {
+  display: grid;
+  gap: 0.65rem;
+  position: absolute;
+  right: -2.15rem;
+  top: 21%;
+  z-index: 4;
+}
+
+.live-notebook-edge-tabs span {
+  background: linear-gradient(90deg, #b69954, #d0b574);
+  border: 1px solid rgba(47, 32, 18, 0.34);
+  border-radius: 0 7px 7px 0;
+  box-shadow: 5px 8px 18px rgba(0, 0, 0, 0.22);
+  color: #2b1d10;
+  font-family: "Segoe Print", "Bradley Hand ITC", cursive;
+  font-size: 0.76rem;
+  padding: 1.05rem 0.38rem;
+  transform: translateX(0);
+  writing-mode: vertical-rl;
+}
+
+.live-notebook-edge-tabs span:nth-child(2) {
+  background: linear-gradient(90deg, #9aa5a2, #c5d0c7);
+}
+
+.live-notebook-edge-tabs span:nth-child(3) {
+  background: linear-gradient(90deg, #8d9560, #b7bf7f);
+}
+
 .live-notebook-controls {
   align-items: center;
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin: 1.15rem auto 0;
+  background: rgba(4, 8, 8, 0.82);
+  border: 1px solid rgba(210, 162, 82, 0.22);
+  border-radius: 8px;
+  box-shadow: inset 0 1px 0 rgba(255, 235, 180, 0.05);
+  display: grid;
+  gap: 0;
+  grid-template-columns: 1.1fr 1fr auto 1fr auto auto;
+  margin: 0.95rem auto 0;
+  max-width: var(--live-notebook-shell-width);
+  overflow: hidden;
 }
 
 .live-notebook-controls button {
-  background: rgba(6, 12, 11, 0.74);
-  border: 1px solid rgba(220, 176, 92, 0.5);
-  border-radius: 6px;
+  background: transparent;
+  border: 0;
+  border-right: 1px solid rgba(210, 162, 82, 0.18);
   color: #f1c267;
   cursor: pointer;
   font-family: var(--mono, "Courier New", monospace);
   font-size: 0.76rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
-  min-width: 8.5rem;
+  letter-spacing: 0.08em;
+  min-height: 3.2rem;
   padding: 0.86rem 1.1rem;
   text-transform: uppercase;
   transition:
-    border-color 180ms ease,
-    box-shadow 180ms ease,
-    color 180ms ease,
-    transform 180ms ease;
+    background 160ms ease,
+    color 160ms ease;
+}
+
+.live-notebook-controls button:last-child {
+  border-right: 0;
 }
 
 .live-notebook-controls button:not(:disabled):hover,
 .live-notebook-controls button:not(:disabled):focus-visible {
-  border-color: rgba(239, 197, 112, 0.92);
-  box-shadow: 0 0 22px rgba(220, 176, 92, 0.18);
+  background: rgba(224, 180, 94, 0.1);
   color: #ffe0a0;
-  transform: translateY(-1px);
 }
 
 .live-notebook-controls button:disabled {
@@ -8617,15 +8912,49 @@ a.build-log-project:focus-visible {
   color: rgba(247, 241, 226, 0.74);
   font-family: var(--mono, "Courier New", monospace);
   font-size: 0.82rem;
+  padding: 0 1rem;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .live-notebook-status {
   color: #e4b35d;
   font-family: var(--mono, "Courier New", monospace);
   font-size: 0.82rem;
-  margin: 0.75rem 0 0;
+  margin: 0.75rem auto 0;
+  max-width: var(--live-notebook-reader-max);
   min-height: 1.2rem;
   text-align: center;
+}
+
+@media (max-width: 1380px) {
+  .live-notebook-intro,
+  .live-notebook-desk {
+    max-width: 1180px;
+  }
+
+  .live-notebook-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .live-notebook-desk {
+    align-items: stretch;
+    grid-template-columns: 1fr;
+  }
+
+  .live-notebook-browser {
+    max-width: none;
+  }
+
+  .live-browser-panel {
+    min-height: 0;
+  }
+
+  .live-entry-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-height: none;
+    overflow: visible;
+  }
 }
 
 @media (max-width: 900px) {
@@ -8636,6 +8965,21 @@ a.build-log-project:focus-visible {
     --live-notebook-page-safe-outer: 1.35rem;
     --live-notebook-page-safe-inner: 1.35rem;
     padding-top: 6.5rem;
+  }
+
+  .live-notebook-principles {
+    grid-template-columns: 1fr;
+  }
+
+  .live-entry-list {
+    display: flex;
+    margin: 0 -0.2rem;
+    overflow-x: auto;
+    padding: 0 0.2rem 0.35rem;
+  }
+
+  .live-entry-button {
+    flex: 0 0 16rem;
   }
 
   .live-notebook-spread {
@@ -8649,18 +8993,39 @@ a.build-log-project:focus-visible {
     overflow: visible;
   }
 
-  .live-notebook-gutter {
+  .live-notebook-gutter,
+  .live-notebook-edge-tabs {
     display: none;
   }
 
   .live-notebook-page-right {
     margin-top: 0.55rem;
   }
+
+  .live-notebook-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .live-notebook-controls span {
+    border-top: 1px solid rgba(210, 162, 82, 0.18);
+    grid-column: 1 / -1;
+    order: 9;
+    padding: 0.85rem 1rem;
+  }
 }
 
 @media (max-width: 620px) {
   .live-notebook-intro {
     text-align: left;
+  }
+
+  .live-notebook-intro h1 {
+    font-size: clamp(3rem, 18vw, 4.6rem);
+  }
+
+  .live-browser-tabs button {
+    flex: 1;
+    padding-inline: 0.6rem;
   }
 
   .live-notebook-page h2 {
@@ -8672,12 +9037,13 @@ a.build-log-project:focus-visible {
   }
 
   .live-notebook-controls {
-    align-items: stretch;
     display: grid;
     grid-template-columns: 1fr;
   }
 
   .live-notebook-controls button {
+    border-right: 0;
+    border-top: 1px solid rgba(210, 162, 82, 0.18);
     width: 100%;
   }
 }

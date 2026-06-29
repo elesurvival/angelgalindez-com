@@ -8,6 +8,8 @@
 
   const selectors = {
     root: "[data-live-notebook]",
+    entryList: "[data-entry-list]",
+    entryCount: "[data-entry-count]",
     notebookTitle: "[data-notebook-title]",
     notebookSubtitle: "[data-notebook-subtitle]",
     noteMeta: "[data-note-meta]",
@@ -18,6 +20,8 @@
     pageCount: "[data-page-count]",
     previous: "[data-notebook-prev]",
     next: "[data-notebook-next]",
+    share: "[data-share-entry]",
+    print: "[data-print-entry]",
     status: "[data-notebook-status]"
   };
 
@@ -47,6 +51,87 @@
     }
   };
 
+  const getPageHash = () => decodeURIComponent(window.location.hash.replace(/^#/, ""));
+
+  const indexFromHash = () => {
+    const hash = getPageHash();
+    if (!hash) {
+      return -1;
+    }
+
+    return pages.findIndex((page) => page.id === hash);
+  };
+
+  const updateHash = (page) => {
+    if (!page?.id || window.location.hash === `#${page.id}`) {
+      return;
+    }
+
+    window.history.replaceState(null, "", `#${encodeURIComponent(page.id)}`);
+  };
+
+  const renderEntryList = (root) => {
+    const list = root.querySelector(selectors.entryList);
+    const count = root.querySelector(selectors.entryCount);
+
+    if (count) {
+      count.textContent = String(pages.length);
+    }
+
+    if (!list) {
+      return;
+    }
+
+    clearNode(list);
+
+    if (!pages.length) {
+      const empty = document.createElement("p");
+      empty.className = "live-entry-empty";
+      empty.textContent = "This notebook is waiting for its first public note.";
+      list.append(empty);
+      return;
+    }
+
+    pages.forEach((page, index) => {
+      const button = document.createElement("button");
+      button.className = "live-entry-button";
+      button.type = "button";
+      button.setAttribute("role", "listitem");
+      button.dataset.entryIndex = String(index);
+      if (index === currentIndex) {
+        button.setAttribute("aria-current", "page");
+      }
+      button.addEventListener("click", () => {
+        currentIndex = index;
+        renderPage(root);
+      });
+
+      const date = document.createElement("span");
+      date.className = "live-entry-date";
+      date.textContent = formatDate(page.date);
+
+      const title = document.createElement("strong");
+      title.textContent = page.title || "Untitled Note";
+
+      const meta = document.createElement("span");
+      meta.className = "live-entry-meta";
+      meta.textContent = page.project || "Notebook";
+
+      button.append(date, title, meta);
+      list.append(button);
+    });
+  };
+
+  const syncEntrySelection = (root) => {
+    root.querySelectorAll("[data-entry-index]").forEach((entry) => {
+      if (Number(entry.dataset.entryIndex) === currentIndex) {
+        entry.setAttribute("aria-current", "page");
+      } else {
+        entry.removeAttribute("aria-current");
+      }
+    });
+  };
+
   const renderFallback = (root, message) => {
     pages = [];
     currentIndex = 0;
@@ -57,6 +142,7 @@
     setText(root, selectors.noteFoot, "Published from Scriptorium");
     setText(root, selectors.pageCount, "Page 0 of 0");
     setText(root, selectors.status, message || "Build activity will appear here soon.");
+    setText(root, selectors.entryCount, "0");
 
     const body = root.querySelector(selectors.noteBody);
     if (body) {
@@ -69,6 +155,15 @@
     const tags = root.querySelector(selectors.noteTags);
     if (tags) {
       clearNode(tags);
+    }
+
+    const entries = root.querySelector(selectors.entryList);
+    if (entries) {
+      clearNode(entries);
+      const empty = document.createElement("p");
+      empty.className = "live-entry-empty";
+      empty.textContent = "This notebook is waiting for its first public note.";
+      entries.append(empty);
     }
 
     root.querySelector(selectors.previous)?.setAttribute("disabled", "");
@@ -87,6 +182,8 @@
     setText(root, selectors.noteFoot, `Published from Scriptorium · ${page.id || "live-note"}`);
     setText(root, selectors.pageCount, `Page ${currentIndex + 1} of ${pages.length}`);
     setText(root, selectors.status, "");
+    updateHash(page);
+    syncEntrySelection(root);
 
     const body = root.querySelector(selectors.noteBody);
     if (body) {
@@ -131,6 +228,23 @@
   const bindControls = (root) => {
     root.querySelector(selectors.previous)?.addEventListener("click", () => movePage(-1));
     root.querySelector(selectors.next)?.addEventListener("click", () => movePage(1));
+    root.querySelector(selectors.share)?.addEventListener("click", async () => {
+      const page = pages[currentIndex];
+      const url = page?.id
+        ? `${window.location.origin}${window.location.pathname}#${encodeURIComponent(page.id)}`
+        : window.location.href;
+
+      try {
+        await navigator.clipboard.writeText(url);
+        setText(root, selectors.status, "Entry link copied.");
+      } catch (error) {
+        console.warn(error.message);
+        setText(root, selectors.status, url);
+      }
+    });
+    root.querySelector(selectors.print)?.addEventListener("click", () => {
+      window.print();
+    });
   };
 
   const bindKeyboard = () => {
@@ -180,9 +294,10 @@
 
       const data = await response.json();
       pages = Array.isArray(data.pages) ? data.pages : [];
-      currentIndex = 0;
+      currentIndex = Math.max(0, indexFromHash());
       setText(root, selectors.notebookTitle, data.notebook?.title || "Live Notebook");
       setText(root, selectors.notebookSubtitle, data.notebook?.subtitle || "Published notes from Scriptorium.");
+      renderEntryList(root);
       renderPage(root);
     } catch (error) {
       console.warn(error.message);

@@ -6,7 +6,7 @@
   <meta name="description" content="The hidden Live Notebook for Scriptorium notes published by Angel Galindez.">
   <title>Live Notebook | Angel Galindez</title>
   <link rel="stylesheet" href="/assets/css/notebook-geometry.css?v=20260629">
-  <link rel="stylesheet" href="/styles.css?v=20260629a">
+  <link rel="stylesheet" href="/styles.css?v=20260629b">
   <link rel="stylesheet" href="/assets/css/global-music-player.css?v=20260621c">
   <link rel="stylesheet" href="/assets/css/qf-lyrics.css?v=20260621">
   <link rel="stylesheet" href="/assets/css/qf-library.css?v=20260621">
@@ -29,46 +29,90 @@
   <main id="site-content">
     <section class="live-notebook-scene" data-live-notebook data-notebook-source="/assets/data/live-notebook.json" aria-labelledby="live-notebook-title">
       <div class="live-notebook-ambient" aria-hidden="true"></div>
-      <div class="live-notebook-intro">
-        <p class="live-notebook-kicker">Scriptorium Notebook</p>
-        <h1 id="live-notebook-title">Fragments from the bench.</h1>
-        <p data-notebook-subtitle>Published notes from Scriptorium.</p>
+      <div class="live-notebook-workbench" aria-hidden="true">
+        <span class="live-prop live-prop-pen"></span>
+        <span class="live-prop live-prop-mug"></span>
+        <span class="live-prop live-prop-lamp"></span>
       </div>
 
-      <div class="live-notebook-stage">
-        <article class="live-notebook-spread" aria-live="polite">
-          <section class="live-notebook-page live-notebook-page-left" aria-label="Published notebook note">
-            <p class="live-notebook-note-meta" data-note-meta>Scriptorium · Notebook · Loading</p>
-            <h2 data-note-title>Opening the notebook...</h2>
-            <div class="live-notebook-note-body" data-note-body>
-              <p>Published notes are loading from Scriptorium.</p>
-            </div>
-            <p class="live-notebook-note-foot" data-note-foot>Published from Scriptorium</p>
-          </section>
+      <div class="live-notebook-intro">
+        <div>
+          <p class="live-notebook-kicker">Workshop Notebook</p>
+          <h1 id="live-notebook-title">The thinking behind the building.</h1>
+          <p data-notebook-subtitle>Ideas, discoveries, wrong turns, and breakthroughs. A notebook of the philosophy behind every commit.</p>
+        </div>
+        <div class="live-notebook-principles" aria-label="Notebook themes">
+          <span><strong>Raw ideas</strong><em>Unfiltered thoughts and early sparks.</em></span>
+          <span><strong>Wrong turns</strong><em>Dead ends that taught us something.</em></span>
+          <span><strong>Experiments</strong><em>Tests, trials, and what we learned.</em></span>
+          <span><strong>Breakthroughs</strong><em>The ideas that changed the direction.</em></span>
+        </div>
+      </div>
 
-          <div class="live-notebook-gutter" aria-hidden="true">
-            <span></span><span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span><span></span>
+      <div class="live-notebook-desk">
+        <aside class="live-notebook-browser" aria-label="Notebook entries">
+          <div class="live-browser-tabs" aria-label="Notebook browser views">
+            <button class="is-active" type="button">All Entries</button>
+            <button type="button" disabled>Projects</button>
+            <button type="button" disabled>Themes</button>
+          </div>
+          <div class="live-browser-panel">
+            <div class="live-browser-heading">
+              <p>Notebook Entries</p>
+              <span data-entry-count>0</span>
+            </div>
+            <div class="live-browser-search" aria-hidden="true">
+              <span>Search the bench notes</span>
+            </div>
+            <div class="live-entry-list" data-entry-list role="list"></div>
+          </div>
+        </aside>
+
+        <div class="live-notebook-main">
+          <div class="live-notebook-stage">
+            <article class="live-notebook-spread" aria-live="polite">
+              <section class="live-notebook-page live-notebook-page-left" aria-label="Published notebook note">
+                <p class="live-notebook-note-meta" data-note-meta>Scriptorium · Notebook · Loading</p>
+                <h2 data-note-title>Opening the notebook...</h2>
+                <div class="live-notebook-note-body" data-note-body>
+                  <p>Published notes are loading from Scriptorium.</p>
+                </div>
+                <p class="live-notebook-note-foot" data-note-foot>Published from Scriptorium</p>
+              </section>
+
+              <div class="live-notebook-gutter" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+
+              <aside class="live-notebook-page live-notebook-page-right" aria-label="Notebook publication details">
+                <p class="live-notebook-side-label">Published from the private Admin Notebook.</p>
+                <h3 data-notebook-title>Live Notebook</h3>
+                <ul class="live-notebook-tags" data-note-tags aria-label="Current note tags"></ul>
+                <div class="live-notebook-side-card">
+                  <span>Source</span>
+                  <strong>Scriptorium</strong>
+                  <p>Selected notes allowed to breathe in public.</p>
+                </div>
+              </aside>
+            </article>
+            <div class="live-notebook-edge-tabs" aria-hidden="true">
+              <span>Notes</span>
+              <span>Sketches</span>
+              <span>Ideas</span>
+            </div>
           </div>
 
-          <aside class="live-notebook-page live-notebook-page-right" aria-label="Notebook publication details">
-            <p class="live-notebook-side-label">Published from the private Admin Notebook.</p>
-            <h3 data-notebook-title>Live Notebook</h3>
-            <ul class="live-notebook-tags" data-note-tags aria-label="Current note tags"></ul>
-            <div class="live-notebook-side-card">
-              <span>Source</span>
-              <strong>Scriptorium</strong>
-              <p>Selected notes allowed to breathe in public.</p>
-            </div>
-          </aside>
-        </article>
-      </div>
-
-      <div class="live-notebook-controls" aria-label="Notebook page controls">
-        <button type="button" data-notebook-prev>Previous</button>
-        <span data-page-count>Page 1 of 1</span>
-        <button type="button" data-notebook-next>Next</button>
+          <div class="live-notebook-controls" aria-label="Notebook page controls">
+            <button class="live-sort-control" type="button" disabled>Newest First</button>
+            <button type="button" data-notebook-prev>Previous Entry</button>
+            <span data-page-count>Page 1 of 1</span>
+            <button type="button" data-notebook-next>Next Entry</button>
+            <button type="button" data-share-entry>Share Entry</button>
+            <button type="button" data-print-entry>Print</button>
+          </div>
+        </div>
       </div>
       <p class="live-notebook-status" data-notebook-status role="status" aria-live="polite"></p>
     </section>
@@ -78,7 +122,7 @@
   <script src="/assets/js/global-music-player.js?v=20260621c" defer></script>
   <script src="/assets/js/qf-lyrics.js?v=20260621b" defer></script>
   <script src="/assets/js/qf-library.js?v=20260621b" defer></script>
-  <script src="/assets/js/notebook.js?v=20260629a" defer></script>
+  <script src="/assets/js/notebook.js?v=20260629b" defer></script>
   <script src="/assets/js/site-router.js?v=20260623a" defer></script>
 </body>
 </html>
