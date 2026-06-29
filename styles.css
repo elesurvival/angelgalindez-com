@@ -8268,72 +8268,26 @@ a.build-log-project:focus-visible {
 
 .live-notebook-ambient {
   background:
-    radial-gradient(circle at 86% 14%, rgba(230, 175, 76, 0.28), transparent 9rem),
-    radial-gradient(circle at 50% 38%, rgba(217, 176, 96, 0.12), transparent 30rem),
-    linear-gradient(120deg, rgba(0, 0, 0, 0.86), transparent 35%, rgba(0, 0, 0, 0.82)),
+    radial-gradient(circle at 82% 17%, rgba(230, 175, 76, 0.1), transparent 18rem),
+    linear-gradient(180deg, rgba(1, 7, 6, 0.44), rgba(1, 7, 6, 0.74) 54%, rgba(1, 7, 6, 0.88)),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent 34%, transparent 70%, rgba(0, 0, 0, 0.28)),
     repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 5px),
-    linear-gradient(135deg, #0b1512, #050605 56%, #140e09);
+    url("/assets/projects/notebook/live-notebook-workbench-bg.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
   inset: 0;
-  opacity: 0.98;
   position: absolute;
   z-index: -3;
 }
 
 .live-notebook-ambient::after {
   background:
-    radial-gradient(ellipse at 50% 104%, rgba(0, 0, 0, 0.56), transparent 42%),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.76), transparent 30%, transparent 72%, rgba(0, 0, 0, 0.72));
+    radial-gradient(ellipse at 50% 108%, rgba(0, 0, 0, 0.58), transparent 46%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.7), transparent 32%, transparent 72%, rgba(0, 0, 0, 0.58));
   content: "";
   inset: 0;
   position: absolute;
-}
-
-.live-notebook-workbench {
-  inset: 0;
-  overflow: hidden;
-  pointer-events: none;
-  position: absolute;
-  z-index: -2;
-}
-
-.live-prop {
-  display: block;
-  opacity: 0.58;
-  position: absolute;
-}
-
-.live-prop-pen {
-  background: linear-gradient(90deg, #1b1712, #d2a24e 18%, #111 23% 76%, #d2a24e 82%, #080808);
-  border-radius: 999px;
-  box-shadow: 0 9px 28px rgba(0, 0, 0, 0.48);
-  height: 0.56rem;
-  left: 43%;
-  top: 8.6rem;
-  transform: rotate(-29deg);
-  width: 13rem;
-}
-
-.live-prop-mug {
-  border: 2px solid rgba(214, 165, 80, 0.18);
-  border-radius: 50%;
-  box-shadow:
-    inset 0 0 0 1.1rem rgba(0, 0, 0, 0.36),
-    inset 0 0 2.6rem rgba(222, 176, 93, 0.12);
-  height: 9rem;
-  left: 56%;
-  top: 4.2rem;
-  width: 9rem;
-}
-
-.live-prop-lamp {
-  background:
-    radial-gradient(circle, rgba(252, 188, 78, 0.72), rgba(252, 188, 78, 0.18) 28%, transparent 62%),
-    linear-gradient(90deg, transparent 46%, rgba(255, 213, 128, 0.76) 49% 51%, transparent 54%);
-  filter: blur(0.4px);
-  height: 14rem;
-  right: -0.5rem;
-  top: 4.8rem;
-  width: 9rem;
 }
 
 .live-notebook-intro {
@@ -8965,6 +8919,10 @@ a.build-log-project:focus-visible {
     --live-notebook-page-safe-outer: 1.35rem;
     --live-notebook-page-safe-inner: 1.35rem;
     padding-top: 6.5rem;
+  }
+
+  .live-notebook-ambient {
+    background-position: 60% top;
   }
 
   .live-notebook-principles {
