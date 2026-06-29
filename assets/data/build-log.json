@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-29T01:30:23.142Z",
+  "updated_at": "2026-06-29T02:27:52.617Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "755fa1b",
+      "message": "Align Scriptorium notebook admin and public sizes",
+      "date": "2026-06-28",
+      "time": "9:27 PM",
+      "timestamp": "2026-06-28T21:27:16-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-14",
       "time": "12:45 AM",
       "timestamp": "2026-06-14T00:45:01-05:00"
-    },
-    {
-      "project": "Continuo",
-      "repo": "Continuo",
-      "hash": "c12bac4",
-      "message": "Scope identity to preview users",
-      "date": "2026-06-14",
-      "time": "12:18 AM",
-      "timestamp": "2026-06-14T00:18:56-05:00"
     }
   ]
 }
