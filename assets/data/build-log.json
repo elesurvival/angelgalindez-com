@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-29T07:12:19.887Z",
+  "updated_at": "2026-06-29T07:40:42.605Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "4fbe302",
+      "message": "Rollback failed Live Notebook parity attempts",
+      "date": "2026-06-29",
+      "time": "2:39 AM",
+      "timestamp": "2026-06-29T02:39:56-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -765,15 +774,6 @@
       "date": "2026-06-23",
       "time": "6:16 AM",
       "timestamp": "2026-06-23T06:16:00-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "b01777c",
-      "message": "Reorder Echo feature chips",
-      "date": "2026-06-23",
-      "time": "4:45 AM",
-      "timestamp": "2026-06-23T04:45:42-05:00"
     },
     {
       "project": "Continuo",
