@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-29T02:27:52.617Z",
+  "updated_at": "2026-06-29T02:54:48.982Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "9e0e55e",
+      "message": "Restore Scriptorium admin notebook size",
+      "date": "2026-06-28",
+      "time": "9:54 PM",
+      "timestamp": "2026-06-28T21:54:14-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -738,15 +747,6 @@
       "date": "2026-06-23",
       "time": "3:51 AM",
       "timestamp": "2026-06-23T03:51:01-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "a382055",
-      "message": "Update Workshop hero build activity CTA",
-      "date": "2026-06-23",
-      "time": "1:44 AM",
-      "timestamp": "2026-06-23T01:44:40-05:00"
     },
     {
       "project": "Continuo",
