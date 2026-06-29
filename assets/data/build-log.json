@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-29T21:07:33.211Z",
+  "updated_at": "2026-06-29T21:35:47.804Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "10dca71",
+      "message": "Tighten Live Notebook header layout",
+      "date": "2026-06-29",
+      "time": "4:35 PM",
+      "timestamp": "2026-06-29T16:35:44-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -702,15 +711,6 @@
       "date": "2026-06-24",
       "time": "5:11 PM",
       "timestamp": "2026-06-24T17:11:36-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "b9a89c8",
-      "message": "Link ELE craft cards to collections",
-      "date": "2026-06-24",
-      "time": "6:38 AM",
-      "timestamp": "2026-06-24T06:38:01-05:00"
     },
     {
       "project": "Glimpse",
