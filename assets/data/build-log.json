@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-29T11:06:51.561Z",
+  "updated_at": "2026-06-29T11:10:08.545Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "7b84bf2",
+      "message": "Document Live Notebook sizing parity",
+      "date": "2026-06-29",
+      "time": "6:10 AM",
+      "timestamp": "2026-06-29T06:10:05-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -891,15 +900,6 @@
       "date": "2026-06-14",
       "time": "3:08 AM",
       "timestamp": "2026-06-14T03:08:44-05:00"
-    },
-    {
-      "project": "Continuo",
-      "repo": "Continuo",
-      "hash": "e00d7db",
-      "message": "Add Continuo guide downloads to login",
-      "date": "2026-06-14",
-      "time": "2:23 AM",
-      "timestamp": "2026-06-14T02:23:27-05:00"
     }
   ]
 }
