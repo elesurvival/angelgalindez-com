@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-06-29T23:41:22.386Z",
+  "updated_at": "2026-06-30T00:13:49.415Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "8d0afeb",
+      "message": "Update Live Notebook exported data",
+      "date": "2026-06-29",
+      "time": "7:13 PM",
+      "timestamp": "2026-06-29T19:13:45-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "a3519ba",
+      "message": "Improve Live Notebook export semantics",
+      "date": "2026-06-29",
+      "time": "7:13 PM",
+      "timestamp": "2026-06-29T19:13:10-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -713,15 +731,6 @@
       "timestamp": "2026-06-24T22:57:11-05:00"
     },
     {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "594ed83",
-      "message": "Restore Tempo logo sizing",
-      "date": "2026-06-24",
-      "time": "10:10 PM",
-      "timestamp": "2026-06-24T22:10:01-05:00"
-    },
-    {
       "project": "Glimpse",
       "repo": "Glimpse",
       "hash": "d51d064",
@@ -891,15 +900,6 @@
       "date": "2026-06-22",
       "time": "12:21 AM",
       "timestamp": "2026-06-22T00:21:02-05:00"
-    },
-    {
-      "project": "Echo",
-      "repo": "Echo",
-      "hash": "6074fb1",
-      "message": "Support live Continuo endpoint in Echo",
-      "date": "2026-06-21",
-      "time": "10:31 PM",
-      "timestamp": "2026-06-21T22:31:15-05:00"
     }
   ]
 }
