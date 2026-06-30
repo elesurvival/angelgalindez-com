@@ -8829,7 +8829,7 @@ a.build-log-project:focus-visible {
   margin: 0 0 1rem;
 }
 
-.live-notebook-page-right h3 {
+.live-notebook-page-right h3[data-notebook-title] {
   color: #15110d;
   font-family: var(--display, Impact, sans-serif);
   font-size: clamp(2.1rem, 3.8vw, 3.8rem);
