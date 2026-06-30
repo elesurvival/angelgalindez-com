@@ -2,7 +2,7 @@
   "source": {
     "app": "Scriptorium",
     "databasePath": "C:\\Users\\Angel\\Documents\\scriptorium\\apps\\api\\data\\scriptorium.sqlite",
-    "settingsUpdatedAt": "2026-06-29T12:49:52.130Z"
+    "settingsUpdatedAt": "2026-06-30T05:30:31.702Z"
   },
   "files": {
     "css": "/assets/css/notebook-typography.css",
@@ -17,6 +17,15 @@
       "originalFilename": "daniel-black.ttf",
       "storedFilename": "daniel-black.ttf",
       "publicUrl": "/assets/projects/notebook/fonts/daniel-black.ttf",
+      "sizeBytes": 0
+    },
+    {
+      "id": -2,
+      "displayName": "Daniel Bold",
+      "fontFamily": "Daniel Bold",
+      "originalFilename": "daniel-bold.ttf",
+      "storedFilename": "daniel-bold.ttf",
+      "publicUrl": "/assets/projects/notebook/fonts/daniel-bold.ttf",
       "sizeBytes": 0
     },
     {
@@ -58,16 +67,16 @@
       "rotation": "-0.45deg"
     },
     "date": {
-      "fontFamily": "\"Daniel Black\", \"Segoe Print\", \"Bradley Hand ITC\", \"Segoe Script\", cursive",
-      "fontId": -3,
+      "fontFamily": "\"Daniel Bold\", \"Segoe Print\", \"Bradley Hand ITC\", \"Segoe Script\", cursive",
+      "fontId": -2,
       "size": "12px",
       "letterSpacing": "0.015em",
       "color": "#12100e",
       "rotation": "-1.1deg"
     },
     "blockHeading": {
-      "fontFamily": "\"Daniel Black\", \"Segoe Print\", \"Bradley Hand ITC\", \"Segoe Script\", cursive",
-      "fontId": -3,
+      "fontFamily": "\"Daniel Bold\", \"Segoe Print\", \"Bradley Hand ITC\", \"Segoe Script\", cursive",
+      "fontId": -2,
       "size": "14px",
       "letterSpacing": "0.01em",
       "color": "#24466a",

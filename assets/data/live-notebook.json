@@ -6,65 +6,6 @@
   },
   "pages": [
     {
-      "id": "why-the-notebook-exists",
-      "title": "Why the Notebook Exists",
-      "date": "2026-06-29",
-      "project": "Workshop Philosophy",
-      "type": "Philosophy",
-      "tags": [
-        "craft",
-        "friction"
-      ],
-      "body": [
-        "Question: How do we show the thinking that led to the commits, not merely the commits themselves?",
-        "Discovery: The notebook is not a recap. It is the place where motives, dead ends, and decisions remain visible.",
-        "Decision: Publish entries from the same semantic document source used by the authoring workspace.",
-        "Why it matters: Artifacts feel more human when the reader can see the path that shaped them."
-      ],
-      "spread": {
-        "left": {
-          "title": "Why the Notebook Exists",
-          "meta": [
-            "Workshop Philosophy",
-            "Philosophy",
-            "2026-06-29",
-            "Craft",
-            "Friction"
-          ],
-          "body": [
-            {
-              "kind": "semantic",
-              "label": "Question",
-              "text": "How do we show the thinking that led to the commits, not merely the commits themselves?"
-            },
-            {
-              "kind": "semantic",
-              "label": "Discovery",
-              "text": "The notebook is not a recap. It is the place where motives, dead ends, and decisions remain visible."
-            }
-          ]
-        },
-        "right": {
-          "title": null,
-          "meta": [
-            "Entry #0098"
-          ],
-          "body": [
-            {
-              "kind": "semantic",
-              "label": "Decision",
-              "text": "Publish entries from the same semantic document source used by the authoring workspace."
-            },
-            {
-              "kind": "semantic",
-              "label": "Why it matters",
-              "text": "Artifacts feel more human when the reader can see the path that shaped them."
-            }
-          ]
-        }
-      }
-    },
-    {
       "id": "why-we-built-tempo-first",
       "title": "Why We Built Tempo First",
       "date": "2026-06-23",
@@ -77,7 +18,8 @@
       "body": [
         "Question: What is the smallest useful interface for protecting attention?",
         "Discovery: Tempo taught us that workflow tools should remove negotiation, not add dashboards.",
-        "Breakthrough: A focused ritual can become infrastructure for better work."
+        "Breakthrough: A focused ritual can become infrastructure for better work.",
+        "I'm just trying to observe whether this works or not and right now it looks like not is winning."
       ],
       "spread": {
         "left": {
@@ -112,6 +54,73 @@
               "kind": "semantic",
               "label": "Breakthrough",
               "text": "A focused ritual can become infrastructure for better work."
+            },
+            {
+              "kind": "paragraph",
+              "text": "I'm just trying to observe whether this works or not and right now it looks like not is winning."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "why-the-notebook-exists",
+      "title": "Why the Notebook Exists",
+      "date": "2026-06-29",
+      "project": "Scriptorium",
+      "type": "Design Note",
+      "tags": [
+        "live-notebook",
+        "notebook",
+        "publishing",
+        "scriptorium"
+      ],
+      "body": [
+        "Question: How do we show the thinking that led to the commits, not merely the commits themselves?",
+        "Discovery: The notebook is not a recap. It is the place where motives, dead ends, and decisions remain visible.",
+        "Decision: Publish entries from the same semantic document source used by the authoring workspace.",
+        "Why it matters: Artifacts feel more human when the reader can see the path that shaped them."
+      ],
+      "spread": {
+        "left": {
+          "title": "Why the Notebook Exists",
+          "meta": [
+            "Scriptorium",
+            "Design Note",
+            "2026-06-29",
+            "live-notebook",
+            "notebook",
+            "publishing",
+            "scriptorium"
+          ],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Question",
+              "text": "How do we show the thinking that led to the commits, not merely the commits themselves?"
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "The notebook is not a recap. It is the place where motives, dead ends, and decisions remain visible."
+            }
+          ]
+        },
+        "right": {
+          "title": null,
+          "meta": [
+            "Entry #0098"
+          ],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Decision",
+              "text": "Publish entries from the same semantic document source used by the authoring workspace."
+            },
+            {
+              "kind": "semantic",
+              "label": "Why it matters",
+              "text": "Artifacts feel more human when the reader can see the path that shaped them."
             }
           ]
         }

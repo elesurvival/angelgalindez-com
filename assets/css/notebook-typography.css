@@ -8,6 +8,14 @@
 }
 
 @font-face {
+  font-family: "Daniel Bold";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/projects/notebook/fonts/daniel-bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Daniel";
   font-style: normal;
   font-weight: 400;
@@ -43,12 +51,12 @@
   --notebook-title-underline-thickness: 2px;
   --notebook-title-underline-width: 96%;
   --notebook-title-underline-offset: -4.8px;
-  --notebook-date-font: "Daniel Black", "Segoe Print", "Bradley Hand ITC", "Segoe Script", cursive;
+  --notebook-date-font: "Daniel Bold", "Segoe Print", "Bradley Hand ITC", "Segoe Script", cursive;
   --notebook-date-size: 12px;
   --notebook-date-letter-spacing: 0.015em;
   --notebook-date-color: #12100e;
   --notebook-date-rotation: -1.1deg;
-  --notebook-block-heading-font: "Daniel Black", "Segoe Print", "Bradley Hand ITC", "Segoe Script", cursive;
+  --notebook-block-heading-font: "Daniel Bold", "Segoe Print", "Bradley Hand ITC", "Segoe Script", cursive;
   --notebook-block-heading-size: 14px;
   --notebook-block-heading-letter-spacing: 0.01em;
   --notebook-block-heading-color: #24466a;
