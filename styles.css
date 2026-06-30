@@ -8628,45 +8628,50 @@ a.build-log-project:focus-visible {
 }
 
 .live-notebook-note-meta {
-  color: #24466a;
-  font-size: clamp(0.72rem, 1.35vw, var(--live-notebook-meta-size));
-  letter-spacing: 0.015em;
+  color: var(--notebook-date-color, #24466a);
+  font-family: var(--notebook-date-font, var(--mono, "Courier New", monospace));
+  font-size: clamp(0.72rem, 1.35vw, var(--notebook-date-size, var(--live-notebook-meta-size)));
+  font-weight: 400;
+  letter-spacing: var(--notebook-date-letter-spacing, 0.015em);
   line-height: 1;
   margin: 0 0 var(--live-notebook-meta-spacing);
   text-transform: none;
+  transform: rotate(var(--notebook-date-rotation, 0deg));
+  transform-origin: left center;
 }
 
 .live-notebook-page h2 {
-  color: #12100e;
-  font-family: "Segoe Print", "Bradley Hand ITC", "Segoe Script", cursive;
-  font-size: clamp(2.1rem, 4vw, var(--live-notebook-title-size));
+  color: var(--notebook-title-color, #12100e);
+  font-family: var(--notebook-title-font, "Segoe Print", "Bradley Hand ITC", "Segoe Script", cursive);
+  font-size: clamp(2.1rem, 4vw, var(--notebook-title-size, var(--live-notebook-title-size)));
   font-weight: 400;
-  letter-spacing: 0.004em;
-  line-height: var(--live-notebook-title-line-height);
+  letter-spacing: var(--notebook-title-letter-spacing, 0.004em);
+  line-height: var(--notebook-title-line-height, var(--live-notebook-title-line-height));
   margin: 0 auto var(--live-notebook-title-spacing);
   max-inline-size: 100%;
   overflow-wrap: break-word;
   text-align: center;
   text-wrap: balance;
-  transform: rotate(-0.45deg);
+  transform: rotate(var(--notebook-title-rotation, -0.45deg));
 }
 
 .live-notebook-page h2::after {
-  background: linear-gradient(91deg, transparent 0 2%, rgba(36, 70, 106, 0.72) 2% 72%, transparent 96%);
+  background: linear-gradient(91deg, transparent 0 2%, var(--notebook-title-underline-color, rgba(36, 70, 106, 0.72)) 2% 72%, transparent 96%);
   border-radius: 61% 39% 54% 46%;
   content: "";
   display: block;
-  height: 2px;
-  margin: 0.25rem auto 0;
-  opacity: 0.85;
-  width: 76%;
+  height: var(--notebook-title-underline-thickness, 2px);
+  margin: var(--notebook-title-underline-offset, 0.25rem) auto 0;
+  opacity: calc(0.85 * var(--notebook-title-underline-opacity, 1));
+  width: var(--notebook-title-underline-width, 76%);
 }
 
 .live-notebook-note-body {
-  color: #3f372c;
-  font-family: "Source Serif 4", Georgia, serif;
-  font-size: var(--live-notebook-body-size);
-  line-height: var(--live-notebook-body-line-height);
+  color: var(--notebook-semantic-body-color, #3f372c);
+  font-family: var(--notebook-semantic-body-font, "Source Serif 4", Georgia, serif);
+  font-size: var(--notebook-semantic-body-size, var(--live-notebook-body-size));
+  letter-spacing: var(--notebook-semantic-body-letter-spacing, 0);
+  line-height: var(--notebook-semantic-body-line-height, var(--live-notebook-body-line-height));
 }
 
 .live-notebook-note-body p {
@@ -8683,21 +8688,29 @@ a.build-log-project:focus-visible {
   border: 1px solid rgba(174, 128, 51, 0.28);
   border-radius: 2px;
   box-decoration-break: clone;
-  color: #24466a;
+  color: var(--notebook-block-heading-color, #24466a);
   display: inline-block;
-  font-family: var(--mono, "Courier New", monospace);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-family: var(--notebook-block-heading-font, var(--mono, "Courier New", monospace));
+  font-size: var(--notebook-block-heading-size, 0.68rem);
+  font-weight: 400;
+  letter-spacing: var(--notebook-block-heading-letter-spacing, 0.08em);
   line-height: 1.2;
   margin: 0 0.42rem 0.12rem 0;
   padding: 0.12rem 0.28rem;
-  text-transform: uppercase;
+  text-transform: var(--notebook-block-heading-transform, uppercase);
   transform: rotate(-0.25deg);
 }
 
 .live-notebook-semantic-text {
   white-space: pre-line;
+}
+
+.live-notebook-semantic-line--margin-note .live-notebook-semantic-text,
+.live-notebook-semantic-line--image-note .live-notebook-semantic-text {
+  color: var(--notebook-margin-note-color, #254b83);
+  font-family: var(--notebook-margin-note-font, "Segoe Print", "Bradley Hand ITC", "Segoe Script", cursive);
+  font-size: var(--notebook-margin-note-size, inherit);
+  line-height: var(--notebook-margin-note-line-height, inherit);
 }
 
 .live-notebook-note-body--right {
@@ -8706,8 +8719,8 @@ a.build-log-project:focus-visible {
 
 .live-notebook-quote {
   border-left: 2px solid rgba(174, 128, 51, 0.34);
-  color: #3f372c;
-  font-family: "Source Serif 4", Georgia, serif;
+  color: var(--notebook-semantic-body-color, #3f372c);
+  font-family: var(--notebook-semantic-body-font, "Source Serif 4", Georgia, serif);
   margin: 0 0 1.2rem;
   padding: 0.2rem 0 0.2rem 1rem;
 }
@@ -8731,12 +8744,14 @@ a.build-log-project:focus-visible {
 }
 
 .live-notebook-list-block h4 {
-  color: #24466a;
-  font-family: var(--mono, "Courier New", monospace);
-  font-size: 0.76rem;
-  letter-spacing: 0.08em;
+  color: var(--notebook-list-title-color, #24466a);
+  font-family: var(--notebook-list-title-font, var(--mono, "Courier New", monospace));
+  font-size: var(--notebook-list-title-size, 0.76rem);
+  font-weight: 400;
+  letter-spacing: var(--notebook-list-title-letter-spacing, 0.08em);
+  line-height: var(--notebook-list-title-line-height, 1.35);
   margin: 0 0 0.45rem;
-  text-transform: uppercase;
+  text-transform: var(--notebook-list-title-text-transform, uppercase);
 }
 
 .live-notebook-list-block ul,
@@ -8746,6 +8761,11 @@ a.build-log-project:focus-visible {
 }
 
 .live-notebook-list-block li {
+  color: var(--notebook-list-item-color, inherit);
+  font-family: var(--notebook-list-item-font, inherit);
+  font-size: var(--notebook-list-item-size, inherit);
+  letter-spacing: var(--notebook-list-item-letter-spacing, 0);
+  line-height: var(--notebook-list-item-line-height, inherit);
   margin-block-end: 0.35rem;
 }
 

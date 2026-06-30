@@ -91,7 +91,10 @@
       return paragraph;
     }
 
-    paragraph.className = "live-notebook-semantic-line";
+    paragraph.className = `live-notebook-semantic-line live-notebook-semantic-line--${semanticLine.label
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "")}`;
 
     const label = document.createElement("span");
     label.className = "live-notebook-semantic-label";

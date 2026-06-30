@@ -1,0 +1,122 @@
+{
+  "source": {
+    "app": "Scriptorium",
+    "databasePath": "C:\\Users\\Angel\\Documents\\scriptorium\\apps\\api\\data\\scriptorium.sqlite",
+    "settingsUpdatedAt": "2026-06-29T12:49:52.130Z"
+  },
+  "files": {
+    "css": "/assets/css/notebook-typography.css",
+    "json": "/assets/data/notebook-typography.json",
+    "fonts": "/assets/projects/notebook/fonts/"
+  },
+  "fonts": [
+    {
+      "id": -3,
+      "displayName": "Daniel Black",
+      "fontFamily": "Daniel Black",
+      "originalFilename": "daniel-black.ttf",
+      "storedFilename": "daniel-black.ttf",
+      "publicUrl": "/assets/projects/notebook/fonts/daniel-black.ttf",
+      "sizeBytes": 0
+    },
+    {
+      "id": -1,
+      "displayName": "Daniel",
+      "fontFamily": "Daniel",
+      "originalFilename": "daniel.ttf",
+      "storedFilename": "daniel.ttf",
+      "publicUrl": "/assets/projects/notebook/fonts/daniel.ttf",
+      "sizeBytes": 0
+    },
+    {
+      "id": 12,
+      "displayName": "Handwriting",
+      "fontFamily": "Scriptorium Handwriting b48c1cdb",
+      "originalFilename": "Handwriting.ttf",
+      "storedFilename": "b48c1cdb-76af-4984-8556-1ae808ef6805.ttf",
+      "publicUrl": "/assets/projects/notebook/fonts/b48c1cdb-76af-4984-8556-1ae808ef6805.ttf",
+      "sizeBytes": 31684
+    },
+    {
+      "id": 18,
+      "displayName": "Roustel",
+      "fontFamily": "Scriptorium Roustel 5b3da537",
+      "originalFilename": "Roustel.ttf",
+      "storedFilename": "5b3da537-930b-4aa9-a410-1170046726d2.ttf",
+      "publicUrl": "/assets/projects/notebook/fonts/5b3da537-930b-4aa9-a410-1170046726d2.ttf",
+      "sizeBytes": 97364
+    }
+  ],
+  "roles": {
+    "title": {
+      "fontFamily": "\"Scriptorium Roustel 5b3da537\", \"Segoe Print\", \"Bradley Hand ITC\", \"Segoe Script\", cursive",
+      "fontId": 18,
+      "size": "39px",
+      "lineHeight": 1.08,
+      "letterSpacing": "0.004em",
+      "color": "#12100e",
+      "rotation": "-0.45deg"
+    },
+    "date": {
+      "fontFamily": "\"Daniel Black\", \"Segoe Print\", \"Bradley Hand ITC\", \"Segoe Script\", cursive",
+      "fontId": -3,
+      "size": "12px",
+      "letterSpacing": "0.015em",
+      "color": "#12100e",
+      "rotation": "-1.1deg"
+    },
+    "blockHeading": {
+      "fontFamily": "\"Daniel Black\", \"Segoe Print\", \"Bradley Hand ITC\", \"Segoe Script\", cursive",
+      "fontId": -3,
+      "size": "14px",
+      "letterSpacing": "0.01em",
+      "color": "#24466a",
+      "textTransform": "uppercase"
+    },
+    "semanticBody": {
+      "fontFamily": "\"Daniel Black\", \"Source Serif 4\", Georgia, serif",
+      "fontId": -3,
+      "size": "13px",
+      "lineHeight": 1.68,
+      "letterSpacing": "0em",
+      "color": "#3f372c"
+    },
+    "marginNote": {
+      "fontFamily": "\"Daniel\", \"Segoe Print\", \"Bradley Hand ITC\", \"Segoe Script\", cursive",
+      "fontId": -1,
+      "size": "16px",
+      "lineHeight": 1.35,
+      "color": "#254b83"
+    },
+    "listTitle": {
+      "fontFamily": "\"Scriptorium Handwriting b48c1cdb\", \"Source Serif 4\", Georgia, serif",
+      "fontId": 12,
+      "size": "18px",
+      "lineHeight": 1.04,
+      "letterSpacing": "0em",
+      "color": "#2d2318",
+      "textTransform": "none"
+    },
+    "listItem": {
+      "fontFamily": "\"Scriptorium Handwriting b48c1cdb\", \"Source Serif 4\", Georgia, serif",
+      "fontId": 12,
+      "size": "20px",
+      "lineHeight": 1.58,
+      "letterSpacing": "0em",
+      "color": "#4f4637"
+    }
+  },
+  "titleUnderline": {
+    "enabled": true,
+    "color": "#24466a",
+    "thickness": "2px",
+    "width": "96%",
+    "offset": "-4.8px"
+  },
+  "listFrame": {
+    "color": "#5d5548",
+    "thickness": "1px",
+    "padding": "14px",
+    "radius": "1px"
+  }
+}
