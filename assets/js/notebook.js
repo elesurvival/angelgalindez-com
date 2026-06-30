@@ -59,6 +59,11 @@
     }
   };
 
+  const displayNotebookSubtitle = (value) =>
+    String(value || "").trim() === "Published notes from Scriptorium."
+      ? "Ideas, discoveries, wrong turns, and breakthroughs. A notebook of the philosophy behind every commit."
+      : value;
+
   const clearNode = (node) => {
     while (node.firstChild) {
       node.removeChild(node.firstChild);
@@ -260,7 +265,7 @@
     setText(
       root,
       selectors.notebookSubtitle,
-      "Published notes from Scriptorium.",
+      displayNotebookSubtitle("Selected notebook notes."),
     );
     setText(
       root,
@@ -332,7 +337,7 @@
 
     const sideLabel = document.createElement("p");
     sideLabel.className = "live-notebook-side-label";
-    sideLabel.textContent = "Published from the private Admin Notebook.";
+    sideLabel.textContent = "Notebook details";
 
     const title = document.createElement("h3");
     title.dataset.notebookTitle = "";
@@ -509,7 +514,7 @@
       setText(
         root,
         selectors.notebookSubtitle,
-        data.notebook?.subtitle || "Published notes from Scriptorium.",
+        displayNotebookSubtitle(data.notebook?.subtitle || "Selected notebook notes."),
       );
       renderEntryList(root);
       renderPage(root);
