@@ -16,7 +16,6 @@
     noteTitle: "[data-note-title]",
     noteBody: "[data-note-body]",
     noteTags: "[data-note-tags]",
-    noteFoot: "[data-note-foot]",
     rightPage: ".live-notebook-page-right",
     pageCount: "[data-page-count]",
     previous: "[data-notebook-prev]",
@@ -266,7 +265,6 @@
       "SCRIPTORIUM · NOTEBOOK · TEMPORARILY QUIET",
     );
     setText(root, selectors.noteTitle, "The notebook is closed for a moment.");
-    setText(root, selectors.noteFoot, "Published from Scriptorium");
     setText(root, selectors.pageCount, "Page 0 of 0");
     setText(
       root,
@@ -318,19 +316,14 @@
       const header = document.createElement("header");
       header.className = "spread-page-header spread-page-header--right";
       const headerText = document.createElement("span");
-      headerText.textContent =
-        rightSpread.meta?.[0] || "Published from Scriptorium";
+      headerText.textContent = rightSpread.meta?.[0] || "Live Notebook";
       header.append(headerText);
 
       const body = document.createElement("div");
       body.className = "live-notebook-note-body live-notebook-note-body--right";
       renderSpreadBody(body, rightBlocks);
 
-      const footer = document.createElement("p");
-      footer.className = "live-notebook-note-foot";
-      footer.textContent = "Published from Scriptorium";
-
-      rightPage.append(header, body, footer);
+      rightPage.append(header, body);
       return;
     }
 
@@ -373,11 +366,6 @@
       `${page.project || "Notebook"} · ${page.type || "Note"} · ${formatDate(page.date)}`,
     );
     setText(root, selectors.noteTitle, page.title || "Untitled Note");
-    setText(
-      root,
-      selectors.noteFoot,
-      `Published from Scriptorium · ${page.id || "live-note"}`,
-    );
     setText(
       root,
       selectors.pageCount,

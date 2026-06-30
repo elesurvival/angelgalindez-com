@@ -8749,14 +8749,6 @@ a.build-log-project:focus-visible {
   margin-block-end: 0.35rem;
 }
 
-.live-notebook-note-foot {
-  color: rgba(79, 70, 55, 0.72);
-  font-family: var(--mono, "Courier New", monospace);
-  font-size: 0.72rem;
-  margin: auto 0 0;
-  text-align: center;
-}
-
 .live-notebook-gutter {
   align-items: center;
   display: flex;
