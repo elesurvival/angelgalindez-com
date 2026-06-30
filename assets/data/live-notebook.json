@@ -12,9 +12,7 @@
       "project": "The Locksmith",
       "type": "Philosophy",
       "tags": [
-        "craft",
-        "decision",
-        "friction"
+        "decision"
       ],
       "body": [
         "Question: Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?",
@@ -36,9 +34,7 @@
             "The Locksmith",
             "Philosophy",
             "2026-06-24",
-            "Craft",
-            "Decision",
-            "Friction"
+            "Decision"
           ],
           "body": [
             {
