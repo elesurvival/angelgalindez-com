@@ -17,12 +17,13 @@
     noteBody: "[data-note-body]",
     noteTags: "[data-note-tags]",
     noteFoot: "[data-note-foot]",
+    rightPage: ".live-notebook-page-right",
     pageCount: "[data-page-count]",
     previous: "[data-notebook-prev]",
     next: "[data-notebook-next]",
     share: "[data-share-entry]",
     print: "[data-print-entry]",
-    status: "[data-notebook-status]"
+    status: "[data-notebook-status]",
   };
 
   const semanticPrefixes = new Set([
@@ -33,11 +34,14 @@
     "Breakthrough",
     "Margin note",
     "Spark",
-    "Image note"
+    "Image note",
   ]);
 
   const formatDate = (value) => {
-    const [year, month, day] = String(value || "").slice(0, 10).split("-").map(Number);
+    const [year, month, day] = String(value || "")
+      .slice(0, 10)
+      .split("-")
+      .map(Number);
     if (!year || !month || !day) {
       return "Undated";
     }
@@ -45,7 +49,7 @@
     return new Date(year, month - 1, day).toLocaleDateString(undefined, {
       month: "long",
       day: "numeric",
-      year: "numeric"
+      year: "numeric",
     });
   };
 
@@ -75,7 +79,7 @@
 
     return {
       label,
-      text: match[2].trim()
+      text: match[2].trim(),
     };
   };
 
@@ -98,11 +102,75 @@
     text.className = "live-notebook-semantic-text";
     text.textContent = semanticLine.text;
 
-    paragraph.append(label, text);
+    paragraph.append(label, document.createTextNode(" "), text);
     return paragraph;
   };
 
-  const getPageHash = () => decodeURIComponent(window.location.hash.replace(/^#/, ""));
+  const renderSpreadBlock = (block) => {
+    if (typeof block === "string") {
+      return renderBodyLine(block);
+    }
+
+    if (!block || typeof block !== "object") {
+      const paragraph = document.createElement("p");
+      paragraph.textContent = "";
+      return paragraph;
+    }
+
+    if (block.kind === "semantic") {
+      return renderBodyLine(`${block.label || "Note"}: ${block.text || ""}`);
+    }
+
+    if (block.kind === "quote") {
+      const quote = document.createElement("blockquote");
+      quote.className = "live-notebook-quote";
+      const text = document.createElement("p");
+      text.textContent = `“${String(block.text || "").replace(/^["“]|["”]$/g, "")}”`;
+      quote.append(text);
+      if (block.attribution) {
+        const cite = document.createElement("cite");
+        cite.textContent = `— ${block.attribution}`;
+        quote.append(cite);
+      }
+      return quote;
+    }
+
+    if (block.kind === "list") {
+      const section = document.createElement("section");
+      section.className = "live-notebook-list-block";
+      if (block.title) {
+        const heading = document.createElement("h4");
+        heading.textContent = block.title;
+        section.append(heading);
+      }
+      const list = document.createElement(block.ordered ? "ol" : "ul");
+      (Array.isArray(block.items) ? block.items : []).forEach((item) => {
+        const listItem = document.createElement("li");
+        listItem.textContent = item;
+        list.append(listItem);
+      });
+      section.append(list);
+      return section;
+    }
+
+    if (block.kind === "image-note") {
+      return renderBodyLine(`Image note: ${block.text || ""}`);
+    }
+
+    const paragraph = document.createElement("p");
+    paragraph.textContent = block.text || "";
+    return paragraph;
+  };
+
+  const renderSpreadBody = (container, blocks) => {
+    clearNode(container);
+    (Array.isArray(blocks) ? blocks : []).forEach((block) => {
+      container.append(renderSpreadBlock(block));
+    });
+  };
+
+  const getPageHash = () =>
+    decodeURIComponent(window.location.hash.replace(/^#/, ""));
 
   const indexFromHash = () => {
     const hash = getPageHash();
@@ -187,19 +255,32 @@
     pages = [];
     currentIndex = 0;
     setText(root, selectors.notebookTitle, "Live Notebook");
-    setText(root, selectors.notebookSubtitle, "Published notes from Scriptorium.");
-    setText(root, selectors.noteMeta, "SCRIPTORIUM · NOTEBOOK · TEMPORARILY QUIET");
+    setText(
+      root,
+      selectors.notebookSubtitle,
+      "Published notes from Scriptorium.",
+    );
+    setText(
+      root,
+      selectors.noteMeta,
+      "SCRIPTORIUM · NOTEBOOK · TEMPORARILY QUIET",
+    );
     setText(root, selectors.noteTitle, "The notebook is closed for a moment.");
     setText(root, selectors.noteFoot, "Published from Scriptorium");
     setText(root, selectors.pageCount, "Page 0 of 0");
-    setText(root, selectors.status, message || "Build activity will appear here soon.");
+    setText(
+      root,
+      selectors.status,
+      message || "Build activity will appear here soon.",
+    );
     setText(root, selectors.entryCount, "0");
 
     const body = root.querySelector(selectors.noteBody);
     if (body) {
       clearNode(body);
       const paragraph = document.createElement("p");
-      paragraph.textContent = "The Live Notebook could not load its notes. Please try again shortly.";
+      paragraph.textContent =
+        "The Live Notebook could not load its notes. Please try again shortly.";
       body.append(paragraph);
     }
 
@@ -221,6 +302,64 @@
     root.querySelector(selectors.next)?.setAttribute("disabled", "");
   };
 
+  const renderRightPage = (root, page) => {
+    const rightPage = root.querySelector(selectors.rightPage);
+    if (!rightPage) {
+      return;
+    }
+
+    const rightSpread = page.spread?.right;
+    const rightBlocks = Array.isArray(rightSpread?.body)
+      ? rightSpread.body
+      : [];
+    clearNode(rightPage);
+
+    if (rightBlocks.length) {
+      const header = document.createElement("header");
+      header.className = "spread-page-header spread-page-header--right";
+      const headerText = document.createElement("span");
+      headerText.textContent =
+        rightSpread.meta?.[0] || "Published from Scriptorium";
+      header.append(headerText);
+
+      const body = document.createElement("div");
+      body.className = "live-notebook-note-body live-notebook-note-body--right";
+      renderSpreadBody(body, rightBlocks);
+
+      const footer = document.createElement("p");
+      footer.className = "live-notebook-note-foot";
+      footer.textContent = "Published from Scriptorium";
+
+      rightPage.append(header, body, footer);
+      return;
+    }
+
+    const sideLabel = document.createElement("p");
+    sideLabel.className = "live-notebook-side-label";
+    sideLabel.textContent = "Published from the private Admin Notebook.";
+
+    const title = document.createElement("h3");
+    title.dataset.notebookTitle = "";
+    title.textContent = "Live Notebook";
+
+    const tags = document.createElement("ul");
+    tags.className = "live-notebook-tags";
+    tags.dataset.noteTags = "";
+    tags.setAttribute("aria-label", "Current note tags");
+
+    const card = document.createElement("div");
+    card.className = "live-notebook-side-card";
+    const cardLabel = document.createElement("span");
+    cardLabel.textContent = "Source";
+    const cardTitle = document.createElement("strong");
+    cardTitle.textContent = "Scriptorium";
+    const cardText = document.createElement("p");
+    cardText.textContent = "Selected notes allowed to breathe in public.";
+    card.append(cardLabel, cardTitle, cardText);
+
+    rightPage.append(sideLabel, title, tags, card);
+  };
+
   const renderPage = (root) => {
     const page = pages[currentIndex];
     if (!page) {
@@ -228,21 +367,40 @@
       return;
     }
 
-    setText(root, selectors.noteMeta, `${page.project || "Notebook"} · ${page.type || "Note"} · ${formatDate(page.date)}`);
+    setText(
+      root,
+      selectors.noteMeta,
+      `${page.project || "Notebook"} · ${page.type || "Note"} · ${formatDate(page.date)}`,
+    );
     setText(root, selectors.noteTitle, page.title || "Untitled Note");
-    setText(root, selectors.noteFoot, `Published from Scriptorium · ${page.id || "live-note"}`);
-    setText(root, selectors.pageCount, `Page ${currentIndex + 1} of ${pages.length}`);
+    setText(
+      root,
+      selectors.noteFoot,
+      `Published from Scriptorium · ${page.id || "live-note"}`,
+    );
+    setText(
+      root,
+      selectors.pageCount,
+      `Page ${currentIndex + 1} of ${pages.length}`,
+    );
     setText(root, selectors.status, "");
     updateHash(page);
     syncEntrySelection(root);
 
     const body = root.querySelector(selectors.noteBody);
     if (body) {
-      clearNode(body);
-      (Array.isArray(page.body) ? page.body : []).forEach((line) => {
-        body.append(renderBodyLine(line));
-      });
+      const leftSpread = page.spread?.left;
+      if (Array.isArray(leftSpread?.body) && leftSpread.body.length) {
+        renderSpreadBody(body, leftSpread.body);
+      } else {
+        clearNode(body);
+        (Array.isArray(page.body) ? page.body : []).forEach((line) => {
+          body.append(renderBodyLine(line));
+        });
+      }
     }
+
+    renderRightPage(root, page);
 
     const tags = root.querySelector(selectors.noteTags);
     if (tags) {
@@ -275,8 +433,12 @@
   };
 
   const bindControls = (root) => {
-    root.querySelector(selectors.previous)?.addEventListener("click", () => movePage(-1));
-    root.querySelector(selectors.next)?.addEventListener("click", () => movePage(1));
+    root
+      .querySelector(selectors.previous)
+      ?.addEventListener("click", () => movePage(-1));
+    root
+      .querySelector(selectors.next)
+      ?.addEventListener("click", () => movePage(1));
     root.querySelector(selectors.share)?.addEventListener("click", async () => {
       const page = pages[currentIndex];
       const url = page?.id
@@ -308,7 +470,11 @@
       }
 
       const tagName = event.target?.tagName;
-      if (tagName === "INPUT" || tagName === "TEXTAREA" || tagName === "SELECT") {
+      if (
+        tagName === "INPUT" ||
+        tagName === "TEXTAREA" ||
+        tagName === "SELECT"
+      ) {
         return;
       }
 
@@ -344,8 +510,16 @@
       const data = await response.json();
       pages = Array.isArray(data.pages) ? data.pages : [];
       currentIndex = Math.max(0, indexFromHash());
-      setText(root, selectors.notebookTitle, data.notebook?.title || "Live Notebook");
-      setText(root, selectors.notebookSubtitle, data.notebook?.subtitle || "Published notes from Scriptorium.");
+      setText(
+        root,
+        selectors.notebookTitle,
+        data.notebook?.title || "Live Notebook",
+      );
+      setText(
+        root,
+        selectors.notebookSubtitle,
+        data.notebook?.subtitle || "Published notes from Scriptorium.",
+      );
       renderEntryList(root);
       renderPage(root);
     } catch (error) {
@@ -356,7 +530,7 @@
 
   window.AngelSite = {
     ...(window.AngelSite || {}),
-    initNotebook
+    initNotebook,
   };
 
   document.addEventListener("DOMContentLoaded", initNotebook);

@@ -8700,6 +8700,55 @@ a.build-log-project:focus-visible {
   white-space: pre-line;
 }
 
+.live-notebook-note-body--right {
+  margin-block-start: 1.8rem;
+}
+
+.live-notebook-quote {
+  border-left: 2px solid rgba(174, 128, 51, 0.34);
+  color: #3f372c;
+  font-family: "Source Serif 4", Georgia, serif;
+  margin: 0 0 1.2rem;
+  padding: 0.2rem 0 0.2rem 1rem;
+}
+
+.live-notebook-quote p {
+  font-style: italic;
+  margin: 0;
+}
+
+.live-notebook-quote cite {
+  color: rgba(79, 70, 55, 0.72);
+  display: block;
+  font-family: var(--mono, "Courier New", monospace);
+  font-size: 0.72rem;
+  font-style: normal;
+  margin-block-start: 0.45rem;
+}
+
+.live-notebook-list-block {
+  margin: 0 0 1.1rem;
+}
+
+.live-notebook-list-block h4 {
+  color: #24466a;
+  font-family: var(--mono, "Courier New", monospace);
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.45rem;
+  text-transform: uppercase;
+}
+
+.live-notebook-list-block ul,
+.live-notebook-list-block ol {
+  margin: 0;
+  padding-inline-start: 1.2rem;
+}
+
+.live-notebook-list-block li {
+  margin-block-end: 0.35rem;
+}
+
 .live-notebook-note-foot {
   color: rgba(79, 70, 55, 0.72);
   font-family: var(--mono, "Courier New", monospace);

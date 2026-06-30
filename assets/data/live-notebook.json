@@ -2,7 +2,7 @@
   "notebook": {
     "title": "Live Notebook",
     "subtitle": "Published notes from Scriptorium.",
-    "updatedAt": "2026-06-29"
+    "updatedAt": "2026-06-30"
   },
   "pages": [
     {
@@ -11,15 +11,41 @@
       "date": "2026-06-23",
       "project": "Tempo",
       "type": "Flow",
-      "tags": [
-        "friction",
-        "raw-ideas"
-      ],
+      "tags": ["friction", "raw-ideas"],
       "body": [
         "Question: What is the smallest useful interface for protecting attention?",
         "Discovery: Tempo taught us that workflow tools should remove negotiation, not add dashboards.",
         "Breakthrough: A focused ritual can become infrastructure for better work."
-      ]
+      ],
+      "spread": {
+        "left": {
+          "title": "Why We Built Tempo First",
+          "meta": ["Tempo", "Flow", "2026-06-23", "Friction", "Raw Ideas"],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Question",
+              "text": "What is the smallest useful interface for protecting attention?"
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Tempo taught us that workflow tools should remove negotiation, not add dashboards."
+            }
+          ]
+        },
+        "right": {
+          "title": null,
+          "meta": ["Entry #0632"],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Breakthrough",
+              "text": "A focused ritual can become infrastructure for better work."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "the-listener-becomes-the-phantom",
@@ -27,18 +53,60 @@
       "date": "2026-06-24",
       "project": "The Locksmith",
       "type": "Philosophy",
-      "tags": [
-        "craft",
-        "decision",
-        "friction"
-      ],
+      "tags": ["craft", "decision", "friction"],
       "body": [
         "Question: Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?",
         "Discovery: The Locksmith is not about breaking in. It is about becoming someone who can build anything.",
         "Decision: Every track will represent a stage in the transformation from ordinary to extraordinary.",
         "Why it matters: When someone presses play, they do not just listen. They step into a different identity.",
         "Margin note: One insight rippled through every decision."
-      ]
+      ],
+      "spread": {
+        "left": {
+          "title": "The Listener Becomes the Phantom",
+          "meta": [
+            "The Locksmith",
+            "Philosophy",
+            "2026-06-24",
+            "Craft",
+            "Decision",
+            "Friction"
+          ],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Question",
+              "text": "Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?"
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "The Locksmith is not about breaking in. It is about becoming someone who can build anything."
+            },
+            {
+              "kind": "semantic",
+              "label": "Decision",
+              "text": "Every track will represent a stage in the transformation from ordinary to extraordinary."
+            }
+          ]
+        },
+        "right": {
+          "title": null,
+          "meta": ["Entry #0630"],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Why it matters",
+              "text": "When someone presses play, they do not just listen. They step into a different identity."
+            },
+            {
+              "kind": "semantic",
+              "label": "Margin note",
+              "text": "One insight rippled through every decision."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "from-friction-to-flow",
@@ -46,14 +114,41 @@
       "date": "2026-06-20",
       "project": "Workshop Philosophy",
       "type": "Flow",
-      "tags": [
-        "raw-ideas"
-      ],
+      "tags": ["raw-ideas"],
       "body": [
         "Spark: Friction is not always bad; unchosen friction is the problem.",
         "Why it matters: Every removed decision gives attention back to the work that matters.",
         "Margin note: Beautiful constraints are a kindness to future focus."
-      ]
+      ],
+      "spread": {
+        "left": {
+          "title": "From Friction to Flow",
+          "meta": ["Workshop Philosophy", "Flow", "2026-06-20", "Raw Ideas"],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Spark",
+              "text": "Friction is not always bad; unchosen friction is the problem."
+            },
+            {
+              "kind": "semantic",
+              "label": "Why it matters",
+              "text": "Every removed decision gives attention back to the work that matters."
+            }
+          ]
+        },
+        "right": {
+          "title": null,
+          "meta": ["Entry #0634"],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Margin note",
+              "text": "Beautiful constraints are a kindness to future focus."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "continuo-isn-t-another-productivity-app",
@@ -61,15 +156,39 @@
       "date": "2026-06-22",
       "project": "Continuo",
       "type": "Philosophy",
-      "tags": [
-        "craft",
-        "friction"
-      ],
+      "tags": ["craft", "friction"],
       "body": [
         "Productivity apps often preserve motion instead of meaning.",
         "Decision: Continuo should help people continue the right work, not merely track more work.",
         "“The tool is successful when the user returns to the craft faster.”"
-      ]
+      ],
+      "spread": {
+        "left": {
+          "title": "Continuo Isn’t Another Productivity App",
+          "meta": ["Continuo", "Philosophy", "2026-06-22", "Craft", "Friction"],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Productivity apps often preserve motion instead of meaning."
+            },
+            {
+              "kind": "semantic",
+              "label": "Decision",
+              "text": "Continuo should help people continue the right work, not merely track more work."
+            }
+          ]
+        },
+        "right": {
+          "title": null,
+          "meta": ["Entry #0633"],
+          "body": [
+            {
+              "kind": "quote",
+              "text": "The tool is successful when the user returns to the craft faster."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "cold-boot-defines-the-identity",
@@ -77,15 +196,46 @@
       "date": "2026-06-23",
       "project": "The Locksmith",
       "type": "Identity",
-      "tags": [
-        "decision",
-        "friction"
-      ],
+      "tags": ["decision", "friction"],
       "body": [
         "Spark: The first sound should feel like a system waking up and remembering its purpose.",
         "Decision: Cold Boot becomes the threshold: before it, potential; after it, commitment.",
         "Identity lands better when it is introduced as a ritual instead of an explanation."
-      ]
+      ],
+      "spread": {
+        "left": {
+          "title": "Cold Boot Defines the Identity",
+          "meta": [
+            "The Locksmith",
+            "Identity",
+            "2026-06-23",
+            "Decision",
+            "Friction"
+          ],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Spark",
+              "text": "The first sound should feel like a system waking up and remembering its purpose."
+            },
+            {
+              "kind": "semantic",
+              "label": "Decision",
+              "text": "Cold Boot becomes the threshold: before it, potential; after it, commitment."
+            }
+          ]
+        },
+        "right": {
+          "title": null,
+          "meta": ["Entry #0631"],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Identity lands better when it is introduced as a ritual instead of an explanation."
+            }
+          ]
+        }
+      }
     }
   ]
 }
