@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-06-30T03:55:51.792Z",
+  "updated_at": "2026-06-30T04:34:45.813Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "68f693a",
+      "message": "Consume Live Notebook typography export",
+      "date": "2026-06-29",
+      "time": "11:34 PM",
+      "timestamp": "2026-06-29T23:34:41-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "8e68c3c",
+      "message": "Export Live Notebook typography",
+      "date": "2026-06-29",
+      "time": "11:34 PM",
+      "timestamp": "2026-06-29T23:34:07-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -882,24 +900,6 @@
       "date": "2026-06-22",
       "time": "6:13 PM",
       "timestamp": "2026-06-22T18:13:58-05:00"
-    },
-    {
-      "project": "Continuo",
-      "repo": "Continuo",
-      "hash": "27d5eec",
-      "message": "Allow Glimpse mobile bearer auth",
-      "date": "2026-06-22",
-      "time": "4:32 PM",
-      "timestamp": "2026-06-22T16:32:02-05:00"
-    },
-    {
-      "project": "Glimpse",
-      "repo": "Glimpse",
-      "hash": "0a9a235",
-      "message": "Polish Glimpse public backend flow",
-      "date": "2026-06-22",
-      "time": "3:36 PM",
-      "timestamp": "2026-06-22T15:36:11-05:00"
     }
   ]
 }
