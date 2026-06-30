@@ -11,9 +11,7 @@
       "date": "2026-06-25",
       "project": "The Locksmith",
       "type": "Philosophy",
-      "tags": [
-        "decision"
-      ],
+      "tags": [],
       "body": [
         "Question: Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?",
         "Discovery: The Locksmith is not about breaking in. It is about becoming someone who can build anything.",
@@ -33,8 +31,7 @@
           "meta": [
             "The Locksmith",
             "Philosophy",
-            "2026-06-25",
-            "Decision"
+            "2026-06-25"
           ],
           "body": [
             {
