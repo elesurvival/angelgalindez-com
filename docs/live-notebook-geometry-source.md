@@ -24,7 +24,7 @@ Do not edit those generated files by hand.
 The hidden Live Notebook page loads:
 
 ```html
-<link rel="stylesheet" href="/assets/css/notebook-geometry.css?v=20260629">
+<link rel="stylesheet" href="/assets/css/notebook-geometry.css?v=20260630">
 ```
 
 Then `styles.css` maps the shared neutral variables into the existing Live Notebook local variables:
@@ -53,8 +53,8 @@ When notebook geometry changes:
 Shell: 1174px x 690px
 Aspect ratio: 1174 / 690
 Gutter: 18px
-Content box: 435.73px x 552.33px
-Page safe areas: 48px top, 52px bottom, 48px outer, 76px inner
+Content box: 435.73px x 584.33px
+Page safe areas: 32px top, 32px bottom, 48px outer, 76px inner
 Body type: 16px / 26.88px
 ```
 

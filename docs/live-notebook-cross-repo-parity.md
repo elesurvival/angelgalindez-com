@@ -54,8 +54,8 @@ Scale factor: 0.4953
 Gutter: 18px
 Left page: 559.73px x 652.33px
 Right page: 559.73px x 652.33px
-Content box: 435.73px x 552.33px
-Page safe areas: 48px top, 52px bottom, 48px outer, 76px inner
+Content box: 435.73px x 584.33px
+Page safe areas: 32px top, 32px bottom, 48px outer, 76px inner
 ```
 
 The Admin preview had no horizontal overflow and no console errors during measurement.
@@ -70,8 +70,8 @@ Scale factor: 1
 Gutter: 18px
 Left page: 559.73px x 652.33px
 Right page: 559.73px x 652.33px
-Content box: 435.73px x 552.33px
-Page safe areas: 48px top, 52px bottom, 48px outer, 76px inner
+Content box: 435.73px x 584.33px
+Page safe areas: 32px top, 32px bottom, 48px outer, 76px inner
 ```
 
 The Live Notebook had no horizontal overflow and no console errors during measurement.
@@ -92,9 +92,9 @@ The Live Notebook had no horizontal overflow and no console errors during measur
 | Right page width | `559.73px` | `559.73px` | Yes | Computed CSS width before Admin scaling. |
 | Right page height | `652.33px` | `652.33px` | Yes | Computed CSS height before Admin scaling. |
 | Content box width | `435.73px` | `435.73px` | Yes | Page width minus outer and inner safe padding. |
-| Content box height | `552.33px` | `552.33px` | Yes | Page height minus top and bottom safe padding. |
-| Page safe top | `48px` | `48px` | Yes | Both derive from `3rem`. |
-| Page safe bottom | `52px` | `52px` | Yes | Both derive from `3.25rem`. |
+| Content box height | `584.33px` | `584.33px` | Yes | Page height minus top and bottom safe padding. |
+| Page safe top | `32px` | `32px` | Yes | Both derive from `2rem`. |
+| Page safe bottom | `32px` | `32px` | Yes | Both derive from `2rem`. |
 | Page safe outer | `48px` | `48px` | Yes | Both derive from `3rem`. |
 | Page safe inner | `76px` | `76px` | Yes | Both derive from `4.75rem`. |
 | Title font size | `48px` canonical token | `48px` | Yes | Runtime Admin value can be lower for long-title classes or saved typography settings. |

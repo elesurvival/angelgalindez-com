@@ -272,8 +272,8 @@ Recommended next step:
    --notebook-publish-shell-height: 690px;
    --notebook-publish-aspect-ratio: 1174 / 690;
    --notebook-publish-gutter-width: 18px;
-   --notebook-publish-page-safe-top: 3rem;
-   --notebook-publish-page-safe-bottom: 3.25rem;
+   --notebook-publish-page-safe-top: 2rem;
+   --notebook-publish-page-safe-bottom: 2rem;
    --notebook-publish-page-safe-outer: 3rem;
    --notebook-publish-page-safe-inner: 4.75rem;
    ```
