@@ -8645,12 +8645,14 @@ a.build-log-project:focus-visible {
   font-family: var(--notebook-title-font, "Segoe Print", "Bradley Hand ITC", "Segoe Script", cursive);
   font-size: clamp(2.1rem, 4vw, var(--notebook-title-size, var(--live-notebook-title-size)));
   font-weight: 400;
+  font-variant-caps: normal;
   letter-spacing: var(--notebook-title-letter-spacing, 0.004em);
   line-height: var(--notebook-title-line-height, var(--live-notebook-title-line-height));
   margin: 0 auto var(--live-notebook-title-spacing);
   max-inline-size: 100%;
   overflow-wrap: break-word;
   text-align: center;
+  text-transform: none;
   text-wrap: balance;
   transform: rotate(var(--notebook-title-rotation, -0.45deg));
 }
@@ -8666,6 +8668,29 @@ a.build-log-project:focus-visible {
   width: var(--notebook-title-underline-width, 76%);
 }
 
+.live-notebook-taxonomy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.42rem;
+  list-style: none;
+  margin: -0.52rem 0 1.08rem;
+  padding: 0;
+}
+
+.live-notebook-taxonomy li {
+  background: rgba(224, 190, 116, 0.24);
+  border: 1px solid rgba(174, 128, 51, 0.28);
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(255, 249, 226, 0.32) inset;
+  color: rgba(55, 42, 25, 0.88);
+  font-family: var(--mono, "Courier New", monospace);
+  font-size: 0.66rem;
+  letter-spacing: 0.045em;
+  line-height: 1.2;
+  padding: 0.25rem 0.42rem;
+  text-transform: uppercase;
+}
+
 .live-notebook-note-body {
   color: var(--notebook-semantic-body-color, #3f372c);
   font-family: var(--notebook-semantic-body-font, "Source Serif 4", Georgia, serif);
@@ -8679,29 +8704,31 @@ a.build-log-project:focus-visible {
   white-space: pre-line;
 }
 
-.live-notebook-note-body p.live-notebook-semantic-line {
+.live-notebook-note-body .live-notebook-semantic-line {
   margin-block-end: 1.08rem;
 }
 
 .live-notebook-semantic-label {
-  background: rgba(221, 176, 82, 0.18);
-  border: 1px solid rgba(174, 128, 51, 0.28);
-  border-radius: 2px;
-  box-decoration-break: clone;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
   color: var(--notebook-block-heading-color, #24466a);
   display: inline-block;
   font-family: var(--notebook-block-heading-font, var(--mono, "Courier New", monospace));
   font-size: var(--notebook-block-heading-size, 0.68rem);
   font-weight: 400;
   letter-spacing: var(--notebook-block-heading-letter-spacing, 0.08em);
-  line-height: 1.2;
-  margin: 0 0.42rem 0.12rem 0;
-  padding: 0.12rem 0.28rem;
+  line-height: 1.18;
+  margin: 0 0 0.38rem;
+  padding: 0;
+  position: relative;
   text-transform: var(--notebook-block-heading-transform, uppercase);
-  transform: rotate(-0.25deg);
+  transform: rotate(-0.28deg);
+  transform-origin: left center;
 }
 
 .live-notebook-semantic-text {
+  margin: 0;
   white-space: pre-line;
 }
 

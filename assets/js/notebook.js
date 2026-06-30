@@ -87,6 +87,45 @@
     };
   };
 
+  const semanticClassName = (label) =>
+    String(label || "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "");
+
+  const semanticHeading = (label) => {
+    const headings = {
+      Spark: "The Spark",
+      Question: "The Question",
+      Discovery: "The Discovery",
+      Decision: "The Decision",
+      "Why it matters": "Why It Matters",
+      Breakthrough: "The Breakthrough",
+      "Margin note": "Margin Note",
+      "Image note": "Image Note",
+    };
+
+    return headings[label] || label || "Note";
+  };
+
+  const renderSemanticBlock = (semanticLine) => {
+    const section = document.createElement("section");
+    section.className = `live-notebook-semantic-line live-notebook-semantic-line--${semanticClassName(
+      semanticLine.label,
+    )}`;
+
+    const label = document.createElement("h3");
+    label.className = "live-notebook-semantic-label";
+    label.textContent = semanticHeading(semanticLine.label);
+
+    const text = document.createElement("p");
+    text.className = "live-notebook-semantic-text";
+    text.textContent = semanticLine.text;
+
+    section.append(label, text);
+    return section;
+  };
+
   const renderBodyLine = (line) => {
     const semanticLine = parseSemanticLine(line);
     const paragraph = document.createElement("p");
@@ -96,21 +135,7 @@
       return paragraph;
     }
 
-    paragraph.className = `live-notebook-semantic-line live-notebook-semantic-line--${semanticLine.label
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, "-")
-      .replace(/^-|-$/g, "")}`;
-
-    const label = document.createElement("span");
-    label.className = "live-notebook-semantic-label";
-    label.textContent = semanticLine.label;
-
-    const text = document.createElement("span");
-    text.className = "live-notebook-semantic-text";
-    text.textContent = semanticLine.text;
-
-    paragraph.append(label, document.createTextNode(" "), text);
-    return paragraph;
+    return renderSemanticBlock(semanticLine);
   };
 
   const renderSpreadBlock = (block) => {
@@ -125,7 +150,10 @@
     }
 
     if (block.kind === "semantic") {
-      return renderBodyLine(`${block.label || "Note"}: ${block.text || ""}`);
+      return renderSemanticBlock({
+        label: block.label || "Note",
+        text: block.text || "",
+      });
     }
 
     if (block.kind === "quote") {
@@ -174,6 +202,69 @@
     (Array.isArray(blocks) ? blocks : []).forEach((block) => {
       container.append(renderSpreadBlock(block));
     });
+  };
+
+  const humanizeTag = (tag) =>
+    String(tag || "")
+      .split(/[-_\s]+/)
+      .filter(Boolean)
+      .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+      .join(" ");
+
+  const taxonomyTagLabels = (page) => {
+    const leftMeta = Array.isArray(page.spread?.left?.meta)
+      ? page.spread.left.meta
+      : [];
+    const labels = leftMeta.filter(
+      (item) =>
+        item &&
+        item !== page.project &&
+        item !== page.type &&
+        item !== page.date &&
+        item !== formatDate(page.date),
+    );
+
+    if (labels.length) {
+      return labels;
+    }
+
+    return Array.isArray(page.tags) ? page.tags.map(humanizeTag) : [];
+  };
+
+  const clearTaxonomyChips = (root) => {
+    root
+      .querySelectorAll(".live-notebook-taxonomy")
+      .forEach((node) => node.remove());
+  };
+
+  const renderTaxonomyChips = (root, page) => {
+    const title = root.querySelector(selectors.noteTitle);
+    if (!title) {
+      return;
+    }
+
+    clearTaxonomyChips(root);
+
+    const chips = [
+      page.project ? `Project: ${page.project}` : "",
+      page.type && page.type !== "Note" ? `Theme: ${page.type}` : "",
+      ...taxonomyTagLabels(page),
+    ].filter(Boolean);
+
+    if (!chips.length) {
+      return;
+    }
+
+    const list = document.createElement("ul");
+    list.className = "live-notebook-taxonomy";
+    list.setAttribute("aria-label", "Notebook entry taxonomy");
+    chips.forEach((chip) => {
+      const item = document.createElement("li");
+      item.textContent = chip;
+      list.append(item);
+    });
+
+    title.insertAdjacentElement("afterend", list);
   };
 
   const getPageHash = () =>
@@ -280,6 +371,7 @@
       message || "Build activity will appear here soon.",
     );
     setText(root, selectors.entryCount, "0");
+    clearTaxonomyChips(root);
 
     const body = root.querySelector(selectors.noteBody);
     if (body) {
@@ -321,17 +413,11 @@
     clearNode(rightPage);
 
     if (rightBlocks.length) {
-      const header = document.createElement("header");
-      header.className = "spread-page-header spread-page-header--right";
-      const headerText = document.createElement("span");
-      headerText.textContent = rightSpread.meta?.[0] || "Live Notebook";
-      header.append(headerText);
-
       const body = document.createElement("div");
       body.className = "live-notebook-note-body live-notebook-note-body--right";
       renderSpreadBody(body, rightBlocks);
 
-      rightPage.append(header, body);
+      rightPage.append(body);
       return;
     }
 
@@ -371,9 +457,10 @@
     setText(
       root,
       selectors.noteMeta,
-      `${page.project || "Notebook"} · ${page.type || "Note"} · ${formatDate(page.date)}`,
+      formatDate(page.date),
     );
     setText(root, selectors.noteTitle, page.title || "Untitled Note");
+    renderTaxonomyChips(root, page);
     setText(
       root,
       selectors.pageCount,
