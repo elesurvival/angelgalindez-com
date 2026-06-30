@@ -20,8 +20,14 @@
         "Question: Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?",
         "Discovery: The Locksmith is not about breaking in. It is about becoming someone who can build anything.",
         "Decision: Every track will represent a stage in the transformation from ordinary to extraordinary.",
+        "THIS CHANGED EVERYTHING",
+        "• Track titles",
+        "• Track purposes",
+        "• The emotional arc",
+        "• The album artwork concept",
+        "• How we talk about the album",
         "Why it matters: When someone presses play, they do not just listen. They step into a different identity.",
-        "Margin note: One insight rippled through every decision."
+        "\"We're not macking music for hackers.\nWe're making music for builders.\" - AG"
       ],
       "spread": {
         "left": {
@@ -44,11 +50,6 @@
               "kind": "semantic",
               "label": "Discovery",
               "text": "The Locksmith is not about breaking in. It is about becoming someone who can build anything."
-            },
-            {
-              "kind": "semantic",
-              "label": "Decision",
-              "text": "Every track will represent a stage in the transformation from ordinary to extraordinary."
             }
           ]
         },
@@ -60,13 +61,29 @@
           "body": [
             {
               "kind": "semantic",
+              "label": "Decision",
+              "text": "Every track will represent a stage in the transformation from ordinary to extraordinary."
+            },
+            {
+              "kind": "list",
+              "ordered": false,
+              "title": "THIS CHANGED EVERYTHING",
+              "items": [
+                "Track titles",
+                "Track purposes",
+                "The emotional arc",
+                "The album artwork concept",
+                "How we talk about the album"
+              ]
+            },
+            {
+              "kind": "semantic",
               "label": "Why it matters",
               "text": "When someone presses play, they do not just listen. They step into a different identity."
             },
             {
-              "kind": "semantic",
-              "label": "Margin note",
-              "text": "One insight rippled through every decision."
+              "kind": "paragraph",
+              "text": "\"We're not macking music for hackers.\nWe're making music for builders.\" - AG"
             }
           ]
         }
