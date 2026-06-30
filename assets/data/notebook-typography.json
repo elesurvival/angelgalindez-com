@@ -2,7 +2,7 @@
   "source": {
     "app": "Scriptorium",
     "databasePath": "C:\\Users\\Angel\\Documents\\scriptorium\\apps\\api\\data\\scriptorium.sqlite",
-    "settingsUpdatedAt": "2026-06-30T05:30:31.702Z"
+    "settingsUpdatedAt": "2026-06-30T07:33:00.685Z"
   },
   "files": {
     "css": "/assets/css/notebook-typography.css",
@@ -10,15 +10,6 @@
     "fonts": "/assets/projects/notebook/fonts/"
   },
   "fonts": [
-    {
-      "id": -3,
-      "displayName": "Daniel Black",
-      "fontFamily": "Daniel Black",
-      "originalFilename": "daniel-black.ttf",
-      "storedFilename": "daniel-black.ttf",
-      "publicUrl": "/assets/projects/notebook/fonts/daniel-black.ttf",
-      "sizeBytes": 0
-    },
     {
       "id": -2,
       "displayName": "Daniel Bold",
@@ -29,13 +20,13 @@
       "sizeBytes": 0
     },
     {
-      "id": -1,
-      "displayName": "Daniel",
-      "fontFamily": "Daniel",
-      "originalFilename": "daniel.ttf",
-      "storedFilename": "daniel.ttf",
-      "publicUrl": "/assets/projects/notebook/fonts/daniel.ttf",
-      "sizeBytes": 0
+      "id": 6,
+      "displayName": "Monday Donuts",
+      "fontFamily": "Scriptorium Monday Donuts 2fe3b0c9",
+      "originalFilename": "Monday Donuts.otf",
+      "storedFilename": "2fe3b0c9-5c71-4807-93d9-7adfb18ced92.otf",
+      "publicUrl": "/assets/projects/notebook/fonts/2fe3b0c9-5c71-4807-93d9-7adfb18ced92.otf",
+      "sizeBytes": 30664
     },
     {
       "id": 12,
@@ -54,6 +45,15 @@
       "storedFilename": "5b3da537-930b-4aa9-a410-1170046726d2.ttf",
       "publicUrl": "/assets/projects/notebook/fonts/5b3da537-930b-4aa9-a410-1170046726d2.ttf",
       "sizeBytes": 97364
+    },
+    {
+      "id": 28,
+      "displayName": "Natural Mono Regular",
+      "fontFamily": "Scriptorium Natural Mono Regular 1c67c8ff",
+      "originalFilename": "Natural Mono-Regular.ttf",
+      "storedFilename": "1c67c8ff-3e7a-4182-b088-1c0186a0036b.ttf",
+      "publicUrl": "/assets/projects/notebook/fonts/1c67c8ff-3e7a-4182-b088-1c0186a0036b.ttf",
+      "sizeBytes": 101544
     }
   ],
   "roles": {
@@ -75,24 +75,24 @@
       "rotation": "-1.1deg"
     },
     "blockHeading": {
-      "fontFamily": "\"Daniel Bold\", \"Segoe Print\", \"Bradley Hand ITC\", \"Segoe Script\", cursive",
-      "fontId": -2,
-      "size": "14px",
+      "fontFamily": "\"Scriptorium Monday Donuts 2fe3b0c9\", \"Segoe Print\", \"Bradley Hand ITC\", \"Segoe Script\", cursive",
+      "fontId": 6,
+      "size": "15px",
       "letterSpacing": "0.01em",
       "color": "#24466a",
       "textTransform": "uppercase"
     },
     "semanticBody": {
-      "fontFamily": "\"Daniel Black\", \"Source Serif 4\", Georgia, serif",
-      "fontId": -3,
+      "fontFamily": "\"Scriptorium Natural Mono Regular 1c67c8ff\", \"Source Serif 4\", Georgia, serif",
+      "fontId": 28,
       "size": "13px",
       "lineHeight": 1.68,
       "letterSpacing": "0em",
       "color": "#3f372c"
     },
     "marginNote": {
-      "fontFamily": "\"Daniel\", \"Segoe Print\", \"Bradley Hand ITC\", \"Segoe Script\", cursive",
-      "fontId": -1,
+      "fontFamily": "\"Scriptorium Handwriting b48c1cdb\", \"Segoe Print\", \"Bradley Hand ITC\", \"Segoe Script\", cursive",
+      "fontId": 12,
       "size": "16px",
       "lineHeight": 1.35,
       "color": "#254b83"
