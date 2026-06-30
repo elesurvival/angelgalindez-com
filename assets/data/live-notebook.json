@@ -21,28 +21,17 @@
         "scriptorium"
       ],
       "body": [
-        "This entry exists to prove that the Live Notebook preserves the authored Admin Notebook spread.",
         "Question: Can the public notebook render the same page we authored in Admin?",
         "Discovery: Geometry alone is not enough. The page also has to preserve block identity, typography, materials, images, and placement.",
         "Decision: The Admin Notebook remains the source of truth. The Live Notebook should receive the authored spread, not rebuild it from flattened text.",
-        "Image note: A visible sketch proves image export and placement.",
-        "Why it matters: If the Live Notebook drifts from Admin, publishing becomes guesswork. Matching the authored page lets Scriptorium feel trustworthy.",
-        "Breakthrough: A notebook entry can become public without becoming a different artifact.",
-        "“The Live Notebook should reveal the authored page, not reinterpret it.” — AG",
-        "Margin note: Parity is the product.",
-        "Parity checklist",
-        "• Title case preserved",
-        "• Semantic headings match",
-        "• List styling transfers",
-        "• Image placement survives",
-        "• Materials render publicly",
         "Publish path",
         "1. Author in Admin",
         "2. Publish Entry",
         "3. Export data and typography",
         "4. Commit website changes",
         "5. Push to main",
-        "This material block should keep its paper treatment when published."
+        "Why it matters: If the Live Notebook drifts from Admin, publishing becomes guesswork. Matching the authored page lets Scriptorium feel trustworthy.",
+        "Breakthrough: A notebook entry can become public without becoming a different artifact."
       ],
       "spread": {
         "left": {
@@ -61,14 +50,6 @@
           ],
           "body": [
             {
-              "kind": "paragraph",
-              "text": "A visual parity entry that exercises Admin-to-Live Notebook publishing."
-            },
-            {
-              "kind": "paragraph",
-              "text": "This entry exists to prove that the Live Notebook preserves the authored Admin Notebook spread."
-            },
-            {
               "kind": "semantic",
               "label": "Question",
               "text": "Can the public notebook render the same page we authored in Admin?"
@@ -79,22 +60,16 @@
               "text": "Geometry alone is not enough. The page also has to preserve block identity, typography, materials, images, and placement."
             },
             {
-              "kind": "semantic",
-              "label": "Decision",
-              "text": "The Admin Notebook remains the source of truth. The Live Notebook should receive the authored spread, not rebuild it from flattened text."
-            },
-            {
               "kind": "image",
               "src": "/assets/projects/notebook/exported-assets/sketch-sketch-of-a-man-seen-sitting-from-behind-a-computer--20260630-083841-26646d29.png",
               "alt": "Pencil sketch used for Live Notebook visual parity testing",
-              "caption": "A visible sketch proves image export and placement.",
               "displayMode": "inset",
               "placement": {
                 "mode": "free",
                 "page": "left",
                 "x": 148,
-                "y": 365,
-                "width": 210,
+                "y": 395,
+                "width": 192,
                 "zIndex": 1
               }
             }
@@ -108,37 +83,8 @@
           "body": [
             {
               "kind": "semantic",
-              "label": "Why it matters",
-              "text": "If the Live Notebook drifts from Admin, publishing becomes guesswork. Matching the authored page lets Scriptorium feel trustworthy."
-            },
-            {
-              "kind": "semantic",
-              "label": "Breakthrough",
-              "text": "A notebook entry can become public without becoming a different artifact."
-            },
-            {
-              "kind": "quote",
-              "text": "The Live Notebook should reveal the authored page, not reinterpret it.",
-              "attribution": "AG"
-            },
-            {
-              "kind": "semantic",
-              "label": "Margin note",
-              "text": "Parity is the product."
-            },
-            {
-              "kind": "list",
-              "listType": "bulleted",
-              "ordered": false,
-              "title": "Parity checklist",
-              "items": [
-                "Title case preserved",
-                "Semantic headings match",
-                "List styling transfers",
-                "Image placement survives",
-                "Materials render publicly"
-              ],
-              "frame": true
+              "label": "Decision",
+              "text": "The Admin Notebook remains the source of truth. The Live Notebook should receive the authored spread, not rebuild it from flattened text."
             },
             {
               "kind": "list",
@@ -155,12 +101,14 @@
               "frame": true
             },
             {
-              "kind": "paragraph",
-              "text": "This material block should keep its paper treatment when published.",
-              "material": {
-                "id": "taped-fragment",
-                "name": "Taped Fragment"
-              }
+              "kind": "semantic",
+              "label": "Why it matters",
+              "text": "If the Live Notebook drifts from Admin, publishing becomes guesswork. Matching the authored page lets Scriptorium feel trustworthy."
+            },
+            {
+              "kind": "semantic",
+              "label": "Breakthrough",
+              "text": "A notebook entry can become public without becoming a different artifact."
             }
           ]
         }
