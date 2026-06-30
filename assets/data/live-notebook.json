@@ -6,6 +6,73 @@
   },
   "pages": [
     {
+      "id": "the-listener-becomes-the-phantom",
+      "title": "The Listener Becomes the Phantom",
+      "date": "2026-06-24",
+      "project": "The Locksmith",
+      "type": "Philosophy",
+      "tags": [
+        "craft",
+        "decision",
+        "friction"
+      ],
+      "body": [
+        "Question: Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?",
+        "Discovery: The Locksmith is not about breaking in. It is about becoming someone who can build anything.",
+        "Decision: Every track will represent a stage in the transformation from ordinary to extraordinary.",
+        "Why it matters: When someone presses play, they do not just listen. They step into a different identity.",
+        "Margin note: One insight rippled through every decision."
+      ],
+      "spread": {
+        "left": {
+          "title": "The Listener Becomes the Phantom",
+          "meta": [
+            "The Locksmith",
+            "Philosophy",
+            "2026-06-24",
+            "Craft",
+            "Decision",
+            "Friction"
+          ],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Question",
+              "text": "Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?"
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "The Locksmith is not about breaking in. It is about becoming someone who can build anything."
+            },
+            {
+              "kind": "semantic",
+              "label": "Decision",
+              "text": "Every track will represent a stage in the transformation from ordinary to extraordinary."
+            }
+          ]
+        },
+        "right": {
+          "title": null,
+          "meta": [
+            "Entry #0093"
+          ],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Why it matters",
+              "text": "When someone presses play, they do not just listen. They step into a different identity."
+            },
+            {
+              "kind": "semantic",
+              "label": "Margin note",
+              "text": "One insight rippled through every decision."
+            }
+          ]
+        }
+      }
+    },
+    {
       "id": "why-we-built-tempo-first",
       "title": "Why We Built Tempo First",
       "date": "2026-06-23",
@@ -121,73 +188,6 @@
               "kind": "semantic",
               "label": "Why it matters",
               "text": "Artifacts feel more human when the reader can see the path that shaped them."
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "the-listener-becomes-the-phantom",
-      "title": "The Listener Becomes the Phantom",
-      "date": "2026-06-24",
-      "project": "The Locksmith",
-      "type": "Philosophy",
-      "tags": [
-        "craft",
-        "decision",
-        "friction"
-      ],
-      "body": [
-        "Question: Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?",
-        "Discovery: The Locksmith is not about breaking in. It is about becoming someone who can build anything.",
-        "Decision: Every track will represent a stage in the transformation from ordinary to extraordinary.",
-        "Why it matters: When someone presses play, they do not just listen. They step into a different identity.",
-        "Margin note: One insight rippled through every decision."
-      ],
-      "spread": {
-        "left": {
-          "title": "The Listener Becomes the Phantom",
-          "meta": [
-            "The Locksmith",
-            "Philosophy",
-            "2026-06-24",
-            "Craft",
-            "Decision",
-            "Friction"
-          ],
-          "body": [
-            {
-              "kind": "semantic",
-              "label": "Question",
-              "text": "Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?"
-            },
-            {
-              "kind": "semantic",
-              "label": "Discovery",
-              "text": "The Locksmith is not about breaking in. It is about becoming someone who can build anything."
-            },
-            {
-              "kind": "semantic",
-              "label": "Decision",
-              "text": "Every track will represent a stage in the transformation from ordinary to extraordinary."
-            }
-          ]
-        },
-        "right": {
-          "title": null,
-          "meta": [
-            "Entry #0093"
-          ],
-          "body": [
-            {
-              "kind": "semantic",
-              "label": "Why it matters",
-              "text": "When someone presses play, they do not just listen. They step into a different identity."
-            },
-            {
-              "kind": "semantic",
-              "label": "Margin note",
-              "text": "One insight rippled through every decision."
             }
           ]
         }
