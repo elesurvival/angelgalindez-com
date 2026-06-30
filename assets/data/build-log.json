@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-30T10:44:00.181Z",
+  "updated_at": "2026-06-30T11:05:40.831Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "808415d",
+      "message": "Publish live-notebook-parity-test to Live Notebook",
+      "date": "2026-06-30",
+      "time": "6:05 AM",
+      "timestamp": "2026-06-30T06:05:37-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -891,15 +900,6 @@
       "date": "2026-06-25",
       "time": "6:38 AM",
       "timestamp": "2026-06-25T06:38:03-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "ce07e11",
-      "message": "Add Scriptorium entry discovery",
-      "date": "2026-06-25",
-      "time": "6:12 AM",
-      "timestamp": "2026-06-25T06:12:49-05:00"
     }
   ]
 }
