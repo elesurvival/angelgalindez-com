@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-06-30T03:12:29.896Z",
+  "updated_at": "2026-06-30T03:54:17.640Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "3b06fd0",
+      "message": "Remove Admin Notebook page numbers",
+      "date": "2026-06-29",
+      "time": "10:54 PM",
+      "timestamp": "2026-06-29T22:54:13-05:00"
+    },
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "7edcf48",
+      "message": "Remove Live Notebook footer metadata",
+      "date": "2026-06-29",
+      "time": "10:54 PM",
+      "timestamp": "2026-06-29T22:54:13-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -882,24 +900,6 @@
       "date": "2026-06-22",
       "time": "3:36 PM",
       "timestamp": "2026-06-22T15:36:11-05:00"
-    },
-    {
-      "project": "Continuo",
-      "repo": "Continuo",
-      "hash": "06c98f6",
-      "message": "Fix smoke test environment drift",
-      "date": "2026-06-22",
-      "time": "1:57 PM",
-      "timestamp": "2026-06-22T13:57:59-05:00"
-    },
-    {
-      "project": "Continuo",
-      "repo": "Continuo",
-      "hash": "7bbefc0",
-      "message": "Add entry state actions to context menu",
-      "date": "2026-06-22",
-      "time": "1:29 PM",
-      "timestamp": "2026-06-22T13:29:14-05:00"
     }
   ]
 }
