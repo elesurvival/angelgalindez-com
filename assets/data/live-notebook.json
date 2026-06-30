@@ -62,6 +62,10 @@
           "body": [
             {
               "kind": "paragraph",
+              "text": "A visual parity entry that exercises Admin-to-Live Notebook publishing."
+            },
+            {
+              "kind": "paragraph",
               "text": "This entry exists to prove that the Live Notebook preserves the authored Admin Notebook spread."
             },
             {
@@ -287,6 +291,10 @@
           ],
           "body": [
             {
+              "kind": "paragraph",
+              "text": "We didn't, we built Continuo first."
+            },
+            {
               "kind": "semantic",
               "label": "Question",
               "text": "What is the smallest useful interface for protecting attention?"
@@ -349,6 +357,10 @@
           ],
           "body": [
             {
+              "kind": "paragraph",
+              "text": "A note on preserving the thinking behind the finished artifact."
+            },
+            {
               "kind": "semantic",
               "label": "Question",
               "text": "How do we show the thinking that led to the commits, not merely the commits themselves?"
@@ -405,6 +417,10 @@
           ],
           "body": [
             {
+              "kind": "paragraph",
+              "text": "A note about designing fewer decisions into the day."
+            },
+            {
               "kind": "semantic",
               "label": "Spark",
               "text": "Friction is not always bad; unchosen friction is the problem."
@@ -459,6 +475,10 @@
           "body": [
             {
               "kind": "paragraph",
+              "text": "A constraint that kept the product honest."
+            },
+            {
+              "kind": "paragraph",
               "text": "Productivity apps often preserve motion instead of meaning."
             },
             {
@@ -508,6 +528,10 @@
             "Friction"
           ],
           "body": [
+            {
+              "kind": "paragraph",
+              "text": "A startup sequence became the emotional doorway into the project."
+            },
             {
               "kind": "semantic",
               "label": "Spark",
