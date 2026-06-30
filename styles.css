@@ -8671,6 +8671,7 @@ a.build-log-project:focus-visible {
 
 .live-notebook-note-body p {
   margin: 0 0 1rem;
+  white-space: pre-line;
 }
 
 .live-notebook-note-foot {
