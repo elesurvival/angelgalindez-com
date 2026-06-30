@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-06-30T11:05:40.831Z",
+  "updated_at": "2026-06-30T11:29:40.501Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "d44dacc",
+      "message": "Improve Live Notebook visual parity rendering",
+      "date": "2026-06-30",
+      "time": "6:29 AM",
+      "timestamp": "2026-06-30T06:29:37-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "2474ae0",
+      "message": "Improve Live Notebook visual parity",
+      "date": "2026-06-30",
+      "time": "6:29 AM",
+      "timestamp": "2026-06-30T06:29:03-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -882,24 +900,6 @@
       "date": "2026-06-25",
       "time": "7:22 AM",
       "timestamp": "2026-06-25T07:22:13-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "78e2691",
-      "message": "Add Scriptorium desktop launcher",
-      "date": "2026-06-25",
-      "time": "7:06 AM",
-      "timestamp": "2026-06-25T07:06:04-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "0bc8e98",
-      "message": "Craft Scriptorium notebook experience",
-      "date": "2026-06-25",
-      "time": "6:38 AM",
-      "timestamp": "2026-06-25T06:38:03-05:00"
     }
   ]
 }
