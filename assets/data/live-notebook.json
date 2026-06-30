@@ -46,6 +46,20 @@
               "kind": "semantic",
               "label": "Discovery",
               "text": "The Locksmith is not about breaking in. It is about becoming someone who can build anything."
+            },
+            {
+              "kind": "image",
+              "src": "/assets/projects/notebook/exported-assets/sketch-sketch-of-a-man-seen-sitting-from-behind-a-computer--20260630-083841-26646d29.png",
+              "alt": "Pencil sketch: sketch of a man seen sitting from behind a computer workstation with multiple monitors. The man is wearing headphones",
+              "displayMode": "full",
+              "placement": {
+                "mode": "free",
+                "page": "left",
+                "x": 30,
+                "y": 370,
+                "width": 211,
+                "zIndex": 1
+              }
             }
           ]
         },

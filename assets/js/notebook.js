@@ -224,7 +224,9 @@
       const listType =
         block.listType || (block.ordered ? "numbered" : "bulleted");
       section.className = `live-notebook-list-block block-${listType}-list`;
-      section.dataset.frame = block.frame === false ? "false" : "true";
+      const frameEnabled =
+        block.frame === false || block.frame?.enabled === false ? "false" : "true";
+      section.dataset.frame = frameEnabled;
       applyMaterial(section, block);
       if (block.title) {
         const heading = document.createElement("h4");
@@ -250,13 +252,100 @@
       });
     }
 
+    if (block.kind === "image") {
+      return renderImageBlock(block);
+    }
+
     return renderParagraphBlock(block);
   };
 
+  const imageZIndex = (placement) => {
+    const zIndex = Number(placement?.zIndex ?? 1);
+    if (zIndex <= 0) return 1;
+    if (zIndex >= 2) return 3;
+    return 2;
+  };
+
+  const applyImagePlacement = (figure, placement = {}) => {
+    const width = Math.max(120, Math.min(Number(placement.width ?? 320), 620));
+    figure.style.setProperty("--live-image-width", `${width}px`);
+    figure.style.zIndex = String(imageZIndex(placement));
+
+    if (placement.mode !== "free") {
+      figure.style.maxWidth = `min(${width}px, 100%)`;
+      return;
+    }
+
+    const x = Math.max(0, Math.min(Number(placement.x ?? 0), 900));
+    const y = Math.max(0, Math.min(Number(placement.y ?? 0), 900));
+    figure.style.left = `max(0px, min(${x}px, calc(100% - ${width}px - 0.9rem)))`;
+    figure.style.top = `max(0px, min(${y}px, calc(100% - 8rem)))`;
+    figure.style.width = `min(${width}px, calc(100% - 1.2rem))`;
+  };
+
+  const renderImageBlock = (block) => {
+    const figure = document.createElement("figure");
+    const displayMode = block.displayMode || "full";
+    const placement = block.placement || {};
+    figure.className = `live-notebook-image-block live-notebook-image-block--${displayMode}`;
+    figure.dataset.placementMode = placement.mode === "free" ? "free" : "flow";
+    applyMaterial(figure, block);
+    applyImagePlacement(figure, placement);
+
+    const image = document.createElement("img");
+    image.src = block.src || "";
+    image.alt = block.alt || "";
+    image.loading = "lazy";
+    image.decoding = "async";
+    figure.append(image);
+
+    if (block.caption) {
+      const caption = document.createElement("figcaption");
+      caption.textContent = block.caption;
+      figure.append(caption);
+    }
+
+    return figure;
+  };
+
+  const freeLayerForBody = (container) => {
+    const page = container.closest(".live-notebook-page");
+    if (!page) return null;
+
+    let layer = page.querySelector(":scope > .live-notebook-free-layer");
+    if (!layer) {
+      layer = document.createElement("div");
+      layer.className = "live-notebook-free-layer";
+      layer.setAttribute("aria-hidden", "true");
+      page.append(layer);
+    }
+
+    return layer;
+  };
+
+  const clearFreeLayerForBody = (container) => {
+    const layer = freeLayerForBody(container);
+    if (layer) clearNode(layer);
+    return layer;
+  };
+
   const renderSpreadBody = (container, blocks) => {
+    const freeLayer = clearFreeLayerForBody(container);
     clearNode(container);
     (Array.isArray(blocks) ? blocks : []).forEach((block) => {
-      container.append(renderSpreadBlock(block));
+      const rendered = renderSpreadBlock(block);
+      if (
+        freeLayer &&
+        block &&
+        typeof block === "object" &&
+        block.kind === "image" &&
+        block.placement?.mode === "free"
+      ) {
+        freeLayer.append(rendered);
+        return;
+      }
+
+      container.append(rendered);
     });
   };
 
@@ -431,6 +520,7 @@
 
     const body = root.querySelector(selectors.noteBody);
     if (body) {
+      clearFreeLayerForBody(body);
       clearNode(body);
       const paragraph = document.createElement("p");
       paragraph.textContent =
@@ -528,6 +618,7 @@
       if (Array.isArray(leftSpread?.body) && leftSpread.body.length) {
         renderSpreadBody(body, leftSpread.body);
       } else {
+        clearFreeLayerForBody(body);
         clearNode(body);
         (Array.isArray(page.body) ? page.body : []).forEach((line) => {
           body.append(renderBodyLine(line));

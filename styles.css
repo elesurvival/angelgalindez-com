@@ -8740,6 +8740,49 @@ a.build-log-project:focus-visible {
   line-height: var(--notebook-margin-note-line-height, inherit);
 }
 
+.live-notebook-free-layer {
+  bottom: var(--live-notebook-page-safe-bottom);
+  left: var(--live-notebook-page-safe-outer);
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: var(--live-notebook-page-safe-inner);
+  top: var(--live-notebook-page-safe-top);
+  z-index: 2;
+}
+
+.live-notebook-page-right .live-notebook-free-layer {
+  left: var(--live-notebook-page-safe-inner);
+  right: var(--live-notebook-page-safe-outer);
+}
+
+.live-notebook-image-block {
+  display: block;
+  margin: 1rem 0 1.2rem;
+  max-inline-size: min(var(--live-image-width, 320px), 100%);
+  position: relative;
+}
+
+.live-notebook-image-block[data-placement-mode="free"] {
+  margin: 0;
+  position: absolute;
+}
+
+.live-notebook-image-block img {
+  display: block;
+  height: auto;
+  inline-size: 100%;
+  opacity: 0.84;
+}
+
+.live-notebook-image-block figcaption {
+  color: rgba(63, 55, 44, 0.72);
+  font-family: var(--notebook-margin-note-font, var(--mono, "Courier New", monospace));
+  font-size: 0.72rem;
+  line-height: 1.35;
+  margin-block-start: 0.45rem;
+}
+
 .live-notebook-note-body--right {
   margin-block-start: 1.8rem;
 }
