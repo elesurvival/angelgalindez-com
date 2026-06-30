@@ -8674,6 +8674,32 @@ a.build-log-project:focus-visible {
   white-space: pre-line;
 }
 
+.live-notebook-note-body p.live-notebook-semantic-line {
+  margin-block-end: 1.08rem;
+}
+
+.live-notebook-semantic-label {
+  background: rgba(221, 176, 82, 0.18);
+  border: 1px solid rgba(174, 128, 51, 0.28);
+  border-radius: 2px;
+  box-decoration-break: clone;
+  color: #24466a;
+  display: inline-block;
+  font-family: var(--mono, "Courier New", monospace);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  margin: 0 0.42rem 0.12rem 0;
+  padding: 0.12rem 0.28rem;
+  text-transform: uppercase;
+  transform: rotate(-0.25deg);
+}
+
+.live-notebook-semantic-text {
+  white-space: pre-line;
+}
+
 .live-notebook-note-foot {
   color: rgba(79, 70, 55, 0.72);
   font-family: var(--mono, "Courier New", monospace);

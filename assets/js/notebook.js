@@ -25,6 +25,17 @@
     status: "[data-notebook-status]"
   };
 
+  const semanticPrefixes = new Set([
+    "Question",
+    "Discovery",
+    "Decision",
+    "Why it matters",
+    "Breakthrough",
+    "Margin note",
+    "Spark",
+    "Image note"
+  ]);
+
   const formatDate = (value) => {
     const [year, month, day] = String(value || "").slice(0, 10).split("-").map(Number);
     if (!year || !month || !day) {
@@ -49,6 +60,46 @@
     while (node.firstChild) {
       node.removeChild(node.firstChild);
     }
+  };
+
+  const parseSemanticLine = (line) => {
+    const match = String(line || "").match(/^([^:\n]{2,32}):\s+([\s\S]+)$/);
+    if (!match) {
+      return null;
+    }
+
+    const label = match[1].trim();
+    if (!semanticPrefixes.has(label)) {
+      return null;
+    }
+
+    return {
+      label,
+      text: match[2].trim()
+    };
+  };
+
+  const renderBodyLine = (line) => {
+    const semanticLine = parseSemanticLine(line);
+    const paragraph = document.createElement("p");
+
+    if (!semanticLine) {
+      paragraph.textContent = line;
+      return paragraph;
+    }
+
+    paragraph.className = "live-notebook-semantic-line";
+
+    const label = document.createElement("span");
+    label.className = "live-notebook-semantic-label";
+    label.textContent = semanticLine.label;
+
+    const text = document.createElement("span");
+    text.className = "live-notebook-semantic-text";
+    text.textContent = semanticLine.text;
+
+    paragraph.append(label, text);
+    return paragraph;
   };
 
   const getPageHash = () => decodeURIComponent(window.location.hash.replace(/^#/, ""));
@@ -189,9 +240,7 @@
     if (body) {
       clearNode(body);
       (Array.isArray(page.body) ? page.body : []).forEach((line) => {
-        const paragraph = document.createElement("p");
-        paragraph.textContent = line;
-        body.append(paragraph);
+        body.append(renderBodyLine(line));
       });
     }
 
