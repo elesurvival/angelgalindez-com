@@ -108,11 +108,51 @@
     return headings[label] || label || "Note";
   };
 
+  const materialClassNames = (block) => {
+    const id = block?.material?.id || block?.materialId;
+    const materials = {
+      "artifact-card":
+        "material material--artifact-card paper-fragment paper-fragment--photo paper-fragment--artifact paper-fragment--taped",
+      "highlight-wash":
+        "material material--highlight-wash paper-fragment--highlight",
+      "kraft-note":
+        "material material--kraft-note paper-fragment paper-fragment--kraft",
+      "margin-scribble":
+        "material material--margin-scribble paper-fragment--annotation paper-fragment--handwritten",
+      "pencil-box":
+        "material material--pencil-box paper-fragment--boxed paper-fragment--pencil",
+      "quiet-divider":
+        "material material--quiet-divider paper-fragment--divider",
+      "quote-slip":
+        "material material--quote-slip paper-fragment paper-fragment--excerpt",
+      "taped-fragment":
+        "material material--taped-fragment paper-fragment paper-fragment--torn paper-fragment--taped",
+    };
+
+    return typeof id === "string" && materials[id] ? materials[id] : "";
+  };
+
+  const applyMaterial = (node, block) => {
+    const classNames = materialClassNames(block);
+    if (!classNames) {
+      return;
+    }
+
+    node.classList.add("notebook-block");
+    classNames.split(/\s+/).forEach((className) => {
+      if (className) node.classList.add(className);
+    });
+    if (block?.material?.id || block?.materialId) {
+      node.dataset.material = block.material?.id || block.materialId;
+    }
+  };
+
   const renderSemanticBlock = (semanticLine) => {
     const section = document.createElement("section");
     section.className = `live-notebook-semantic-line live-notebook-semantic-line--${semanticClassName(
       semanticLine.label,
     )}`;
+    applyMaterial(section, semanticLine);
 
     const label = document.createElement("h3");
     label.className = "live-notebook-semantic-label";
@@ -124,6 +164,13 @@
 
     section.append(label, text);
     return section;
+  };
+
+  const renderParagraphBlock = (block) => {
+    const paragraph = document.createElement("p");
+    paragraph.textContent = block?.text || "";
+    applyMaterial(paragraph, block);
+    return paragraph;
   };
 
   const renderBodyLine = (line) => {
@@ -153,12 +200,14 @@
       return renderSemanticBlock({
         label: block.label || "Note",
         text: block.text || "",
+        material: block.material,
       });
     }
 
     if (block.kind === "quote") {
       const quote = document.createElement("blockquote");
       quote.className = "live-notebook-quote";
+      applyMaterial(quote, block);
       const text = document.createElement("p");
       text.textContent = `“${String(block.text || "").replace(/^["“]|["”]$/g, "")}”`;
       quote.append(text);
@@ -172,9 +221,14 @@
 
     if (block.kind === "list") {
       const section = document.createElement("section");
-      section.className = "live-notebook-list-block";
+      const listType =
+        block.listType || (block.ordered ? "numbered" : "bulleted");
+      section.className = `live-notebook-list-block block-${listType}-list`;
+      section.dataset.frame = block.frame === false ? "false" : "true";
+      applyMaterial(section, block);
       if (block.title) {
         const heading = document.createElement("h4");
+        heading.className = "notebook-block__heading";
         heading.textContent = block.title;
         section.append(heading);
       }
@@ -189,12 +243,14 @@
     }
 
     if (block.kind === "image-note") {
-      return renderBodyLine(`Image note: ${block.text || ""}`);
+      return renderSemanticBlock({
+        label: "Image note",
+        text: block.text || "",
+        material: block.material,
+      });
     }
 
-    const paragraph = document.createElement("p");
-    paragraph.textContent = block.text || "";
-    return paragraph;
+    return renderParagraphBlock(block);
   };
 
   const renderSpreadBody = (container, blocks) => {
@@ -454,11 +510,7 @@
       return;
     }
 
-    setText(
-      root,
-      selectors.noteMeta,
-      formatDate(page.date),
-    );
+    setText(root, selectors.noteMeta, formatDate(page.date));
     setText(root, selectors.noteTitle, page.title || "Untitled Note");
     renderTaxonomyChips(root, page);
     setText(
@@ -601,7 +653,9 @@
       setText(
         root,
         selectors.notebookSubtitle,
-        displayNotebookSubtitle(data.notebook?.subtitle || "Selected notebook notes."),
+        displayNotebookSubtitle(
+          data.notebook?.subtitle || "Selected notebook notes.",
+        ),
       );
       renderEntryList(root);
       renderPage(root);

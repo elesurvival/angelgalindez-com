@@ -66,6 +66,7 @@
             },
             {
               "kind": "list",
+              "listType": "bulleted",
               "ordered": false,
               "title": "THIS CHANGED EVERYTHING",
               "items": [
@@ -74,7 +75,8 @@
                 "The emotional arc",
                 "The album artwork concept",
                 "How we talk about the album"
-              ]
+              ],
+              "frame": true
             },
             {
               "kind": "semantic",
@@ -83,7 +85,11 @@
             },
             {
               "kind": "paragraph",
-              "text": "\"We're not macking music for hackers.\nWe're making music for builders.\" - AG"
+              "text": "\"We're not macking music for hackers.\nWe're making music for builders.\" - AG",
+              "material": {
+                "id": "taped-fragment",
+                "name": "Taped Fragment"
+              }
             }
           ]
         }

@@ -8744,12 +8744,144 @@ a.build-log-project:focus-visible {
   margin-block-start: 1.8rem;
 }
 
+.live-notebook-note-body .notebook-block {
+  position: relative;
+}
+
+.live-notebook-note-body .paper-fragment {
+  isolation: isolate;
+}
+
+.live-notebook-note-body .paper-fragment--torn {
+  clip-path: polygon(0.4% 1.1%, 99.2% 0.35%, 98.9% 98.4%, 1.1% 99.2%);
+}
+
+.live-notebook-note-body .material--taped-fragment {
+  background:
+    linear-gradient(180deg, rgba(255, 248, 225, 0.5), rgba(215, 171, 93, 0.16)),
+    rgba(221, 188, 122, 0.34);
+  border: 1px solid rgba(139, 100, 39, 0.2);
+  box-shadow:
+    0 10px 17px rgba(82, 52, 22, 0.13),
+    0 2px 3px rgba(82, 52, 22, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  margin: 1.18rem 0 1.3rem;
+  padding: 1.04rem 1.12rem;
+  transform: rotate(-0.15deg);
+}
+
+.live-notebook-note-body .material--taped-fragment::before {
+  background:
+    linear-gradient(90deg, transparent 0 8%, rgba(255, 244, 201, 0.32) 8% 92%, transparent 92%),
+    rgba(224, 190, 116, 0.38);
+  box-shadow: 0 3px 8px rgba(67, 43, 17, 0.12);
+  content: "";
+  height: 1.05rem;
+  left: 50%;
+  position: absolute;
+  top: -0.58rem;
+  transform: translateX(-50%) rotate(0.6deg);
+  width: 4.7rem;
+}
+
+.live-notebook-note-body .material--taped-fragment::after {
+  background: rgba(255, 244, 201, 0.22);
+  bottom: -0.34rem;
+  box-shadow: 0 2px 5px rgba(67, 43, 17, 0.1);
+  content: "";
+  height: 0.76rem;
+  position: absolute;
+  right: 0.62rem;
+  transform: rotate(-5deg);
+  width: 2.8rem;
+}
+
+.live-notebook-note-body .material--quote-slip {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(238, 211, 156, 0.08)),
+    rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(92, 59, 26, 0.2);
+  border-top: 1px solid rgba(92, 59, 26, 0.2);
+  box-shadow: 0 5px 12px rgba(82, 52, 22, 0.08);
+  margin-inline: auto;
+  max-width: 90%;
+  padding: 1.12rem 0.85rem;
+  text-align: center;
+}
+
+.live-notebook-note-body .material--pencil-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(76, 60, 38, 0.3);
+  border-radius: 2px 3px 1px 2px;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+    3px 4px 0 rgba(71, 48, 21, 0.03);
+  padding: 0.86rem 0.95rem;
+}
+
+.live-notebook-note-body .material--highlight-wash {
+  background:
+    linear-gradient(178deg, transparent 0 8%, rgba(255, 255, 255, 0.1) 8% 10%, transparent 10%),
+    linear-gradient(94deg, rgba(224, 190, 116, 0.34), rgba(238, 211, 156, 0.1) 88%),
+    transparent;
+  border: 0;
+  box-shadow: none;
+  clip-path: polygon(0.4% 1.4%, 99.3% 0.5%, 98.7% 97.2%, 1.1% 99%);
+  padding: 0.74rem 0.86rem;
+}
+
+.live-notebook-note-body .material--kraft-note {
+  background:
+    linear-gradient(180deg, rgba(255, 248, 225, 0.35), rgba(191, 145, 68, 0.2)),
+    rgba(214, 174, 101, 0.32);
+  border: 1px solid rgba(121, 84, 32, 0.18);
+  box-shadow: 0 7px 14px rgba(82, 52, 22, 0.1);
+  clip-path: polygon(0.6% 0.8%, 99.1% 0.2%, 99% 98.7%, 1% 99.2%);
+  padding: 0.88rem 1rem;
+}
+
+.live-notebook-note-body .material--margin-scribble {
+  border-left: 1px solid rgba(37, 75, 131, 0.28);
+  font-family: var(--notebook-margin-note-font, "Segoe Print", "Bradley Hand ITC", "Segoe Script", cursive);
+  margin-left: 0.55rem;
+  padding: 0.28rem 0 0.34rem 0.86rem;
+}
+
+.live-notebook-note-body .material--artifact-card {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(239, 227, 202, 0.26)),
+    rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(80, 54, 25, 0.2);
+  box-shadow:
+    0 10px 19px rgba(82, 52, 22, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  padding: 0.68rem;
+  transform: rotate(0.15deg);
+}
+
+.live-notebook-note-body .material--artifact-card::before {
+  background: rgba(238, 218, 176, 0.46);
+  box-shadow: 0 2px 5px rgba(67, 43, 17, 0.1);
+  content: "";
+  height: 1rem;
+  left: 1rem;
+  position: absolute;
+  top: -0.42rem;
+  transform: rotate(-6deg);
+  width: 3.2rem;
+  z-index: 1;
+}
+
 .live-notebook-quote {
   border-left: 2px solid rgba(174, 128, 51, 0.34);
   color: var(--notebook-semantic-body-color, #3f372c);
   font-family: var(--notebook-semantic-body-font, "Source Serif 4", Georgia, serif);
   margin: 0 0 1.2rem;
   padding: 0.2rem 0 0.2rem 1rem;
+}
+
+.live-notebook-quote.material {
+  border-left: 0;
 }
 
 .live-notebook-quote p {
@@ -8767,33 +8899,50 @@ a.build-log-project:focus-visible {
 }
 
 .live-notebook-list-block {
-  margin: 0 0 1.1rem;
+  border-color: color-mix(in srgb, var(--notebook-list-frame-color, #5d5548) 72%, transparent);
+  border-radius: var(--notebook-list-frame-radius, 1px);
+  border-style: solid;
+  border-width: var(--notebook-list-frame-thickness, 1px);
+  inline-size: fit-content;
+  margin: 1.05rem 0 1.2rem;
+  max-inline-size: min(100%, 24rem);
+  min-inline-size: min(17rem, 100%);
+  padding: var(--notebook-list-frame-padding, 14px);
+}
+
+.live-notebook-list-block[data-frame="false"] {
+  border-color: transparent;
+  padding-inline: 0;
 }
 
 .live-notebook-list-block h4 {
-  color: var(--notebook-list-title-color, #24466a);
-  font-family: var(--notebook-list-title-font, var(--mono, "Courier New", monospace));
-  font-size: var(--notebook-list-title-size, 0.76rem);
-  font-weight: 400;
-  letter-spacing: var(--notebook-list-title-letter-spacing, 0.08em);
+  color: var(--notebook-list-title-color, #15110d);
+  display: block;
+  font-family: var(--notebook-list-title-font, "Source Serif 4", Georgia, serif);
+  font-size: var(--notebook-list-title-size, 16.32px);
+  font-weight: 600;
+  letter-spacing: var(--notebook-list-title-letter-spacing, 0);
   line-height: var(--notebook-list-title-line-height, 1.35);
-  margin: 0 0 0.45rem;
-  text-transform: var(--notebook-list-title-text-transform, uppercase);
+  margin: 0 0 0.42rem;
+  text-transform: var(--notebook-list-title-text-transform, none);
+  transform: none;
 }
 
 .live-notebook-list-block ul,
 .live-notebook-list-block ol {
+  color: var(--notebook-list-item-color, rgba(23, 20, 17, 0.74));
+  font-family: var(--notebook-list-item-font, var(--notebook-semantic-body-font, "Source Serif 4", Georgia, serif));
+  font-size: var(--notebook-list-item-size, 15.36px);
+  letter-spacing: var(--notebook-list-item-letter-spacing, 0);
+  line-height: var(--notebook-list-item-line-height, 1.58);
   margin: 0;
-  padding-inline-start: 1.2rem;
+  padding-left: 1.05rem;
 }
 
 .live-notebook-list-block li {
-  color: var(--notebook-list-item-color, inherit);
-  font-family: var(--notebook-list-item-font, inherit);
-  font-size: var(--notebook-list-item-size, inherit);
-  letter-spacing: var(--notebook-list-item-letter-spacing, 0);
-  line-height: var(--notebook-list-item-line-height, inherit);
-  margin-block-end: 0.35rem;
+  margin: 0.16rem 0;
+  overflow-wrap: anywhere;
+  padding-left: 0.16rem;
 }
 
 .live-notebook-gutter {
