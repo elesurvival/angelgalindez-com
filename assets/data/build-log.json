@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-30T22:20:32.446Z",
+  "updated_at": "2026-06-30T23:14:38.757Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "e3a1f6e",
+      "message": "Add Blue Pen decoration assets",
+      "date": "2026-06-30",
+      "time": "6:13 PM",
+      "timestamp": "2026-06-30T18:13:47-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-25",
       "time": "11:06 PM",
       "timestamp": "2026-06-25T23:06:41-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "5350353",
-      "message": "Make Scriptorium admin notebook-first",
-      "date": "2026-06-25",
-      "time": "9:53 PM",
-      "timestamp": "2026-06-25T21:53:02-05:00"
     }
   ]
 }
