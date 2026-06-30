@@ -6,12 +6,74 @@
   },
   "pages": [
     {
+      "id": "why-the-notebook-exists",
+      "title": "Why the Notebook Exists",
+      "date": "2026-06-29",
+      "project": "Workshop Philosophy",
+      "type": "Philosophy",
+      "tags": [
+        "craft",
+        "friction"
+      ],
+      "body": [
+        "Question: How do we show the thinking that led to the commits, not merely the commits themselves?",
+        "Discovery: The notebook is not a recap. It is the place where motives, dead ends, and decisions remain visible.",
+        "Decision: Publish entries from the same semantic document source used by the authoring workspace.",
+        "Why it matters: Artifacts feel more human when the reader can see the path that shaped them."
+      ],
+      "spread": {
+        "left": {
+          "title": "Why the Notebook Exists",
+          "meta": [
+            "Workshop Philosophy",
+            "Philosophy",
+            "2026-06-29",
+            "Craft",
+            "Friction"
+          ],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Question",
+              "text": "How do we show the thinking that led to the commits, not merely the commits themselves?"
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "The notebook is not a recap. It is the place where motives, dead ends, and decisions remain visible."
+            }
+          ]
+        },
+        "right": {
+          "title": null,
+          "meta": [
+            "Entry #0098"
+          ],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Decision",
+              "text": "Publish entries from the same semantic document source used by the authoring workspace."
+            },
+            {
+              "kind": "semantic",
+              "label": "Why it matters",
+              "text": "Artifacts feel more human when the reader can see the path that shaped them."
+            }
+          ]
+        }
+      }
+    },
+    {
       "id": "why-we-built-tempo-first",
       "title": "Why We Built Tempo First",
       "date": "2026-06-23",
       "project": "Tempo",
       "type": "Flow",
-      "tags": ["friction", "raw-ideas"],
+      "tags": [
+        "friction",
+        "raw-ideas"
+      ],
       "body": [
         "Question: What is the smallest useful interface for protecting attention?",
         "Discovery: Tempo taught us that workflow tools should remove negotiation, not add dashboards.",
@@ -20,7 +82,13 @@
       "spread": {
         "left": {
           "title": "Why We Built Tempo First",
-          "meta": ["Tempo", "Flow", "2026-06-23", "Friction", "Raw Ideas"],
+          "meta": [
+            "Tempo",
+            "Flow",
+            "2026-06-23",
+            "Friction",
+            "Raw Ideas"
+          ],
           "body": [
             {
               "kind": "semantic",
@@ -36,7 +104,9 @@
         },
         "right": {
           "title": null,
-          "meta": ["Entry #0632"],
+          "meta": [
+            "Entry #0095"
+          ],
           "body": [
             {
               "kind": "semantic",
@@ -53,7 +123,11 @@
       "date": "2026-06-24",
       "project": "The Locksmith",
       "type": "Philosophy",
-      "tags": ["craft", "decision", "friction"],
+      "tags": [
+        "craft",
+        "decision",
+        "friction"
+      ],
       "body": [
         "Question: Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?",
         "Discovery: The Locksmith is not about breaking in. It is about becoming someone who can build anything.",
@@ -92,7 +166,9 @@
         },
         "right": {
           "title": null,
-          "meta": ["Entry #0630"],
+          "meta": [
+            "Entry #0093"
+          ],
           "body": [
             {
               "kind": "semantic",
@@ -114,7 +190,9 @@
       "date": "2026-06-20",
       "project": "Workshop Philosophy",
       "type": "Flow",
-      "tags": ["raw-ideas"],
+      "tags": [
+        "raw-ideas"
+      ],
       "body": [
         "Spark: Friction is not always bad; unchosen friction is the problem.",
         "Why it matters: Every removed decision gives attention back to the work that matters.",
@@ -123,7 +201,12 @@
       "spread": {
         "left": {
           "title": "From Friction to Flow",
-          "meta": ["Workshop Philosophy", "Flow", "2026-06-20", "Raw Ideas"],
+          "meta": [
+            "Workshop Philosophy",
+            "Flow",
+            "2026-06-20",
+            "Raw Ideas"
+          ],
           "body": [
             {
               "kind": "semantic",
@@ -139,7 +222,9 @@
         },
         "right": {
           "title": null,
-          "meta": ["Entry #0634"],
+          "meta": [
+            "Entry #0097"
+          ],
           "body": [
             {
               "kind": "semantic",
@@ -156,7 +241,10 @@
       "date": "2026-06-22",
       "project": "Continuo",
       "type": "Philosophy",
-      "tags": ["craft", "friction"],
+      "tags": [
+        "craft",
+        "friction"
+      ],
       "body": [
         "Productivity apps often preserve motion instead of meaning.",
         "Decision: Continuo should help people continue the right work, not merely track more work.",
@@ -165,7 +253,13 @@
       "spread": {
         "left": {
           "title": "Continuo Isn’t Another Productivity App",
-          "meta": ["Continuo", "Philosophy", "2026-06-22", "Craft", "Friction"],
+          "meta": [
+            "Continuo",
+            "Philosophy",
+            "2026-06-22",
+            "Craft",
+            "Friction"
+          ],
           "body": [
             {
               "kind": "paragraph",
@@ -180,7 +274,9 @@
         },
         "right": {
           "title": null,
-          "meta": ["Entry #0633"],
+          "meta": [
+            "Entry #0096"
+          ],
           "body": [
             {
               "kind": "quote",
@@ -196,7 +292,10 @@
       "date": "2026-06-23",
       "project": "The Locksmith",
       "type": "Identity",
-      "tags": ["decision", "friction"],
+      "tags": [
+        "decision",
+        "friction"
+      ],
       "body": [
         "Spark: The first sound should feel like a system waking up and remembering its purpose.",
         "Decision: Cold Boot becomes the threshold: before it, potential; after it, commitment.",
@@ -227,7 +326,9 @@
         },
         "right": {
           "title": null,
-          "meta": ["Entry #0631"],
+          "meta": [
+            "Entry #0094"
+          ],
           "body": [
             {
               "kind": "paragraph",
