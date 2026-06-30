@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-06-30T01:09:08.963Z",
+  "updated_at": "2026-06-30T02:30:54.607Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "c2cc740",
+      "message": "Fix Live Notebook export source",
+      "date": "2026-06-29",
+      "time": "9:30 PM",
+      "timestamp": "2026-06-29T21:30:50-05:00"
+    },
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "cb5d622",
+      "message": "Update Live Notebook exported data",
+      "date": "2026-06-29",
+      "time": "9:30 PM",
+      "timestamp": "2026-06-29T21:30:50-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -882,24 +900,6 @@
       "date": "2026-06-22",
       "time": "12:59 PM",
       "timestamp": "2026-06-22T12:59:41-05:00"
-    },
-    {
-      "project": "Continuo",
-      "repo": "Continuo",
-      "hash": "94125af",
-      "message": "Fix Echo entry action menus",
-      "date": "2026-06-22",
-      "time": "3:32 AM",
-      "timestamp": "2026-06-22T03:32:05-05:00"
-    },
-    {
-      "project": "Echo",
-      "repo": "Echo",
-      "hash": "62640f7",
-      "message": "Add Echo API token support",
-      "date": "2026-06-22",
-      "time": "12:21 AM",
-      "timestamp": "2026-06-22T00:21:50-05:00"
     }
   ]
 }
