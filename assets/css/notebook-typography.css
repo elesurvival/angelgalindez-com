@@ -85,4 +85,8 @@
   --notebook-list-frame-thickness: 1px;
   --notebook-list-frame-padding: 14px;
   --notebook-list-frame-radius: 1px;
+  --notebook-list-item-spacing: 2.56px;
+  --notebook-list-item-indent: 16.8px;
+  --notebook-list-block-margin-top: 16.8px;
+  --notebook-list-block-margin-bottom: 19.2px;
 }

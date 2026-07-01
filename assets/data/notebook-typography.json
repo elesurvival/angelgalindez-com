@@ -2,7 +2,7 @@
   "source": {
     "app": "Scriptorium",
     "databasePath": "C:\\Users\\Angel\\Documents\\scriptorium\\apps\\api\\data\\scriptorium.sqlite",
-    "settingsUpdatedAt": "2026-06-30T07:33:00.685Z"
+    "settingsUpdatedAt": "2026-07-01T08:52:12.638Z"
   },
   "files": {
     "css": "/assets/css/notebook-typography.css",
@@ -127,5 +127,11 @@
     "thickness": "1px",
     "padding": "14px",
     "radius": "1px"
+  },
+  "listSpacing": {
+    "itemSpacing": "2.56px",
+    "itemIndent": "16.8px",
+    "blockMarginTop": "16.8px",
+    "blockMarginBottom": "19.2px"
   }
 }

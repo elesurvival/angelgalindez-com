@@ -8965,7 +8965,8 @@ a.build-log-project:focus-visible {
   border-style: solid;
   border-width: var(--notebook-list-frame-thickness, 1px);
   inline-size: fit-content;
-  margin: 1.05rem 0 1.2rem;
+  margin: var(--notebook-list-block-margin-top, 16.8px) 0
+    var(--notebook-list-block-margin-bottom, 19.2px);
   max-inline-size: min(100%, 24rem);
   min-inline-size: min(17rem, 100%);
   padding: var(--notebook-list-frame-padding, 14px);
@@ -8996,11 +8997,11 @@ a.build-log-project:focus-visible {
   letter-spacing: var(--notebook-list-item-letter-spacing, 0);
   line-height: var(--notebook-list-item-line-height, 1.58);
   margin: 0;
-  padding-left: 1.05rem;
+  padding-left: var(--notebook-list-item-indent, 16.8px);
 }
 
 .live-notebook-list-block .notebook-list-block__items li {
-  margin: 0.16rem 0;
+  margin: var(--notebook-list-item-spacing, 2.56px) 0;
   overflow-wrap: anywhere;
   padding-left: 0.16rem;
 }
