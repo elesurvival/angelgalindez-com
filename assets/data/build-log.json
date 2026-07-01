@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01T11:07:31.755Z",
+  "updated_at": "2026-07-01T11:09:15.757Z",
   "items": [
     {
       "project": "Scriptorium",
@@ -641,15 +641,6 @@
       "timestamp": "2026-06-29T06:38:42-05:00"
     },
     {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "7b84bf2",
-      "message": "Document Live Notebook sizing parity",
-      "date": "2026-06-29",
-      "time": "6:10 AM",
-      "timestamp": "2026-06-29T06:10:05-05:00"
-    },
-    {
       "project": "Scriptorium",
       "repo": "scriptorium",
       "hash": "4fbe302",
@@ -900,6 +891,15 @@
       "date": "2026-06-27",
       "time": "1:35 AM",
       "timestamp": "2026-06-27T01:35:19-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "855a9f1",
+      "message": "Add pending image placement preview",
+      "date": "2026-06-27",
+      "time": "12:40 AM",
+      "timestamp": "2026-06-27T00:40:23-05:00"
     }
   ]
 }
