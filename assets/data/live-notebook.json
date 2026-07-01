@@ -25,6 +25,86 @@
         "Why it matters: When someone presses play, they do not just listen. They step into a different identity.",
         "\"We're not macking music for hackers.\nWe're making music for builders.\" - AG"
       ],
+      "pages": [
+        {
+          "pageNumber": 1,
+          "side": "left",
+          "title": "The Listener Becomes the Phantom",
+          "meta": [
+            "The Locksmith",
+            "Philosophy",
+            "2026-06-25"
+          ],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Question",
+              "text": "Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?"
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "The Locksmith is not about breaking in. It is about becoming someone who can build anything."
+            },
+            {
+              "kind": "image",
+              "src": "/assets/projects/notebook/exported-assets/sketch-sketch-of-a-man-seen-sitting-from-behind-a-computer--20260630-083841-26646d29.png",
+              "alt": "Pencil sketch: sketch of a man seen sitting from behind a computer workstation with multiple monitors. The man is wearing headphones",
+              "displayMode": "full",
+              "placement": {
+                "mode": "free",
+                "page": "left",
+                "x": 20,
+                "y": 370,
+                "width": 211,
+                "zIndex": 1
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 2,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Decision",
+              "text": "Every track will represent a stage in the transformation from ordinary to extraordinary."
+            },
+            {
+              "kind": "list",
+              "listType": "bulleted",
+              "ordered": false,
+              "title": "THIS CHANGED EVERYTHING",
+              "items": [
+                "Track titles",
+                "Track purposes",
+                "The emotional arc",
+                "The album artwork concept",
+                "How we talk about the album"
+              ],
+              "frame": true
+            },
+            {
+              "kind": "semantic",
+              "label": "Why it matters",
+              "text": "When someone presses play, they do not just listen. They step into a different identity."
+            },
+            {
+              "kind": "paragraph",
+              "text": "\"We're not macking music for hackers.\nWe're making music for builders.\" - AG",
+              "material": {
+                "id": "taped-fragment",
+                "name": "Taped Fragment"
+              }
+            }
+          ],
+          "decorations": []
+        }
+      ],
       "spread": {
         "left": {
           "title": "The Listener Becomes the Phantom",
@@ -119,6 +199,55 @@
         "Breakthrough: A focused ritual can become infrastructure for better work.",
         "I'm just trying to observe whether this works or not and right now it looks like not is winning."
       ],
+      "pages": [
+        {
+          "pageNumber": 1,
+          "side": "left",
+          "title": "Why We Built Tempo First",
+          "meta": [
+            "Tempo",
+            "Flow",
+            "2026-06-23",
+            "Friction",
+            "Raw Ideas"
+          ],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "We didn't, we built Continuo first."
+            },
+            {
+              "kind": "semantic",
+              "label": "Question",
+              "text": "What is the smallest useful interface for protecting attention?"
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Tempo taught us that workflow tools should remove negotiation, not add dashboards."
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 2,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Breakthrough",
+              "text": "A focused ritual can become infrastructure for better work."
+            },
+            {
+              "kind": "paragraph",
+              "text": "I'm just trying to observe whether this works or not and right now it looks like not is winning."
+            }
+          ],
+          "decorations": []
+        }
+      ],
       "spread": {
         "left": {
           "title": "Why We Built Tempo First",
@@ -184,6 +313,58 @@
         "Decision: Publish entries from the same semantic document source used by the authoring workspace.",
         "Why it matters: Artifacts feel more human when the reader can see the path that shaped them."
       ],
+      "pages": [
+        {
+          "pageNumber": 1,
+          "side": "left",
+          "title": "Why the Notebook Exists",
+          "meta": [
+            "Scriptorium",
+            "Design Note",
+            "2026-06-29",
+            "live-notebook",
+            "notebook",
+            "publishing",
+            "scriptorium"
+          ],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "A note on preserving the thinking behind the finished artifact."
+            },
+            {
+              "kind": "semantic",
+              "label": "Question",
+              "text": "How do we show the thinking that led to the commits, not merely the commits themselves?"
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "The notebook is not a recap. It is the place where motives, dead ends, and decisions remain visible."
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 2,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Decision",
+              "text": "Publish entries from the same semantic document source used by the authoring workspace."
+            },
+            {
+              "kind": "semantic",
+              "label": "Why it matters",
+              "text": "Artifacts feel more human when the reader can see the path that shaped them."
+            }
+          ],
+          "decorations": []
+        }
+      ],
       "spread": {
         "left": {
           "title": "Why the Notebook Exists",
@@ -248,6 +429,50 @@
         "Why it matters: Every removed decision gives attention back to the work that matters.",
         "Margin note: Beautiful constraints are a kindness to future focus."
       ],
+      "pages": [
+        {
+          "pageNumber": 1,
+          "side": "left",
+          "title": "From Friction to Flow",
+          "meta": [
+            "Workshop Philosophy",
+            "Flow",
+            "2026-06-20",
+            "Friction"
+          ],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "A note about designing fewer decisions into the day."
+            },
+            {
+              "kind": "semantic",
+              "label": "Spark",
+              "text": "Friction is not always bad; unchosen friction is the problem."
+            },
+            {
+              "kind": "semantic",
+              "label": "Why it matters",
+              "text": "Every removed decision gives attention back to the work that matters."
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 2,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Margin note",
+              "text": "Beautiful constraints are a kindness to future focus."
+            }
+          ],
+          "decorations": []
+        }
+      ],
       "spread": {
         "left": {
           "title": "From Friction to Flow",
@@ -305,6 +530,50 @@
         "Decision: Cold Boot becomes the threshold: before it, potential; after it, commitment.",
         "Identity lands better when it is introduced as a ritual instead of an explanation."
       ],
+      "pages": [
+        {
+          "pageNumber": 1,
+          "side": "left",
+          "title": "Cold Boot Defines the Identity",
+          "meta": [
+            "The Locksmith",
+            "Identity",
+            "2026-06-23",
+            "Craft",
+            "Decision"
+          ],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "A startup sequence became the emotional doorway into the project."
+            },
+            {
+              "kind": "semantic",
+              "label": "Spark",
+              "text": "The first sound should feel like a system waking up and remembering its purpose."
+            },
+            {
+              "kind": "semantic",
+              "label": "Decision",
+              "text": "Cold Boot becomes the threshold: before it, potential; after it, commitment."
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 2,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Identity lands better when it is introduced as a ritual instead of an explanation."
+            }
+          ],
+          "decorations": []
+        }
+      ],
       "spread": {
         "left": {
           "title": "Cold Boot Defines the Identity",
@@ -361,6 +630,49 @@
         "Productivity apps often preserve motion instead of meaning.",
         "Decision: Continuo should help people continue the right work, not merely track more work.",
         "“The tool is successful when the user returns to the craft faster.”"
+      ],
+      "pages": [
+        {
+          "pageNumber": 1,
+          "side": "left",
+          "title": "Continuo Isn’t Another Productivity App",
+          "meta": [
+            "Continuo",
+            "Philosophy",
+            "2026-06-22",
+            "Craft",
+            "Friction"
+          ],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "A constraint that kept the product honest."
+            },
+            {
+              "kind": "paragraph",
+              "text": "Productivity apps often preserve motion instead of meaning."
+            },
+            {
+              "kind": "semantic",
+              "label": "Decision",
+              "text": "Continuo should help people continue the right work, not merely track more work."
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 2,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "quote",
+              "text": "The tool is successful when the user returns to the craft faster."
+            }
+          ],
+          "decorations": []
+        }
       ],
       "spread": {
         "left": {
