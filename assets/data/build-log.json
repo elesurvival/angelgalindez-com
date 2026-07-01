@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-07-01T08:56:01.987Z",
+  "updated_at": "2026-07-01T09:24:36.520Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "dd9d0de",
+      "message": "Update Live Notebook typography cache token",
+      "date": "2026-07-01",
+      "time": "4:24 AM",
+      "timestamp": "2026-07-01T04:24:32-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "2f99742",
+      "message": "Allow notebook.html Live publish cache updates",
+      "date": "2026-07-01",
+      "time": "4:23 AM",
+      "timestamp": "2026-07-01T04:23:46-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -882,24 +900,6 @@
       "date": "2026-06-27",
       "time": "12:40 AM",
       "timestamp": "2026-06-27T00:40:23-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "a400bd4",
-      "message": "Add Scriptorium image placement controls",
-      "date": "2026-06-26",
-      "time": "11:37 PM",
-      "timestamp": "2026-06-26T23:37:40-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "df69d53",
-      "message": "Polish Scriptorium tags and stats panels",
-      "date": "2026-06-26",
-      "time": "10:21 PM",
-      "timestamp": "2026-06-26T22:21:26-05:00"
     }
   ]
 }
