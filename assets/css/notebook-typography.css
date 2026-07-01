@@ -78,15 +78,15 @@
   --notebook-list-title-text-transform: none;
   --notebook-list-item-font: "Scriptorium Handwriting b48c1cdb", "Source Serif 4", Georgia, serif;
   --notebook-list-item-size: 20px;
-  --notebook-list-item-line-height: 1.58;
-  --notebook-list-item-letter-spacing: 0em;
+  --notebook-list-item-line-height: 1;
+  --notebook-list-item-letter-spacing: -0.04em;
   --notebook-list-item-color: #4f4637;
   --notebook-list-frame-color: #5d5548;
-  --notebook-list-frame-thickness: 1px;
-  --notebook-list-frame-padding: 14px;
+  --notebook-list-frame-thickness: 0.25px;
+  --notebook-list-frame-padding: 13px;
   --notebook-list-frame-radius: 1px;
   --notebook-list-item-spacing: 2.56px;
-  --notebook-list-item-indent: 16.8px;
-  --notebook-list-block-margin-top: 16.8px;
-  --notebook-list-block-margin-bottom: 19.2px;
+  --notebook-list-item-indent: 13px;
+  --notebook-list-block-margin-top: 3px;
+  --notebook-list-block-margin-bottom: 12.5px;
 }

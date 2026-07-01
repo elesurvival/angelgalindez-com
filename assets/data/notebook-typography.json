@@ -2,7 +2,7 @@
   "source": {
     "app": "Scriptorium",
     "databasePath": "C:\\Users\\Angel\\Documents\\scriptorium\\apps\\api\\data\\scriptorium.sqlite",
-    "settingsUpdatedAt": "2026-07-01T08:52:12.638Z"
+    "settingsUpdatedAt": "2026-07-01T09:05:03.115Z"
   },
   "files": {
     "css": "/assets/css/notebook-typography.css",
@@ -110,8 +110,8 @@
       "fontFamily": "\"Scriptorium Handwriting b48c1cdb\", \"Source Serif 4\", Georgia, serif",
       "fontId": 12,
       "size": "20px",
-      "lineHeight": 1.58,
-      "letterSpacing": "0em",
+      "lineHeight": 1,
+      "letterSpacing": "-0.04em",
       "color": "#4f4637"
     }
   },
@@ -124,14 +124,14 @@
   },
   "listFrame": {
     "color": "#5d5548",
-    "thickness": "1px",
-    "padding": "14px",
+    "thickness": "0.25px",
+    "padding": "13px",
     "radius": "1px"
   },
   "listSpacing": {
     "itemSpacing": "2.56px",
-    "itemIndent": "16.8px",
-    "blockMarginTop": "16.8px",
-    "blockMarginBottom": "19.2px"
+    "itemIndent": "13px",
+    "blockMarginTop": "3px",
+    "blockMarginBottom": "12.5px"
   }
 }
