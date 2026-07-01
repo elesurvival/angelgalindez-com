@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-01T10:20:14.607Z",
+  "updated_at": "2026-07-01T11:07:31.755Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "0717a36",
+      "message": "Add Templates sidebar MVP",
+      "date": "2026-07-01",
+      "time": "6:06 AM",
+      "timestamp": "2026-07-01T06:06:44-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-27",
       "time": "1:35 AM",
       "timestamp": "2026-06-27T01:35:19-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "855a9f1",
-      "message": "Add pending image placement preview",
-      "date": "2026-06-27",
-      "time": "12:40 AM",
-      "timestamp": "2026-06-27T00:40:23-05:00"
     }
   ]
 }
