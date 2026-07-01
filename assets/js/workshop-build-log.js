@@ -3,43 +3,70 @@
 
   const dataUrl = "/assets/data/build-log.json";
   const maxVisibleItems = 100;
-  const projectAccent = {
-    continuo: "cyan",
-    echo: "purple",
-    glimpse: "green",
-    tempo: "green",
-    "angelgalindez-com": "gold",
-    "ele survival shopify": "green",
-    "elesurvival-shopify": "green",
+  const PROJECTS = {
+    "angelgalindez-com": {
+      href: "index.html",
+      color: "#5FA8D3",
+      aliases: ["angelgalindez.com"],
+    },
+    continuo: {
+      href: "continuo.html",
+      color: "#37d8f2",
+    },
+    echo: {
+      href: "echo.html",
+      color: "#b46cff",
+    },
+    glimpse: {
+      href: "glimpse.html",
+      color: "#8edc52",
+    },
+    tempo: {
+      href: "tempo.html",
+      color: "#8edc52",
+    },
+    scriptorium: {
+      color: "var(--amber-2)",
+    },
+    "ele-survival": {
+      href: "ele.html",
+      color: "#8edc52",
+      aliases: ["ele survival", "ele survival shopify", "ele shopify", "elesurvival-shopify"],
+    },
+    "quantum-flux": {
+      href: "quantum-flux.html",
+      color: "#37d8f2",
+      aliases: ["quantum flux"],
+    },
   };
 
-  const projectLinks = {
-    "angelgalindez.com": "index.html",
-    "angelgalindez-com": "index.html",
-    continuo: "continuo.html",
-    echo: "echo.html",
-    tempo: "tempo.html",
-    "ele survival": "ele.html",
-    "ele survival shopify": "ele.html",
-    "ele shopify": "ele.html",
-    "elesurvival-shopify": "ele.html",
-    "quantum flux": "quantum-flux.html",
-  };
+  const projectLookup = Object.entries(PROJECTS).reduce((lookup, [key, config]) => {
+    lookup[key] = config;
+    (config.aliases || []).forEach((alias) => {
+      lookup[alias] = config;
+    });
+    return lookup;
+  }, {});
 
   const normalizeProject = (value) => String(value || "")
     .trim()
     .toLowerCase();
 
-  const getAccent = (item) => {
+  const getProjectConfig = (item) => {
     const project = normalizeProject(item.project);
     const repo = normalizeProject(item.repo);
-    return projectAccent[project] || projectAccent[repo] || "gold";
+    return projectLookup[project] || projectLookup[repo] || {};
   };
 
   const getProjectHref = (item) => {
-    const project = normalizeProject(item.project);
-    const repo = normalizeProject(item.repo);
-    return projectLinks[project] || projectLinks[repo] || "";
+    return getProjectConfig(item).href || "";
+  };
+
+  const applyProjectAccent = (element, item) => {
+    const color = getProjectConfig(item).color;
+    if (color) {
+      element.style.setProperty("--build-log-accent", color);
+    }
   };
 
   const formatUpdated = (value) => {
@@ -87,6 +114,7 @@
       element.href = href;
       element.setAttribute("aria-label", `View ${label}`);
     }
+    applyProjectAccent(element, item);
 
     return element;
   };
@@ -126,9 +154,8 @@
 
     list.replaceChildren(...items.map((item) => {
       const row = makeElement("article", "build-log-row");
-      const accent = getAccent(item);
 
-      const badge = makeProjectBadge(item, `build-log-badge build-log-badge--${accent}`);
+      const badge = makeProjectBadge(item, "build-log-badge");
       const message = makeElement("p", "build-log-message", item.message || "Quiet progress");
       const meta = makeElement("p", "build-log-meta", `${item.date || ""}${item.time ? ` • ${item.time}` : ""}`.trim());
       const hash = makeElement("span", "build-log-hash", item.hash || "-------");
@@ -145,7 +172,7 @@
     if (projects) {
       const uniqueProjects = [...new Map(items.map((item) => [item.project || item.repo, item])).values()].slice(0, 4);
       projects.replaceChildren(...uniqueProjects.map((item) => (
-        makeProjectBadge(item, `build-log-project build-log-project--${getAccent(item)}`)
+        makeProjectBadge(item, "build-log-project")
       )));
     }
   };

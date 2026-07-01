@@ -4694,7 +4694,7 @@ h2 {
   padding: 0.18rem 0.55rem;
   border: 1px solid currentColor;
   border-radius: 6px;
-  color: var(--amber-2);
+  color: var(--build-log-accent, var(--amber-2));
   background: color-mix(in srgb, currentColor 10%, transparent);
   font-size: 0.68rem;
   font-weight: 900;
@@ -4723,21 +4723,6 @@ a.build-log-project:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 3px;
   box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.55);
-}
-
-.build-log-badge--cyan,
-.build-log-project--cyan {
-  color: #37d8f2;
-}
-
-.build-log-badge--purple,
-.build-log-project--purple {
-  color: #b46cff;
-}
-
-.build-log-badge--green,
-.build-log-project--green {
-  color: #8edc52;
 }
 
 .build-log-message {
