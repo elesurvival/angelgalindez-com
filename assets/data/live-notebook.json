@@ -100,7 +100,8 @@
             }
           ]
         }
-      }
+      },
+      "decorations": []
     },
     {
       "id": "why-we-built-tempo-first",
@@ -162,7 +163,8 @@
             }
           ]
         }
-      }
+      },
+      "decorations": []
     },
     {
       "id": "why-the-notebook-exists",
@@ -229,7 +231,121 @@
             }
           ]
         }
-      }
+      },
+      "decorations": []
+    },
+    {
+      "id": "from-friction-to-flow",
+      "title": "From Friction to Flow",
+      "date": "2026-06-20",
+      "project": "Workshop Philosophy",
+      "type": "Flow",
+      "tags": [
+        "friction"
+      ],
+      "body": [
+        "Spark: Friction is not always bad; unchosen friction is the problem.",
+        "Why it matters: Every removed decision gives attention back to the work that matters.",
+        "Margin note: Beautiful constraints are a kindness to future focus."
+      ],
+      "spread": {
+        "left": {
+          "title": "From Friction to Flow",
+          "meta": [
+            "Workshop Philosophy",
+            "Flow",
+            "2026-06-20",
+            "Friction"
+          ],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "A note about designing fewer decisions into the day."
+            },
+            {
+              "kind": "semantic",
+              "label": "Spark",
+              "text": "Friction is not always bad; unchosen friction is the problem."
+            },
+            {
+              "kind": "semantic",
+              "label": "Why it matters",
+              "text": "Every removed decision gives attention back to the work that matters."
+            }
+          ]
+        },
+        "right": {
+          "title": null,
+          "meta": [
+            "Entry #0105"
+          ],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Margin note",
+              "text": "Beautiful constraints are a kindness to future focus."
+            }
+          ]
+        }
+      },
+      "decorations": []
+    },
+    {
+      "id": "cold-boot-defines-the-identity",
+      "title": "Cold Boot Defines the Identity",
+      "date": "2026-06-23",
+      "project": "The Locksmith",
+      "type": "Identity",
+      "tags": [
+        "craft",
+        "decision"
+      ],
+      "body": [
+        "Spark: The first sound should feel like a system waking up and remembering its purpose.",
+        "Decision: Cold Boot becomes the threshold: before it, potential; after it, commitment.",
+        "Identity lands better when it is introduced as a ritual instead of an explanation."
+      ],
+      "spread": {
+        "left": {
+          "title": "Cold Boot Defines the Identity",
+          "meta": [
+            "The Locksmith",
+            "Identity",
+            "2026-06-23",
+            "Craft",
+            "Decision"
+          ],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "A startup sequence became the emotional doorway into the project."
+            },
+            {
+              "kind": "semantic",
+              "label": "Spark",
+              "text": "The first sound should feel like a system waking up and remembering its purpose."
+            },
+            {
+              "kind": "semantic",
+              "label": "Decision",
+              "text": "Cold Boot becomes the threshold: before it, potential; after it, commitment."
+            }
+          ]
+        },
+        "right": {
+          "title": null,
+          "meta": [
+            "Entry #0104"
+          ],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Identity lands better when it is introduced as a ritual instead of an explanation."
+            }
+          ]
+        }
+      },
+      "decorations": []
     },
     {
       "id": "continuo-isn-t-another-productivity-app",
@@ -284,7 +400,8 @@
             }
           ]
         }
-      }
+      },
+      "decorations": []
     }
   ]
 }

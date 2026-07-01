@@ -8756,6 +8756,24 @@ a.build-log-project:focus-visible {
   right: var(--live-notebook-page-safe-outer);
 }
 
+.live-notebook-decoration-layer {
+  z-index: 4;
+}
+
+.live-notebook-decoration {
+  display: block;
+  margin: 0;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 50% 50%;
+}
+
+.live-notebook-decoration-image {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
 .live-notebook-image-block {
   display: block;
   margin: 1rem 0 1.2rem;

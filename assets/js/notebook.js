@@ -15,6 +15,7 @@
     noteMeta: "[data-note-meta]",
     noteTitle: "[data-note-title]",
     noteBody: "[data-note-body]",
+    leftPage: ".live-notebook-page-left",
     noteTags: "[data-note-tags]",
     rightPage: ".live-notebook-page-right",
     pageCount: "[data-page-count]",
@@ -311,11 +312,15 @@
   const freeLayerForBody = (container) => {
     const page = container.closest(".live-notebook-page");
     if (!page) return null;
+    return freeLayerForPage(page);
+  };
 
+  const freeLayerForPage = (page) => {
     let layer = page.querySelector(":scope > .live-notebook-free-layer");
     if (!layer) {
       layer = document.createElement("div");
-      layer.className = "live-notebook-free-layer";
+      layer.className =
+        "live-notebook-free-layer live-notebook-decoration-layer";
       layer.setAttribute("aria-hidden", "true");
       page.append(layer);
     }
@@ -347,6 +352,69 @@
 
       container.append(rendered);
     });
+  };
+
+  const clampNumber = (value, fallback, min, max) => {
+    const numeric = Number(value);
+    if (!Number.isFinite(numeric)) return fallback;
+    return Math.min(max, Math.max(min, numeric));
+  };
+
+  const applyDecorationPlacement = (node, decoration = {}) => {
+    const width = clampNumber(decoration.width, 80, 16, 520);
+    const x = clampNumber(decoration.x, 0, 0, 900);
+    const y = clampNumber(decoration.y, 0, 0, 900);
+    const scale = clampNumber(decoration.scale, 1, 0.5, 2);
+    const rotation = clampNumber(decoration.rotation, 0, -180, 180);
+    const zIndex = clampNumber(decoration.zIndex, 5, 0, 20);
+    const flipX = decoration.flipX ? -1 : 1;
+    const flipY = decoration.flipY ? -1 : 1;
+
+    node.style.left = `min(${x}px, calc(100% - ${width}px - 0.9rem))`;
+    node.style.top = `min(${y}px, calc(100% - 4rem))`;
+    node.style.transform = `rotate(${rotation}deg) scale(${flipX * scale}, ${
+      flipY * scale
+    })`;
+    node.style.width = `min(${width}px, calc(100% - 1.2rem))`;
+    node.style.zIndex = String(zIndex);
+  };
+
+  const renderDecoration = (decoration) => {
+    const figure = document.createElement("figure");
+    figure.className = "live-notebook-decoration";
+    figure.dataset.decorationId = decoration.id || "";
+    figure.dataset.decorationPage = decoration.page || "left";
+    if (decoration.collection) figure.dataset.collection = decoration.collection;
+    if (decoration.category) figure.dataset.category = decoration.category;
+    applyDecorationPlacement(figure, decoration);
+
+    const image = document.createElement("img");
+    image.className = "live-notebook-decoration-image";
+    image.src = decoration.src || "";
+    image.alt = decoration.name || "";
+    image.loading = "lazy";
+    image.decoding = "async";
+    figure.append(image);
+
+    return figure;
+  };
+
+  const renderDecorationsForPage = (pageElement, page, side) => {
+    if (!pageElement) return;
+    const decorations = Array.isArray(page.decorations)
+      ? page.decorations.filter((decoration) => decoration?.page === side)
+      : [];
+    if (!decorations.length) return;
+
+    const layer = freeLayerForPage(pageElement);
+    decorations.forEach((decoration) => {
+      layer.append(renderDecoration(decoration));
+    });
+  };
+
+  const renderDecorations = (root, page) => {
+    renderDecorationsForPage(root.querySelector(selectors.leftPage), page, "left");
+    renderDecorationsForPage(root.querySelector(selectors.rightPage), page, "right");
   };
 
   const humanizeTag = (tag) =>
@@ -627,6 +695,7 @@
     }
 
     renderRightPage(root, page);
+    renderDecorations(root, page);
 
     const tags = root.querySelector(selectors.noteTags);
     if (tags) {
