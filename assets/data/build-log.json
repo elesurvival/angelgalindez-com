@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-06-30T23:14:38.757Z",
+  "updated_at": "2026-07-01T00:06:29.328Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "a549996",
+      "message": "Render Live Notebook decorations",
+      "date": "2026-06-30",
+      "time": "7:06 PM",
+      "timestamp": "2026-06-30T19:06:25-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "ccf5aa7",
+      "message": "Export Live Notebook decorations",
+      "date": "2026-06-30",
+      "time": "7:05 PM",
+      "timestamp": "2026-06-30T19:05:49-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -882,24 +900,6 @@
       "date": "2026-06-26",
       "time": "12:23 AM",
       "timestamp": "2026-06-26T00:23:31-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "0f6fbfc",
-      "message": "Refine Scriptorium notebook gutter realism",
-      "date": "2026-06-26",
-      "time": "12:04 AM",
-      "timestamp": "2026-06-26T00:04:53-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "d76d70e",
-      "message": "Refine Scriptorium notebook page fidelity",
-      "date": "2026-06-25",
-      "time": "11:06 PM",
-      "timestamp": "2026-06-25T23:06:41-05:00"
     }
   ]
 }
