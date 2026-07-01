@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01T09:24:36.520Z",
+  "updated_at": "2026-07-01T09:26:14.682Z",
   "items": [
     {
       "project": "AngelGalindez.com",
@@ -632,15 +632,6 @@
       "timestamp": "2026-06-29T05:01:04-05:00"
     },
     {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "301db97",
-      "message": "Update Tempo page screenshots",
-      "date": "2026-06-29",
-      "time": "3:30 AM",
-      "timestamp": "2026-06-29T03:30:25-05:00"
-    },
-    {
       "project": "Scriptorium",
       "repo": "scriptorium",
       "hash": "4fbe302",
@@ -900,6 +891,15 @@
       "date": "2026-06-27",
       "time": "12:40 AM",
       "timestamp": "2026-06-27T00:40:23-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "a400bd4",
+      "message": "Add Scriptorium image placement controls",
+      "date": "2026-06-26",
+      "time": "11:37 PM",
+      "timestamp": "2026-06-26T23:37:40-05:00"
     }
   ]
 }
