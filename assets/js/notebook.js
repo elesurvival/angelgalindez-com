@@ -223,18 +223,25 @@
       const section = document.createElement("section");
       const listType =
         block.listType || (block.ordered ? "numbered" : "bulleted");
-      section.className = `live-notebook-list-block block-${listType}-list`;
+      const semanticListType = block.ordered
+        ? "numbered-list"
+        : `${listType}-list`;
+      section.className = `notebook-block live-notebook-list-block block-${semanticListType}`;
+      section.dataset.blockType = semanticListType;
       const frameEnabled =
-        block.frame === false || block.frame?.enabled === false ? "false" : "true";
+        block.frame === false || block.frame?.enabled === false
+          ? "false"
+          : "true";
       section.dataset.frame = frameEnabled;
       applyMaterial(section, block);
       if (block.title) {
-        const heading = document.createElement("h4");
+        const heading = document.createElement("h3");
         heading.className = "notebook-block__heading";
         heading.textContent = block.title;
         section.append(heading);
       }
       const list = document.createElement(block.ordered ? "ol" : "ul");
+      list.className = "notebook-list-block__items";
       (Array.isArray(block.items) ? block.items : []).forEach((item) => {
         const listItem = document.createElement("li");
         listItem.textContent = item;
@@ -380,7 +387,8 @@
     figure.className = "live-notebook-decoration";
     figure.dataset.decorationId = decoration.id || "";
     figure.dataset.decorationPage = decoration.page || "";
-    if (decoration.collection) figure.dataset.collection = decoration.collection;
+    if (decoration.collection)
+      figure.dataset.collection = decoration.collection;
     if (decoration.category) figure.dataset.category = decoration.category;
     applyDecorationPlacement(figure, decoration);
 
@@ -486,7 +494,10 @@
   const entryTitle = (entry) => entry?.title || "Untitled Note";
 
   const normalizePageRecord = (entry, record, fallbackNumber) => {
-    const pageNumber = Math.max(1, Number(record?.pageNumber || fallbackNumber));
+    const pageNumber = Math.max(
+      1,
+      Number(record?.pageNumber || fallbackNumber),
+    );
     const side = pageNumber % 2 === 0 ? "right" : "left";
     return {
       pageNumber,
@@ -551,7 +562,9 @@
   const getVisiblePagePair = (entry, pagePairStart) => {
     const normalizedStart = Math.max(
       1,
-      Number(pagePairStart) % 2 === 0 ? Number(pagePairStart) - 1 : Number(pagePairStart),
+      Number(pagePairStart) % 2 === 0
+        ? Number(pagePairStart) - 1
+        : Number(pagePairStart),
     );
     const entryPages = getEntryPages(entry);
     return {
@@ -716,7 +729,9 @@
     pageElement.dataset.visiblePage = "";
     pageElement.setAttribute(
       "aria-label",
-      side === "left" ? "Blank left notebook page" : "Blank right notebook page",
+      side === "left"
+        ? "Blank left notebook page"
+        : "Blank right notebook page",
     );
   };
 
@@ -778,23 +793,43 @@
       currentPagePairStart,
     );
     if (currentPagePairStart > totalPages) {
-      currentPagePairStart = Math.max(1, totalPages % 2 === 0 ? totalPages - 1 : totalPages);
+      currentPagePairStart = Math.max(
+        1,
+        totalPages % 2 === 0 ? totalPages - 1 : totalPages,
+      );
     }
 
-    setText(root, selectors.pageCount, pageStatusText(entry, currentPagePairStart));
+    setText(
+      root,
+      selectors.pageCount,
+      pageStatusText(entry, currentPagePairStart),
+    );
     setText(root, selectors.status, "");
     updateHash(entry);
     syncEntrySelection(root);
 
-    renderNotebookPage(root.querySelector(selectors.leftPage), left, entry, "left");
-    renderNotebookPage(root.querySelector(selectors.rightPage), right, entry, "right");
+    renderNotebookPage(
+      root.querySelector(selectors.leftPage),
+      left,
+      entry,
+      "left",
+    );
+    renderNotebookPage(
+      root.querySelector(selectors.rightPage),
+      right,
+      entry,
+      "right",
+    );
 
     const previousEntry = root.querySelector(selectors.previousEntry);
     const nextEntry = root.querySelector(selectors.nextEntry);
     const previousPage = root.querySelector(selectors.previousPage);
     const nextPage = root.querySelector(selectors.nextPage);
     previousEntry?.toggleAttribute("disabled", currentEntryIndex === 0);
-    nextEntry?.toggleAttribute("disabled", currentEntryIndex === entries.length - 1);
+    nextEntry?.toggleAttribute(
+      "disabled",
+      currentEntryIndex === entries.length - 1,
+    );
     previousPage?.toggleAttribute(
       "disabled",
       !hasPreviousPagePair(currentPagePairStart),
@@ -827,7 +862,10 @@
 
     const entry = entries[currentEntryIndex];
     const nextStart = currentPagePairStart + offset * 2;
-    if (nextStart < 1 || nextStart > getVisiblePagePair(entry, currentPagePairStart).totalPages) {
+    if (
+      nextStart < 1 ||
+      nextStart > getVisiblePagePair(entry, currentPagePairStart).totalPages
+    ) {
       return;
     }
 

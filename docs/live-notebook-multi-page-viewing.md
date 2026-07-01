@@ -31,5 +31,13 @@ The renderer keeps support for:
 - nested page-level `body`
 - nested page-level `decorations`
 
+Nested list blocks use the same Admin-compatible class hooks as the authoring notebook:
+`block-bulleted-list`, `block-numbered-list`, `notebook-block__heading`, and
+`notebook-list-block__items`. This keeps bulleted and numbered lists tied to exported Notebook
+Typography variables.
+
+Blue Pen page decorations are expected to arrive as transparent PNGs from Scriptorium. The website
+renders them directly in page-local free layers without adding a background.
+
 The generated notebook geometry files remain the source of physical notebook dimensions and should not
 be edited by hand.
