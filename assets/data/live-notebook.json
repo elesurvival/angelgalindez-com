@@ -468,6 +468,20 @@
             {
               "kind": "paragraph",
               "text": "This entry exists to test the full multi-page publishing loop.\n\nFor the first time, a single Scriptorium note should be able to move beyond the original two-page notebook view. The Admin can now assign content to Page 1, Page 2, Page 3, and Page 4, and the hidden Live Notebook should let a visitor turn through those pages under one slug.\n\nThe important thing is not just that more content can be stored. The important thing is that the authored structure survives the journey from Admin to export to the public notebook."
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 2,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Question",
+              "text": "Can one Scriptorium entry behave like a real notebook entry with multiple pages, while still publishing as one clean, shareable slug?"
             },
             {
               "kind": "list",
@@ -489,20 +503,6 @@
               "kind": "semantic",
               "label": "Discovery",
               "text": "The page model is now based on page numbers instead of only left and right sides. That means the author can think in simple terms: Page 1, Page 2, Page 3, Page 4."
-            }
-          ],
-          "decorations": []
-        },
-        {
-          "pageNumber": 2,
-          "side": "right",
-          "title": null,
-          "meta": [],
-          "body": [
-            {
-              "kind": "semantic",
-              "label": "Question",
-              "text": "Can one Scriptorium entry behave like a real notebook entry with multiple pages, while still publishing as one clean, shareable slug?"
             }
           ],
           "decorations": []
@@ -611,6 +611,19 @@
             {
               "kind": "paragraph",
               "text": "This entry exists to test the full multi-page publishing loop.\n\nFor the first time, a single Scriptorium note should be able to move beyond the original two-page notebook view. The Admin can now assign content to Page 1, Page 2, Page 3, and Page 4, and the hidden Live Notebook should let a visitor turn through those pages under one slug.\n\nThe important thing is not just that more content can be stored. The important thing is that the authored structure survives the journey from Admin to export to the public notebook."
+            }
+          ]
+        },
+        "right": {
+          "title": null,
+          "meta": [
+            "Entry #0107"
+          ],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Question",
+              "text": "Can one Scriptorium entry behave like a real notebook entry with multiple pages, while still publishing as one clean, shareable slug?"
             },
             {
               "kind": "list",
@@ -632,19 +645,6 @@
               "kind": "semantic",
               "label": "Discovery",
               "text": "The page model is now based on page numbers instead of only left and right sides. That means the author can think in simple terms: Page 1, Page 2, Page 3, Page 4."
-            }
-          ]
-        },
-        "right": {
-          "title": null,
-          "meta": [
-            "Entry #0107"
-          ],
-          "body": [
-            {
-              "kind": "semantic",
-              "label": "Question",
-              "text": "Can one Scriptorium entry behave like a real notebook entry with multiple pages, while still publishing as one clean, shareable slug?"
             }
           ]
         }
