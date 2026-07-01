@@ -3,8 +3,9 @@
 
   const defaultSource = "/assets/data/live-notebook.json";
   let initializedRoot = null;
-  let pages = [];
-  let currentIndex = 0;
+  let entries = [];
+  let currentEntryIndex = 0;
+  let currentPagePairStart = 1;
 
   const selectors = {
     root: "[data-live-notebook]",
@@ -12,15 +13,13 @@
     entryCount: "[data-entry-count]",
     notebookTitle: "[data-notebook-title]",
     notebookSubtitle: "[data-notebook-subtitle]",
-    noteMeta: "[data-note-meta]",
-    noteTitle: "[data-note-title]",
-    noteBody: "[data-note-body]",
     leftPage: ".live-notebook-page-left",
-    noteTags: "[data-note-tags]",
     rightPage: ".live-notebook-page-right",
     pageCount: "[data-page-count]",
-    previous: "[data-notebook-prev]",
-    next: "[data-notebook-next]",
+    previousEntry: "[data-entry-prev]",
+    nextEntry: "[data-entry-next]",
+    previousPage: "[data-page-prev]",
+    nextPage: "[data-page-next]",
     share: "[data-share-entry]",
     print: "[data-print-entry]",
     status: "[data-notebook-status]",
@@ -186,7 +185,7 @@
     return renderSemanticBlock(semanticLine);
   };
 
-  const renderSpreadBlock = (block) => {
+  const renderNotebookBlock = (block) => {
     if (typeof block === "string") {
       return renderBodyLine(block);
     }
@@ -309,12 +308,6 @@
     return figure;
   };
 
-  const freeLayerForBody = (container) => {
-    const page = container.closest(".live-notebook-page");
-    if (!page) return null;
-    return freeLayerForPage(page);
-  };
-
   const freeLayerForPage = (page) => {
     let layer = page.querySelector(":scope > .live-notebook-free-layer");
     if (!layer) {
@@ -328,17 +321,20 @@
     return layer;
   };
 
-  const clearFreeLayerForBody = (container) => {
-    const layer = freeLayerForBody(container);
-    if (layer) clearNode(layer);
+  const clearFreeLayerForPage = (page) => {
+    const layer = page.querySelector(":scope > .live-notebook-free-layer");
+    if (layer) {
+      clearNode(layer);
+    }
     return layer;
   };
 
-  const renderSpreadBody = (container, blocks) => {
-    const freeLayer = clearFreeLayerForBody(container);
+  const renderNotebookBody = (pageElement, container, blocks) => {
+    const freeLayer = freeLayerForPage(pageElement);
+    clearNode(freeLayer);
     clearNode(container);
     (Array.isArray(blocks) ? blocks : []).forEach((block) => {
-      const rendered = renderSpreadBlock(block);
+      const rendered = renderNotebookBlock(block);
       if (
         freeLayer &&
         block &&
@@ -383,7 +379,7 @@
     const figure = document.createElement("figure");
     figure.className = "live-notebook-decoration";
     figure.dataset.decorationId = decoration.id || "";
-    figure.dataset.decorationPage = decoration.page || "left";
+    figure.dataset.decorationPage = decoration.page || "";
     if (decoration.collection) figure.dataset.collection = decoration.collection;
     if (decoration.category) figure.dataset.category = decoration.category;
     applyDecorationPlacement(figure, decoration);
@@ -399,10 +395,10 @@
     return figure;
   };
 
-  const renderDecorationsForPage = (pageElement, page, side) => {
+  const renderDecorationsForNotebookPage = (pageElement, notebookPage) => {
     if (!pageElement) return;
-    const decorations = Array.isArray(page.decorations)
-      ? page.decorations.filter((decoration) => decoration?.page === side)
+    const decorations = Array.isArray(notebookPage?.decorations)
+      ? notebookPage.decorations
       : [];
     if (!decorations.length) return;
 
@@ -412,11 +408,6 @@
     });
   };
 
-  const renderDecorations = (root, page) => {
-    renderDecorationsForPage(root.querySelector(selectors.leftPage), page, "left");
-    renderDecorationsForPage(root.querySelector(selectors.rightPage), page, "right");
-  };
-
   const humanizeTag = (tag) =>
     String(tag || "")
       .split(/[-_\s]+/)
@@ -424,44 +415,36 @@
       .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
       .join(" ");
 
-  const taxonomyTagLabels = (page) => {
-    const leftMeta = Array.isArray(page.spread?.left?.meta)
-      ? page.spread.left.meta
+  const taxonomyTagLabels = (entry) => {
+    const leftMeta = Array.isArray(entry.spread?.left?.meta)
+      ? entry.spread.left.meta
       : [];
     const labels = leftMeta.filter(
       (item) =>
         item &&
-        item !== page.project &&
-        item !== page.type &&
-        item !== page.date &&
-        item !== formatDate(page.date),
+        item !== entry.project &&
+        item !== entry.type &&
+        item !== entry.date &&
+        item !== formatDate(entry.date),
     );
 
     if (labels.length) {
       return labels;
     }
 
-    return Array.isArray(page.tags) ? page.tags.map(humanizeTag) : [];
+    return Array.isArray(entry.tags) ? entry.tags.map(humanizeTag) : [];
   };
 
-  const clearTaxonomyChips = (root) => {
-    root
-      .querySelectorAll(".live-notebook-taxonomy")
-      .forEach((node) => node.remove());
-  };
-
-  const renderTaxonomyChips = (root, page) => {
-    const title = root.querySelector(selectors.noteTitle);
+  const renderTaxonomyChips = (pageElement, entry) => {
+    const title = pageElement.querySelector("h2");
     if (!title) {
       return;
     }
 
-    clearTaxonomyChips(root);
-
     const chips = [
-      page.project ? `Project: ${page.project}` : "",
-      page.type && page.type !== "Note" ? `Theme: ${page.type}` : "",
-      ...taxonomyTagLabels(page),
+      entry.project ? `Project: ${entry.project}` : "",
+      entry.type && entry.type !== "Note" ? `Theme: ${entry.type}` : "",
+      ...taxonomyTagLabels(entry),
     ].filter(Boolean);
 
     if (!chips.length) {
@@ -481,7 +464,7 @@
   };
 
   const getPageHash = () =>
-    decodeURIComponent(window.location.hash.replace(/^#/, ""));
+    decodeURIComponent(window.location.hash.replace(/^#/, "").split("/")[0]);
 
   const indexFromHash = () => {
     const hash = getPageHash();
@@ -489,15 +472,122 @@
       return -1;
     }
 
-    return pages.findIndex((page) => page.id === hash);
+    return entries.findIndex((entry) => entry.id === hash);
   };
 
-  const updateHash = (page) => {
-    if (!page?.id || window.location.hash === `#${page.id}`) {
+  const updateHash = (entry) => {
+    if (!entry?.id || window.location.hash === `#${entry.id}`) {
       return;
     }
 
-    window.history.replaceState(null, "", `#${encodeURIComponent(page.id)}`);
+    window.history.replaceState(null, "", `#${encodeURIComponent(entry.id)}`);
+  };
+
+  const entryTitle = (entry) => entry?.title || "Untitled Note";
+
+  const normalizePageRecord = (entry, record, fallbackNumber) => {
+    const pageNumber = Math.max(1, Number(record?.pageNumber || fallbackNumber));
+    const side = pageNumber % 2 === 0 ? "right" : "left";
+    return {
+      pageNumber,
+      side,
+      title: record?.title ?? null,
+      meta: Array.isArray(record?.meta) ? record.meta : [],
+      body: Array.isArray(record?.body) ? record.body : [],
+      decorations: Array.isArray(record?.decorations) ? record.decorations : [],
+    };
+  };
+
+  const legacyEntryPages = (entry) => {
+    const leftSpread = entry?.spread?.left;
+    const rightSpread = entry?.spread?.right;
+    const leftBody = Array.isArray(leftSpread?.body)
+      ? leftSpread.body
+      : Array.isArray(entry?.body)
+        ? entry.body
+        : [];
+    const rightBody = Array.isArray(rightSpread?.body) ? rightSpread.body : [];
+    const legacyDecorations = Array.isArray(entry?.decorations)
+      ? entry.decorations
+      : [];
+
+    return [
+      {
+        pageNumber: 1,
+        side: "left",
+        title: entryTitle(entry),
+        meta: Array.isArray(leftSpread?.meta) ? leftSpread.meta : [],
+        body: leftBody,
+        decorations: legacyDecorations.filter(
+          (decoration) => decoration?.page !== "right",
+        ),
+      },
+      {
+        pageNumber: 2,
+        side: "right",
+        title: null,
+        meta: Array.isArray(rightSpread?.meta) ? rightSpread.meta : [],
+        body: rightBody,
+        decorations: legacyDecorations.filter(
+          (decoration) => decoration?.page === "right",
+        ),
+      },
+    ];
+  };
+
+  const getEntryPages = (entry) => {
+    if (Array.isArray(entry?.pages) && entry.pages.length) {
+      return entry.pages
+        .map((record, index) => normalizePageRecord(entry, record, index + 1))
+        .sort((a, b) => a.pageNumber - b.pageNumber);
+    }
+
+    return legacyEntryPages(entry);
+  };
+
+  const pageByNumber = (entryPages, pageNumber) =>
+    entryPages.find((page) => page.pageNumber === pageNumber) || null;
+
+  const getVisiblePagePair = (entry, pagePairStart) => {
+    const normalizedStart = Math.max(
+      1,
+      Number(pagePairStart) % 2 === 0 ? Number(pagePairStart) - 1 : Number(pagePairStart),
+    );
+    const entryPages = getEntryPages(entry);
+    return {
+      entryPages,
+      left: pageByNumber(entryPages, normalizedStart),
+      right: pageByNumber(entryPages, normalizedStart + 1),
+      start: normalizedStart,
+      totalPages: Math.max(1, ...entryPages.map((page) => page.pageNumber)),
+    };
+  };
+
+  const hasPreviousPagePair = (pagePairStart) => pagePairStart > 1;
+
+  const hasNextPagePair = (entry, pagePairStart) => {
+    const { totalPages } = getVisiblePagePair(entry, pagePairStart);
+    return pagePairStart + 2 <= totalPages;
+  };
+
+  const pageStatusText = (entry, pagePairStart) => {
+    const { left, right, start, totalPages } = getVisiblePagePair(
+      entry,
+      pagePairStart,
+    );
+    const visible = [left, right].filter(Boolean);
+    if (!visible.length) {
+      return "Page 0 of 0";
+    }
+
+    const first = visible[0].pageNumber;
+    const last = visible[visible.length - 1].pageNumber;
+
+    if (first === last || start === totalPages) {
+      return `Page ${first} of ${totalPages}`;
+    }
+
+    return `Pages ${first}-${last} of ${totalPages}`;
   };
 
   const renderEntryList = (root) => {
@@ -505,7 +595,7 @@
     const count = root.querySelector(selectors.entryCount);
 
     if (count) {
-      count.textContent = String(pages.length);
+      count.textContent = String(entries.length);
     }
 
     if (!list) {
@@ -514,7 +604,7 @@
 
     clearNode(list);
 
-    if (!pages.length) {
+    if (!entries.length) {
       const empty = document.createElement("p");
       empty.className = "live-entry-empty";
       empty.textContent = "This notebook is waiting for its first public note.";
@@ -522,30 +612,31 @@
       return;
     }
 
-    pages.forEach((page, index) => {
+    entries.forEach((entry, index) => {
       const button = document.createElement("button");
       button.className = "live-entry-button";
       button.type = "button";
       button.setAttribute("role", "listitem");
       button.dataset.entryIndex = String(index);
-      if (index === currentIndex) {
+      if (index === currentEntryIndex) {
         button.setAttribute("aria-current", "page");
       }
       button.addEventListener("click", () => {
-        currentIndex = index;
-        renderPage(root);
+        currentEntryIndex = index;
+        currentPagePairStart = 1;
+        renderEntry(root);
       });
 
       const date = document.createElement("span");
       date.className = "live-entry-date";
-      date.textContent = formatDate(page.date);
+      date.textContent = formatDate(entry.date);
 
       const title = document.createElement("strong");
-      title.textContent = page.title || "Untitled Note";
+      title.textContent = entryTitle(entry);
 
       const meta = document.createElement("span");
       meta.className = "live-entry-meta";
-      meta.textContent = page.project || "Notebook";
+      meta.textContent = entry.project || "Notebook";
 
       button.append(date, title, meta);
       list.append(button);
@@ -554,7 +645,7 @@
 
   const syncEntrySelection = (root) => {
     root.querySelectorAll("[data-entry-index]").forEach((entry) => {
-      if (Number(entry.dataset.entryIndex) === currentIndex) {
+      if (Number(entry.dataset.entryIndex) === currentEntryIndex) {
         entry.setAttribute("aria-current", "page");
       } else {
         entry.removeAttribute("aria-current");
@@ -563,20 +654,15 @@
   };
 
   const renderFallback = (root, message) => {
-    pages = [];
-    currentIndex = 0;
+    entries = [];
+    currentEntryIndex = 0;
+    currentPagePairStart = 1;
     setText(root, selectors.notebookTitle, "Live Notebook");
     setText(
       root,
       selectors.notebookSubtitle,
       displayNotebookSubtitle("Selected notebook notes."),
     );
-    setText(
-      root,
-      selectors.noteMeta,
-      "SCRIPTORIUM · NOTEBOOK · TEMPORARILY QUIET",
-    );
-    setText(root, selectors.noteTitle, "The notebook is closed for a moment.");
     setText(root, selectors.pageCount, "Page 0 of 0");
     setText(
       root,
@@ -584,160 +670,188 @@
       message || "Build activity will appear here soon.",
     );
     setText(root, selectors.entryCount, "0");
-    clearTaxonomyChips(root);
 
-    const body = root.querySelector(selectors.noteBody);
-    if (body) {
-      clearFreeLayerForBody(body);
-      clearNode(body);
+    const leftPage = root.querySelector(selectors.leftPage);
+    const rightPage = root.querySelector(selectors.rightPage);
+    if (leftPage) {
+      clearNode(leftPage);
+      clearFreeLayerForPage(leftPage);
+      const meta = document.createElement("p");
+      meta.className = "live-notebook-note-meta";
+      meta.textContent = "SCRIPTORIUM · NOTEBOOK · TEMPORARILY QUIET";
+      const title = document.createElement("h2");
+      title.textContent = "The notebook is closed for a moment.";
+      const body = document.createElement("div");
+      body.className = "live-notebook-note-body";
       const paragraph = document.createElement("p");
       paragraph.textContent =
         "The Live Notebook could not load its notes. Please try again shortly.";
       body.append(paragraph);
+      leftPage.append(meta, title, body);
     }
 
-    const tags = root.querySelector(selectors.noteTags);
-    if (tags) {
-      clearNode(tags);
+    if (rightPage) {
+      renderBlankNotebookPage(rightPage, "right");
     }
 
-    const entries = root.querySelector(selectors.entryList);
-    if (entries) {
-      clearNode(entries);
+    const entryList = root.querySelector(selectors.entryList);
+    if (entryList) {
+      clearNode(entryList);
       const empty = document.createElement("p");
       empty.className = "live-entry-empty";
       empty.textContent = "This notebook is waiting for its first public note.";
-      entries.append(empty);
+      entryList.append(empty);
     }
 
-    root.querySelector(selectors.previous)?.setAttribute("disabled", "");
-    root.querySelector(selectors.next)?.setAttribute("disabled", "");
+    root.querySelector(selectors.previousEntry)?.setAttribute("disabled", "");
+    root.querySelector(selectors.nextEntry)?.setAttribute("disabled", "");
+    root.querySelector(selectors.previousPage)?.setAttribute("disabled", "");
+    root.querySelector(selectors.nextPage)?.setAttribute("disabled", "");
   };
 
-  const renderRightPage = (root, page) => {
-    const rightPage = root.querySelector(selectors.rightPage);
-    if (!rightPage) {
+  const renderBlankNotebookPage = (pageElement, side) => {
+    clearNode(pageElement);
+    clearFreeLayerForPage(pageElement);
+    pageElement.classList.add("live-notebook-blank-page");
+    pageElement.dataset.visiblePage = "";
+    pageElement.setAttribute(
+      "aria-label",
+      side === "left" ? "Blank left notebook page" : "Blank right notebook page",
+    );
+  };
+
+  const renderNotebookPage = (pageElement, notebookPage, entry, side) => {
+    if (!pageElement) return;
+    if (!notebookPage) {
+      renderBlankNotebookPage(pageElement, side);
       return;
     }
 
-    const rightSpread = page.spread?.right;
-    const rightBlocks = Array.isArray(rightSpread?.body)
-      ? rightSpread.body
-      : [];
-    clearNode(rightPage);
+    clearNode(pageElement);
+    clearFreeLayerForPage(pageElement);
+    pageElement.classList.remove("live-notebook-blank-page");
+    pageElement.dataset.visiblePage = String(notebookPage.pageNumber);
+    pageElement.setAttribute(
+      "aria-label",
+      `${side === "left" ? "Left" : "Right"} notebook page ${notebookPage.pageNumber}`,
+    );
 
-    if (rightBlocks.length) {
-      const body = document.createElement("div");
-      body.className = "live-notebook-note-body live-notebook-note-body--right";
-      renderSpreadBody(body, rightBlocks);
-
-      rightPage.append(body);
-      return;
+    if (notebookPage.pageNumber === 1) {
+      const meta = document.createElement("p");
+      meta.className = "live-notebook-note-meta";
+      meta.textContent = formatDate(entry.date);
+      pageElement.append(meta);
+    } else if (Array.isArray(notebookPage.meta) && notebookPage.meta.length) {
+      const meta = document.createElement("p");
+      meta.className = "live-notebook-note-meta";
+      meta.textContent = notebookPage.meta.join(" · ");
+      pageElement.append(meta);
     }
 
-    const sideLabel = document.createElement("p");
-    sideLabel.className = "live-notebook-side-label";
-    sideLabel.textContent = "Notebook details";
+    if (notebookPage.title) {
+      const title = document.createElement("h2");
+      title.textContent = notebookPage.title;
+      pageElement.append(title);
+      if (notebookPage.pageNumber === 1) {
+        renderTaxonomyChips(pageElement, entry);
+      }
+    }
 
-    const title = document.createElement("h3");
-    title.dataset.notebookTitle = "";
-    title.textContent = "Live Notebook";
-
-    const tags = document.createElement("ul");
-    tags.className = "live-notebook-tags";
-    tags.dataset.noteTags = "";
-    tags.setAttribute("aria-label", "Current note tags");
-
-    const card = document.createElement("div");
-    card.className = "live-notebook-side-card";
-    const cardLabel = document.createElement("span");
-    cardLabel.textContent = "Source";
-    const cardTitle = document.createElement("strong");
-    cardTitle.textContent = "Scriptorium";
-    const cardText = document.createElement("p");
-    cardText.textContent = "Selected notes allowed to breathe in public.";
-    card.append(cardLabel, cardTitle, cardText);
-
-    rightPage.append(sideLabel, title, tags, card);
+    const body = document.createElement("div");
+    body.className = `live-notebook-note-body${
+      side === "right" ? " live-notebook-note-body--right" : ""
+    }`;
+    renderNotebookBody(pageElement, body, notebookPage.body);
+    pageElement.append(body);
+    renderDecorationsForNotebookPage(pageElement, notebookPage);
   };
 
-  const renderPage = (root) => {
-    const page = pages[currentIndex];
-    if (!page) {
+  const renderEntry = (root) => {
+    const entry = entries[currentEntryIndex];
+    if (!entry) {
       renderFallback(root, "No published notes are available yet.");
       return;
     }
 
-    setText(root, selectors.noteMeta, formatDate(page.date));
-    setText(root, selectors.noteTitle, page.title || "Untitled Note");
-    renderTaxonomyChips(root, page);
-    setText(
-      root,
-      selectors.pageCount,
-      `Page ${currentIndex + 1} of ${pages.length}`,
+    const { left, right, totalPages } = getVisiblePagePair(
+      entry,
+      currentPagePairStart,
     );
+    if (currentPagePairStart > totalPages) {
+      currentPagePairStart = Math.max(1, totalPages % 2 === 0 ? totalPages - 1 : totalPages);
+    }
+
+    setText(root, selectors.pageCount, pageStatusText(entry, currentPagePairStart));
     setText(root, selectors.status, "");
-    updateHash(page);
+    updateHash(entry);
     syncEntrySelection(root);
 
-    const body = root.querySelector(selectors.noteBody);
-    if (body) {
-      const leftSpread = page.spread?.left;
-      if (Array.isArray(leftSpread?.body) && leftSpread.body.length) {
-        renderSpreadBody(body, leftSpread.body);
-      } else {
-        clearFreeLayerForBody(body);
-        clearNode(body);
-        (Array.isArray(page.body) ? page.body : []).forEach((line) => {
-          body.append(renderBodyLine(line));
-        });
-      }
-    }
+    renderNotebookPage(root.querySelector(selectors.leftPage), left, entry, "left");
+    renderNotebookPage(root.querySelector(selectors.rightPage), right, entry, "right");
 
-    renderRightPage(root, page);
-    renderDecorations(root, page);
-
-    const tags = root.querySelector(selectors.noteTags);
-    if (tags) {
-      clearNode(tags);
-      (Array.isArray(page.tags) ? page.tags : []).forEach((tag) => {
-        const item = document.createElement("li");
-        item.textContent = tag;
-        tags.append(item);
-      });
-    }
-
-    const previous = root.querySelector(selectors.previous);
-    const next = root.querySelector(selectors.next);
-    previous?.toggleAttribute("disabled", currentIndex === 0);
-    next?.toggleAttribute("disabled", currentIndex === pages.length - 1);
+    const previousEntry = root.querySelector(selectors.previousEntry);
+    const nextEntry = root.querySelector(selectors.nextEntry);
+    const previousPage = root.querySelector(selectors.previousPage);
+    const nextPage = root.querySelector(selectors.nextPage);
+    previousEntry?.toggleAttribute("disabled", currentEntryIndex === 0);
+    nextEntry?.toggleAttribute("disabled", currentEntryIndex === entries.length - 1);
+    previousPage?.toggleAttribute(
+      "disabled",
+      !hasPreviousPagePair(currentPagePairStart),
+    );
+    nextPage?.toggleAttribute(
+      "disabled",
+      !hasNextPagePair(entry, currentPagePairStart),
+    );
   };
 
-  const movePage = (offset) => {
-    if (!initializedRoot || !pages.length) {
+  const moveEntry = (offset) => {
+    if (!initializedRoot || !entries.length) {
       return;
     }
 
-    const nextIndex = currentIndex + offset;
-    if (nextIndex < 0 || nextIndex >= pages.length) {
+    const nextIndex = currentEntryIndex + offset;
+    if (nextIndex < 0 || nextIndex >= entries.length) {
       return;
     }
 
-    currentIndex = nextIndex;
-    renderPage(initializedRoot);
+    currentEntryIndex = nextIndex;
+    currentPagePairStart = 1;
+    renderEntry(initializedRoot);
+  };
+
+  const turnPage = (offset) => {
+    if (!initializedRoot || !entries.length) {
+      return;
+    }
+
+    const entry = entries[currentEntryIndex];
+    const nextStart = currentPagePairStart + offset * 2;
+    if (nextStart < 1 || nextStart > getVisiblePagePair(entry, currentPagePairStart).totalPages) {
+      return;
+    }
+
+    currentPagePairStart = nextStart;
+    renderEntry(initializedRoot);
   };
 
   const bindControls = (root) => {
     root
-      .querySelector(selectors.previous)
-      ?.addEventListener("click", () => movePage(-1));
+      .querySelector(selectors.previousEntry)
+      ?.addEventListener("click", () => moveEntry(-1));
     root
-      .querySelector(selectors.next)
-      ?.addEventListener("click", () => movePage(1));
+      .querySelector(selectors.nextEntry)
+      ?.addEventListener("click", () => moveEntry(1));
+    root
+      .querySelector(selectors.previousPage)
+      ?.addEventListener("click", () => turnPage(-1));
+    root
+      .querySelector(selectors.nextPage)
+      ?.addEventListener("click", () => turnPage(1));
     root.querySelector(selectors.share)?.addEventListener("click", async () => {
-      const page = pages[currentIndex];
-      const url = page?.id
-        ? `${window.location.origin}${window.location.pathname}#${encodeURIComponent(page.id)}`
+      const entry = entries[currentEntryIndex];
+      const url = entry?.id
+        ? `${window.location.origin}${window.location.pathname}#${encodeURIComponent(entry.id)}`
         : window.location.href;
 
       try {
@@ -775,12 +889,12 @@
 
       if (event.key === "ArrowLeft") {
         event.preventDefault();
-        movePage(-1);
+        moveEntry(-1);
       }
 
       if (event.key === "ArrowRight") {
         event.preventDefault();
-        movePage(1);
+        moveEntry(1);
       }
     });
   };
@@ -803,8 +917,9 @@
       }
 
       const data = await response.json();
-      pages = Array.isArray(data.pages) ? data.pages : [];
-      currentIndex = Math.max(0, indexFromHash());
+      entries = Array.isArray(data.pages) ? data.pages : [];
+      currentEntryIndex = Math.max(0, indexFromHash());
+      currentPagePairStart = 1;
       setText(
         root,
         selectors.notebookTitle,
@@ -818,7 +933,7 @@
         ),
       );
       renderEntryList(root);
-      renderPage(root);
+      renderEntry(root);
     } catch (error) {
       console.warn(error.message);
       renderFallback(root, "The notebook data could not be loaded.");

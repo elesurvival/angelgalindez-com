@@ -7,7 +7,7 @@
   <title>Live Notebook | Angel Galindez</title>
   <link rel="stylesheet" href="/assets/css/notebook-geometry.css?v=20260630">
   <link rel="stylesheet" href="/assets/css/notebook-typography.css?v=20260629">
-  <link rel="stylesheet" href="/styles.css?v=20260629e">
+  <link rel="stylesheet" href="/styles.css?v=20260630b">
   <link rel="stylesheet" href="/assets/css/global-music-player.css?v=20260621c">
   <link rel="stylesheet" href="/assets/css/qf-lyrics.css?v=20260621">
   <link rel="stylesheet" href="/assets/css/qf-library.css?v=20260621">
@@ -92,11 +92,13 @@
             </div>
           </div>
 
-          <div class="live-notebook-controls" aria-label="Notebook page controls">
+          <div class="live-notebook-controls" aria-label="Notebook controls">
             <button class="live-sort-control" type="button" disabled>Newest First</button>
-            <button type="button" data-notebook-prev>Previous Entry</button>
+            <button type="button" data-entry-prev aria-label="Previous entry">Previous Entry</button>
+            <button type="button" data-page-prev aria-label="Previous page">Previous Page</button>
             <span data-page-count>Page 1 of 1</span>
-            <button type="button" data-notebook-next>Next Entry</button>
+            <button type="button" data-page-next aria-label="Next page">Next Page</button>
+            <button type="button" data-entry-next aria-label="Next entry">Next Entry</button>
             <button type="button" data-share-entry>Share Entry</button>
             <button type="button" data-print-entry>Print</button>
           </div>
@@ -110,7 +112,7 @@
   <script src="/assets/js/global-music-player.js?v=20260621c" defer></script>
   <script src="/assets/js/qf-lyrics.js?v=20260621b" defer></script>
   <script src="/assets/js/qf-library.js?v=20260621b" defer></script>
-  <script src="/assets/js/notebook.js?v=20260630a" defer></script>
+  <script src="/assets/js/notebook.js?v=20260630b" defer></script>
   <script src="/assets/js/site-router.js?v=20260623a" defer></script>
 </body>
 </html>
