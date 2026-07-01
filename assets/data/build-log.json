@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-07-01T05:50:06.417Z",
+  "updated_at": "2026-07-01T07:20:23.939Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "292bde2",
+      "message": "Fix Live Notebook decoration transparency and list typography",
+      "date": "2026-07-01",
+      "time": "2:20 AM",
+      "timestamp": "2026-07-01T02:20:20-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "673e21d",
+      "message": "Fix Live Notebook decoration and list typography export parity",
+      "date": "2026-07-01",
+      "time": "2:19 AM",
+      "timestamp": "2026-07-01T02:19:35-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -882,24 +900,6 @@
       "date": "2026-06-26",
       "time": "6:48 PM",
       "timestamp": "2026-06-26T18:48:37-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "d661ba7",
-      "message": "Apply Quentin and Daniel notebook typography",
-      "date": "2026-06-26",
-      "time": "5:55 PM",
-      "timestamp": "2026-06-26T17:55:39-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "fb999d3",
-      "message": "Split notebook handwriting fonts",
-      "date": "2026-06-26",
-      "time": "5:15 PM",
-      "timestamp": "2026-06-26T17:15:13-05:00"
     }
   ]
 }
