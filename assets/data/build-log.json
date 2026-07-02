@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-02T12:35:38.766Z",
+  "updated_at": "2026-07-02T13:18:17.284Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "8b3e0c4",
+      "message": "Add manifest-driven presentation rhythm",
+      "date": "2026-07-02",
+      "time": "8:17 AM",
+      "timestamp": "2026-07-02T08:17:19-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-27",
       "time": "8:22 PM",
       "timestamp": "2026-06-27T20:22:21-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "76702dd",
-      "message": "Add Scriptorium list typography settings",
-      "date": "2026-06-27",
-      "time": "4:51 AM",
-      "timestamp": "2026-06-27T04:51:25-05:00"
     }
   ]
 }
