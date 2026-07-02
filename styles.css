@@ -8484,7 +8484,26 @@ a.build-log-project:focus-visible {
 }
 
 .keepers-character-grid article {
+  overflow: hidden;
   padding: 0.75rem;
+  transform: translateY(0);
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease,
+    background-color 220ms ease;
+}
+
+.keepers-character-grid article:hover,
+.keepers-character-grid article:focus-visible {
+  border-color: rgba(142, 220, 82, 0.46);
+  outline: none;
+  background: linear-gradient(180deg, rgba(142, 220, 82, 0.07), rgba(2, 8, 9, 0.82));
+  box-shadow:
+    0 18px 46px rgba(0, 0, 0, 0.34),
+    0 0 28px rgba(142, 220, 82, 0.12),
+    0 0 44px rgba(228, 173, 88, 0.08);
+  transform: translateY(-4px);
 }
 
 .keepers-character-grid img {
@@ -8494,6 +8513,14 @@ a.build-log-project:focus-visible {
   margin-bottom: 0.75rem;
   border-radius: 5px;
   object-fit: cover;
+  transform: scale(1);
+  transition: transform 260ms ease, filter 260ms ease;
+}
+
+.keepers-character-grid article:hover img,
+.keepers-character-grid article:focus-visible img {
+  filter: saturate(1.08) contrast(1.04);
+  transform: scale(1.02);
 }
 
 .keepers-character-grid h3,
@@ -8651,6 +8678,10 @@ a.build-log-project:focus-visible {
 }
 
 .keepers-related-grid a {
+  display: flex;
+  min-height: 190px;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 1rem;
   color: inherit;
   text-decoration: none;
@@ -8664,21 +8695,35 @@ a.build-log-project:focus-visible {
   transform: translateY(-2px);
 }
 
+.keepers-related-grid img,
+.keepers-related-grid .keepers-related-icon {
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  margin: 0 0 0.85rem;
+}
+
 .keepers-related-grid img {
-  width: 54px;
-  height: 54px;
-  margin-bottom: 0.8rem;
   object-fit: contain;
 }
 
+.keepers-related-grid a > span:not(.keepers-related-icon) {
+  min-height: 2.1em;
+}
+
 .keepers-closing {
+  overflow: hidden;
   display: grid;
   grid-template-columns: minmax(260px, 0.8fr) minmax(320px, 1fr) minmax(180px, 0.4fr);
   gap: 2rem;
   align-items: center;
-  min-height: 210px;
+  min-height: clamp(360px, 36vw, 520px);
   margin-top: 1rem;
-  padding-bottom: 2.5rem;
+  padding: clamp(3rem, 7vw, 6rem) clamp(1.5rem, 4vw, 4rem);
+  border-top: 1px solid rgba(228, 173, 88, 0.18);
+  border-bottom: 1px solid rgba(142, 220, 82, 0.12);
+  border-radius: 8px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04), 0 24px 80px rgba(0,0,0,0.34);
 }
 
 .keepers-closing img {
@@ -8688,29 +8733,44 @@ a.build-log-project:focus-visible {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 52%;
+  transform: scale(1.03);
 }
 
 .keepers-closing::before {
   z-index: -1;
-  background: linear-gradient(90deg, rgba(2, 7, 8, 0.9), rgba(2, 7, 8, 0.72), rgba(2, 7, 8, 0.88));
+  background:
+    radial-gradient(circle at 28% 45%, rgba(142, 220, 82, 0.14), transparent 22rem),
+    linear-gradient(90deg, rgba(2, 7, 8, 0.9), rgba(2, 7, 8, 0.58), rgba(2, 7, 8, 0.86)),
+    linear-gradient(0deg, rgba(2, 7, 8, 0.92), transparent 42%, rgba(2, 7, 8, 0.42));
 }
 
 .keepers-closing blockquote {
   grid-column: 2;
   margin: 0;
   color: var(--ink);
-  font: 500 clamp(1.25rem, 2.8vw, 2rem)/1.25 Arial, Helvetica, sans-serif;
+  text-wrap: balance;
+  text-shadow: 0 2px 22px rgba(0, 0, 0, 0.72);
+  font: 600 clamp(1.55rem, 3.2vw, 3rem)/1.18 Arial, Helvetica, sans-serif;
 }
 
-.keepers-closing p,
+.keepers-closing p {
+  grid-column: 2;
+  margin: -1.1rem 0 0;
+  color: var(--keepers-gold);
+  font: 400 clamp(1.15rem, 1.8vw, 1.6rem)/1.2 Georgia, serif;
+}
+
 .keepers-closing span {
   color: var(--keepers-green);
 }
 
 .keepers-closing span {
+  align-self: end;
   justify-self: end;
   font-weight: 900;
   letter-spacing: 0.12em;
+  text-shadow: 0 0 18px rgba(142, 220, 82, 0.24);
 }
 
 @media (max-width: 1100px) {
@@ -8777,10 +8837,12 @@ a.build-log-project:focus-visible {
   }
 
   .keepers-closing {
-    padding: 2rem 0 3rem;
+    min-height: 440px;
+    padding: 3rem 1.25rem;
   }
 
-  .keepers-closing blockquote {
+  .keepers-closing blockquote,
+  .keepers-closing p {
     grid-column: 1;
   }
 
