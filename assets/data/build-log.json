@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02T14:26:08.405Z",
+  "updated_at": "2026-07-02T14:27:43.370Z",
   "items": [
     {
       "project": "Scriptorium",
@@ -650,15 +650,6 @@
       "timestamp": "2026-06-30T01:15:42-05:00"
     },
     {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "1efb739",
-      "message": "Remove remaining Live Notebook source footer",
-      "date": "2026-06-29",
-      "time": "11:51 PM",
-      "timestamp": "2026-06-29T23:51:28-05:00"
-    },
-    {
       "project": "Scriptorium",
       "repo": "scriptorium",
       "hash": "8e68c3c",
@@ -900,6 +891,15 @@
       "date": "2026-06-28",
       "time": "7:53 AM",
       "timestamp": "2026-06-28T07:53:50-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "8f65d2a",
+      "message": "Promote Scriptorium typography to sidebar tool",
+      "date": "2026-06-28",
+      "time": "6:27 AM",
+      "timestamp": "2026-06-28T06:27:05-05:00"
     }
   ]
 }
