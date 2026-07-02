@@ -8211,6 +8211,598 @@ a.build-log-project:focus-visible {
   }
 }
 
+/* The Code Keepers project page */
+.code-keepers-page-body {
+  --keepers-green: #8edc52;
+  --keepers-emerald: #42d982;
+  --keepers-gold: #e4ad58;
+  --keepers-amber: #f0c371;
+  --keepers-line: rgba(228, 173, 88, 0.22);
+  --keepers-panel: rgba(4, 11, 12, 0.88);
+  background:
+    radial-gradient(circle at 82% 5%, rgba(66, 217, 130, 0.08), transparent 28rem),
+    radial-gradient(circle at 12% 20%, rgba(228, 173, 88, 0.08), transparent 25rem),
+    #020708;
+  color: var(--ink);
+}
+
+.keepers-hero {
+  position: relative;
+  min-height: 620px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(228, 173, 88, 0.16);
+}
+
+.keepers-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+}
+
+.keepers-hero::before,
+.keepers-closing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.keepers-hero::before {
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(2, 7, 8, 0.98) 0%, rgba(2, 7, 8, 0.74) 35%, rgba(2, 7, 8, 0.28) 68%, rgba(2, 7, 8, 0.12) 100%),
+    linear-gradient(0deg, rgba(2, 7, 8, 0.82), transparent 38%),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.025) 0 1px, transparent 1px 4px);
+}
+
+.keepers-hero-inner,
+.keepers-panel,
+.keepers-related,
+.keepers-closing {
+  position: relative;
+  z-index: 2;
+  width: min(92vw, 1500px);
+  margin: 0 auto;
+}
+
+.keepers-hero-inner {
+  display: flex;
+  align-items: center;
+  min-height: 620px;
+  padding: clamp(6rem, 12vw, 9rem) 0 4rem;
+}
+
+.keepers-hero-copy {
+  max-width: 520px;
+}
+
+.keepers-kicker {
+  margin: 0 0 0.8rem;
+  color: var(--keepers-green);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.keepers-kicker span {
+  display: inline-block;
+  width: 0.42rem;
+  height: 0.42rem;
+  margin-right: 0.45rem;
+  border-radius: 999px;
+  background: var(--keepers-green);
+  box-shadow: 0 0 16px rgba(142, 220, 82, 0.45);
+  vertical-align: 0.08rem;
+}
+
+.keepers-hero h1 {
+  max-width: 8ch;
+  margin: 0;
+  font: 900 clamp(4.6rem, 10vw, 8.8rem)/0.92 Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.keepers-series,
+.keepers-motto,
+.keepers-accent {
+  color: var(--keepers-green);
+}
+
+.keepers-series {
+  margin: 0.85rem 0 0;
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
+  font-weight: 900;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.keepers-motto {
+  margin: 1.1rem 0 0.75rem;
+  font: 800 clamp(1.1rem, 2.4vw, 1.55rem)/1.3 Arial, Helvetica, sans-serif;
+}
+
+.keepers-hero-copy > p:not(.keepers-kicker):not(.keepers-series):not(.keepers-motto) {
+  max-width: 46ch;
+  color: rgba(255,255,255,0.84);
+  line-height: 1.75;
+}
+
+.keepers-actions,
+.keepers-books-heading,
+.keepers-related-grid,
+.keepers-join,
+.keepers-behind,
+.keepers-story {
+  display: grid;
+  gap: 1rem;
+}
+
+.keepers-actions {
+  grid-template-columns: repeat(2, max-content);
+  margin-top: 1.8rem;
+}
+
+.keepers-primary,
+.keepers-secondary,
+.keepers-inline-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.85rem 1.35rem;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.keepers-primary {
+  border: 1px solid rgba(142, 220, 82, 0.55);
+  color: #061006;
+  background: linear-gradient(135deg, #70b747, var(--keepers-green));
+  box-shadow: 0 0 24px rgba(142, 220, 82, 0.18);
+}
+
+.keepers-secondary,
+.keepers-inline-cta {
+  border: 1px solid var(--keepers-line);
+  color: var(--ink);
+  background: rgba(255,255,255,0.03);
+}
+
+.keepers-primary:hover,
+.keepers-secondary:hover,
+.keepers-inline-cta:hover,
+.keepers-primary:focus-visible,
+.keepers-secondary:focus-visible,
+.keepers-inline-cta:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 0 26px rgba(142, 220, 82, 0.2);
+}
+
+.keepers-panel,
+.keepers-related {
+  margin-top: 1rem;
+  padding: clamp(1.35rem, 2.4vw, 2rem);
+  border: 1px solid var(--keepers-line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(142, 220, 82, 0.04), transparent 40%),
+    linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.015)),
+    var(--keepers-panel);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04), 0 20px 70px rgba(0,0,0,0.24);
+}
+
+.keepers-story {
+  grid-template-columns: minmax(260px, 0.9fr) minmax(300px, 1.1fr) minmax(180px, 0.45fr);
+  align-items: center;
+}
+
+.keepers-story-image,
+.keepers-behind img,
+.keepers-closing img {
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.keepers-story-image img,
+.keepers-behind img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 270px;
+  object-fit: cover;
+}
+
+.keepers-story-copy h2,
+.keepers-section-heading h2,
+.keepers-behind h2,
+.keepers-join h2 {
+  margin: 0 0 0.7rem;
+  color: var(--ink);
+  font: 700 clamp(1.8rem, 3.3vw, 3.1rem)/1.08 Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.keepers-story-copy p,
+.keepers-section-heading p,
+.keepers-character-grid p,
+.keepers-book-grid p,
+.keepers-principles p,
+.keepers-behind p,
+.keepers-join p,
+.keepers-related-grid p {
+  color: rgba(255,255,255,0.74);
+  line-height: 1.68;
+}
+
+.keepers-accent {
+  font-weight: 800;
+}
+
+.keepers-story-mark {
+  width: min(220px, 100%);
+  justify-self: center;
+  opacity: 0.32;
+  filter: drop-shadow(0 0 30px rgba(142, 220, 82, 0.2));
+}
+
+.keepers-section-heading {
+  margin-bottom: 1.2rem;
+}
+
+.keepers-character-grid,
+.keepers-book-grid,
+.keepers-principles,
+.keepers-updates,
+.keepers-related-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.keepers-character-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.keepers-character-grid article,
+.keepers-book-grid article,
+.keepers-principles article,
+.keepers-updates article,
+.keepers-related-grid a {
+  border: 1px solid rgba(228, 173, 88, 0.18);
+  border-radius: 7px;
+  background: rgba(2, 8, 9, 0.72);
+}
+
+.keepers-character-grid article {
+  padding: 0.75rem;
+}
+
+.keepers-character-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1.05;
+  margin-bottom: 0.75rem;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.keepers-character-grid h3,
+.keepers-book-grid h3,
+.keepers-principles h3,
+.keepers-updates h3,
+.keepers-related-grid span {
+  margin: 0 0 0.45rem;
+  color: var(--keepers-green);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.keepers-character-grid p {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.keepers-team > .keepers-inline-cta {
+  margin: 1rem auto 0;
+}
+
+.keepers-books-heading {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+}
+
+.keepers-book-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.keepers-book-grid article {
+  display: grid;
+  grid-template-columns: minmax(88px, 0.42fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.keepers-book-grid img {
+  width: 100%;
+  max-height: 190px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 18px rgba(228, 173, 88, 0.16));
+}
+
+.keepers-book-grid article:not(:first-child) img {
+  opacity: 0.62;
+}
+
+.keepers-book-grid article div > p:first-child {
+  margin: 0 0 0.35rem;
+  color: var(--keepers-green);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.keepers-book-grid h3 {
+  color: var(--ink);
+  font-size: 1.1rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.keepers-book-grid span {
+  display: inline-block;
+  margin: 0.35rem 0;
+  color: var(--keepers-green);
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.keepers-principles {
+  grid-template-columns: minmax(240px, 0.9fr) repeat(4, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.keepers-lessons .keepers-section-heading {
+  margin: 0;
+}
+
+.keepers-principles article {
+  padding: 1.1rem;
+  text-align: center;
+}
+
+.keepers-principles span,
+.keepers-related-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 0.8rem;
+  border: 1px solid rgba(228, 173, 88, 0.32);
+  border-radius: 999px;
+  color: var(--keepers-gold);
+  background: rgba(228, 173, 88, 0.06);
+}
+
+.keepers-principles svg {
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.4;
+}
+
+.keepers-related-icon svg {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.4;
+}
+
+.keepers-behind {
+  grid-template-columns: minmax(280px, 0.8fr) minmax(320px, 1.2fr);
+  align-items: center;
+}
+
+.keepers-signature {
+  color: var(--keepers-gold);
+  font: 400 1.35rem/1.2 Georgia, serif;
+}
+
+.keepers-join {
+  grid-template-columns: minmax(260px, 0.8fr) minmax(260px, 1fr) minmax(180px, 0.45fr);
+  align-items: center;
+}
+
+.keepers-updates article {
+  padding: 0.95rem 1rem;
+}
+
+.keepers-join > img {
+  width: min(220px, 100%);
+  justify-self: center;
+  filter: drop-shadow(0 0 26px rgba(142, 220, 82, 0.2));
+}
+
+.keepers-related {
+  padding-top: 1.4rem;
+}
+
+.keepers-related-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.keepers-related-grid a {
+  padding: 1rem;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.keepers-related-grid a:hover,
+.keepers-related-grid a:focus-visible {
+  border-color: rgba(142, 220, 82, 0.42);
+  box-shadow: 0 0 28px rgba(142, 220, 82, 0.12);
+  transform: translateY(-2px);
+}
+
+.keepers-related-grid img {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 0.8rem;
+  object-fit: contain;
+}
+
+.keepers-closing {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(320px, 1fr) minmax(180px, 0.4fr);
+  gap: 2rem;
+  align-items: center;
+  min-height: 210px;
+  margin-top: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.keepers-closing img {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.keepers-closing::before {
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(2, 7, 8, 0.9), rgba(2, 7, 8, 0.72), rgba(2, 7, 8, 0.88));
+}
+
+.keepers-closing blockquote {
+  grid-column: 2;
+  margin: 0;
+  color: var(--ink);
+  font: 500 clamp(1.25rem, 2.8vw, 2rem)/1.25 Arial, Helvetica, sans-serif;
+}
+
+.keepers-closing p,
+.keepers-closing span {
+  color: var(--keepers-green);
+}
+
+.keepers-closing span {
+  justify-self: end;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+@media (max-width: 1100px) {
+  .keepers-character-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .keepers-story,
+  .keepers-join {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .keepers-story-mark,
+  .keepers-join > img {
+    display: none;
+  }
+
+  .keepers-principles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .keepers-lessons .keepers-section-heading {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 760px) {
+  .keepers-hero {
+    min-height: 620px;
+  }
+
+  .keepers-hero-image {
+    object-position: 62% center;
+  }
+
+  .keepers-hero::before {
+    background:
+      linear-gradient(90deg, rgba(2, 7, 8, 0.98), rgba(2, 7, 8, 0.76)),
+      linear-gradient(0deg, rgba(2, 7, 8, 0.88), transparent 42%);
+  }
+
+  .keepers-hero h1 {
+    font-size: clamp(3.7rem, 18vw, 5.4rem);
+  }
+
+  .keepers-actions,
+  .keepers-story,
+  .keepers-books-heading,
+  .keepers-book-grid,
+  .keepers-principles,
+  .keepers-behind,
+  .keepers-join,
+  .keepers-related-grid,
+  .keepers-closing {
+    grid-template-columns: 1fr;
+  }
+
+  .keepers-character-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .keepers-book-grid article {
+    grid-template-columns: 96px minmax(0, 1fr);
+  }
+
+  .keepers-closing {
+    padding: 2rem 0 3rem;
+  }
+
+  .keepers-closing blockquote {
+    grid-column: 1;
+  }
+
+  .keepers-closing span {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 520px) {
+  .keepers-character-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .keepers-book-grid article {
+    grid-template-columns: 1fr;
+  }
+
+  .keepers-book-grid img {
+    max-height: 240px;
+  }
+}
+
 /* Hidden Scriptorium Live Notebook */
 .notebook-page-body {
   background:

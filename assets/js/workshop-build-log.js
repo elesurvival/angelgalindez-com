@@ -38,6 +38,11 @@
       color: "#37d8f2",
       aliases: ["quantum flux"],
     },
+    "the-code-keepers": {
+      href: "the-code-keepers.html",
+      color: "#8edc52",
+      aliases: ["the code keepers", "code keepers"],
+    },
   };
 
   const projectLookup = Object.entries(PROJECTS).reduce((lookup, [key, config]) => {
