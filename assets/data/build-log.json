@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-07-02T14:27:43.370Z",
+  "updated_at": "2026-07-02T14:46:56.297Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "85c0f7e",
+      "message": "Add theme QA checklist",
+      "date": "2026-07-02",
+      "time": "9:45 AM",
+      "timestamp": "2026-07-02T09:45:29-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "99c9cb2",
+      "message": "Add world style guide",
+      "date": "2026-07-02",
+      "time": "9:41 AM",
+      "timestamp": "2026-07-02T09:41:59-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -882,24 +900,6 @@
       "date": "2026-06-28",
       "time": "8:46 AM",
       "timestamp": "2026-06-28T08:46:38-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "62d7ac5",
-      "message": "Add Scriptorium Sketcher tool",
-      "date": "2026-06-28",
-      "time": "7:53 AM",
-      "timestamp": "2026-06-28T07:53:50-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "8f65d2a",
-      "message": "Promote Scriptorium typography to sidebar tool",
-      "date": "2026-06-28",
-      "time": "6:27 AM",
-      "timestamp": "2026-06-28T06:27:05-05:00"
     }
   ]
 }
