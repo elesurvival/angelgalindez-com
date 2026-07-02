@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-02T13:18:17.284Z",
+  "updated_at": "2026-07-02T13:43:08.567Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "7f07e18",
+      "message": "Add Scriptorium publishing guide",
+      "date": "2026-07-02",
+      "time": "8:42 AM",
+      "timestamp": "2026-07-02T08:42:22-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-28",
       "time": "2:36 AM",
       "timestamp": "2026-06-28T02:36:20-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "30dba9a",
-      "message": "Add Scriptorium page composition controls",
-      "date": "2026-06-27",
-      "time": "8:22 PM",
-      "timestamp": "2026-06-27T20:22:21-05:00"
     }
   ]
 }
