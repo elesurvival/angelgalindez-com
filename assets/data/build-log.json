@@ -1,6 +1,60 @@
 {
-  "updated_at": "2026-07-02T13:44:29.397Z",
+  "updated_at": "2026-07-02T14:26:08.405Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "b18d5c4",
+      "message": "Add theme asset gallery",
+      "date": "2026-07-02",
+      "time": "9:24 AM",
+      "timestamp": "2026-07-02T09:24:29-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "b6fa9ed",
+      "message": "Add theme creation cookbook",
+      "date": "2026-07-02",
+      "time": "9:21 AM",
+      "timestamp": "2026-07-02T09:21:07-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "8ebb111",
+      "message": "Add semantic authoring and publishing pipeline docs",
+      "date": "2026-07-02",
+      "time": "9:18 AM",
+      "timestamp": "2026-07-02T09:18:01-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "92cfbd5",
+      "message": "Add theme asset and manifest specs",
+      "date": "2026-07-02",
+      "time": "9:12 AM",
+      "timestamp": "2026-07-02T09:12:05-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "58ab7d5",
+      "message": "Add renderer presentation docs",
+      "date": "2026-07-02",
+      "time": "9:07 AM",
+      "timestamp": "2026-07-02T09:07:20-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "bf36a7b",
+      "message": "Add Scriptorium design principles",
+      "date": "2026-07-02",
+      "time": "9:02 AM",
+      "timestamp": "2026-07-02T09:02:32-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -846,60 +900,6 @@
       "date": "2026-06-28",
       "time": "7:53 AM",
       "timestamp": "2026-06-28T07:53:50-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "8f65d2a",
-      "message": "Promote Scriptorium typography to sidebar tool",
-      "date": "2026-06-28",
-      "time": "6:27 AM",
-      "timestamp": "2026-06-28T06:27:05-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "c286565",
-      "message": "Polish Scriptorium center spiral notebook",
-      "date": "2026-06-28",
-      "time": "5:21 AM",
-      "timestamp": "2026-06-28T05:21:21-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "3617e7d",
-      "message": "Fix Scriptorium typography save behavior",
-      "date": "2026-06-28",
-      "time": "4:15 AM",
-      "timestamp": "2026-06-28T04:15:12-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "debcf81",
-      "message": "Add Scriptorium Text block typography controls",
-      "date": "2026-06-28",
-      "time": "3:31 AM",
-      "timestamp": "2026-06-28T03:31:49-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "4285df1",
-      "message": "Preserve Scriptorium authored line breaks",
-      "date": "2026-06-28",
-      "time": "2:36 AM",
-      "timestamp": "2026-06-28T02:36:20-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "30dba9a",
-      "message": "Add Scriptorium page composition controls",
-      "date": "2026-06-27",
-      "time": "8:22 PM",
-      "timestamp": "2026-06-27T20:22:21-05:00"
     }
   ]
 }
