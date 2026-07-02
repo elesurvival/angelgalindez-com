@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02T13:43:08.567Z",
+  "updated_at": "2026-07-02T13:44:29.397Z",
   "items": [
     {
       "project": "Scriptorium",
@@ -605,15 +605,6 @@
       "timestamp": "2026-06-29T23:51:28-05:00"
     },
     {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "68f693a",
-      "message": "Consume Live Notebook typography export",
-      "date": "2026-06-29",
-      "time": "11:34 PM",
-      "timestamp": "2026-06-29T23:34:41-05:00"
-    },
-    {
       "project": "Scriptorium",
       "repo": "scriptorium",
       "hash": "8e68c3c",
@@ -900,6 +891,15 @@
       "date": "2026-06-28",
       "time": "2:36 AM",
       "timestamp": "2026-06-28T02:36:20-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "30dba9a",
+      "message": "Add Scriptorium page composition controls",
+      "date": "2026-06-27",
+      "time": "8:22 PM",
+      "timestamp": "2026-06-27T20:22:21-05:00"
     }
   ]
 }
