@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-02T06:08:45.414Z",
+  "updated_at": "2026-07-02T08:40:32.195Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "d25e1df",
+      "message": "Add Scriptorium theme manifests",
+      "date": "2026-07-02",
+      "time": "3:39 AM",
+      "timestamp": "2026-07-02T03:39:45-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -603,15 +612,6 @@
       "date": "2026-06-29",
       "time": "7:25 PM",
       "timestamp": "2026-06-29T19:25:31-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "8d0afeb",
-      "message": "Update Live Notebook exported data",
-      "date": "2026-06-29",
-      "time": "7:13 PM",
-      "timestamp": "2026-06-29T19:13:45-05:00"
     },
     {
       "project": "Scriptorium",
