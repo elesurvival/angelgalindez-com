@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-02T10:34:54.924Z",
+  "updated_at": "2026-07-02T11:15:20.381Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "2f829b2",
+      "message": "Refine Scriptorium presentation rhythm",
+      "date": "2026-07-02",
+      "time": "6:13 AM",
+      "timestamp": "2026-07-02T06:13:49-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -612,15 +621,6 @@
       "date": "2026-06-29",
       "time": "9:30 PM",
       "timestamp": "2026-06-29T21:30:50-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "d6b4de2",
-      "message": "Render Live Notebook spreads",
-      "date": "2026-06-29",
-      "time": "8:09 PM",
-      "timestamp": "2026-06-29T20:09:05-05:00"
     },
     {
       "project": "Scriptorium",
