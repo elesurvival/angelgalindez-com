@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02T03:41:38.378Z",
+  "updated_at": "2026-07-02T03:43:18.490Z",
   "items": [
     {
       "project": "Scriptorium",
@@ -623,15 +623,6 @@
       "timestamp": "2026-06-29T18:40:47-05:00"
     },
     {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "a11dbcc",
-      "message": "Polish Live Notebook presentation",
-      "date": "2026-06-29",
-      "time": "5:33 PM",
-      "timestamp": "2026-06-29T17:33:28-05:00"
-    },
-    {
       "project": "Scriptorium",
       "repo": "scriptorium",
       "hash": "83d5ae4",
@@ -900,6 +891,15 @@
       "date": "2026-06-27",
       "time": "2:46 AM",
       "timestamp": "2026-06-27T02:46:37-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "a62a04e",
+      "message": "Simplify Scriptorium semantic blocks",
+      "date": "2026-06-27",
+      "time": "1:35 AM",
+      "timestamp": "2026-06-27T01:35:19-05:00"
     }
   ]
 }
