@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-03T12:13:27.562Z",
+  "updated_at": "2026-07-03T13:41:47.390Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "457c082",
+      "message": "Use approved aged notebook overlay",
+      "date": "2026-07-03",
+      "time": "8:41 AM",
+      "timestamp": "2026-07-03T08:41:03-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-28",
       "time": "11:30 AM",
       "timestamp": "2026-06-28T11:30:50-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "59d0d34",
-      "message": "Improve Scriptorium Sketcher transparency cleanup",
-      "date": "2026-06-28",
-      "time": "9:25 AM",
-      "timestamp": "2026-06-28T09:25:31-05:00"
     }
   ]
 }
