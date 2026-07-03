@@ -2,7 +2,7 @@
   "notebook": {
     "title": "Live Notebook",
     "subtitle": "Published notes from Scriptorium.",
-    "updatedAt": "2026-07-01"
+    "updatedAt": "2026-07-03"
   },
   "pages": [
     {
@@ -12,6 +12,8 @@
       "project": "The Locksmith",
       "type": "Philosophy",
       "tags": [],
+      "presentationTheme": "scriptorium-default",
+      "notebookSkin": "scriptorium-default",
       "body": [
         "Question: Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?",
         "Discovery: The Locksmith is not about breaking in. It is about becoming someone who can build anything.",
@@ -193,6 +195,8 @@
         "friction",
         "raw-ideas"
       ],
+      "presentationTheme": "scriptorium-default",
+      "notebookSkin": "scriptorium-default",
       "body": [
         "Question: What is the smallest useful interface for protecting attention?",
         "Discovery: Tempo taught us that workflow tools should remove negotiation, not add dashboards.",
@@ -307,6 +311,8 @@
         "publishing",
         "scriptorium"
       ],
+      "presentationTheme": "scriptorium-default",
+      "notebookSkin": "scriptorium-default",
       "body": [
         "Question: How do we show the thinking that led to the commits, not merely the commits themselves?",
         "Discovery: The notebook is not a recap. It is the place where motives, dead ends, and decisions remain visible.",
@@ -416,6 +422,2331 @@
       "decorations": []
     },
     {
+      "id": "stress-test-50-page-illustrated-notebook",
+      "title": "Stress Test — 50 Page Illustrated Notebook",
+      "date": "2026-07-01",
+      "project": "Notebook",
+      "type": "Notebook Note",
+      "tags": [],
+      "presentationTheme": "scriptorium-default",
+      "notebookSkin": "scriptorium-default",
+      "body": [
+        "Chapter/Page 01 — The First Signal",
+        "Page 1 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-01-the-first-signal",
+        "Chapter/Page 02 — A Door Left Open",
+        "Page 2 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-02-a-door-left-open",
+        "Chapter/Page 03 — The Workshop Map",
+        "Page 3 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-03-the-workshop-map",
+        "Field notes",
+        "• Page 3 keeps the structure readable.",
+        "• The page carries image, prose, and decision weight.",
+        "• The renderer should remain calm under density.",
+        "Chapter/Page 04 — The Quiet Constraint",
+        "Page 4 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-04-the-quiet-constraint",
+        "Chapter/Page 05 — A Thread of Brass",
+        "Page 5 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-05-a-thread-of-brass",
+        "“A longer notebook should still feel like one careful thought, even on page 5.” — Scriptorium stress note",
+        "Chapter/Page 06 — The Hidden Ledger",
+        "Page 6 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-06-the-hidden-ledger",
+        "Workshop sequence",
+        "1. Page 6 keeps the structure readable.",
+        "2. The page carries image, prose, and decision weight.",
+        "3. The renderer should remain calm under density.",
+        "Chapter/Page 07 — A Page Learns Weight",
+        "Page 7 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-07-a-page-learns-weight",
+        "Breakthrough: The page model is strongest when content can grow without becoming a separate post.",
+        "Chapter/Page 08 — The Shape of Revision",
+        "Page 8 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-08-the-shape-of-revision",
+        "Chapter/Page 09 — A Lantern in the Margin",
+        "Page 9 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-09-a-lantern-in-the-margin",
+        "Field notes",
+        "• Page 9 keeps the structure readable.",
+        "• The page carries image, prose, and decision weight.",
+        "• The renderer should remain calm under density.",
+        "Chapter/Page 10 — The Keeper's Question",
+        "Page 10 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-10-the-keepers-question",
+        "“A longer notebook should still feel like one careful thought, even on page 10.” — Scriptorium stress note",
+        "Chapter/Page 11 — The First Signal",
+        "Page 11 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-11-the-first-signal",
+        "Chapter/Page 12 — A Door Left Open",
+        "Page 12 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-12-a-door-left-open",
+        "Workshop sequence",
+        "1. Page 12 keeps the structure readable.",
+        "2. The page carries image, prose, and decision weight.",
+        "3. The renderer should remain calm under density.",
+        "Chapter/Page 13 — The Workshop Map",
+        "Page 13 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-13-the-workshop-map",
+        "Chapter/Page 14 — The Quiet Constraint",
+        "Page 14 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-14-the-quiet-constraint",
+        "Breakthrough: The page model is strongest when content can grow without becoming a separate post.",
+        "Chapter/Page 15 — A Thread of Brass",
+        "Page 15 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-15-a-thread-of-brass",
+        "Field notes",
+        "• Page 15 keeps the structure readable.",
+        "• The page carries image, prose, and decision weight.",
+        "• The renderer should remain calm under density.",
+        "“A longer notebook should still feel like one careful thought, even on page 15.” — Scriptorium stress note",
+        "Chapter/Page 16 — The Hidden Ledger",
+        "Page 16 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-16-the-hidden-ledger",
+        "Chapter/Page 17 — A Page Learns Weight",
+        "Page 17 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-17-a-page-learns-weight",
+        "Chapter/Page 18 — The Shape of Revision",
+        "Page 18 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-18-the-shape-of-revision",
+        "Workshop sequence",
+        "1. Page 18 keeps the structure readable.",
+        "2. The page carries image, prose, and decision weight.",
+        "3. The renderer should remain calm under density.",
+        "Chapter/Page 19 — A Lantern in the Margin",
+        "Page 19 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-19-a-lantern-in-the-margin",
+        "Chapter/Page 20 — The Keeper's Question",
+        "Page 20 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-20-the-keepers-question",
+        "“A longer notebook should still feel like one careful thought, even on page 20.” — Scriptorium stress note",
+        "Chapter/Page 21 — The First Signal",
+        "Page 21 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-21-the-first-signal",
+        "Field notes",
+        "• Page 21 keeps the structure readable.",
+        "• The page carries image, prose, and decision weight.",
+        "• The renderer should remain calm under density.",
+        "Breakthrough: The page model is strongest when content can grow without becoming a separate post.",
+        "Chapter/Page 22 — A Door Left Open",
+        "Page 22 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-22-a-door-left-open",
+        "Chapter/Page 23 — The Workshop Map",
+        "Page 23 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-23-the-workshop-map",
+        "Chapter/Page 24 — The Quiet Constraint",
+        "Page 24 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-24-the-quiet-constraint",
+        "Workshop sequence",
+        "1. Page 24 keeps the structure readable.",
+        "2. The page carries image, prose, and decision weight.",
+        "3. The renderer should remain calm under density.",
+        "Chapter/Page 25 — A Thread of Brass",
+        "Page 25 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-25-a-thread-of-brass",
+        "“A longer notebook should still feel like one careful thought, even on page 25.” — Scriptorium stress note",
+        "Chapter/Page 26 — The Hidden Ledger",
+        "Page 26 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-26-the-hidden-ledger",
+        "Chapter/Page 27 — A Page Learns Weight",
+        "Page 27 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-27-a-page-learns-weight",
+        "Field notes",
+        "• Page 27 keeps the structure readable.",
+        "• The page carries image, prose, and decision weight.",
+        "• The renderer should remain calm under density.",
+        "Chapter/Page 28 — The Shape of Revision",
+        "Page 28 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-28-the-shape-of-revision",
+        "Breakthrough: The page model is strongest when content can grow without becoming a separate post.",
+        "Chapter/Page 29 — A Lantern in the Margin",
+        "Page 29 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-29-a-lantern-in-the-margin",
+        "Chapter/Page 30 — The Keeper's Question",
+        "Page 30 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-30-the-keepers-question",
+        "Workshop sequence",
+        "1. Page 30 keeps the structure readable.",
+        "2. The page carries image, prose, and decision weight.",
+        "3. The renderer should remain calm under density.",
+        "“A longer notebook should still feel like one careful thought, even on page 30.” — Scriptorium stress note",
+        "Chapter/Page 31 — The First Signal",
+        "Page 31 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-31-the-first-signal",
+        "Chapter/Page 32 — A Door Left Open",
+        "Page 32 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-32-a-door-left-open",
+        "Chapter/Page 33 — The Workshop Map",
+        "Page 33 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-33-the-workshop-map",
+        "Field notes",
+        "• Page 33 keeps the structure readable.",
+        "• The page carries image, prose, and decision weight.",
+        "• The renderer should remain calm under density.",
+        "Chapter/Page 34 — The Quiet Constraint",
+        "Page 34 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-34-the-quiet-constraint",
+        "Chapter/Page 35 — A Thread of Brass",
+        "Page 35 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-35-a-thread-of-brass",
+        "“A longer notebook should still feel like one careful thought, even on page 35.” — Scriptorium stress note",
+        "Breakthrough: The page model is strongest when content can grow without becoming a separate post.",
+        "Chapter/Page 36 — The Hidden Ledger",
+        "Page 36 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-36-the-hidden-ledger",
+        "Workshop sequence",
+        "1. Page 36 keeps the structure readable.",
+        "2. The page carries image, prose, and decision weight.",
+        "3. The renderer should remain calm under density.",
+        "Chapter/Page 37 — A Page Learns Weight",
+        "Page 37 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-37-a-page-learns-weight",
+        "Chapter/Page 38 — The Shape of Revision",
+        "Page 38 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-38-the-shape-of-revision",
+        "Chapter/Page 39 — A Lantern in the Margin",
+        "Page 39 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-39-a-lantern-in-the-margin",
+        "Field notes",
+        "• Page 39 keeps the structure readable.",
+        "• The page carries image, prose, and decision weight.",
+        "• The renderer should remain calm under density.",
+        "Chapter/Page 40 — The Keeper's Question",
+        "Page 40 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-40-the-keepers-question",
+        "“A longer notebook should still feel like one careful thought, even on page 40.” — Scriptorium stress note",
+        "Chapter/Page 41 — The First Signal",
+        "Page 41 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-41-the-first-signal",
+        "Chapter/Page 42 — A Door Left Open",
+        "Page 42 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-42-a-door-left-open",
+        "Workshop sequence",
+        "1. Page 42 keeps the structure readable.",
+        "2. The page carries image, prose, and decision weight.",
+        "3. The renderer should remain calm under density.",
+        "Breakthrough: The page model is strongest when content can grow without becoming a separate post.",
+        "Chapter/Page 43 — The Workshop Map",
+        "Page 43 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-43-the-workshop-map",
+        "Chapter/Page 44 — The Quiet Constraint",
+        "Page 44 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-44-the-quiet-constraint",
+        "Chapter/Page 45 — A Thread of Brass",
+        "Page 45 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-45-a-thread-of-brass",
+        "Field notes",
+        "• Page 45 keeps the structure readable.",
+        "• The page carries image, prose, and decision weight.",
+        "• The renderer should remain calm under density.",
+        "“A longer notebook should still feel like one careful thought, even on page 45.” — Scriptorium stress note",
+        "Chapter/Page 46 — The Hidden Ledger",
+        "Page 46 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-46-the-hidden-ledger",
+        "Chapter/Page 47 — A Page Learns Weight",
+        "Page 47 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-47-a-page-learns-weight",
+        "Chapter/Page 48 — The Shape of Revision",
+        "Page 48 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-48-the-shape-of-revision",
+        "Workshop sequence",
+        "1. Page 48 keeps the structure readable.",
+        "2. The page carries image, prose, and decision weight.",
+        "3. The renderer should remain calm under density.",
+        "Chapter/Page 49 — A Lantern in the Margin",
+        "Page 49 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-49-a-lantern-in-the-margin",
+        "Breakthrough: The page model is strongest when content can grow without becoming a separate post.",
+        "Chapter/Page 50 — The Keeper's Question",
+        "Page 50 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
+        "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
+        "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
+        "Image note: Illustration slot: chapter-page-50-the-keepers-question",
+        "“A longer notebook should still feel like one careful thought, even on page 50.” — Scriptorium stress note"
+      ],
+      "pages": [
+        {
+          "pageNumber": 1,
+          "side": "left",
+          "title": "Stress Test — 50 Page Illustrated Notebook",
+          "meta": [
+            "2026-07-01"
+          ],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "A generated 50-page notebook used to validate long-form Scriptorium authoring, rendering, publishing, image placeholders, and page navigation."
+            },
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 01 — The First Signal"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 1 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-01-the-first-signal"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 2,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 02 — A Door Left Open"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 2 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-02-a-door-left-open"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 3,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 03 — The Workshop Map"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 3 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-03-the-workshop-map"
+            },
+            {
+              "kind": "list",
+              "listType": "bulleted",
+              "ordered": false,
+              "title": "Field notes",
+              "items": [
+                "Page 3 keeps the structure readable.",
+                "The page carries image, prose, and decision weight.",
+                "The renderer should remain calm under density."
+              ],
+              "frame": true,
+              "material": {
+                "id": "artifact-card",
+                "name": "Artifact Card"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 4,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 04 — The Quiet Constraint"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 4 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-04-the-quiet-constraint"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 5,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 05 — A Thread of Brass"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 5 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-05-a-thread-of-brass"
+            },
+            {
+              "kind": "quote",
+              "text": "A longer notebook should still feel like one careful thought, even on page 5.",
+              "attribution": "Scriptorium stress note",
+              "material": {
+                "id": "quote-slip",
+                "name": "Quote Slip"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 6,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 06 — The Hidden Ledger"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 6 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-06-the-hidden-ledger"
+            },
+            {
+              "kind": "list",
+              "listType": "numbered",
+              "ordered": true,
+              "title": "Workshop sequence",
+              "items": [
+                "Page 6 keeps the structure readable.",
+                "The page carries image, prose, and decision weight.",
+                "The renderer should remain calm under density."
+              ],
+              "frame": true,
+              "material": {
+                "id": "artifact-card",
+                "name": "Artifact Card"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 7,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 07 — A Page Learns Weight"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 7 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-07-a-page-learns-weight"
+            },
+            {
+              "kind": "semantic",
+              "label": "Breakthrough",
+              "text": "The page model is strongest when content can grow without becoming a separate post.",
+              "material": {
+                "id": "taped-fragment",
+                "name": "Taped Fragment"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 8,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 08 — The Shape of Revision"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 8 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-08-the-shape-of-revision"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 9,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 09 — A Lantern in the Margin"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 9 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-09-a-lantern-in-the-margin"
+            },
+            {
+              "kind": "list",
+              "listType": "bulleted",
+              "ordered": false,
+              "title": "Field notes",
+              "items": [
+                "Page 9 keeps the structure readable.",
+                "The page carries image, prose, and decision weight.",
+                "The renderer should remain calm under density."
+              ],
+              "frame": true,
+              "material": {
+                "id": "artifact-card",
+                "name": "Artifact Card"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 10,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 10 — The Keeper's Question"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 10 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-10-the-keepers-question"
+            },
+            {
+              "kind": "quote",
+              "text": "A longer notebook should still feel like one careful thought, even on page 10.",
+              "attribution": "Scriptorium stress note",
+              "material": {
+                "id": "quote-slip",
+                "name": "Quote Slip"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 11,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 11 — The First Signal"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 11 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-11-the-first-signal"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 12,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 12 — A Door Left Open"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 12 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-12-a-door-left-open"
+            },
+            {
+              "kind": "list",
+              "listType": "numbered",
+              "ordered": true,
+              "title": "Workshop sequence",
+              "items": [
+                "Page 12 keeps the structure readable.",
+                "The page carries image, prose, and decision weight.",
+                "The renderer should remain calm under density."
+              ],
+              "frame": true,
+              "material": {
+                "id": "artifact-card",
+                "name": "Artifact Card"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 13,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 13 — The Workshop Map"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 13 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-13-the-workshop-map"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 14,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 14 — The Quiet Constraint"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 14 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-14-the-quiet-constraint"
+            },
+            {
+              "kind": "semantic",
+              "label": "Breakthrough",
+              "text": "The page model is strongest when content can grow without becoming a separate post.",
+              "material": {
+                "id": "taped-fragment",
+                "name": "Taped Fragment"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 15,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 15 — A Thread of Brass"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 15 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-15-a-thread-of-brass"
+            },
+            {
+              "kind": "list",
+              "listType": "bulleted",
+              "ordered": false,
+              "title": "Field notes",
+              "items": [
+                "Page 15 keeps the structure readable.",
+                "The page carries image, prose, and decision weight.",
+                "The renderer should remain calm under density."
+              ],
+              "frame": true,
+              "material": {
+                "id": "artifact-card",
+                "name": "Artifact Card"
+              }
+            },
+            {
+              "kind": "quote",
+              "text": "A longer notebook should still feel like one careful thought, even on page 15.",
+              "attribution": "Scriptorium stress note",
+              "material": {
+                "id": "quote-slip",
+                "name": "Quote Slip"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 16,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 16 — The Hidden Ledger"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 16 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-16-the-hidden-ledger"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 17,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 17 — A Page Learns Weight"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 17 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-17-a-page-learns-weight"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 18,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 18 — The Shape of Revision"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 18 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-18-the-shape-of-revision"
+            },
+            {
+              "kind": "list",
+              "listType": "numbered",
+              "ordered": true,
+              "title": "Workshop sequence",
+              "items": [
+                "Page 18 keeps the structure readable.",
+                "The page carries image, prose, and decision weight.",
+                "The renderer should remain calm under density."
+              ],
+              "frame": true,
+              "material": {
+                "id": "artifact-card",
+                "name": "Artifact Card"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 19,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 19 — A Lantern in the Margin"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 19 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-19-a-lantern-in-the-margin"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 20,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 20 — The Keeper's Question"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 20 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-20-the-keepers-question"
+            },
+            {
+              "kind": "quote",
+              "text": "A longer notebook should still feel like one careful thought, even on page 20.",
+              "attribution": "Scriptorium stress note",
+              "material": {
+                "id": "quote-slip",
+                "name": "Quote Slip"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 21,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 21 — The First Signal"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 21 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-21-the-first-signal"
+            },
+            {
+              "kind": "list",
+              "listType": "bulleted",
+              "ordered": false,
+              "title": "Field notes",
+              "items": [
+                "Page 21 keeps the structure readable.",
+                "The page carries image, prose, and decision weight.",
+                "The renderer should remain calm under density."
+              ],
+              "frame": true,
+              "material": {
+                "id": "artifact-card",
+                "name": "Artifact Card"
+              }
+            },
+            {
+              "kind": "semantic",
+              "label": "Breakthrough",
+              "text": "The page model is strongest when content can grow without becoming a separate post.",
+              "material": {
+                "id": "taped-fragment",
+                "name": "Taped Fragment"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 22,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 22 — A Door Left Open"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 22 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-22-a-door-left-open"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 23,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 23 — The Workshop Map"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 23 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-23-the-workshop-map"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 24,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 24 — The Quiet Constraint"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 24 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-24-the-quiet-constraint"
+            },
+            {
+              "kind": "list",
+              "listType": "numbered",
+              "ordered": true,
+              "title": "Workshop sequence",
+              "items": [
+                "Page 24 keeps the structure readable.",
+                "The page carries image, prose, and decision weight.",
+                "The renderer should remain calm under density."
+              ],
+              "frame": true,
+              "material": {
+                "id": "artifact-card",
+                "name": "Artifact Card"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 25,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 25 — A Thread of Brass"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 25 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-25-a-thread-of-brass"
+            },
+            {
+              "kind": "quote",
+              "text": "A longer notebook should still feel like one careful thought, even on page 25.",
+              "attribution": "Scriptorium stress note",
+              "material": {
+                "id": "quote-slip",
+                "name": "Quote Slip"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 26,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 26 — The Hidden Ledger"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 26 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-26-the-hidden-ledger"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 27,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 27 — A Page Learns Weight"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 27 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-27-a-page-learns-weight"
+            },
+            {
+              "kind": "list",
+              "listType": "bulleted",
+              "ordered": false,
+              "title": "Field notes",
+              "items": [
+                "Page 27 keeps the structure readable.",
+                "The page carries image, prose, and decision weight.",
+                "The renderer should remain calm under density."
+              ],
+              "frame": true,
+              "material": {
+                "id": "artifact-card",
+                "name": "Artifact Card"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 28,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 28 — The Shape of Revision"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 28 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-28-the-shape-of-revision"
+            },
+            {
+              "kind": "semantic",
+              "label": "Breakthrough",
+              "text": "The page model is strongest when content can grow without becoming a separate post.",
+              "material": {
+                "id": "taped-fragment",
+                "name": "Taped Fragment"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 29,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 29 — A Lantern in the Margin"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 29 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-29-a-lantern-in-the-margin"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 30,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 30 — The Keeper's Question"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 30 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-30-the-keepers-question"
+            },
+            {
+              "kind": "list",
+              "listType": "numbered",
+              "ordered": true,
+              "title": "Workshop sequence",
+              "items": [
+                "Page 30 keeps the structure readable.",
+                "The page carries image, prose, and decision weight.",
+                "The renderer should remain calm under density."
+              ],
+              "frame": true,
+              "material": {
+                "id": "artifact-card",
+                "name": "Artifact Card"
+              }
+            },
+            {
+              "kind": "quote",
+              "text": "A longer notebook should still feel like one careful thought, even on page 30.",
+              "attribution": "Scriptorium stress note",
+              "material": {
+                "id": "quote-slip",
+                "name": "Quote Slip"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 31,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 31 — The First Signal"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 31 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-31-the-first-signal"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 32,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 32 — A Door Left Open"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 32 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-32-a-door-left-open"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 33,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 33 — The Workshop Map"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 33 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-33-the-workshop-map"
+            },
+            {
+              "kind": "list",
+              "listType": "bulleted",
+              "ordered": false,
+              "title": "Field notes",
+              "items": [
+                "Page 33 keeps the structure readable.",
+                "The page carries image, prose, and decision weight.",
+                "The renderer should remain calm under density."
+              ],
+              "frame": true,
+              "material": {
+                "id": "artifact-card",
+                "name": "Artifact Card"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 34,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 34 — The Quiet Constraint"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 34 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-34-the-quiet-constraint"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 35,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 35 — A Thread of Brass"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 35 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-35-a-thread-of-brass"
+            },
+            {
+              "kind": "quote",
+              "text": "A longer notebook should still feel like one careful thought, even on page 35.",
+              "attribution": "Scriptorium stress note",
+              "material": {
+                "id": "quote-slip",
+                "name": "Quote Slip"
+              }
+            },
+            {
+              "kind": "semantic",
+              "label": "Breakthrough",
+              "text": "The page model is strongest when content can grow without becoming a separate post.",
+              "material": {
+                "id": "taped-fragment",
+                "name": "Taped Fragment"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 36,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 36 — The Hidden Ledger"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 36 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-36-the-hidden-ledger"
+            },
+            {
+              "kind": "list",
+              "listType": "numbered",
+              "ordered": true,
+              "title": "Workshop sequence",
+              "items": [
+                "Page 36 keeps the structure readable.",
+                "The page carries image, prose, and decision weight.",
+                "The renderer should remain calm under density."
+              ],
+              "frame": true,
+              "material": {
+                "id": "artifact-card",
+                "name": "Artifact Card"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 37,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 37 — A Page Learns Weight"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 37 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-37-a-page-learns-weight"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 38,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 38 — The Shape of Revision"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 38 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-38-the-shape-of-revision"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 39,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 39 — A Lantern in the Margin"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 39 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-39-a-lantern-in-the-margin"
+            },
+            {
+              "kind": "list",
+              "listType": "bulleted",
+              "ordered": false,
+              "title": "Field notes",
+              "items": [
+                "Page 39 keeps the structure readable.",
+                "The page carries image, prose, and decision weight.",
+                "The renderer should remain calm under density."
+              ],
+              "frame": true,
+              "material": {
+                "id": "artifact-card",
+                "name": "Artifact Card"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 40,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 40 — The Keeper's Question"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 40 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-40-the-keepers-question"
+            },
+            {
+              "kind": "quote",
+              "text": "A longer notebook should still feel like one careful thought, even on page 40.",
+              "attribution": "Scriptorium stress note",
+              "material": {
+                "id": "quote-slip",
+                "name": "Quote Slip"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 41,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 41 — The First Signal"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 41 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-41-the-first-signal"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 42,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 42 — A Door Left Open"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 42 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-42-a-door-left-open"
+            },
+            {
+              "kind": "list",
+              "listType": "numbered",
+              "ordered": true,
+              "title": "Workshop sequence",
+              "items": [
+                "Page 42 keeps the structure readable.",
+                "The page carries image, prose, and decision weight.",
+                "The renderer should remain calm under density."
+              ],
+              "frame": true,
+              "material": {
+                "id": "artifact-card",
+                "name": "Artifact Card"
+              }
+            },
+            {
+              "kind": "semantic",
+              "label": "Breakthrough",
+              "text": "The page model is strongest when content can grow without becoming a separate post.",
+              "material": {
+                "id": "taped-fragment",
+                "name": "Taped Fragment"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 43,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 43 — The Workshop Map"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 43 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-43-the-workshop-map"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 44,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 44 — The Quiet Constraint"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 44 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-44-the-quiet-constraint"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 45,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 45 — A Thread of Brass"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 45 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-45-a-thread-of-brass"
+            },
+            {
+              "kind": "list",
+              "listType": "bulleted",
+              "ordered": false,
+              "title": "Field notes",
+              "items": [
+                "Page 45 keeps the structure readable.",
+                "The page carries image, prose, and decision weight.",
+                "The renderer should remain calm under density."
+              ],
+              "frame": true,
+              "material": {
+                "id": "artifact-card",
+                "name": "Artifact Card"
+              }
+            },
+            {
+              "kind": "quote",
+              "text": "A longer notebook should still feel like one careful thought, even on page 45.",
+              "attribution": "Scriptorium stress note",
+              "material": {
+                "id": "quote-slip",
+                "name": "Quote Slip"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 46,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 46 — The Hidden Ledger"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 46 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-46-the-hidden-ledger"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 47,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 47 — A Page Learns Weight"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 47 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-47-a-page-learns-weight"
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 48,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 48 — The Shape of Revision"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 48 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-48-the-shape-of-revision"
+            },
+            {
+              "kind": "list",
+              "listType": "numbered",
+              "ordered": true,
+              "title": "Workshop sequence",
+              "items": [
+                "Page 48 keeps the structure readable.",
+                "The page carries image, prose, and decision weight.",
+                "The renderer should remain calm under density."
+              ],
+              "frame": true,
+              "material": {
+                "id": "artifact-card",
+                "name": "Artifact Card"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 49,
+          "side": "left",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 49 — A Lantern in the Margin"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 49 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-49-a-lantern-in-the-margin"
+            },
+            {
+              "kind": "semantic",
+              "label": "Breakthrough",
+              "text": "The page model is strongest when content can grow without becoming a separate post.",
+              "material": {
+                "id": "taped-fragment",
+                "name": "Taped Fragment"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 50,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 50 — The Keeper's Question"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 50 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-50-the-keepers-question"
+            },
+            {
+              "kind": "quote",
+              "text": "A longer notebook should still feel like one careful thought, even on page 50.",
+              "attribution": "Scriptorium stress note",
+              "material": {
+                "id": "quote-slip",
+                "name": "Quote Slip"
+              }
+            }
+          ],
+          "decorations": []
+        }
+      ],
+      "spread": {
+        "left": {
+          "title": "Stress Test — 50 Page Illustrated Notebook",
+          "meta": [
+            "2026-07-01"
+          ],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "A generated 50-page notebook used to validate long-form Scriptorium authoring, rendering, publishing, image placeholders, and page navigation."
+            },
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 01 — The First Signal"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 1 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-01-the-first-signal"
+            }
+          ]
+        },
+        "right": {
+          "title": null,
+          "meta": [
+            "Entry #0146"
+          ],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "Chapter/Page 02 — A Door Left Open"
+            },
+            {
+              "kind": "paragraph",
+              "text": "Page 2 opens as part of a larger notebook: one steady artifact made from many small, authored moments."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
+            },
+            {
+              "kind": "image-note",
+              "text": "Illustration slot: chapter-page-02-a-door-left-open"
+            }
+          ]
+        }
+      },
+      "decorations": []
+    },
+    {
       "id": "the-four-page-notebook-test",
       "title": "The Four-Page Notebook Test",
       "date": "2026-07-02",
@@ -426,6 +2757,8 @@
         "multi-page",
         "publishing-test"
       ],
+      "presentationTheme": "scriptorium-default",
+      "notebookSkin": "scriptorium-default",
       "body": [
         "This entry exists to test the full multi-page publishing loop.\n\nFor the first time, a single Scriptorium note should be able to move beyond the original two-page notebook view. The Admin can now assign content to Page 1, Page 2, Page 3, and Page 4, and the hidden Live Notebook should let a visitor turn through those pages under one slug.\n\nThe important thing is not just that more content can be stored. The important thing is that the authored structure survives the journey from Admin to export to the public notebook.",
         "Question: Can one Scriptorium entry behave like a real notebook entry with multiple pages, while still publishing as one clean, shareable slug?",
@@ -660,6 +2993,8 @@
       "tags": [
         "friction"
       ],
+      "presentationTheme": "scriptorium-default",
+      "notebookSkin": "scriptorium-default",
       "body": [
         "Spark: Friction is not always bad; unchosen friction is the problem.",
         "Why it matters: Every removed decision gives attention back to the work that matters.",
@@ -761,6 +3096,8 @@
         "craft",
         "decision"
       ],
+      "presentationTheme": "scriptorium-default",
+      "notebookSkin": "scriptorium-default",
       "body": [
         "Spark: The first sound should feel like a system waking up and remembering its purpose.",
         "Decision: Cold Boot becomes the threshold: before it, potential; after it, commitment.",
@@ -862,6 +3199,8 @@
         "craft",
         "friction"
       ],
+      "presentationTheme": "scriptorium-default",
+      "notebookSkin": "scriptorium-default",
       "body": [
         "Productivity apps often preserve motion instead of meaning.",
         "Decision: Continuo should help people continue the right work, not merely track more work.",
