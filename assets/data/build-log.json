@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-03T15:29:12.470Z",
+  "updated_at": "2026-07-03T23:07:07.278Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "16dee52",
+      "message": "Publish stress-test-50-page-illustrated-notebook to Live Notebook",
+      "date": "2026-07-03",
+      "time": "6:07 PM",
+      "timestamp": "2026-07-03T18:07:03-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -630,15 +639,6 @@
       "date": "2026-06-30",
       "time": "6:29 AM",
       "timestamp": "2026-06-30T06:29:03-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "808415d",
-      "message": "Publish live-notebook-parity-test to Live Notebook",
-      "date": "2026-06-30",
-      "time": "6:05 AM",
-      "timestamp": "2026-06-30T06:05:37-05:00"
     },
     {
       "project": "Scriptorium",
