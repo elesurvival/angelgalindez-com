@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-03T23:07:07.278Z",
+  "updated_at": "2026-07-03T23:07:55.287Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "bb217a0",
+      "message": "Publish from-friction-to-flow to Live Notebook",
+      "date": "2026-07-03",
+      "time": "6:07 PM",
+      "timestamp": "2026-07-03T18:07:51-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -621,15 +630,6 @@
       "date": "2026-06-30",
       "time": "7:22 AM",
       "timestamp": "2026-06-30T07:22:47-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "d44dacc",
-      "message": "Improve Live Notebook visual parity rendering",
-      "date": "2026-06-30",
-      "time": "6:29 AM",
-      "timestamp": "2026-06-30T06:29:37-05:00"
     },
     {
       "project": "Scriptorium",
