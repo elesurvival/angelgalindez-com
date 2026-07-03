@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03T12:11:45.247Z",
+  "updated_at": "2026-07-03T12:13:27.562Z",
   "items": [
     {
       "project": "Scriptorium",
@@ -650,15 +650,6 @@
       "timestamp": "2026-06-30T04:46:29-05:00"
     },
     {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "6271d0a",
-      "message": "Publish the-listener-becomes-the-phantom to Live Notebook",
-      "date": "2026-06-30",
-      "time": "4:43 AM",
-      "timestamp": "2026-06-30T04:43:47-05:00"
-    },
-    {
       "project": "Scriptorium",
       "repo": "scriptorium",
       "hash": "21ba49c",
@@ -900,6 +891,15 @@
       "date": "2026-06-28",
       "time": "11:30 AM",
       "timestamp": "2026-06-28T11:30:50-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "59d0d34",
+      "message": "Improve Scriptorium Sketcher transparency cleanup",
+      "date": "2026-06-28",
+      "time": "9:25 AM",
+      "timestamp": "2026-06-28T09:25:31-05:00"
     }
   ]
 }
