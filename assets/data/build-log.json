@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03T06:25:15.549Z",
+  "updated_at": "2026-07-03T06:26:43.076Z",
   "items": [
     {
       "project": "Scriptorium",
@@ -650,15 +650,6 @@
       "timestamp": "2026-06-30T03:35:48-05:00"
     },
     {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "ecd65b7",
-      "message": "Render Live Notebook list and material blocks",
-      "date": "2026-06-30",
-      "time": "3:28 AM",
-      "timestamp": "2026-06-30T03:28:09-05:00"
-    },
-    {
       "project": "Scriptorium",
       "repo": "scriptorium",
       "hash": "3d4e6d1",
@@ -900,6 +891,15 @@
       "date": "2026-06-28",
       "time": "9:25 AM",
       "timestamp": "2026-06-28T09:25:31-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "c60e493",
+      "message": "Fix Sketcher asset drawer and raw image defaults",
+      "date": "2026-06-28",
+      "time": "8:46 AM",
+      "timestamp": "2026-06-28T08:46:38-05:00"
     }
   ]
 }
