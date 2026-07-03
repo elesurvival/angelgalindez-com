@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-03T06:26:43.076Z",
+  "updated_at": "2026-07-03T07:24:28.392Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "4b32cdf",
+      "message": "Prototype notebook paper overlays",
+      "date": "2026-07-03",
+      "time": "2:23 AM",
+      "timestamp": "2026-07-03T02:23:49-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-28",
       "time": "9:25 AM",
       "timestamp": "2026-06-28T09:25:31-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "c60e493",
-      "message": "Fix Sketcher asset drawer and raw image defaults",
-      "date": "2026-06-28",
-      "time": "8:46 AM",
-      "timestamp": "2026-06-28T08:46:38-05:00"
     }
   ]
 }
