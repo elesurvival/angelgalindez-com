@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-04T02:44:51.543Z",
+  "updated_at": "2026-07-04T02:48:14.901Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "0a13059",
+      "message": "Publish from-friction-to-flow to Live Notebook",
+      "date": "2026-07-03",
+      "time": "9:48 PM",
+      "timestamp": "2026-07-03T21:48:11-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -603,15 +612,6 @@
       "date": "2026-06-30",
       "time": "7:36 PM",
       "timestamp": "2026-06-30T19:36:23-05:00"
-    },
-    {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "a549996",
-      "message": "Render Live Notebook decorations",
-      "date": "2026-06-30",
-      "time": "7:06 PM",
-      "timestamp": "2026-06-30T19:06:25-05:00"
     },
     {
       "project": "Scriptorium",
