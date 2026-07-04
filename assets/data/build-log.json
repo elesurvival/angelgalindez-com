@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-04T13:52:39.293Z",
+  "updated_at": "2026-07-04T13:54:31.493Z",
   "items": [
     {
       "project": "Scriptorium",
@@ -569,15 +569,6 @@
       "timestamp": "2026-07-01T07:01:44-05:00"
     },
     {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "edb68f7",
-      "message": "Publish the-four-page-notebook-test to Live Notebook",
-      "date": "2026-07-01",
-      "time": "6:20 AM",
-      "timestamp": "2026-07-01T06:20:28-05:00"
-    },
-    {
       "project": "Scriptorium",
       "repo": "scriptorium",
       "hash": "0717a36",
@@ -900,6 +891,15 @@
       "date": "2026-06-29",
       "time": "12:12 AM",
       "timestamp": "2026-06-29T00:12:02-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "5537efe",
+      "message": "Restore true Scriptorium admin notebook size",
+      "date": "2026-06-28",
+      "time": "11:39 PM",
+      "timestamp": "2026-06-28T23:39:53-05:00"
     }
   ]
 }
