@@ -433,8 +433,8 @@
       "tags": [
         "friction"
       ],
-      "presentationTheme": "scriptorium-default",
-      "notebookSkin": "scriptorium-default",
+      "presentationTheme": "code-keepers",
+      "notebookSkin": "aged-notebook",
       "publishTarget": "workshop-notebook",
       "body": [
         "Spark: Friction is not always bad; unchosen friction is the problem.",
