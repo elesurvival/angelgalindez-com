@@ -8902,6 +8902,14 @@ a.build-log-project:focus-visible {
   --live-notebook-body-size: var(--notebook-publish-body-size);
   --live-notebook-body-line-height: var(--notebook-publish-body-line-height);
   --live-notebook-reader-max: 1600px;
+  --live-notebook-ambient-top-wash: 0.3;
+  --live-notebook-ambient-mid-wash: 0.54;
+  --live-notebook-ambient-bottom-wash: 0.78;
+  --live-notebook-ambient-side-left: 0.5;
+  --live-notebook-ambient-side-right: 0.18;
+  --live-notebook-ambient-vignette-bottom: 0.38;
+  --live-notebook-ambient-vignette-left: 0.56;
+  --live-notebook-ambient-vignette-right: 0.34;
   color: #f7f1e2;
   isolation: isolate;
   min-height: calc(100vh - 5.5rem);
@@ -8913,8 +8921,8 @@ a.build-log-project:focus-visible {
 .live-notebook-ambient {
   background:
     radial-gradient(circle at 82% 17%, rgba(230, 175, 76, 0.12), transparent 18rem),
-    linear-gradient(180deg, rgba(1, 7, 6, 0.36), rgba(1, 7, 6, 0.68) 54%, rgba(1, 7, 6, 0.86)),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.62), transparent 36%, transparent 70%, rgba(0, 0, 0, 0.24)),
+    linear-gradient(180deg, rgba(1, 7, 6, var(--live-notebook-ambient-top-wash)), rgba(1, 7, 6, var(--live-notebook-ambient-mid-wash)) 54%, rgba(1, 7, 6, var(--live-notebook-ambient-bottom-wash))),
+    linear-gradient(90deg, rgba(0, 0, 0, var(--live-notebook-ambient-side-left)), transparent 36%, transparent 70%, rgba(0, 0, 0, var(--live-notebook-ambient-side-right))),
     repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 5px),
     url("/assets/projects/notebook/live-notebook-workbench-bg.png");
   background-position: center top;
@@ -8927,18 +8935,26 @@ a.build-log-project:focus-visible {
 
 .live-notebook-ambient::after {
   background:
-    radial-gradient(ellipse at 50% 108%, rgba(0, 0, 0, 0.52), transparent 46%),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.72), transparent 32%, transparent 72%, rgba(0, 0, 0, 0.5));
+    radial-gradient(ellipse at 50% 108%, rgba(0, 0, 0, var(--live-notebook-ambient-vignette-bottom)), transparent 46%),
+    linear-gradient(90deg, rgba(0, 0, 0, var(--live-notebook-ambient-vignette-left)), transparent 32%, transparent 72%, rgba(0, 0, 0, var(--live-notebook-ambient-vignette-right)));
   content: "";
   inset: 0;
   position: absolute;
 }
 
 .live-notebook-scene.notebook-theme-code-keepers .live-notebook-ambient {
+  --live-notebook-ambient-top-wash: 0.16;
+  --live-notebook-ambient-mid-wash: 0.46;
+  --live-notebook-ambient-bottom-wash: 0.72;
+  --live-notebook-ambient-side-left: 0.42;
+  --live-notebook-ambient-side-right: 0.2;
+  --live-notebook-ambient-vignette-bottom: 0.3;
+  --live-notebook-ambient-vignette-left: 0.44;
+  --live-notebook-ambient-vignette-right: 0.28;
   background:
     radial-gradient(circle at 75% 18%, rgba(231, 183, 95, 0.14), transparent 18rem),
-    linear-gradient(180deg, rgba(1, 7, 6, 0.26), rgba(1, 7, 6, 0.68) 58%, rgba(1, 7, 6, 0.9)),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.68), transparent 38%, transparent 72%, rgba(0, 0, 0, 0.32)),
+    linear-gradient(180deg, rgba(1, 7, 6, var(--live-notebook-ambient-top-wash)), rgba(1, 7, 6, var(--live-notebook-ambient-mid-wash)) 58%, rgba(1, 7, 6, var(--live-notebook-ambient-bottom-wash))),
+    linear-gradient(90deg, rgba(0, 0, 0, var(--live-notebook-ambient-side-left)), transparent 38%, transparent 72%, rgba(0, 0, 0, var(--live-notebook-ambient-side-right))),
     repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 5px),
     url("/assets/projects/notebook/themes/code-keepers/code-keepers-notebook-background.jpg"),
     url("/assets/projects/notebook/live-notebook-workbench-bg.png");
