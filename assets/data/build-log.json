@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-04T15:29:31.611Z",
+  "updated_at": "2026-07-04T16:00:57.145Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "dcf84a4",
+      "message": "Polish Active Document metadata rhythm",
+      "date": "2026-07-04",
+      "time": "10:59 AM",
+      "timestamp": "2026-07-04T10:59:55-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-29",
       "time": "1:34 AM",
       "timestamp": "2026-06-29T01:34:36-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "13a370a",
-      "message": "Match Live Notebook to Admin size without touching Admin",
-      "date": "2026-06-29",
-      "time": "12:57 AM",
-      "timestamp": "2026-06-29T00:57:15-05:00"
     }
   ]
 }
