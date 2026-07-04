@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-07-03T23:07:55.287Z",
+  "updated_at": "2026-07-04T00:46:45.990Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "cb6635b",
+      "message": "Honor Live Notebook skin settings",
+      "date": "2026-07-03",
+      "time": "7:46 PM",
+      "timestamp": "2026-07-03T19:46:42-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "aefc8f7",
+      "message": "Add Live Notebook publishing targets",
+      "date": "2026-07-03",
+      "time": "7:45 PM",
+      "timestamp": "2026-07-03T19:45:53-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -882,24 +900,6 @@
       "date": "2026-06-28",
       "time": "1:10 PM",
       "timestamp": "2026-06-28T13:10:29-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "7859aae",
-      "message": "Add Scriptorium notebook decoration assets",
-      "date": "2026-06-28",
-      "time": "11:30 AM",
-      "timestamp": "2026-06-28T11:30:50-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "59d0d34",
-      "message": "Improve Scriptorium Sketcher transparency cleanup",
-      "date": "2026-06-28",
-      "time": "9:25 AM",
-      "timestamp": "2026-06-28T09:25:31-05:00"
     }
   ]
 }
