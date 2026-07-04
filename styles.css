@@ -9296,46 +9296,141 @@ a.build-log-project:focus-visible {
 
 .live-notebook-scene.notebook-skin-aged-notebook .live-notebook-spread {
   background:
-    radial-gradient(ellipse at 50% 103%, rgba(0, 0, 0, 0.34), transparent 54%),
-    linear-gradient(180deg, rgba(255, 208, 132, 0.06), transparent 14%, rgba(0, 0, 0, 0.24)),
+    radial-gradient(ellipse at 50% 104%, rgba(0, 0, 0, 0.5), transparent 58%),
+    linear-gradient(90deg, rgba(38, 15, 5, 0.96), rgba(107, 55, 19, 0.44) 8%, transparent 20%),
+    linear-gradient(270deg, rgba(38, 15, 5, 0.94), rgba(107, 55, 19, 0.4) 8%, transparent 20%),
+    radial-gradient(ellipse at 13% 50%, rgba(203, 124, 48, 0.22), transparent 20%),
+    radial-gradient(ellipse at 87% 50%, rgba(203, 124, 48, 0.18), transparent 20%),
+    linear-gradient(180deg, rgba(250, 187, 104, 0.12), transparent 16%, rgba(22, 9, 4, 0.42)),
+    #241106;
+  border-color: rgba(142, 78, 30, 0.82);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 228, 170, 0.16),
+    inset 0 0 0 4px rgba(48, 19, 7, 0.48),
+    inset 0 0 0 8px rgba(13, 6, 3, 0.22),
+    inset 0 -18px 34px rgba(0, 0, 0, 0.36),
+    0 34px 96px rgba(0, 0, 0, 0.6);
+}
+
+.live-notebook-scene.notebook-skin-aged-notebook .live-notebook-spread::before {
+  background:
+    linear-gradient(90deg, rgba(75, 32, 10, 0.9), rgba(178, 94, 32, 0.3) 1.4%, transparent 4.4%),
+    linear-gradient(270deg, rgba(75, 32, 10, 0.86), rgba(178, 94, 32, 0.28) 1.4%, transparent 4.4%),
     linear-gradient(
       90deg,
-      rgba(14, 7, 3, 0.94),
-      rgba(74, 41, 19, 0.56) 8%,
-      rgba(74, 41, 19, 0.26) 17%,
-      rgba(74, 41, 19, 0.24) 83%,
-      rgba(74, 41, 19, 0.58) 92%,
-      rgba(14, 7, 3, 0.94)
+      transparent 0 5%,
+      rgba(13, 6, 3, 0.18) 5.25% 5.55%,
+      transparent 5.9% 94.1%,
+      rgba(13, 6, 3, 0.16) 94.45% 94.75%,
+      transparent 95%
     ),
-    linear-gradient(135deg, #2e1709, #100b07 58%, #3a210f);
-  border-color: rgba(154, 103, 54, 0.54);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 214, 144, 0.14),
-    inset 0 0 0 5px rgba(15, 8, 4, 0.3),
-    inset 0 -18px 30px rgba(0, 0, 0, 0.26),
-    0 34px 90px rgba(0, 0, 0, 0.58);
+    linear-gradient(
+      180deg,
+      rgba(230, 151, 67, 0.18),
+      transparent 14%,
+      transparent 86%,
+      rgba(53, 19, 7, 0.46)
+    );
+  box-shadow: none;
+  opacity: 0.9;
 }
 
 .live-notebook-scene.notebook-skin-aged-notebook .live-notebook-page {
   background:
-    radial-gradient(circle at 24% 18%, rgba(255, 246, 218, 0.22), transparent 34%),
-    radial-gradient(circle at 82% 84%, rgba(126, 76, 28, 0.07), transparent 42%),
-    linear-gradient(180deg, rgba(255, 238, 194, 0.1), transparent 10%, transparent 88%, rgba(99, 52, 19, 0.08)),
-    linear-gradient(90deg, rgba(96, 54, 22, 0.055), transparent 15%, transparent 85%, rgba(96, 54, 22, 0.055)),
-    #e8c88f;
-  border-color: rgba(112, 73, 33, 0.62);
+    radial-gradient(circle at 18% 12%, rgba(255, 243, 206, 0.2), transparent 31%),
+    radial-gradient(circle at 78% 76%, rgba(127, 70, 21, 0.075), transparent 42%),
+    radial-gradient(ellipse at 50% 50%, rgba(255, 238, 193, 0.16), transparent 55%),
+    linear-gradient(
+      90deg,
+      rgba(82, 41, 12, 0.22),
+      rgba(126, 77, 26, 0.08) 5%,
+      transparent 13%,
+      transparent 87%,
+      rgba(126, 77, 26, 0.075) 95%,
+      rgba(78, 38, 12, 0.2)
+    ),
+    linear-gradient(180deg, rgba(255, 247, 214, 0.34), transparent 13%, rgba(118, 64, 19, 0.14)),
+    #eed5a0;
+  border-color: rgba(111, 61, 21, 0.64);
   box-shadow:
-    inset 0 0 22px rgba(80, 43, 18, 0.18),
-    inset 0 1px 0 rgba(255, 239, 196, 0.36),
-    inset 0 -1px 0 rgba(85, 44, 17, 0.16),
-    0 2px 0 rgba(179, 119, 58, 0.28),
-    0 5px 0 rgba(96, 57, 27, 0.18),
-    0 18px 38px rgba(0, 0, 0, 0.3);
+    inset 0 0 0 1px rgba(255, 237, 191, 0.2),
+    inset 0 14px 24px rgba(96, 52, 17, 0.13),
+    inset 0 -18px 24px rgba(82, 40, 13, 0.18),
+    inset 16px 0 25px rgba(80, 38, 12, 0.13),
+    inset -16px 0 25px rgba(80, 38, 12, 0.13),
+    0 13px 22px rgba(24, 12, 5, 0.38);
 }
 
 .live-notebook-scene.notebook-skin-aged-notebook .live-notebook-page::before {
-  background-image: url("/assets/projects/notebook/notebook-skins/aged-notebook/page-edge-overlay.png");
+  background:
+    url("/assets/projects/notebook/notebook-skins/aged-notebook/page-edge-overlay.png"),
+    radial-gradient(ellipse at 7% 10%, rgba(82, 39, 11, 0.18), transparent 20%),
+    radial-gradient(ellipse at 94% 8%, rgba(82, 39, 11, 0.14), transparent 18%),
+    radial-gradient(ellipse at 11% 92%, rgba(79, 36, 10, 0.2), transparent 21%),
+    radial-gradient(ellipse at 89% 94%, rgba(79, 36, 10, 0.16), transparent 20%),
+    linear-gradient(
+      90deg,
+      rgba(65, 30, 8, 0.16),
+      transparent 5.4%,
+      transparent 94.4%,
+      rgba(65, 30, 8, 0.15)
+    ),
+    linear-gradient(
+      180deg,
+      rgba(65, 30, 8, 0.17),
+      transparent 7.4%,
+      transparent 91%,
+      rgba(65, 30, 8, 0.19)
+    );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   opacity: 1;
+}
+
+.live-notebook-scene.notebook-skin-aged-notebook .live-notebook-page::after {
+  background:
+    radial-gradient(ellipse at 0 0, rgba(58, 26, 7, 0.16), transparent 12%),
+    radial-gradient(ellipse at 100% 0, rgba(58, 26, 7, 0.14), transparent 11%),
+    radial-gradient(ellipse at 0 100%, rgba(58, 26, 7, 0.18), transparent 13%),
+    radial-gradient(ellipse at 100% 100%, rgba(58, 26, 7, 0.16), transparent 12%),
+    linear-gradient(
+      90deg,
+      rgba(62, 27, 7, 0.18),
+      transparent 1.5%,
+      transparent 98.5%,
+      rgba(62, 27, 7, 0.18)
+    ),
+    linear-gradient(
+      180deg,
+      rgba(62, 27, 7, 0.16),
+      transparent 1.5%,
+      transparent 98.1%,
+      rgba(62, 27, 7, 0.19)
+    );
+  height: auto;
+  inset: 0;
+  opacity: 1;
+  right: 0;
+  z-index: 1;
+}
+
+.live-notebook-scene.notebook-skin-aged-notebook .live-notebook-page-left {
+  box-shadow:
+    inset -18px 0 30px rgba(53, 25, 8, 0.16),
+    inset -4px 0 7px rgba(254, 232, 178, 0.09),
+    inset 0 0 0 1px rgba(255, 236, 190, 0.12),
+    -3px 0 0 rgba(55, 24, 7, 0.24),
+    0 13px 22px rgba(24, 12, 5, 0.38);
+}
+
+.live-notebook-scene.notebook-skin-aged-notebook .live-notebook-page-right {
+  box-shadow:
+    inset 18px 0 30px rgba(53, 25, 8, 0.16),
+    inset 4px 0 7px rgba(254, 232, 178, 0.08),
+    inset 0 0 0 1px rgba(255, 236, 190, 0.12),
+    3px 0 0 rgba(55, 24, 7, 0.2),
+    0 13px 22px rgba(24, 12, 5, 0.38);
 }
 
 .live-notebook-page::after {
@@ -9764,6 +9859,102 @@ a.build-log-project:focus-visible {
   height: 0.56rem;
   width: 2.7rem;
   z-index: 1;
+}
+
+.live-notebook-scene.notebook-skin-aged-notebook .live-notebook-gutter {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(34, 14, 5, 0.58),
+      rgba(117, 69, 31, 0.34) 27%,
+      rgba(222, 169, 93, 0.22) 47%,
+      rgba(118, 68, 29, 0.32) 65%,
+      rgba(31, 13, 5, 0.58)
+    ),
+    linear-gradient(180deg, rgba(255, 215, 142, 0.08), transparent 20%, rgba(25, 10, 4, 0.18)),
+    #4d2a12;
+  box-shadow:
+    inset 7px 0 14px rgba(0, 0, 0, 0.22),
+    inset -7px 0 14px rgba(0, 0, 0, 0.24),
+    0 0 10px rgba(45, 21, 8, 0.28);
+}
+
+.live-notebook-scene.notebook-skin-aged-notebook .live-notebook-gutter::before {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(18, 8, 3, 0.3),
+      rgba(255, 217, 142, 0.1) 44%,
+      rgba(70, 31, 10, 0.38)
+    ),
+    linear-gradient(180deg, rgba(246, 183, 96, 0.22), rgba(73, 35, 12, 0.34));
+  box-shadow: 0 0 12px rgba(51, 22, 7, 0.35);
+}
+
+.live-notebook-scene.notebook-skin-aged-notebook .live-notebook-gutter::after {
+  background: linear-gradient(180deg, transparent, rgba(255, 215, 139, 0.16) 50%, transparent);
+  content: "";
+  inset: 0;
+  opacity: 0.48;
+  pointer-events: none;
+  position: absolute;
+}
+
+.live-notebook-scene.notebook-skin-aged-notebook .live-notebook-gutter span {
+  background: linear-gradient(
+    180deg,
+    transparent 0 15%,
+    rgba(19, 9, 4, 0.86) 18%,
+    rgba(92, 55, 25, 0.94) 23%,
+    rgba(210, 145, 74, 0.98) 29%,
+    rgba(57, 29, 12, 0.96) 36%,
+    transparent 39% 61%,
+    rgba(18, 8, 4, 0.88) 64%,
+    rgba(86, 50, 22, 0.96) 69%,
+    rgba(197, 132, 64, 0.98) 75%,
+    rgba(45, 22, 9, 0.98) 82%,
+    transparent 85% 100%
+  );
+  border: 0;
+  box-shadow:
+    0 1px 0 rgba(255, 227, 158, 0.12),
+    0 3px 5px rgba(0, 0, 0, 0.46);
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+  position: relative;
+}
+
+.live-notebook-scene.notebook-skin-aged-notebook .live-notebook-gutter span::before,
+.live-notebook-scene.notebook-skin-aged-notebook .live-notebook-gutter span::after {
+  background:
+    linear-gradient(180deg, rgba(255, 214, 126, 0.24), rgba(24, 11, 5, 0.68)),
+    linear-gradient(90deg, #0e0704, #6f431f 46%, #130805);
+  border-radius: 4px;
+  box-shadow:
+    inset 0 1px 1px rgba(255, 223, 148, 0.22),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.48),
+    0 1px 2px rgba(0, 0, 0, 0.48);
+  content: "";
+  height: 0.44rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.44rem;
+}
+
+.live-notebook-scene.notebook-skin-aged-notebook .live-notebook-gutter span::before {
+  left: -0.02rem;
+}
+
+.live-notebook-scene.notebook-skin-aged-notebook .live-notebook-gutter span::after {
+  right: -0.02rem;
+}
+
+.live-notebook-scene.notebook-skin-aged-notebook .live-notebook-gutter span:nth-child(3n) {
+  opacity: 0.95;
+}
+
+.live-notebook-scene.notebook-skin-aged-notebook .live-notebook-gutter span:nth-child(4n) {
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.44)) saturate(0.9);
 }
 
 .live-notebook-side-label {
