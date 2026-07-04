@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-04T07:20:53.379Z",
+  "updated_at": "2026-07-04T09:17:16.377Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "1f58cf6",
+      "message": "Replace Scriptorium brand kit with approved identity",
+      "date": "2026-07-04",
+      "time": "4:16 AM",
+      "timestamp": "2026-07-04T04:16:16-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -891,15 +900,6 @@
       "date": "2026-06-28",
       "time": "9:54 PM",
       "timestamp": "2026-06-28T21:54:14-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "755fa1b",
-      "message": "Align Scriptorium notebook admin and public sizes",
-      "date": "2026-06-28",
-      "time": "9:27 PM",
-      "timestamp": "2026-06-28T21:27:16-05:00"
     }
   ]
 }
