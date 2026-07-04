@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-04T10:41:46.868Z",
+  "updated_at": "2026-07-04T12:29:33.942Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "6ad35c4",
+      "message": "Group Entries sidebar by status",
+      "date": "2026-07-04",
+      "time": "7:28 AM",
+      "timestamp": "2026-07-04T07:28:40-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-29",
       "time": "12:12 AM",
       "timestamp": "2026-06-29T00:12:02-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "5537efe",
-      "message": "Restore true Scriptorium admin notebook size",
-      "date": "2026-06-28",
-      "time": "11:39 PM",
-      "timestamp": "2026-06-28T23:39:53-05:00"
     }
   ]
 }
