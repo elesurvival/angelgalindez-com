@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-04T03:00:09.349Z",
+  "updated_at": "2026-07-04T03:00:15.105Z",
   "items": [
     {
       "project": "AngelGalindez.com",
@@ -587,15 +587,6 @@
       "timestamp": "2026-06-30T23:17:58-05:00"
     },
     {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "2926326",
-      "message": "Update Live Notebook exported data",
-      "date": "2026-06-30",
-      "time": "10:45 PM",
-      "timestamp": "2026-06-30T22:45:32-05:00"
-    },
-    {
       "project": "Scriptorium",
       "repo": "scriptorium",
       "hash": "8c59a0c",
@@ -900,6 +891,15 @@
       "date": "2026-06-28",
       "time": "5:09 PM",
       "timestamp": "2026-06-28T17:09:10-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "1b30705",
+      "message": "Fix Scriptorium decoration asset grid",
+      "date": "2026-06-28",
+      "time": "4:17 PM",
+      "timestamp": "2026-06-28T16:17:55-05:00"
     }
   ]
 }
