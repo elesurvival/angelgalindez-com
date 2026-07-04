@@ -8934,6 +8934,19 @@ a.build-log-project:focus-visible {
   position: absolute;
 }
 
+.live-notebook-scene.notebook-theme-code-keepers .live-notebook-ambient {
+  background:
+    radial-gradient(circle at 75% 18%, rgba(231, 183, 95, 0.14), transparent 18rem),
+    linear-gradient(180deg, rgba(1, 7, 6, 0.26), rgba(1, 7, 6, 0.68) 58%, rgba(1, 7, 6, 0.9)),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.68), transparent 38%, transparent 72%, rgba(0, 0, 0, 0.32)),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 5px),
+    url("/assets/projects/notebook/themes/code-keepers/code-keepers-notebook-background.jpg"),
+    url("/assets/projects/notebook/live-notebook-workbench-bg.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .live-notebook-intro {
   display: block;
   margin: 0 auto 0.5rem;
@@ -9241,6 +9254,72 @@ a.build-log-project:focus-visible {
     var(--live-notebook-page-safe-bottom);
   position: relative;
   z-index: 1;
+}
+
+.live-notebook-page > :not(.live-notebook-free-layer) {
+  position: relative;
+  z-index: 2;
+}
+
+.live-notebook-page::before {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  content: "";
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.live-notebook-scene.notebook-skin-scriptorium-default .live-notebook-page::before {
+  background-image: url("/assets/projects/notebook/notebook-skins/scriptorium-default/page-edge-overlay.png");
+  opacity: 1;
+}
+
+.live-notebook-scene.notebook-skin-aged-notebook .live-notebook-spread {
+  background:
+    radial-gradient(ellipse at 50% 103%, rgba(0, 0, 0, 0.34), transparent 54%),
+    linear-gradient(180deg, rgba(255, 208, 132, 0.06), transparent 14%, rgba(0, 0, 0, 0.24)),
+    linear-gradient(
+      90deg,
+      rgba(14, 7, 3, 0.94),
+      rgba(74, 41, 19, 0.56) 8%,
+      rgba(74, 41, 19, 0.26) 17%,
+      rgba(74, 41, 19, 0.24) 83%,
+      rgba(74, 41, 19, 0.58) 92%,
+      rgba(14, 7, 3, 0.94)
+    ),
+    linear-gradient(135deg, #2e1709, #100b07 58%, #3a210f);
+  border-color: rgba(154, 103, 54, 0.54);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 214, 144, 0.14),
+    inset 0 0 0 5px rgba(15, 8, 4, 0.3),
+    inset 0 -18px 30px rgba(0, 0, 0, 0.26),
+    0 34px 90px rgba(0, 0, 0, 0.58);
+}
+
+.live-notebook-scene.notebook-skin-aged-notebook .live-notebook-page {
+  background:
+    radial-gradient(circle at 24% 18%, rgba(255, 246, 218, 0.22), transparent 34%),
+    radial-gradient(circle at 82% 84%, rgba(126, 76, 28, 0.07), transparent 42%),
+    linear-gradient(180deg, rgba(255, 238, 194, 0.1), transparent 10%, transparent 88%, rgba(99, 52, 19, 0.08)),
+    linear-gradient(90deg, rgba(96, 54, 22, 0.055), transparent 15%, transparent 85%, rgba(96, 54, 22, 0.055)),
+    #e8c88f;
+  border-color: rgba(112, 73, 33, 0.62);
+  box-shadow:
+    inset 0 0 22px rgba(80, 43, 18, 0.18),
+    inset 0 1px 0 rgba(255, 239, 196, 0.36),
+    inset 0 -1px 0 rgba(85, 44, 17, 0.16),
+    0 2px 0 rgba(179, 119, 58, 0.28),
+    0 5px 0 rgba(96, 57, 27, 0.18),
+    0 18px 38px rgba(0, 0, 0, 0.3);
+}
+
+.live-notebook-scene.notebook-skin-aged-notebook .live-notebook-page::before {
+  background-image: url("/assets/projects/notebook/notebook-skins/aged-notebook/page-edge-overlay.png");
+  opacity: 1;
 }
 
 .live-notebook-page::after {

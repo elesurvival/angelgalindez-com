@@ -36,6 +36,52 @@
     "Image note",
   ]);
 
+  const presentationThemes = new Set(["scriptorium-default", "code-keepers"]);
+  const notebookSkins = new Set(["scriptorium-default", "aged-notebook"]);
+  const publishTargets = new Set([
+    "workshop-notebook",
+    "code-keepers-notebook",
+  ]);
+
+  const normalizePresentationTheme = (value) =>
+    presentationThemes.has(value) ? value : "scriptorium-default";
+
+  const normalizeNotebookSkin = (value) =>
+    notebookSkins.has(value) ? value : "scriptorium-default";
+
+  const normalizePublishTarget = (value) =>
+    publishTargets.has(value) ? value : "workshop-notebook";
+
+  const resetAxisClasses = (node, prefix, values) => {
+    if (!node) return;
+    values.forEach((value) => node.classList.remove(`${prefix}-${value}`));
+  };
+
+  const applyEntryPresentation = (root, entry) => {
+    const presentationTheme = normalizePresentationTheme(
+      entry?.presentationTheme,
+    );
+    const notebookSkin = normalizeNotebookSkin(entry?.notebookSkin);
+    const publishTarget = normalizePublishTarget(entry?.publishTarget);
+    const spread = root.querySelector(".live-notebook-spread");
+
+    [root, spread].forEach((node) => {
+      resetAxisClasses(node, "notebook-theme", presentationThemes);
+      resetAxisClasses(node, "notebook-skin", notebookSkins);
+      resetAxisClasses(node, "notebook-target", publishTargets);
+      node?.classList.add(
+        `notebook-theme-${presentationTheme}`,
+        `notebook-skin-${notebookSkin}`,
+        `notebook-target-${publishTarget}`,
+      );
+      if (node) {
+        node.dataset.presentationTheme = presentationTheme;
+        node.dataset.notebookSkin = notebookSkin;
+        node.dataset.publishTarget = publishTarget;
+      }
+    });
+  };
+
   const formatDate = (value) => {
     const [year, month, day] = String(value || "")
       .slice(0, 10)
@@ -670,6 +716,7 @@
     entries = [];
     currentEntryIndex = 0;
     currentPagePairStart = 1;
+    applyEntryPresentation(root, null);
     setText(root, selectors.notebookTitle, "Live Notebook");
     setText(
       root,
@@ -787,6 +834,7 @@
       renderFallback(root, "No published notes are available yet.");
       return;
     }
+    applyEntryPresentation(root, entry);
 
     const { left, right, totalPages } = getVisiblePagePair(
       entry,
