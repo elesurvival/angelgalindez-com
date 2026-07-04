@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-04T13:54:31.493Z",
+  "updated_at": "2026-07-04T14:42:35.205Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "50f88be",
+      "message": "Compress Admin publishing inspector",
+      "date": "2026-07-04",
+      "time": "9:41 AM",
+      "timestamp": "2026-07-04T09:41:41-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-29",
       "time": "12:12 AM",
       "timestamp": "2026-06-29T00:12:02-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "5537efe",
-      "message": "Restore true Scriptorium admin notebook size",
-      "date": "2026-06-28",
-      "time": "11:39 PM",
-      "timestamp": "2026-06-28T23:39:53-05:00"
     }
   ]
 }
