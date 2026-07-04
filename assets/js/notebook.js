@@ -59,10 +59,14 @@
 
   const applyEntryPresentation = (root, entry) => {
     const presentationTheme = normalizePresentationTheme(
-      entry?.presentationTheme,
+      entry?.presentationTheme || root.dataset.defaultPresentationTheme,
     );
-    const notebookSkin = normalizeNotebookSkin(entry?.notebookSkin);
-    const publishTarget = normalizePublishTarget(entry?.publishTarget);
+    const notebookSkin = normalizeNotebookSkin(
+      entry?.notebookSkin || root.dataset.defaultNotebookSkin,
+    );
+    const publishTarget = normalizePublishTarget(
+      entry?.publishTarget || root.dataset.defaultPublishTarget,
+    );
     const spread = root.querySelector(".live-notebook-spread");
 
     [root, spread].forEach((node) => {
