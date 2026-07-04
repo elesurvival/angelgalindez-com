@@ -4,5 +4,110 @@
     "subtitle": "Published notes from Scriptorium.",
     "updatedAt": "2026-07-03"
   },
-  "pages": []
+  "pages": [
+    {
+      "id": "code-keepers-notebook",
+      "title": "Code Keepers Notebook",
+      "date": "2026-07-03",
+      "project": "Notebook",
+      "type": "Notebook Note",
+      "tags": [],
+      "presentationTheme": "code-keepers",
+      "notebookSkin": "aged-notebook",
+      "publishTarget": "code-keepers-notebook",
+      "body": [
+        "Discovery: Users who come here will benefit from knowing behing the scenes insights into all these different projects.",
+        "Why it matters: Without the extra context shared here, users will not know what led to certain decisions.",
+        "Breakthrough: We created different worlds for each notebook to give it a richer user viewing experience.",
+        "This is a much better viewing experience."
+      ],
+      "pages": [
+        {
+          "pageNumber": 1,
+          "side": "left",
+          "title": "Code Keepers Notebook",
+          "meta": [
+            "2026-07-03"
+          ],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "This notebook will contain the Code Keepers books, articles, and notes."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Users who come here will benefit from knowing behing the scenes insights into all these different projects."
+            },
+            {
+              "kind": "semantic",
+              "label": "Why it matters",
+              "text": "Without the extra context shared here, users will not know what led to certain decisions."
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 2,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Breakthrough",
+              "text": "We created different worlds for each notebook to give it a richer user viewing experience."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This is a much better viewing experience."
+            }
+          ],
+          "decorations": []
+        }
+      ],
+      "spread": {
+        "left": {
+          "title": "Code Keepers Notebook",
+          "meta": [
+            "2026-07-03"
+          ],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "This notebook will contain the Code Keepers books, articles, and notes."
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Users who come here will benefit from knowing behing the scenes insights into all these different projects."
+            },
+            {
+              "kind": "semantic",
+              "label": "Why it matters",
+              "text": "Without the extra context shared here, users will not know what led to certain decisions."
+            }
+          ]
+        },
+        "right": {
+          "title": null,
+          "meta": [
+            "Entry #0149"
+          ],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Breakthrough",
+              "text": "We created different worlds for each notebook to give it a richer user viewing experience."
+            },
+            {
+              "kind": "paragraph",
+              "text": "This is a much better viewing experience."
+            }
+          ]
+        }
+      },
+      "decorations": []
+    }
+  ]
 }
