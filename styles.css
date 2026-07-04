@@ -9294,6 +9294,72 @@ a.build-log-project:focus-visible {
   opacity: 1;
 }
 
+.live-notebook-scene.notebook-skin-scriptorium-default .live-notebook-spread {
+  background:
+    radial-gradient(ellipse at 50% 102%, rgba(0, 0, 0, 0.3), transparent 54%),
+    linear-gradient(180deg, rgba(255, 220, 148, 0.04), transparent 14%, rgba(0, 0, 0, 0.2)),
+    linear-gradient(
+      90deg,
+      rgba(7, 5, 3, 0.82),
+      rgba(34, 22, 13, 0.48) 8%,
+      rgba(34, 22, 13, 0.22) 17%,
+      rgba(34, 22, 13, 0.2) 83%,
+      rgba(34, 22, 13, 0.5) 92%,
+      rgba(7, 5, 3, 0.82)
+    ),
+    #22170f;
+  border-color: rgba(200, 155, 74, 0.28);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 229, 177, 0.1),
+    inset 0 0 0 5px rgba(0, 0, 0, 0.16),
+    inset 0 -18px 30px rgba(0, 0, 0, 0.2),
+    0 28px 80px rgba(0, 0, 0, 0.44);
+}
+
+.live-notebook-scene.notebook-skin-scriptorium-default .live-notebook-page {
+  background:
+    radial-gradient(circle at 25% 18%, rgba(255, 255, 255, 0.18), transparent 36%),
+    radial-gradient(circle at 82% 86%, rgba(120, 83, 38, 0.045), transparent 42%),
+    radial-gradient(circle at 8% 92%, rgba(79, 52, 25, 0.035), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 10%, transparent 88%, rgba(83, 53, 21, 0.055)),
+    linear-gradient(90deg, rgba(82, 52, 22, 0.035), transparent 16%, transparent 84%, rgba(82, 52, 22, 0.035)),
+    #efe3ca;
+  border-color: rgba(128, 100, 61, 0.52);
+  box-shadow:
+    inset 0 0 18px rgba(87, 59, 27, 0.12),
+    inset 0 1px 0 rgba(255, 252, 238, 0.34),
+    inset 0 -1px 0 rgba(96, 65, 31, 0.12),
+    0 2px 0 rgba(232, 211, 174, 0.34),
+    0 5px 0 rgba(161, 125, 76, 0.12),
+    0 16px 34px rgba(0, 0, 0, 0.28);
+}
+
+.live-notebook-scene.notebook-skin-scriptorium-default .live-notebook-page-left {
+  box-shadow:
+    inset -34px 0 28px -28px rgba(43, 27, 13, 0.7),
+    inset -10px 0 13px -12px rgba(255, 249, 230, 0.48),
+    inset 4px 0 11px -13px rgba(72, 43, 17, 0.36),
+    inset 0 0 18px rgba(87, 59, 27, 0.11),
+    inset 0 1px 0 rgba(255, 252, 238, 0.34),
+    inset 0 -1px 0 rgba(96, 65, 31, 0.12),
+    -2px 2px 0 rgba(232, 211, 174, 0.28),
+    0 5px 0 rgba(161, 125, 76, 0.12),
+    0 16px 34px rgba(0, 0, 0, 0.28);
+}
+
+.live-notebook-scene.notebook-skin-scriptorium-default .live-notebook-page-right {
+  box-shadow:
+    inset 34px 0 28px -28px rgba(43, 27, 13, 0.7),
+    inset 10px 0 13px -12px rgba(255, 249, 230, 0.42),
+    inset -4px 0 11px -13px rgba(72, 43, 17, 0.32),
+    inset 0 0 18px rgba(87, 59, 27, 0.1),
+    inset 0 1px 0 rgba(255, 252, 238, 0.32),
+    inset 0 -1px 0 rgba(96, 65, 31, 0.12),
+    2px 2px 0 rgba(232, 211, 174, 0.25),
+    0 5px 0 rgba(161, 125, 76, 0.12),
+    0 16px 34px rgba(0, 0, 0, 0.28);
+}
+
 .live-notebook-scene.notebook-skin-aged-notebook .live-notebook-spread {
   background:
     radial-gradient(ellipse at 50% 104%, rgba(0, 0, 0, 0.5), transparent 58%),
@@ -9859,6 +9925,102 @@ a.build-log-project:focus-visible {
   height: 0.56rem;
   width: 2.7rem;
   z-index: 1;
+}
+
+.live-notebook-scene.notebook-skin-scriptorium-default .live-notebook-gutter {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(48, 30, 13, 0.18),
+      rgba(237, 219, 181, 0.14) 22%,
+      rgba(245, 231, 195, 0.08) 43%,
+      rgba(74, 45, 19, 0.14) 50%,
+      rgba(245, 231, 195, 0.08) 57%,
+      rgba(237, 219, 181, 0.14) 78%,
+      rgba(48, 30, 13, 0.18)
+    ),
+    rgba(222, 202, 164, 0.42);
+  box-shadow:
+    inset 7px 0 10px -10px rgba(58, 35, 14, 0.5),
+    inset -7px 0 10px -10px rgba(58, 35, 14, 0.46);
+}
+
+.live-notebook-scene.notebook-skin-scriptorium-default .live-notebook-gutter::before {
+  background: linear-gradient(
+    90deg,
+    rgba(51, 39, 29, 0.5),
+    rgba(158, 140, 111, 0.38) 46%,
+    rgba(48, 36, 26, 0.56)
+  );
+  border-radius: 999px;
+  box-shadow:
+    0 0 0 1px rgba(255, 238, 201, 0.1),
+    0 12px 24px rgba(0, 0, 0, 0.12),
+    inset 1px 0 1px rgba(255, 255, 255, 0.16);
+  inset: 0.78rem auto 0.78rem 50%;
+  transform: translateX(-50%);
+  width: 3px;
+}
+
+.live-notebook-scene.notebook-skin-scriptorium-default .live-notebook-gutter::after {
+  background:
+    radial-gradient(ellipse at center, rgba(28, 19, 12, 0.18) 0 30%, transparent 36%) 2px 0 / 10px 5.55%,
+    radial-gradient(ellipse at center, rgba(28, 19, 12, 0.16) 0 30%, transparent 36%) calc(100% - 2px) 0 / 10px 5.55%;
+  background-repeat: repeat-y;
+  content: "";
+  inset: 0.88rem 0;
+  opacity: 0.38;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+}
+
+.live-notebook-scene.notebook-skin-scriptorium-default .live-notebook-gutter span {
+  background: linear-gradient(
+    180deg,
+    transparent 0,
+    transparent 18%,
+    rgba(43, 37, 31, 0.18) 18%,
+    rgba(9, 8, 7, 0.92) 28%,
+    rgba(43, 37, 31, 0.2) 38%,
+    transparent 39%,
+    transparent 61%,
+    rgba(43, 37, 31, 0.18) 62%,
+    rgba(9, 8, 7, 0.94) 72%,
+    rgba(43, 37, 31, 0.2) 82%,
+    transparent 82%,
+    transparent 100%
+  );
+  border: 0;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.06),
+    0 2px 5px rgba(0, 0, 0, 0.28);
+  position: relative;
+}
+
+.live-notebook-scene.notebook-skin-scriptorium-default .live-notebook-gutter span::before,
+.live-notebook-scene.notebook-skin-scriptorium-default .live-notebook-gutter span::after {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.1), transparent 30%, rgba(0, 0, 0, 0.28)),
+    #14100c;
+  border-radius: 4px;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.26),
+    inset 0 0 2px rgba(0, 0, 0, 0.72);
+  content: "";
+  height: 0.44rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.44rem;
+}
+
+.live-notebook-scene.notebook-skin-scriptorium-default .live-notebook-gutter span::before {
+  left: -0.02rem;
+}
+
+.live-notebook-scene.notebook-skin-scriptorium-default .live-notebook-gutter span::after {
+  right: -0.02rem;
 }
 
 .live-notebook-scene.notebook-skin-aged-notebook .live-notebook-gutter {
