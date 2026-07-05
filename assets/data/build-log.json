@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-05T01:21:11.997Z",
+  "updated_at": "2026-07-05T01:25:35.888Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "145e276",
+      "message": "Publish the-listener-becomes-the-phantom to Live Notebook",
+      "date": "2026-07-04",
+      "time": "8:25 PM",
+      "timestamp": "2026-07-04T20:25:32-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -891,15 +900,6 @@
       "date": "2026-06-29",
       "time": "6:38 AM",
       "timestamp": "2026-06-29T06:38:42-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "4fbe302",
-      "message": "Rollback failed Live Notebook parity attempts",
-      "date": "2026-06-29",
-      "time": "2:39 AM",
-      "timestamp": "2026-06-29T02:39:56-05:00"
     }
   ]
 }
