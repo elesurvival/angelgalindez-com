@@ -6,6 +6,284 @@
   },
   "pages": [
     {
+      "id": "the-listener-becomes-the-phantom",
+      "title": "The Listener Becomes the Phantom",
+      "date": "2026-06-25",
+      "project": "The Locksmith",
+      "type": "Philosophy",
+      "tags": [],
+      "presentationTheme": "scriptorium-default",
+      "notebookSkin": "scriptorium-default",
+      "publishTarget": "workshop-notebook",
+      "body": [
+        "Question: Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?",
+        "Discovery: The Locksmith is not about breaking in. It is about becoming someone who can build anything.",
+        "Decision: Every track will represent a stage in the transformation from ordinary to extraordinary.",
+        "THIS CHANGED EVERYTHING",
+        "• Track titles",
+        "• Track purposes",
+        "• The emotional arc",
+        "• The album artwork concept",
+        "• How we talk about the album",
+        "Why it matters: When someone presses play, they do not just listen. They step into a different identity.",
+        "\"We're not macking music for hackers.\nWe're making music for builders.\" - AG"
+      ],
+      "pages": [
+        {
+          "pageNumber": 1,
+          "side": "left",
+          "title": "The Listener Becomes the Phantom",
+          "meta": [
+            "The Locksmith",
+            "Philosophy",
+            "2026-06-25"
+          ],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Question",
+              "text": "Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?"
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "The Locksmith is not about breaking in. It is about becoming someone who can build anything."
+            },
+            {
+              "kind": "image",
+              "src": "/assets/projects/notebook/exported-assets/sketch-a-man-seen-from-behind-working-at-a-multi-montior-co-20260705-011328-f4b128c0.png",
+              "alt": "Pencil sketch: a man seen from behind working at a multi montior computer workstation wearing headphones",
+              "displayMode": "full",
+              "placement": {
+                "mode": "free",
+                "page": "left",
+                "pageNumber": 1,
+                "x": 7.950538979640683,
+                "y": 350.1476345594365,
+                "width": 306,
+                "zIndex": 1
+              },
+              "imageSurface": {
+                "preset": "drawn-on-page",
+                "inkStrength": 1.1,
+                "opacity": 1,
+                "paperCleanup": 0.1,
+                "blendMode": "multiply",
+                "inkSrc": "/assets/projects/notebook/exported-assets/sketch-a-man-seen-from-behind-working-at-a-multi-montior-co-20260705-011328-f4b128c0-ink-4a1970773a5b3c39.png"
+              }
+            }
+          ],
+          "decorations": [
+            {
+              "id": "b1ec5420-9fe0-4c7e-8da9-57285e593e1d",
+              "assetId": 214,
+              "name": "Blue Pen Arrow Arrow",
+              "filename": "blue-pen-arrow-06.png",
+              "collection": "blue-pen-arrows",
+              "category": "arrows",
+              "page": "left",
+              "pageNumber": 1,
+              "src": "/assets/projects/notebook/decorations/blue-pen-arrow-06.png",
+              "x": 297,
+              "y": 470,
+              "width": 80,
+              "scale": 1,
+              "rotation": -75,
+              "zIndex": 6,
+              "flipX": false,
+              "flipY": true
+            }
+          ]
+        },
+        {
+          "pageNumber": 2,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Decision",
+              "text": "Every track will represent a stage in the transformation from ordinary to extraordinary."
+            },
+            {
+              "kind": "list",
+              "listType": "bulleted",
+              "ordered": false,
+              "title": "THIS CHANGED EVERYTHING",
+              "items": [
+                "Track titles",
+                "Track purposes",
+                "The emotional arc",
+                "The album artwork concept",
+                "How we talk about the album"
+              ],
+              "frame": true
+            },
+            {
+              "kind": "semantic",
+              "label": "Why it matters",
+              "text": "When someone presses play, they do not just listen. They step into a different identity."
+            },
+            {
+              "kind": "paragraph",
+              "text": "\"We're not macking music for hackers.\nWe're making music for builders.\" - AG",
+              "material": {
+                "id": "taped-fragment",
+                "name": "Taped Fragment"
+              }
+            }
+          ],
+          "decorations": [
+            {
+              "id": "eaa9ecaa-ed0b-48d8-8e7f-ebeb9b637c44",
+              "assetId": 214,
+              "name": "Blue Pen Arrow Arrow",
+              "filename": "blue-pen-arrow-06.png",
+              "collection": "blue-pen-arrows",
+              "category": "arrows",
+              "page": "right",
+              "pageNumber": 2,
+              "src": "/assets/projects/notebook/decorations/blue-pen-arrow-06.png",
+              "x": 339,
+              "y": 175,
+              "width": 80,
+              "scale": 1,
+              "rotation": -75,
+              "zIndex": 6,
+              "flipX": false,
+              "flipY": true
+            }
+          ]
+        }
+      ],
+      "spread": {
+        "left": {
+          "title": "The Listener Becomes the Phantom",
+          "meta": [
+            "The Locksmith",
+            "Philosophy",
+            "2026-06-25"
+          ],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Question",
+              "text": "Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?"
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "The Locksmith is not about breaking in. It is about becoming someone who can build anything."
+            },
+            {
+              "kind": "image",
+              "src": "/assets/projects/notebook/exported-assets/sketch-a-man-seen-from-behind-working-at-a-multi-montior-co-20260705-011328-f4b128c0.png",
+              "alt": "Pencil sketch: a man seen from behind working at a multi montior computer workstation wearing headphones",
+              "displayMode": "full",
+              "placement": {
+                "mode": "free",
+                "page": "left",
+                "pageNumber": 1,
+                "x": 7.950538979640683,
+                "y": 350.1476345594365,
+                "width": 306,
+                "zIndex": 1
+              },
+              "imageSurface": {
+                "preset": "drawn-on-page",
+                "inkStrength": 1.1,
+                "opacity": 1,
+                "paperCleanup": 0.1,
+                "blendMode": "multiply",
+                "inkSrc": "/assets/projects/notebook/exported-assets/sketch-a-man-seen-from-behind-working-at-a-multi-montior-co-20260705-011328-f4b128c0-ink-4a1970773a5b3c39.png"
+              }
+            }
+          ]
+        },
+        "right": {
+          "title": null,
+          "meta": [
+            "Entry #0093"
+          ],
+          "body": [
+            {
+              "kind": "semantic",
+              "label": "Decision",
+              "text": "Every track will represent a stage in the transformation from ordinary to extraordinary."
+            },
+            {
+              "kind": "list",
+              "listType": "bulleted",
+              "ordered": false,
+              "title": "THIS CHANGED EVERYTHING",
+              "items": [
+                "Track titles",
+                "Track purposes",
+                "The emotional arc",
+                "The album artwork concept",
+                "How we talk about the album"
+              ],
+              "frame": true
+            },
+            {
+              "kind": "semantic",
+              "label": "Why it matters",
+              "text": "When someone presses play, they do not just listen. They step into a different identity."
+            },
+            {
+              "kind": "paragraph",
+              "text": "\"We're not macking music for hackers.\nWe're making music for builders.\" - AG",
+              "material": {
+                "id": "taped-fragment",
+                "name": "Taped Fragment"
+              }
+            }
+          ]
+        }
+      },
+      "decorations": [
+        {
+          "id": "b1ec5420-9fe0-4c7e-8da9-57285e593e1d",
+          "assetId": 214,
+          "name": "Blue Pen Arrow Arrow",
+          "filename": "blue-pen-arrow-06.png",
+          "collection": "blue-pen-arrows",
+          "category": "arrows",
+          "page": "left",
+          "pageNumber": 1,
+          "src": "/assets/projects/notebook/decorations/blue-pen-arrow-06.png",
+          "x": 297,
+          "y": 470,
+          "width": 80,
+          "scale": 1,
+          "rotation": -75,
+          "zIndex": 6,
+          "flipX": false,
+          "flipY": true
+        },
+        {
+          "id": "eaa9ecaa-ed0b-48d8-8e7f-ebeb9b637c44",
+          "assetId": 214,
+          "name": "Blue Pen Arrow Arrow",
+          "filename": "blue-pen-arrow-06.png",
+          "collection": "blue-pen-arrows",
+          "category": "arrows",
+          "page": "right",
+          "pageNumber": 2,
+          "src": "/assets/projects/notebook/decorations/blue-pen-arrow-06.png",
+          "x": 339,
+          "y": 175,
+          "width": 80,
+          "scale": 1,
+          "rotation": -75,
+          "zIndex": 6,
+          "flipX": false,
+          "flipY": true
+        }
+      ]
+    },
+    {
       "id": "why-we-built-tempo-first",
       "title": "Why We Built Tempo First",
       "date": "2026-06-23",
@@ -116,205 +394,6 @@
               "kind": "semantic",
               "label": "Breakthrough",
               "text": "A focused ritual can become infrastructure for better work..."
-            }
-          ]
-        }
-      },
-      "decorations": []
-    },
-    {
-      "id": "the-listener-becomes-the-phantom",
-      "title": "The Listener Becomes the Phantom",
-      "date": "2026-06-25",
-      "project": "The Locksmith",
-      "type": "Philosophy",
-      "tags": [],
-      "presentationTheme": "scriptorium-default",
-      "notebookSkin": "aged-notebook",
-      "publishTarget": "workshop-notebook",
-      "body": [
-        "Question: Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?",
-        "Discovery: The Locksmith is not about breaking in. It is about becoming someone who can build anything.",
-        "Decision: Every track will represent a stage in the transformation from ordinary to extraordinary.",
-        "THIS CHANGED EVERYTHING",
-        "• Track titles",
-        "• Track purposes",
-        "• The emotional arc",
-        "• The album artwork concept",
-        "• How we talk about the album",
-        "Why it matters: When someone presses play, they do not just listen. They step into a different identity.",
-        "\"We're not macking music for hackers.\nWe're making music for builders.\" - AG"
-      ],
-      "pages": [
-        {
-          "pageNumber": 1,
-          "side": "left",
-          "title": "The Listener Becomes the Phantom",
-          "meta": [
-            "The Locksmith",
-            "Philosophy",
-            "2026-06-25"
-          ],
-          "body": [
-            {
-              "kind": "semantic",
-              "label": "Question",
-              "text": "Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?"
-            },
-            {
-              "kind": "semantic",
-              "label": "Discovery",
-              "text": "The Locksmith is not about breaking in. It is about becoming someone who can build anything."
-            },
-            {
-              "kind": "image",
-              "src": "/assets/projects/notebook/exported-assets/sketch-a-man-seen-from-behind-working-at-a-multi-montior-co-20260705-011328-f4b128c0.png",
-              "alt": "Pencil sketch: a man seen from behind working at a multi montior computer workstation wearing headphones",
-              "displayMode": "full",
-              "placement": {
-                "mode": "free",
-                "page": "left",
-                "pageNumber": 1,
-                "x": 90,
-                "y": 350,
-                "width": 306,
-                "zIndex": 1
-              },
-              "imageSurface": {
-                "preset": "drawn-on-page",
-                "inkStrength": 1.1,
-                "opacity": 1,
-                "paperCleanup": 0.1,
-                "blendMode": "multiply",
-                "inkSrc": "/assets/projects/notebook/exported-assets/sketch-a-man-seen-from-behind-working-at-a-multi-montior-co-20260705-011328-f4b128c0-ink-4a1970773a5b3c39.png"
-              }
-            }
-          ],
-          "decorations": []
-        },
-        {
-          "pageNumber": 2,
-          "side": "right",
-          "title": null,
-          "meta": [],
-          "body": [
-            {
-              "kind": "semantic",
-              "label": "Decision",
-              "text": "Every track will represent a stage in the transformation from ordinary to extraordinary."
-            },
-            {
-              "kind": "list",
-              "listType": "bulleted",
-              "ordered": false,
-              "title": "THIS CHANGED EVERYTHING",
-              "items": [
-                "Track titles",
-                "Track purposes",
-                "The emotional arc",
-                "The album artwork concept",
-                "How we talk about the album"
-              ],
-              "frame": true
-            },
-            {
-              "kind": "semantic",
-              "label": "Why it matters",
-              "text": "When someone presses play, they do not just listen. They step into a different identity."
-            },
-            {
-              "kind": "paragraph",
-              "text": "\"We're not macking music for hackers.\nWe're making music for builders.\" - AG",
-              "material": {
-                "id": "taped-fragment",
-                "name": "Taped Fragment"
-              }
-            }
-          ],
-          "decorations": []
-        }
-      ],
-      "spread": {
-        "left": {
-          "title": "The Listener Becomes the Phantom",
-          "meta": [
-            "The Locksmith",
-            "Philosophy",
-            "2026-06-25"
-          ],
-          "body": [
-            {
-              "kind": "semantic",
-              "label": "Question",
-              "text": "Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?"
-            },
-            {
-              "kind": "semantic",
-              "label": "Discovery",
-              "text": "The Locksmith is not about breaking in. It is about becoming someone who can build anything."
-            },
-            {
-              "kind": "image",
-              "src": "/assets/projects/notebook/exported-assets/sketch-a-man-seen-from-behind-working-at-a-multi-montior-co-20260705-011328-f4b128c0.png",
-              "alt": "Pencil sketch: a man seen from behind working at a multi montior computer workstation wearing headphones",
-              "displayMode": "full",
-              "placement": {
-                "mode": "free",
-                "page": "left",
-                "pageNumber": 1,
-                "x": 90,
-                "y": 350,
-                "width": 306,
-                "zIndex": 1
-              },
-              "imageSurface": {
-                "preset": "drawn-on-page",
-                "inkStrength": 1.1,
-                "opacity": 1,
-                "paperCleanup": 0.1,
-                "blendMode": "multiply",
-                "inkSrc": "/assets/projects/notebook/exported-assets/sketch-a-man-seen-from-behind-working-at-a-multi-montior-co-20260705-011328-f4b128c0-ink-4a1970773a5b3c39.png"
-              }
-            }
-          ]
-        },
-        "right": {
-          "title": null,
-          "meta": [
-            "Entry #0093"
-          ],
-          "body": [
-            {
-              "kind": "semantic",
-              "label": "Decision",
-              "text": "Every track will represent a stage in the transformation from ordinary to extraordinary."
-            },
-            {
-              "kind": "list",
-              "listType": "bulleted",
-              "ordered": false,
-              "title": "THIS CHANGED EVERYTHING",
-              "items": [
-                "Track titles",
-                "Track purposes",
-                "The emotional arc",
-                "The album artwork concept",
-                "How we talk about the album"
-              ],
-              "frame": true
-            },
-            {
-              "kind": "semantic",
-              "label": "Why it matters",
-              "text": "When someone presses play, they do not just listen. They step into a different identity."
-            },
-            {
-              "kind": "paragraph",
-              "text": "\"We're not macking music for hackers.\nWe're making music for builders.\" - AG",
-              "material": {
-                "id": "taped-fragment",
-                "name": "Taped Fragment"
-              }
             }
           ]
         }
