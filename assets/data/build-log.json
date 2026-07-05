@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-05T06:26:23.040Z",
+  "updated_at": "2026-07-05T06:37:41.584Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "a79df82",
+      "message": "Publish why-we-built-tempo-first to Live Notebook",
+      "date": "2026-07-05",
+      "time": "1:37 AM",
+      "timestamp": "2026-07-05T01:37:37-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-30",
       "time": "3:27 AM",
       "timestamp": "2026-06-30T03:27:20-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "1ffab4d",
-      "message": "Publish entries directly to Live Notebook",
-      "date": "2026-06-30",
-      "time": "1:20 AM",
-      "timestamp": "2026-06-30T01:20:55-05:00"
     }
   ]
 }
