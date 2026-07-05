@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-04T23:12:51.906Z",
+  "updated_at": "2026-07-05T00:16:02.915Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "28230ec",
+      "message": "Add image page integration controls",
+      "date": "2026-07-04",
+      "time": "7:15 PM",
+      "timestamp": "2026-07-04T19:15:03-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-29",
       "time": "2:11 AM",
       "timestamp": "2026-06-29T02:11:07-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "5a08c65",
-      "message": "Fix Live Notebook visible page size parity",
-      "date": "2026-06-29",
-      "time": "1:34 AM",
-      "timestamp": "2026-06-29T01:34:36-05:00"
     }
   ]
 }
