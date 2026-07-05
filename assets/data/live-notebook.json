@@ -13,7 +13,7 @@
       "type": "Philosophy",
       "tags": [],
       "presentationTheme": "scriptorium-default",
-      "notebookSkin": "scriptorium-default",
+      "notebookSkin": "aged-notebook",
       "publishTarget": "workshop-notebook",
       "body": [
         "Question: Who is The Phantom: a character we tell stories about, or a state of mind the listener becomes?",
@@ -66,7 +66,10 @@
               "imageSurface": {
                 "preset": "drawn-on-page",
                 "inkStrength": 1.1,
-                "opacity": 0.9
+                "opacity": 1,
+                "paperCleanup": 0.1,
+                "blendMode": "multiply",
+                "inkSrc": "/assets/projects/notebook/exported-assets/sketch-a-man-seen-from-behind-working-at-a-multi-montior-co-20260705-011328-f4b128c0-ink-4a1970773a5b3c39.png"
               }
             }
           ],
@@ -150,7 +153,10 @@
               "imageSurface": {
                 "preset": "drawn-on-page",
                 "inkStrength": 1.1,
-                "opacity": 0.9
+                "opacity": 1,
+                "paperCleanup": 0.1,
+                "blendMode": "multiply",
+                "inkSrc": "/assets/projects/notebook/exported-assets/sketch-a-man-seen-from-behind-working-at-a-multi-montior-co-20260705-011328-f4b128c0-ink-4a1970773a5b3c39.png"
               }
             }
           ]
@@ -850,7 +856,9 @@
               "imageSurface": {
                 "preset": "raw",
                 "inkStrength": 0,
-                "opacity": 1
+                "opacity": 1,
+                "paperCleanup": 0.6,
+                "blendMode": "multiply"
               }
             }
           ],
@@ -2776,7 +2784,9 @@
               "imageSurface": {
                 "preset": "raw",
                 "inkStrength": 0,
-                "opacity": 1
+                "opacity": 1,
+                "paperCleanup": 0.6,
+                "blendMode": "multiply"
               }
             }
           ]
@@ -3036,7 +3046,9 @@
               "imageSurface": {
                 "preset": "raw",
                 "inkStrength": 0,
-                "opacity": 1
+                "opacity": 1,
+                "paperCleanup": 0.6,
+                "blendMode": "multiply"
               }
             }
           ],

@@ -9693,8 +9693,13 @@ a.build-log-project:focus-visible {
     grayscale(1)
     saturate(0)
     contrast(var(--live-image-surface-contrast, 1.16));
-  mix-blend-mode: multiply;
+  mix-blend-mode: var(--live-image-surface-blend-mode, multiply);
   opacity: var(--live-image-surface-opacity, 0.9);
+}
+
+.live-notebook-image-block[data-image-surface="drawn-on-page"][data-image-ink-prepared="true"] img {
+  filter: none;
+  mix-blend-mode: var(--live-image-surface-blend-mode, multiply);
 }
 
 .live-notebook-image-block figcaption {

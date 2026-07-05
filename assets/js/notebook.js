@@ -57,12 +57,22 @@
       surface?.preset === "drawn-on-page" || surface?.preset === "pasted-reference"
         ? surface.preset
         : "raw";
+    const blendMode =
+      surface?.blendMode === "darken" || surface?.blendMode === "normal"
+        ? surface.blendMode
+        : "multiply";
+    const inkSrc =
+      typeof surface?.inkSrc === "string" && surface.inkSrc.trim()
+        ? surface.inkSrc.trim()
+        : "";
 
     if (preset !== "drawn-on-page") {
       return {
         preset,
         inkStrength: 0,
         opacity: 1,
+        blendMode,
+        inkSrc: "",
       };
     }
 
@@ -70,6 +80,8 @@
       preset,
       inkStrength: clampNumber(surface?.inkStrength, 1, 0.6, 1.6),
       opacity: clampNumber(surface?.opacity, 0.9, 0.35, 1),
+      blendMode,
+      inkSrc,
     };
   };
 
@@ -364,16 +376,26 @@
   const applyImageSurface = (figure, surface = {}) => {
     const normalized = normalizeImageSurface(surface);
     figure.dataset.imageSurface = normalized.preset;
+    delete figure.dataset.imageInkPrepared;
 
     if (normalized.preset !== "drawn-on-page") return;
 
     figure.style.setProperty(
-      "--live-image-surface-contrast",
-      String(1 + normalized.inkStrength * 0.16),
-    );
-    figure.style.setProperty(
       "--live-image-surface-opacity",
       String(normalized.opacity),
+    );
+    figure.style.setProperty(
+      "--live-image-surface-blend-mode",
+      normalized.blendMode,
+    );
+    if (normalized.inkSrc) {
+      figure.dataset.imageInkPrepared = "true";
+      return;
+    }
+
+    figure.style.setProperty(
+      "--live-image-surface-contrast",
+      String(1 + normalized.inkStrength * 0.16),
     );
   };
 
@@ -385,10 +407,14 @@
     figure.dataset.placementMode = placement.mode === "free" ? "free" : "flow";
     applyMaterial(figure, block);
     applyImagePlacement(figure, placement);
-    applyImageSurface(figure, block.imageSurface);
+    const imageSurface = normalizeImageSurface(block.imageSurface);
+    applyImageSurface(figure, imageSurface);
 
     const image = document.createElement("img");
-    image.src = block.src || "";
+    image.src =
+      imageSurface.preset === "drawn-on-page" && imageSurface.inkSrc
+        ? imageSurface.inkSrc
+        : block.src || "";
     image.alt = block.alt || "";
     image.loading = "lazy";
     image.decoding = "async";
