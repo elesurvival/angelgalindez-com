@@ -52,6 +52,27 @@
   const normalizePublishTarget = (value) =>
     publishTargets.has(value) ? value : "workshop-notebook";
 
+  const normalizeImageSurface = (surface) => {
+    const preset =
+      surface?.preset === "drawn-on-page" || surface?.preset === "pasted-reference"
+        ? surface.preset
+        : "raw";
+
+    if (preset !== "drawn-on-page") {
+      return {
+        preset,
+        inkStrength: 0,
+        opacity: 1,
+      };
+    }
+
+    return {
+      preset,
+      inkStrength: clampNumber(surface?.inkStrength, 1, 0.6, 1.6),
+      opacity: clampNumber(surface?.opacity, 0.9, 0.35, 1),
+    };
+  };
+
   const resetAxisClasses = (node, prefix, values) => {
     if (!node) return;
     values.forEach((value) => node.classList.remove(`${prefix}-${value}`));
@@ -340,6 +361,22 @@
     figure.style.width = `min(${width}px, calc(100% - 1.2rem))`;
   };
 
+  const applyImageSurface = (figure, surface = {}) => {
+    const normalized = normalizeImageSurface(surface);
+    figure.dataset.imageSurface = normalized.preset;
+
+    if (normalized.preset !== "drawn-on-page") return;
+
+    figure.style.setProperty(
+      "--live-image-surface-contrast",
+      String(1 + normalized.inkStrength * 0.16),
+    );
+    figure.style.setProperty(
+      "--live-image-surface-opacity",
+      String(normalized.opacity),
+    );
+  };
+
   const renderImageBlock = (block) => {
     const figure = document.createElement("figure");
     const displayMode = block.displayMode || "full";
@@ -348,6 +385,7 @@
     figure.dataset.placementMode = placement.mode === "free" ? "free" : "flow";
     applyMaterial(figure, block);
     applyImagePlacement(figure, placement);
+    applyImageSurface(figure, block.imageSurface);
 
     const image = document.createElement("img");
     image.src = block.src || "";

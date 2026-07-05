@@ -61,6 +61,11 @@
                 "y": 370,
                 "width": 211,
                 "zIndex": 1
+              },
+              "imageSurface": {
+                "preset": "raw",
+                "inkStrength": 0,
+                "opacity": 1
               }
             }
           ],
@@ -139,6 +144,11 @@
                 "y": 370,
                 "width": 211,
                 "zIndex": 1
+              },
+              "imageSurface": {
+                "preset": "raw",
+                "inkStrength": 0,
+                "opacity": 1
               }
             }
           ]
@@ -439,12 +449,10 @@
         "Page 1 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
         "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
         "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
-        "Image note: Illustration slot: chapter-page-01-the-first-signal",
         "Chapter/Page 02 — A Door Left Open",
         "Page 2 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
         "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
         "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries.",
-        "Image note: Illustration slot: chapter-page-02-a-door-left-open",
         "Chapter/Page 03 — The Workshop Map",
         "Page 3 opens as part of a larger notebook: one steady artifact made from many small, authored moments.",
         "Discovery: Long-form entries need stable page targeting, predictable rendering, and room for sketches, lists, and callouts.",
@@ -796,10 +804,6 @@
             {
               "kind": "paragraph",
               "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
-            },
-            {
-              "kind": "image-note",
-              "text": "Illustration slot: chapter-page-01-the-first-signal"
             }
           ],
           "decorations": []
@@ -828,8 +832,24 @@
               "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
             },
             {
-              "kind": "image-note",
-              "text": "Illustration slot: chapter-page-02-a-door-left-open"
+              "kind": "image",
+              "src": "/assets/projects/notebook/exported-assets/sketch-sketch-an-old-spiral-bound-notebook-laying-open-on-a-20260701-054151-a444abc6.png",
+              "alt": "Illustration placeholder for Chapter/Page 02 — A Door Left Open",
+              "displayMode": "inset",
+              "placement": {
+                "mode": "free",
+                "page": "right",
+                "pageNumber": 2,
+                "x": 90,
+                "y": 320,
+                "width": 292,
+                "zIndex": 2
+              },
+              "imageSurface": {
+                "preset": "raw",
+                "inkStrength": 0,
+                "opacity": 1
+              }
             }
           ],
           "decorations": []
@@ -2711,17 +2731,13 @@
             {
               "kind": "paragraph",
               "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
-            },
-            {
-              "kind": "image-note",
-              "text": "Illustration slot: chapter-page-01-the-first-signal"
             }
           ]
         },
         "right": {
           "title": null,
           "meta": [
-            "Entry #0150"
+            "Entry #0152"
           ],
           "body": [
             {
@@ -2742,8 +2758,24 @@
               "text": "This page combines prose, an image slot, and supporting material while preserving the same semantic document source used by ordinary entries."
             },
             {
-              "kind": "image-note",
-              "text": "Illustration slot: chapter-page-02-a-door-left-open"
+              "kind": "image",
+              "src": "/assets/projects/notebook/exported-assets/sketch-sketch-an-old-spiral-bound-notebook-laying-open-on-a-20260701-054151-a444abc6.png",
+              "alt": "Illustration placeholder for Chapter/Page 02 — A Door Left Open",
+              "displayMode": "inset",
+              "placement": {
+                "mode": "free",
+                "page": "right",
+                "pageNumber": 2,
+                "x": 90,
+                "y": 320,
+                "width": 292,
+                "zIndex": 2
+              },
+              "imageSurface": {
+                "preset": "raw",
+                "inkStrength": 0,
+                "opacity": 1
+              }
             }
           ]
         }
@@ -2998,6 +3030,11 @@
                 "y": 310,
                 "width": 266,
                 "zIndex": 1
+              },
+              "imageSurface": {
+                "preset": "raw",
+                "inkStrength": 0,
+                "opacity": 1
               }
             }
           ],

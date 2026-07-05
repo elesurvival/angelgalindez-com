@@ -9688,6 +9688,15 @@ a.build-log-project:focus-visible {
   opacity: 0.84;
 }
 
+.live-notebook-image-block[data-image-surface="drawn-on-page"] img {
+  filter:
+    grayscale(1)
+    saturate(0)
+    contrast(var(--live-image-surface-contrast, 1.16));
+  mix-blend-mode: multiply;
+  opacity: var(--live-image-surface-opacity, 0.9);
+}
+
 .live-notebook-image-block figcaption {
   color: rgba(63, 55, 44, 0.72);
   font-family: var(--notebook-margin-note-font, var(--mono, "Courier New", monospace));
