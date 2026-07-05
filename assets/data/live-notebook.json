@@ -22,7 +22,7 @@
         "Question: What is the smallest useful interface for protecting attention?",
         "Discovery: Tempo taught us that workflow tools should remove negotiation, not add dashboards.",
         "I'm just trying to observe whether this works or not and right now it looks like not is winning.",
-        "Breakthrough: A focused ritual can become infrastructure for better work."
+        "Breakthrough: A focused ritual can become infrastructure for better work..."
       ],
       "pages": [
         {
@@ -90,7 +90,7 @@
             {
               "kind": "semantic",
               "label": "Breakthrough",
-              "text": "A focused ritual can become infrastructure for better work."
+              "text": "A focused ritual can become infrastructure for better work..."
             }
           ],
           "decorations": []
@@ -159,7 +159,7 @@
             {
               "kind": "semantic",
               "label": "Breakthrough",
-              "text": "A focused ritual can become infrastructure for better work."
+              "text": "A focused ritual can become infrastructure for better work..."
             }
           ]
         }
