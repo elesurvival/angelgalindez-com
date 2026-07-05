@@ -1,8 +1,8 @@
 /* Generated from Scriptorium canonical notebook geometry. Do not edit manually. */
 :root {
   --notebook-publish-shell-width: 1174px;
-  --notebook-publish-shell-height: 690px;
-  --notebook-publish-aspect-ratio: 1174 / 690;
+  --notebook-publish-shell-height: 760px;
+  --notebook-publish-aspect-ratio: 1174 / 760;
   --notebook-publish-gutter-width: 18px;
 
   --notebook-publish-shell-padding-top: 1.05rem;

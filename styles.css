@@ -8894,6 +8894,10 @@ a.build-log-project:focus-visible {
   --live-notebook-page-safe-bottom: var(--notebook-publish-page-safe-bottom);
   --live-notebook-page-safe-outer: var(--notebook-publish-page-safe-outer);
   --live-notebook-page-safe-inner: var(--notebook-publish-page-safe-inner);
+  --live-notebook-image-safe-top: clamp(1.45rem, 2.05vw, 2rem);
+  --live-notebook-image-safe-bottom: clamp(1.45rem, 2.05vw, 2rem);
+  --live-notebook-image-safe-outer: clamp(1.45rem, 2.05vw, 2rem);
+  --live-notebook-image-safe-inner: clamp(2.6rem, 3.6vw, 3.5rem);
   --live-notebook-title-size: var(--notebook-publish-title-size);
   --live-notebook-title-line-height: var(--notebook-publish-title-line-height);
   --live-notebook-title-spacing: 1.12rem;
@@ -9636,19 +9640,19 @@ a.build-log-project:focus-visible {
 }
 
 .live-notebook-free-layer {
-  bottom: var(--live-notebook-page-safe-bottom);
-  left: var(--live-notebook-page-safe-outer);
+  bottom: var(--live-notebook-image-safe-bottom);
+  left: var(--live-notebook-image-safe-outer);
   overflow: hidden;
   pointer-events: none;
   position: absolute;
-  right: var(--live-notebook-page-safe-inner);
-  top: var(--live-notebook-page-safe-top);
+  right: var(--live-notebook-image-safe-inner);
+  top: var(--live-notebook-image-safe-top);
   z-index: 2;
 }
 
 .live-notebook-page-right .live-notebook-free-layer {
-  left: var(--live-notebook-page-safe-inner);
-  right: var(--live-notebook-page-safe-outer);
+  left: var(--live-notebook-image-safe-inner);
+  right: var(--live-notebook-image-safe-outer);
 }
 
 .live-notebook-decoration-layer {
@@ -10392,6 +10396,10 @@ a.build-log-project:focus-visible {
     --live-notebook-page-safe-bottom: 2.2rem;
     --live-notebook-page-safe-outer: 1.35rem;
     --live-notebook-page-safe-inner: 1.35rem;
+    --live-notebook-image-safe-top: 1.35rem;
+    --live-notebook-image-safe-bottom: 1.35rem;
+    --live-notebook-image-safe-outer: 1.35rem;
+    --live-notebook-image-safe-inner: 1.35rem;
     padding-top: 6.5rem;
   }
 
