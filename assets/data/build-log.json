@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-05T14:44:13.397Z",
+  "updated_at": "2026-07-05T21:33:19.399Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "50b29cc",
+      "message": "Fix Composer block deselection flow",
+      "date": "2026-07-05",
+      "time": "4:32 PM",
+      "timestamp": "2026-07-05T16:32:17-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-30",
       "time": "8:23 PM",
       "timestamp": "2026-06-30T20:23:15-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "fc899dc",
-      "message": "Audit multi-page notebook entries",
-      "date": "2026-06-30",
-      "time": "7:36 PM",
-      "timestamp": "2026-06-30T19:36:23-05:00"
     }
   ]
 }
