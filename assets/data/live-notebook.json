@@ -92,6 +92,29 @@
               "kind": "semantic",
               "label": "Breakthrough",
               "text": "A focused ritual can become infrastructure for better work..."
+            },
+            {
+              "kind": "image",
+              "src": "/assets/projects/notebook/exported-assets/sketch-houston-texas-skyline-20260705-063634-beb843d9.png",
+              "alt": "Pencil sketch: Houston Texas skyline",
+              "displayMode": "full",
+              "placement": {
+                "mode": "free",
+                "page": "right",
+                "pageNumber": 2,
+                "x": 40,
+                "y": 180,
+                "width": 320,
+                "zIndex": 1
+              },
+              "imageSurface": {
+                "preset": "drawn-on-page",
+                "inkStrength": 1,
+                "opacity": 0.9,
+                "paperCleanup": 0.6,
+                "blendMode": "multiply",
+                "inkSrc": "/assets/projects/notebook/exported-assets/sketch-houston-texas-skyline-20260705-063634-beb843d9-ink-0ffe18185b48bc8f.png"
+              }
             }
           ],
           "decorations": []
@@ -162,6 +185,29 @@
               "kind": "semantic",
               "label": "Breakthrough",
               "text": "A focused ritual can become infrastructure for better work..."
+            },
+            {
+              "kind": "image",
+              "src": "/assets/projects/notebook/exported-assets/sketch-houston-texas-skyline-20260705-063634-beb843d9.png",
+              "alt": "Pencil sketch: Houston Texas skyline",
+              "displayMode": "full",
+              "placement": {
+                "mode": "free",
+                "page": "right",
+                "pageNumber": 2,
+                "x": 40,
+                "y": 180,
+                "width": 320,
+                "zIndex": 1
+              },
+              "imageSurface": {
+                "preset": "drawn-on-page",
+                "inkStrength": 1,
+                "opacity": 0.9,
+                "paperCleanup": 0.6,
+                "blendMode": "multiply",
+                "inkSrc": "/assets/projects/notebook/exported-assets/sketch-houston-texas-skyline-20260705-063634-beb843d9-ink-0ffe18185b48bc8f.png"
+              }
             }
           ]
         }
