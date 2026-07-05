@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-07-05T04:15:36.488Z",
+  "updated_at": "2026-07-05T05:15:00.499Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "243874b",
+      "message": "Fix Live Notebook image layout parity",
+      "date": "2026-07-05",
+      "time": "12:14 AM",
+      "timestamp": "2026-07-05T00:14:57-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "949318c",
+      "message": "Fix Live Notebook geometry parity",
+      "date": "2026-07-05",
+      "time": "12:13 AM",
+      "timestamp": "2026-07-05T00:13:34-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -882,24 +900,6 @@
       "date": "2026-06-29",
       "time": "11:34 PM",
       "timestamp": "2026-06-29T23:34:07-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "3b06fd0",
-      "message": "Remove Admin Notebook page numbers",
-      "date": "2026-06-29",
-      "time": "10:54 PM",
-      "timestamp": "2026-06-29T22:54:13-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "f5b0869",
-      "message": "Protect Scriptorium authoring data during seed",
-      "date": "2026-06-29",
-      "time": "10:11 PM",
-      "timestamp": "2026-06-29T22:11:46-05:00"
     }
   ]
 }
