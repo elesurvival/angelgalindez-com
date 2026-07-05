@@ -31,6 +31,7 @@
     "Decision",
     "Why it matters",
     "Breakthrough",
+    "Observation",
     "Margin note",
     "Spark",
     "Image note",
@@ -184,6 +185,7 @@
       Decision: "The Decision",
       "Why it matters": "Why It Matters",
       Breakthrough: "The Breakthrough",
+      Observation: "The Observation",
       "Margin note": "Margin Note",
       "Image note": "Image Note",
     };

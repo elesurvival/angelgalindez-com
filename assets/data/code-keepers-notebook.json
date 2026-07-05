@@ -19,7 +19,7 @@
         "Discovery: Users who come here will benefit from knowing behing the scenes insights into all these different projects.",
         "Why it matters: Without the extra context shared here, users will not know what led to certain decisions.",
         "Breakthrough: We created different worlds for each notebook to give it a richer user viewing experience.",
-        "This is a much better viewing experience."
+        "Observation: This is a much better viewing experience."
       ],
       "pages": [
         {
@@ -59,7 +59,8 @@
               "text": "We created different worlds for each notebook to give it a richer user viewing experience."
             },
             {
-              "kind": "paragraph",
+              "kind": "semantic",
+              "label": "Observation",
               "text": "This is a much better viewing experience."
             }
           ],
@@ -101,7 +102,8 @@
               "text": "We created different worlds for each notebook to give it a richer user viewing experience."
             },
             {
-              "kind": "paragraph",
+              "kind": "semantic",
+              "label": "Observation",
               "text": "This is a much better viewing experience."
             }
           ]

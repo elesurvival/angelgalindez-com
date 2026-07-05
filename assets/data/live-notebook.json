@@ -21,7 +21,7 @@
       "body": [
         "Question: What is the smallest useful interface for protecting attention?",
         "Discovery: Tempo taught us that workflow tools should remove negotiation, not add dashboards.",
-        "I'm just trying to observe whether this works or not and right now it looks like not is winning.",
+        "Observation: I'm just trying to observe whether this works or not and right now it looks like not is winning.",
         "Breakthrough: A focused ritual can become infrastructure for better work..."
       ],
       "pages": [
@@ -84,7 +84,8 @@
           "meta": [],
           "body": [
             {
-              "kind": "paragraph",
+              "kind": "semantic",
+              "label": "Observation",
               "text": "I'm just trying to observe whether this works or not and right now it looks like not is winning."
             },
             {
@@ -153,7 +154,8 @@
           ],
           "body": [
             {
-              "kind": "paragraph",
+              "kind": "semantic",
+              "label": "Observation",
               "text": "I'm just trying to observe whether this works or not and right now it looks like not is winning."
             },
             {
@@ -3227,7 +3229,7 @@
       "body": [
         "Spark: The first sound should feel like a system waking up and remembering its purpose.",
         "Decision: Cold Boot becomes the threshold: before it, potential; after it, commitment.",
-        "Identity lands better when it is introduced as a ritual instead of an explanation."
+        "Observation: Identity lands better when it is introduced as a ritual instead of an explanation."
       ],
       "pages": [
         {
@@ -3266,7 +3268,8 @@
           "meta": [],
           "body": [
             {
-              "kind": "paragraph",
+              "kind": "semantic",
+              "label": "Observation",
               "text": "Identity lands better when it is introduced as a ritual instead of an explanation."
             }
           ],
@@ -3307,7 +3310,8 @@
           ],
           "body": [
             {
-              "kind": "paragraph",
+              "kind": "semantic",
+              "label": "Observation",
               "text": "Identity lands better when it is introduced as a ritual instead of an explanation."
             }
           ]
@@ -3329,7 +3333,7 @@
       "notebookSkin": "scriptorium-default",
       "publishTarget": "workshop-notebook",
       "body": [
-        "Productivity apps often preserve motion instead of meaning.",
+        "Observation: Productivity apps often preserve motion instead of meaning.",
         "Decision: Continuo should help people continue the right work, not merely track more work.",
         "“The tool is successful when the user returns to the craft faster.”"
       ],
@@ -3351,7 +3355,8 @@
               "text": "A constraint that kept the product honest."
             },
             {
-              "kind": "paragraph",
+              "kind": "semantic",
+              "label": "Observation",
               "text": "Productivity apps often preserve motion instead of meaning."
             },
             {
@@ -3392,7 +3397,8 @@
               "text": "A constraint that kept the product honest."
             },
             {
-              "kind": "paragraph",
+              "kind": "semantic",
+              "label": "Observation",
               "text": "Productivity apps often preserve motion instead of meaning."
             },
             {
