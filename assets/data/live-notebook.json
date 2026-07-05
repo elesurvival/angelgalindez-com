@@ -50,29 +50,6 @@
               "kind": "semantic",
               "label": "Discovery",
               "text": "Tempo taught us that workflow tools should remove negotiation, not add dashboards."
-            },
-            {
-              "kind": "image",
-              "src": "/assets/projects/notebook/exported-assets/sketch-a-sketch-of-the-cleveland-ohio-skyline-20260705-032747-da5d69e2.png",
-              "alt": "Pencil sketch: a sketch of the cleveland ohio skyline",
-              "displayMode": "full",
-              "placement": {
-                "mode": "free",
-                "page": "left",
-                "pageNumber": 1,
-                "x": 90,
-                "y": 370,
-                "width": 285,
-                "zIndex": 1
-              },
-              "imageSurface": {
-                "preset": "drawn-on-page",
-                "inkStrength": 1.15,
-                "opacity": 0.9,
-                "paperCleanup": 0.4,
-                "blendMode": "multiply",
-                "inkSrc": "/assets/projects/notebook/exported-assets/sketch-a-sketch-of-the-cleveland-ohio-skyline-20260705-032747-da5d69e2-ink-7ffeba3773041040.png"
-              }
             }
           ],
           "decorations": []
@@ -92,29 +69,6 @@
               "kind": "semantic",
               "label": "Breakthrough",
               "text": "A focused ritual can become infrastructure for better work..."
-            },
-            {
-              "kind": "image",
-              "src": "/assets/projects/notebook/exported-assets/sketch-houston-texas-skyline-20260705-063634-beb843d9.png",
-              "alt": "Pencil sketch: Houston Texas skyline",
-              "displayMode": "full",
-              "placement": {
-                "mode": "free",
-                "page": "right",
-                "pageNumber": 2,
-                "x": 71.01869867842854,
-                "y": 336.1543890817636,
-                "width": 320,
-                "zIndex": 1
-              },
-              "imageSurface": {
-                "preset": "drawn-on-page",
-                "inkStrength": 1,
-                "opacity": 0.9,
-                "paperCleanup": 0.6,
-                "blendMode": "multiply",
-                "inkSrc": "/assets/projects/notebook/exported-assets/sketch-houston-texas-skyline-20260705-063634-beb843d9-ink-0ffe18185b48bc8f.png"
-              }
             }
           ],
           "decorations": []
@@ -144,29 +98,6 @@
               "kind": "semantic",
               "label": "Discovery",
               "text": "Tempo taught us that workflow tools should remove negotiation, not add dashboards."
-            },
-            {
-              "kind": "image",
-              "src": "/assets/projects/notebook/exported-assets/sketch-a-sketch-of-the-cleveland-ohio-skyline-20260705-032747-da5d69e2.png",
-              "alt": "Pencil sketch: a sketch of the cleveland ohio skyline",
-              "displayMode": "full",
-              "placement": {
-                "mode": "free",
-                "page": "left",
-                "pageNumber": 1,
-                "x": 90,
-                "y": 370,
-                "width": 285,
-                "zIndex": 1
-              },
-              "imageSurface": {
-                "preset": "drawn-on-page",
-                "inkStrength": 1.15,
-                "opacity": 0.9,
-                "paperCleanup": 0.4,
-                "blendMode": "multiply",
-                "inkSrc": "/assets/projects/notebook/exported-assets/sketch-a-sketch-of-the-cleveland-ohio-skyline-20260705-032747-da5d69e2-ink-7ffeba3773041040.png"
-              }
             }
           ]
         },
@@ -185,29 +116,6 @@
               "kind": "semantic",
               "label": "Breakthrough",
               "text": "A focused ritual can become infrastructure for better work..."
-            },
-            {
-              "kind": "image",
-              "src": "/assets/projects/notebook/exported-assets/sketch-houston-texas-skyline-20260705-063634-beb843d9.png",
-              "alt": "Pencil sketch: Houston Texas skyline",
-              "displayMode": "full",
-              "placement": {
-                "mode": "free",
-                "page": "right",
-                "pageNumber": 2,
-                "x": 71.01869867842854,
-                "y": 336.1543890817636,
-                "width": 320,
-                "zIndex": 1
-              },
-              "imageSurface": {
-                "preset": "drawn-on-page",
-                "inkStrength": 1,
-                "opacity": 0.9,
-                "paperCleanup": 0.6,
-                "blendMode": "multiply",
-                "inkSrc": "/assets/projects/notebook/exported-assets/sketch-houston-texas-skyline-20260705-063634-beb843d9-ink-0ffe18185b48bc8f.png"
-              }
             }
           ]
         }
