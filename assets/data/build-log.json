@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-05T23:03:49.324Z",
+  "updated_at": "2026-07-05T23:53:32.209Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "12e2555",
+      "message": "Fix Text Artifact sizing and captions",
+      "date": "2026-07-05",
+      "time": "6:52 PM",
+      "timestamp": "2026-07-05T18:52:25-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-30",
       "time": "10:42 PM",
       "timestamp": "2026-06-30T22:42:36-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "f34497b",
-      "message": "Add Admin multi-page authoring controls",
-      "date": "2026-06-30",
-      "time": "10:05 PM",
-      "timestamp": "2026-06-30T22:05:27-05:00"
     }
   ]
 }
