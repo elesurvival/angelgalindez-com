@@ -51,21 +51,22 @@
             },
             {
               "kind": "image",
-              "src": "/assets/projects/notebook/exported-assets/sketch-sketch-of-a-man-seen-sitting-from-behind-a-computer--20260630-083841-26646d29.png",
-              "alt": "Pencil sketch: sketch of a man seen sitting from behind a computer workstation with multiple monitors. The man is wearing headphones",
+              "src": "/assets/projects/notebook/exported-assets/sketch-a-man-seen-from-behind-working-at-a-multi-montior-co-20260705-011328-f4b128c0.png",
+              "alt": "Pencil sketch: a man seen from behind working at a multi montior computer workstation wearing headphones",
               "displayMode": "full",
               "placement": {
                 "mode": "free",
                 "page": "left",
-                "x": 20,
-                "y": 370,
-                "width": 211,
+                "pageNumber": 1,
+                "x": 90,
+                "y": 350,
+                "width": 306,
                 "zIndex": 1
               },
               "imageSurface": {
-                "preset": "raw",
-                "inkStrength": 0,
-                "opacity": 1
+                "preset": "drawn-on-page",
+                "inkStrength": 1.1,
+                "opacity": 0.9
               }
             }
           ],
@@ -134,21 +135,22 @@
             },
             {
               "kind": "image",
-              "src": "/assets/projects/notebook/exported-assets/sketch-sketch-of-a-man-seen-sitting-from-behind-a-computer--20260630-083841-26646d29.png",
-              "alt": "Pencil sketch: sketch of a man seen sitting from behind a computer workstation with multiple monitors. The man is wearing headphones",
+              "src": "/assets/projects/notebook/exported-assets/sketch-a-man-seen-from-behind-working-at-a-multi-montior-co-20260705-011328-f4b128c0.png",
+              "alt": "Pencil sketch: a man seen from behind working at a multi montior computer workstation wearing headphones",
               "displayMode": "full",
               "placement": {
                 "mode": "free",
                 "page": "left",
-                "x": 20,
-                "y": 370,
-                "width": 211,
+                "pageNumber": 1,
+                "x": 90,
+                "y": 350,
+                "width": 306,
                 "zIndex": 1
               },
               "imageSurface": {
-                "preset": "raw",
-                "inkStrength": 0,
-                "opacity": 1
+                "preset": "drawn-on-page",
+                "inkStrength": 1.1,
+                "opacity": 0.9
               }
             }
           ]
