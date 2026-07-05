@@ -6,6 +6,167 @@
   },
   "pages": [
     {
+      "id": "why-we-built-tempo-first",
+      "title": "Why We Built Tempo First",
+      "date": "2026-06-23",
+      "project": "Tempo",
+      "type": "Flow",
+      "tags": [
+        "friction",
+        "raw-ideas"
+      ],
+      "presentationTheme": "scriptorium-default",
+      "notebookSkin": "scriptorium-default",
+      "publishTarget": "workshop-notebook",
+      "body": [
+        "Question: What is the smallest useful interface for protecting attention?",
+        "Discovery: Tempo taught us that workflow tools should remove negotiation, not add dashboards.",
+        "I'm just trying to observe whether this works or not and right now it looks like not is winning.",
+        "Breakthrough: A focused ritual can become infrastructure for better work."
+      ],
+      "pages": [
+        {
+          "pageNumber": 1,
+          "side": "left",
+          "title": "Why We Built Tempo First",
+          "meta": [
+            "Tempo",
+            "Flow",
+            "2026-06-23",
+            "Friction",
+            "Raw Ideas"
+          ],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "We didn't, we built Continuo first."
+            },
+            {
+              "kind": "semantic",
+              "label": "Question",
+              "text": "What is the smallest useful interface for protecting attention?"
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Tempo taught us that workflow tools should remove negotiation, not add dashboards."
+            },
+            {
+              "kind": "image",
+              "src": "/assets/projects/notebook/exported-assets/sketch-a-sketch-of-the-cleveland-ohio-skyline-20260705-032747-da5d69e2.png",
+              "alt": "Pencil sketch: a sketch of the cleveland ohio skyline",
+              "displayMode": "full",
+              "placement": {
+                "mode": "free",
+                "page": "left",
+                "pageNumber": 1,
+                "x": 90,
+                "y": 370,
+                "width": 285,
+                "zIndex": 1
+              },
+              "imageSurface": {
+                "preset": "drawn-on-page",
+                "inkStrength": 1.15,
+                "opacity": 0.9,
+                "paperCleanup": 0.4,
+                "blendMode": "multiply",
+                "inkSrc": "/assets/projects/notebook/exported-assets/sketch-a-sketch-of-the-cleveland-ohio-skyline-20260705-032747-da5d69e2-ink-7ffeba3773041040.png"
+              }
+            }
+          ],
+          "decorations": []
+        },
+        {
+          "pageNumber": 2,
+          "side": "right",
+          "title": null,
+          "meta": [],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "I'm just trying to observe whether this works or not and right now it looks like not is winning."
+            },
+            {
+              "kind": "semantic",
+              "label": "Breakthrough",
+              "text": "A focused ritual can become infrastructure for better work."
+            }
+          ],
+          "decorations": []
+        }
+      ],
+      "spread": {
+        "left": {
+          "title": "Why We Built Tempo First",
+          "meta": [
+            "Tempo",
+            "Flow",
+            "2026-06-23",
+            "Friction",
+            "Raw Ideas"
+          ],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "We didn't, we built Continuo first."
+            },
+            {
+              "kind": "semantic",
+              "label": "Question",
+              "text": "What is the smallest useful interface for protecting attention?"
+            },
+            {
+              "kind": "semantic",
+              "label": "Discovery",
+              "text": "Tempo taught us that workflow tools should remove negotiation, not add dashboards."
+            },
+            {
+              "kind": "image",
+              "src": "/assets/projects/notebook/exported-assets/sketch-a-sketch-of-the-cleveland-ohio-skyline-20260705-032747-da5d69e2.png",
+              "alt": "Pencil sketch: a sketch of the cleveland ohio skyline",
+              "displayMode": "full",
+              "placement": {
+                "mode": "free",
+                "page": "left",
+                "pageNumber": 1,
+                "x": 90,
+                "y": 370,
+                "width": 285,
+                "zIndex": 1
+              },
+              "imageSurface": {
+                "preset": "drawn-on-page",
+                "inkStrength": 1.15,
+                "opacity": 0.9,
+                "paperCleanup": 0.4,
+                "blendMode": "multiply",
+                "inkSrc": "/assets/projects/notebook/exported-assets/sketch-a-sketch-of-the-cleveland-ohio-skyline-20260705-032747-da5d69e2-ink-7ffeba3773041040.png"
+              }
+            }
+          ]
+        },
+        "right": {
+          "title": null,
+          "meta": [
+            "Entry #0095"
+          ],
+          "body": [
+            {
+              "kind": "paragraph",
+              "text": "I'm just trying to observe whether this works or not and right now it looks like not is winning."
+            },
+            {
+              "kind": "semantic",
+              "label": "Breakthrough",
+              "text": "A focused ritual can become infrastructure for better work."
+            }
+          ]
+        }
+      },
+      "decorations": []
+    },
+    {
       "id": "the-listener-becomes-the-phantom",
       "title": "The Listener Becomes the Phantom",
       "date": "2026-06-25",
@@ -198,121 +359,6 @@
                 "id": "taped-fragment",
                 "name": "Taped Fragment"
               }
-            }
-          ]
-        }
-      },
-      "decorations": []
-    },
-    {
-      "id": "why-we-built-tempo-first",
-      "title": "Why We Built Tempo First",
-      "date": "2026-06-23",
-      "project": "Tempo",
-      "type": "Flow",
-      "tags": [
-        "friction",
-        "raw-ideas"
-      ],
-      "presentationTheme": "scriptorium-default",
-      "notebookSkin": "scriptorium-default",
-      "publishTarget": "workshop-notebook",
-      "body": [
-        "Question: What is the smallest useful interface for protecting attention?",
-        "Discovery: Tempo taught us that workflow tools should remove negotiation, not add dashboards.",
-        "Breakthrough: A focused ritual can become infrastructure for better work.",
-        "I'm just trying to observe whether this works or not and right now it looks like not is winning."
-      ],
-      "pages": [
-        {
-          "pageNumber": 1,
-          "side": "left",
-          "title": "Why We Built Tempo First",
-          "meta": [
-            "Tempo",
-            "Flow",
-            "2026-06-23",
-            "Friction",
-            "Raw Ideas"
-          ],
-          "body": [
-            {
-              "kind": "paragraph",
-              "text": "We didn't, we built Continuo first."
-            },
-            {
-              "kind": "semantic",
-              "label": "Question",
-              "text": "What is the smallest useful interface for protecting attention?"
-            },
-            {
-              "kind": "semantic",
-              "label": "Discovery",
-              "text": "Tempo taught us that workflow tools should remove negotiation, not add dashboards."
-            }
-          ],
-          "decorations": []
-        },
-        {
-          "pageNumber": 2,
-          "side": "right",
-          "title": null,
-          "meta": [],
-          "body": [
-            {
-              "kind": "semantic",
-              "label": "Breakthrough",
-              "text": "A focused ritual can become infrastructure for better work."
-            },
-            {
-              "kind": "paragraph",
-              "text": "I'm just trying to observe whether this works or not and right now it looks like not is winning."
-            }
-          ],
-          "decorations": []
-        }
-      ],
-      "spread": {
-        "left": {
-          "title": "Why We Built Tempo First",
-          "meta": [
-            "Tempo",
-            "Flow",
-            "2026-06-23",
-            "Friction",
-            "Raw Ideas"
-          ],
-          "body": [
-            {
-              "kind": "paragraph",
-              "text": "We didn't, we built Continuo first."
-            },
-            {
-              "kind": "semantic",
-              "label": "Question",
-              "text": "What is the smallest useful interface for protecting attention?"
-            },
-            {
-              "kind": "semantic",
-              "label": "Discovery",
-              "text": "Tempo taught us that workflow tools should remove negotiation, not add dashboards."
-            }
-          ]
-        },
-        "right": {
-          "title": null,
-          "meta": [
-            "Entry #0095"
-          ],
-          "body": [
-            {
-              "kind": "semantic",
-              "label": "Breakthrough",
-              "text": "A focused ritual can become infrastructure for better work."
-            },
-            {
-              "kind": "paragraph",
-              "text": "I'm just trying to observe whether this works or not and right now it looks like not is winning."
             }
           ]
         }
