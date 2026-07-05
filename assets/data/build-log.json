@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-07-05T03:40:24.719Z",
+  "updated_at": "2026-07-05T04:15:36.488Z",
   "items": [
+    {
+      "project": "AngelGalindez.com",
+      "repo": "angelgalindez-com",
+      "hash": "e161f59",
+      "message": "Render observation headings in Live Notebook",
+      "date": "2026-07-04",
+      "time": "11:15 PM",
+      "timestamp": "2026-07-04T23:15:33-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "6fee215",
+      "message": "Fix Live Notebook observation export",
+      "date": "2026-07-04",
+      "time": "11:14 PM",
+      "timestamp": "2026-07-04T23:14:41-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -882,24 +900,6 @@
       "date": "2026-06-29",
       "time": "10:11 PM",
       "timestamp": "2026-06-29T22:11:46-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "c2cc740",
-      "message": "Fix Live Notebook export source",
-      "date": "2026-06-29",
-      "time": "9:30 PM",
-      "timestamp": "2026-06-29T21:30:50-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "9166664",
-      "message": "Export Live Notebook spreads",
-      "date": "2026-06-29",
-      "time": "8:08 PM",
-      "timestamp": "2026-06-29T20:08:31-05:00"
     }
   ]
 }
