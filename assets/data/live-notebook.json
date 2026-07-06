@@ -25,7 +25,7 @@
         "• The emotional arc",
         "• The album artwork concept",
         "• How we talk about the album",
-        "Why it matters: When someone presses play, they do not just listen. They step into a different identity.",
+        "Why it matters: This turns the album into an experience, not just a collection of songs. When someone presses play, they don't just listen.\nThey step into a different identity.",
         "\"We're not macking music for hackers.\nWe're making music for builders.\" - AG"
       ],
       "pages": [
@@ -58,8 +58,8 @@
                 "mode": "free",
                 "page": "left",
                 "pageNumber": 1,
-                "x": 7.950538979640683,
-                "y": 350.1476345594365,
+                "x": 7.950538979640684,
+                "y": 344.15052935471954,
                 "width": 306,
                 "zIndex": 1
               },
@@ -70,6 +70,28 @@
                 "paperCleanup": 0.1,
                 "blendMode": "multiply",
                 "inkSrc": "/assets/projects/notebook/exported-assets/sketch-a-man-seen-from-behind-working-at-a-multi-montior-co-20260705-011328-f4b128c0-ink-4a1970773a5b3c39.png"
+              }
+            },
+            {
+              "kind": "image",
+              "src": "/assets/projects/notebook/exported-assets/text-artifact-1f587bf5-424b-444d-84d7-60087fa59a6d.png",
+              "alt": "Text artifact: It's not a soundtrack. It's a transformation.",
+              "displayMode": "inset",
+              "placement": {
+                "mode": "free",
+                "page": "left",
+                "pageNumber": 1,
+                "x": 340.92218937041036,
+                "y": 404.8624972240543,
+                "width": 105,
+                "zIndex": 1
+              },
+              "imageSurface": {
+                "preset": "raw",
+                "inkStrength": 0,
+                "opacity": 1,
+                "paperCleanup": 0.6,
+                "blendMode": "multiply"
               }
             }
           ],
@@ -84,8 +106,8 @@
               "page": "left",
               "pageNumber": 1,
               "src": "/assets/projects/notebook/decorations/blue-pen-arrow-06.png",
-              "x": 297,
-              "y": 470,
+              "x": 267,
+              "y": 432,
               "width": 80,
               "scale": 1,
               "rotation": -75,
@@ -123,7 +145,7 @@
             {
               "kind": "semantic",
               "label": "Why it matters",
-              "text": "When someone presses play, they do not just listen. They step into a different identity."
+              "text": "This turns the album into an experience, not just a collection of songs. When someone presses play, they don't just listen.\nThey step into a different identity."
             },
             {
               "kind": "paragraph",
@@ -132,9 +154,50 @@
                 "id": "taped-fragment",
                 "name": "Taped Fragment"
               }
+            },
+            {
+              "kind": "image",
+              "src": "/assets/projects/notebook/exported-assets/text-artifact-5b38eac8-a1fc-4072-a378-f2376cb45181.png",
+              "alt": "Text artifact: One insight rippled through every decision.",
+              "displayMode": "inset",
+              "placement": {
+                "mode": "free",
+                "page": "right",
+                "pageNumber": 2,
+                "x": 350.9282212021615,
+                "y": 153.98359616006266,
+                "width": 105,
+                "zIndex": 1
+              },
+              "imageSurface": {
+                "preset": "raw",
+                "inkStrength": 0,
+                "opacity": 1,
+                "paperCleanup": 0.6,
+                "blendMode": "multiply"
+              }
             }
           ],
           "decorations": [
+            {
+              "id": "9d007e6a-36bd-40b3-9c2f-cf10a54bd672",
+              "assetId": 220,
+              "name": "Blue Pen Underlines",
+              "filename": "blue-pen-underlines-01.png",
+              "collection": "blue-pen",
+              "category": "marks",
+              "page": "right",
+              "pageNumber": 2,
+              "src": "/assets/projects/notebook/decorations/blue-pen-underlines-01.png",
+              "x": 358,
+              "y": 211,
+              "width": 80,
+              "scale": 1.35,
+              "rotation": 0,
+              "zIndex": 5,
+              "flipX": false,
+              "flipY": false
+            },
             {
               "id": "eaa9ecaa-ed0b-48d8-8e7f-ebeb9b637c44",
               "assetId": 214,
@@ -145,8 +208,8 @@
               "page": "right",
               "pageNumber": 2,
               "src": "/assets/projects/notebook/decorations/blue-pen-arrow-06.png",
-              "x": 339,
-              "y": 175,
+              "x": 274,
+              "y": 176,
               "width": 80,
               "scale": 1,
               "rotation": -75,
@@ -185,8 +248,8 @@
                 "mode": "free",
                 "page": "left",
                 "pageNumber": 1,
-                "x": 7.950538979640683,
-                "y": 350.1476345594365,
+                "x": 7.950538979640684,
+                "y": 344.15052935471954,
                 "width": 306,
                 "zIndex": 1
               },
@@ -197,6 +260,28 @@
                 "paperCleanup": 0.1,
                 "blendMode": "multiply",
                 "inkSrc": "/assets/projects/notebook/exported-assets/sketch-a-man-seen-from-behind-working-at-a-multi-montior-co-20260705-011328-f4b128c0-ink-4a1970773a5b3c39.png"
+              }
+            },
+            {
+              "kind": "image",
+              "src": "/assets/projects/notebook/exported-assets/text-artifact-1f587bf5-424b-444d-84d7-60087fa59a6d.png",
+              "alt": "Text artifact: It's not a soundtrack. It's a transformation.",
+              "displayMode": "inset",
+              "placement": {
+                "mode": "free",
+                "page": "left",
+                "pageNumber": 1,
+                "x": 340.92218937041036,
+                "y": 404.8624972240543,
+                "width": 105,
+                "zIndex": 1
+              },
+              "imageSurface": {
+                "preset": "raw",
+                "inkStrength": 0,
+                "opacity": 1,
+                "paperCleanup": 0.6,
+                "blendMode": "multiply"
               }
             }
           ]
@@ -229,7 +314,7 @@
             {
               "kind": "semantic",
               "label": "Why it matters",
-              "text": "When someone presses play, they do not just listen. They step into a different identity."
+              "text": "This turns the album into an experience, not just a collection of songs. When someone presses play, they don't just listen.\nThey step into a different identity."
             },
             {
               "kind": "paragraph",
@@ -238,11 +323,52 @@
                 "id": "taped-fragment",
                 "name": "Taped Fragment"
               }
+            },
+            {
+              "kind": "image",
+              "src": "/assets/projects/notebook/exported-assets/text-artifact-5b38eac8-a1fc-4072-a378-f2376cb45181.png",
+              "alt": "Text artifact: One insight rippled through every decision.",
+              "displayMode": "inset",
+              "placement": {
+                "mode": "free",
+                "page": "right",
+                "pageNumber": 2,
+                "x": 350.9282212021615,
+                "y": 153.98359616006266,
+                "width": 105,
+                "zIndex": 1
+              },
+              "imageSurface": {
+                "preset": "raw",
+                "inkStrength": 0,
+                "opacity": 1,
+                "paperCleanup": 0.6,
+                "blendMode": "multiply"
+              }
             }
           ]
         }
       },
       "decorations": [
+        {
+          "id": "9d007e6a-36bd-40b3-9c2f-cf10a54bd672",
+          "assetId": 220,
+          "name": "Blue Pen Underlines",
+          "filename": "blue-pen-underlines-01.png",
+          "collection": "blue-pen",
+          "category": "marks",
+          "page": "right",
+          "pageNumber": 2,
+          "src": "/assets/projects/notebook/decorations/blue-pen-underlines-01.png",
+          "x": 358,
+          "y": 211,
+          "width": 80,
+          "scale": 1.35,
+          "rotation": 0,
+          "zIndex": 5,
+          "flipX": false,
+          "flipY": false
+        },
         {
           "id": "b1ec5420-9fe0-4c7e-8da9-57285e593e1d",
           "assetId": 214,
@@ -253,8 +379,8 @@
           "page": "left",
           "pageNumber": 1,
           "src": "/assets/projects/notebook/decorations/blue-pen-arrow-06.png",
-          "x": 297,
-          "y": 470,
+          "x": 267,
+          "y": 432,
           "width": 80,
           "scale": 1,
           "rotation": -75,
@@ -272,8 +398,8 @@
           "page": "right",
           "pageNumber": 2,
           "src": "/assets/projects/notebook/decorations/blue-pen-arrow-06.png",
-          "x": 339,
-          "y": 175,
+          "x": 274,
+          "y": 176,
           "width": 80,
           "scale": 1,
           "rotation": -75,
