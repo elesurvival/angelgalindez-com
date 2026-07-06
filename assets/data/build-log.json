@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-06T03:37:30.411Z",
+  "updated_at": "2026-07-06T05:10:06.723Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "c12ecc2",
+      "message": "Add notebook block context actions",
+      "date": "2026-07-06",
+      "time": "12:09 AM",
+      "timestamp": "2026-07-06T00:09:01-05:00"
+    },
     {
       "project": "AngelGalindez.com",
       "repo": "angelgalindez-com",
@@ -891,15 +900,6 @@
       "date": "2026-07-01",
       "time": "3:05 AM",
       "timestamp": "2026-07-01T03:05:20-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "673e21d",
-      "message": "Fix Live Notebook decoration and list typography export parity",
-      "date": "2026-07-01",
-      "time": "2:19 AM",
-      "timestamp": "2026-07-01T02:19:35-05:00"
     }
   ]
 }
