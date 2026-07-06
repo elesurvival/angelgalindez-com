@@ -8878,11 +8878,6 @@ a.build-log-project:focus-visible {
   border-bottom: 1px solid rgba(219, 176, 91, 0.16);
 }
 
-.notebook-page-body .global-music-player,
-.notebook-page-body .qf-player-reveal {
-  display: none;
-}
-
 .live-notebook-scene {
   --live-notebook-shell-width: var(--notebook-publish-shell-width);
   --live-notebook-shell-height: var(--notebook-publish-shell-height);
