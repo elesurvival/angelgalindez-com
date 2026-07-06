@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-05T23:53:32.209Z",
+  "updated_at": "2026-07-06T03:28:23.994Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "8d14207",
+      "message": "Add notebook block visibility toggle",
+      "date": "2026-07-05",
+      "time": "10:26 PM",
+      "timestamp": "2026-07-05T22:26:20-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-06-30",
       "time": "11:18 PM",
       "timestamp": "2026-06-30T23:18:36-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "8c59a0c",
-      "message": "Export multi-page Live Notebook entries",
-      "date": "2026-06-30",
-      "time": "10:42 PM",
-      "timestamp": "2026-06-30T22:42:36-05:00"
     }
   ]
 }
