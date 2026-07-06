@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-06T05:10:06.723Z",
+  "updated_at": "2026-07-06T09:39:25.514Z",
   "items": [
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "d4b269b",
+      "message": "Harden admin API security boundaries",
+      "date": "2026-07-06",
+      "time": "4:34 AM",
+      "timestamp": "2026-07-06T04:34:36-05:00"
+    },
     {
       "project": "Scriptorium",
       "repo": "scriptorium",
@@ -891,15 +900,6 @@
       "date": "2026-07-01",
       "time": "3:55 AM",
       "timestamp": "2026-07-01T03:55:14-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "1092a4e",
-      "message": "Audit Live Notebook list typography parity",
-      "date": "2026-07-01",
-      "time": "3:05 AM",
-      "timestamp": "2026-07-01T03:05:20-05:00"
     }
   ]
 }
