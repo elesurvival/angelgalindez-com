@@ -52,8 +52,17 @@ function formatTime(timestamp) {
   return timeFormatter.format(new Date(timestamp));
 }
 
-function resolveLogRef() {
-  return "HEAD";
+function resolveLogRef(repoPath) {
+  try {
+    const upstream = execFileSync(
+      "git",
+      ["rev-parse", "--abbrev-ref", "--symbolic-full-name", "@{upstream}"],
+      { cwd: repoPath, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] },
+    ).trim();
+    return upstream || "HEAD";
+  } catch {
+    return "HEAD";
+  }
 }
 
 function readCommits(repoConfig) {
