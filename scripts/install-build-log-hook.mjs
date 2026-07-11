@@ -11,6 +11,7 @@ const repos = [
   { repo: "scriptorium", path: "C:\\Users\\Angel\\Documents\\scriptorium" },
   { repo: "angelgalindez-com", path: rootDir },
   { repo: "elesurvival-shopify", path: "C:\\Users\\Angel\\Documents\\elesurvival-shopify" },
+  { repo: "trace-app", path: "C:\\Users\\Angel\\Documents\\Trace\\trace-app" },
 ];
 const siteRootForHook = rootDir.replaceAll("\\", "/");
 

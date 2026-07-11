@@ -43,6 +43,10 @@
       color: "#8edc52",
       aliases: ["the code keepers", "code keepers"],
     },
+    "trace-app": {
+      color: "#d98543",
+      aliases: ["trace"],
+    },
   };
 
   const projectLookup = Object.entries(PROJECTS).reduce((lookup, [key, config]) => {

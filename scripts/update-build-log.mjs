@@ -27,6 +27,7 @@ const repos = [
     repo: "elesurvival-shopify",
     path: "C:\\Users\\Angel\\Documents\\elesurvival-shopify",
   },
+  { project: "Trace", repo: "trace-app", path: "C:\\Users\\Angel\\Documents\\Trace\\trace-app" },
 ];
 
 const dateFormatter = new Intl.DateTimeFormat("en-CA", {

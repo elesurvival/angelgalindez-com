@@ -13,6 +13,7 @@ The update script scans these local project names when they are available:
 - Scriptorium
 - AngelGalindez.com
 - ELE Survival Shopify
+- Trace (trace-app)
 
 Missing local repos are skipped gracefully and reported in the console.
 
