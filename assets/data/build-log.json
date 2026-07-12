@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-12T11:21:40.670Z",
+  "updated_at": "2026-07-12T13:03:26.686Z",
   "items": [
     {
       "project": "Trace",
@@ -605,15 +605,6 @@
       "timestamp": "2026-07-04T00:12:21-05:00"
     },
     {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "db2dffd",
-      "message": "Honor default notebook skin shell in Live Notebook",
-      "date": "2026-07-04",
-      "time": "12:02 AM",
-      "timestamp": "2026-07-04T00:02:45-05:00"
-    },
-    {
       "project": "Scriptorium",
       "repo": "scriptorium",
       "hash": "2b3164f",
@@ -900,6 +891,15 @@
       "date": "2026-07-02",
       "time": "4:47 AM",
       "timestamp": "2026-07-02T04:47:55-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "2e3a859",
+      "message": "Add Scriptorium presentation slots",
+      "date": "2026-07-02",
+      "time": "4:09 AM",
+      "timestamp": "2026-07-02T04:09:01-05:00"
     }
   ]
 }
