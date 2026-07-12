@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-12T14:36:58.473Z",
+  "updated_at": "2026-07-12T14:37:42.888Z",
   "items": [
+    {
+      "project": "Trace",
+      "repo": "trace-app",
+      "hash": "2ad277b",
+      "message": "Implement local file ingestion hardening",
+      "date": "2026-07-12",
+      "time": "9:36 AM",
+      "timestamp": "2026-07-12T09:36:44-05:00"
+    },
     {
       "project": "Trace",
       "repo": "trace-app",
@@ -891,15 +900,6 @@
       "date": "2026-07-02",
       "time": "4:47 AM",
       "timestamp": "2026-07-02T04:47:55-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "2e3a859",
-      "message": "Add Scriptorium presentation slots",
-      "date": "2026-07-02",
-      "time": "4:09 AM",
-      "timestamp": "2026-07-02T04:09:01-05:00"
     }
   ]
 }
