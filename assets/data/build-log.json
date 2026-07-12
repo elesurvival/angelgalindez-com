@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-12T09:03:40.761Z",
+  "updated_at": "2026-07-12T10:07:23.948Z",
   "items": [
     {
       "project": "Trace",
@@ -605,15 +605,6 @@
       "timestamp": "2026-07-03T23:28:35-05:00"
     },
     {
-      "project": "AngelGalindez.com",
-      "repo": "angelgalindez-com",
-      "hash": "c50423b",
-      "message": "Tune Live Notebook ambient overlays",
-      "date": "2026-07-03",
-      "time": "11:00 PM",
-      "timestamp": "2026-07-03T23:00:15-05:00"
-    },
-    {
       "project": "Scriptorium",
       "repo": "scriptorium",
       "hash": "2b3164f",
@@ -900,6 +891,15 @@
       "date": "2026-07-02",
       "time": "4:47 AM",
       "timestamp": "2026-07-02T04:47:55-05:00"
+    },
+    {
+      "project": "Scriptorium",
+      "repo": "scriptorium",
+      "hash": "2e3a859",
+      "message": "Add Scriptorium presentation slots",
+      "date": "2026-07-02",
+      "time": "4:09 AM",
+      "timestamp": "2026-07-02T04:09:01-05:00"
     }
   ]
 }
