@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-12T13:03:26.686Z",
+  "updated_at": "2026-07-12T13:04:43.772Z",
   "items": [
+    {
+      "project": "Trace",
+      "repo": "trace-app",
+      "hash": "c53a481",
+      "message": "Implement attachments and evidence foundation",
+      "date": "2026-07-12",
+      "time": "8:03 AM",
+      "timestamp": "2026-07-12T08:03:15-05:00"
+    },
     {
       "project": "Trace",
       "repo": "trace-app",
@@ -891,15 +900,6 @@
       "date": "2026-07-02",
       "time": "4:47 AM",
       "timestamp": "2026-07-02T04:47:55-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "2e3a859",
-      "message": "Add Scriptorium presentation slots",
-      "date": "2026-07-02",
-      "time": "4:09 AM",
-      "timestamp": "2026-07-02T04:09:01-05:00"
     }
   ]
 }
