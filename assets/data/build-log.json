@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-12T22:01:38.081Z",
+  "updated_at": "2026-07-12T22:04:16.357Z",
   "items": [
+    {
+      "project": "Trace",
+      "repo": "trace-app",
+      "hash": "f6d1374",
+      "message": "Add purchase and line item foundation",
+      "date": "2026-07-12",
+      "time": "5:01 PM",
+      "timestamp": "2026-07-12T17:01:29-05:00"
+    },
     {
       "project": "Trace",
       "repo": "trace-app",
@@ -891,15 +900,6 @@
       "date": "2026-07-02",
       "time": "6:38 AM",
       "timestamp": "2026-07-02T06:38:24-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "2f829b2",
-      "message": "Refine Scriptorium presentation rhythm",
-      "date": "2026-07-02",
-      "time": "6:13 AM",
-      "timestamp": "2026-07-02T06:13:49-05:00"
     }
   ]
 }
