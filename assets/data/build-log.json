@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-13T08:05:11.155Z",
+  "updated_at": "2026-07-13T13:35:02.197Z",
   "items": [
+    {
+      "project": "Trace",
+      "repo": "trace-app",
+      "hash": "5105532",
+      "message": "Implement derived spending views",
+      "date": "2026-07-13",
+      "time": "6:53 AM",
+      "timestamp": "2026-07-13T06:53:18-05:00"
+    },
     {
       "project": "Trace",
       "repo": "trace-app",
@@ -891,15 +900,6 @@
       "date": "2026-07-02",
       "time": "8:42 AM",
       "timestamp": "2026-07-02T08:42:22-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "8b3e0c4",
-      "message": "Add manifest-driven presentation rhythm",
-      "date": "2026-07-02",
-      "time": "8:17 AM",
-      "timestamp": "2026-07-02T08:17:19-05:00"
     }
   ]
 }
