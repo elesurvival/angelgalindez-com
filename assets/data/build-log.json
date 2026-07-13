@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-07-13T18:13:06.272Z",
+  "updated_at": "2026-07-13T18:56:31.844Z",
   "items": [
+    {
+      "project": "Trace",
+      "repo": "trace-app",
+      "hash": "34dc405",
+      "message": "Fix packaged release startup",
+      "date": "2026-07-13",
+      "time": "1:56 PM",
+      "timestamp": "2026-07-13T13:56:10-05:00"
+    },
     {
       "project": "Trace",
       "repo": "trace-app",
@@ -891,15 +900,6 @@
       "date": "2026-07-02",
       "time": "9:18 AM",
       "timestamp": "2026-07-02T09:18:01-05:00"
-    },
-    {
-      "project": "Scriptorium",
-      "repo": "scriptorium",
-      "hash": "92cfbd5",
-      "message": "Add theme asset and manifest specs",
-      "date": "2026-07-02",
-      "time": "9:12 AM",
-      "timestamp": "2026-07-02T09:12:05-05:00"
     }
   ]
 }
